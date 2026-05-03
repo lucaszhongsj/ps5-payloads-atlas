@@ -11,6 +11,17 @@
     "checksum": "33029ec7e3fb82f63839582169ab44f01650547870050e4ee8f76eaaa8733ce2"
   },
   {
+    "name": "kstuff-lite",
+    "filename": "kstuff-lite_v1.04.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/kstuff-lite_v1.04.elf",
+    "source": "https://github.com/EchoStretch/kstuff-lite/releases",
+    "source_direct": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.04/kstuff.elf",
+    "description": "Lite version of kstuff",
+    "last_update": "2026-05-02",
+    "version": "v1.04",
+    "checksum": "df425cf117cb4d2a3e9dfbb49ec4c4b8cf198f0d9c5cf3728d1a840d97a92220"
+  },
+  {
     "name": "BackPork",
     "filename": "BackPork_0.1.elf",
     "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/BackPork_0.1.elf",
@@ -43,17 +54,6 @@
     "last_update": "2026-04-07",
     "version": "v0.19",
     "checksum": "e6c1babbfd5e1b766d12b659853b514b9faedf6333cbe8cb514b1a3e79b7ce39"
-  },
-  {
-    "name": "kstuff-lite",
-    "filename": "kstuff-lite_v1.03.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/kstuff-lite_v1.03.elf",
-    "source": "https://github.com/EchoStretch/kstuff-lite/releases",
-    "source_direct": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.03/kstuff.elf",
-    "description": "Lite version of kstuff",
-    "last_update": "2026-04-04",
-    "version": "v1.03",
-    "checksum": "54df47a48d9c5ee4338ef70ba66093908a4f2845e53468bdd7c080b65d7488c1"
   },
   {
     "name": "websrv",
