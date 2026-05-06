@@ -271,8 +271,7 @@ def update_payloads():
             filepath = os.path.join(PAYLOADS_DIR, new_filename)
             needs_download = (
                 item.get("version") != new_version or 
-                item.get("filename") != new_filename or
-                not os.path.exists(filepath)
+                item.get("filename") != new_filename
             )
             
             if needs_download:
