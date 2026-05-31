@@ -1,5 +1,17 @@
 [
   {
+    "name": "ShadowMountPlus",
+    "filename": "ShadowMountPlus_1.6test12.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ShadowMountPlus_1.6test12.elf",
+    "source": "https://github.com/drakmor/ShadowMountPlus/releases",
+    "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.6test12/ShadowMountPlus_1.6test12.zip",
+    "extract_file": "shadowmountplus.elf",
+    "description": "A fully automated, background 'Auto-Mounter' payload for Jailbroken PlayStation 5 consoles.",
+    "last_update": "2026-05-30",
+    "version": "1.6test12",
+    "checksum": "534f1a204d371904705334fc09087cedc202bcbc81cf1a9a82a8e1e9e4f6fb90"
+  },
+  {
     "name": "kstuff-lite",
     "filename": "kstuff-lite_v1.06.elf",
     "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/kstuff-lite_v1.06.elf",
@@ -20,18 +32,6 @@
     "last_update": "2026-05-25",
     "version": "v0.32",
     "checksum": "8dd24df100bff6db156e86bdf9380d5c0fcd2a680c2b08f5c87380d5007190c5"
-  },
-  {
-    "name": "ShadowMountPlus",
-    "filename": "ShadowMountPlus_1.6test11.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ShadowMountPlus_1.6test11.elf",
-    "source": "https://github.com/drakmor/ShadowMountPlus/releases",
-    "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.6test11/ShadowMountPlus_1.6test11.zip",
-    "extract_file": "shadowmountplus.elf",
-    "description": "A fully automated, background 'Auto-Mounter' payload for Jailbroken PlayStation 5 consoles.",
-    "last_update": "2026-05-13",
-    "version": "1.6test11",
-    "checksum": "035de95e2808fa8f285523e061f39df97732ab56b80628f5989cd167b1e6f6df"
   },
   {
     "name": "ftpsrv",
