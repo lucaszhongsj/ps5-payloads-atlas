@@ -153,9 +153,9 @@ def pick_asset(assets: list, asset_pattern: str, repo_url: str) -> dict | None:
     return min(
         candidates,
         key=lambda a: (
-            0 if a["name"].endswith(".elf") else 1,   # .elf preferred over .bin
-            "ps4" in a["name"].lower(),                # avoid ps4 builds
-            len(a["name"]),                            # shorter canonical name preferred
+            "ps4" in a["name"].lower(),                # avoid ps4 builds first (PS5 catalogue)
+            0 if a["name"].endswith(".elf") else 1,   # then prefer .elf over .bin
+            len(a["name"]),                            # then shorter canonical name
         ),
     )
 
@@ -170,13 +170,12 @@ def get_checksum(asset: dict) -> str:
 CATEGORY_RULES = [
     (r"kernel|kstuff|exploit|patch|jb|jailbreak", "Kernel"),
     (r"\bftp\b|ftpsrv|file transfer", "File Transfer"),
-    (r"\bhttp\b|web|telnet|\bdns\b", "Networking"),
+    (r"\bhttp\b|telnet|\bdns\b|klog", "Networking"),  # `web` dropped: too generic (collides with "web-based dashboard")
     (r"save", "Save Manager"),
     (r"debug|gdb", "Debugger"),
     (r"linux|loader|launch|homebrew|mount|backup|pkg", "Launcher"),
     (r"cheat", "Misc"),
     (r"controller|input|ghostpad|virtual pad", "Misc"),
-    (r"log|klog", "Networking"),
 ]
 
 

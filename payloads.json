@@ -106,7 +106,7 @@
       "url": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.8/klogsrv-ps5.elf",
       "description": "Streams /dev/klog over TCP :3232 and tees it to /data/klog/klog.log (10-backup rotation).",
       "version": "v0.8",
-      "category": "Launcher",
+      "category": "Networking",
       "checksum": "f6eb1b415ecf3340b89a56a0cb04ba5c714430085851ada13a98012b63a5a4cf",
       "last_update": "2026-05-13 02:44:28 UTC+8",
       "source": "https://github.com/ps5-payload-dev/klogsrv"
@@ -183,7 +183,7 @@
       "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.3.1/pldmgr_v0.3.1.elf",
       "description": "A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5.",
       "version": "v0.3.1",
-      "category": "Networking",
+      "category": "Misc",
       "checksum": "518740adbacccb9094fadb07dd424c53ee290f38306449ccc9d6957fdf813c0b",
       "last_update": "2026-06-07 07:26:20 UTC+8",
       "source": "https://github.com/itsplk/ps5-payload-manager"
