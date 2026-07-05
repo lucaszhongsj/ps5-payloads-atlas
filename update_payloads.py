@@ -2,24 +2,24 @@
 """Aggregate PS5 payload catalogue into payloads.json.
 
 Three-layer composition, all read-only against upstream:
-  1. Discovery: `itsPLK/ps5-payloads-mirror/payloads.json` supplies the upstream
-     repo list (so new payloads added there appear here automatically).
-  2. Curation: `sources.json` overrides display name / description /
-     asset_pattern / extract_file for any repo, and can `exclude` repos we do
-     not want to republish. Entries here also act as a fallback seed if the
-     itsPLK discovery fetch fails.
-  3. Enrichment: `phantomptr/ps5upload` `CATALOGUE` provides longer
+  1. Discovery: `itsPLK/ps5-payloads-mirror/payloads.json` and
+     `phantomptr/ps5upload` CATALOGUE both supply upstream repo URLs.
+  2. Curation: `sources.json` overrides display name / description / asset
+     selection per repo, and can `"exclude": true` to suppress one.
+  3. Enrichment: `phantomptr/ps5upload` CATALOGUE provides longer
      descriptions / display names where available.
 
-For each repo, the latest release is queried, the canonical asset is picked,
-and an entry in ps5-payload-manager custom-repository schema is emitted.
-
-Notes:
-- No binaries are downloaded. GitHub checksums come from the Release API
-  `digest` field. Forgejo / missing-digest assets get an empty checksum.
-- `/releases/latest` 404 → fall back to `/releases[0]` for pre-release-only repos.
-- Repos are deduped by canonical (host, owner, repo) after redirect resolution
-  (e.g. LightningMods/etaHEN folds into etaHEN/etaHEN).
+Design rules:
+- A repo is identified by its full HTML URL string (e.g.
+  `https://github.com/owner/repo`). All maps are keyed by the lowercased URL.
+- The API response is the source of truth. Nothing is reassembled from
+  parsed fragments — `version`, `published_at`, asset `name` /
+  `browser_download_url` / `digest`, and the canonical repo URL (via
+  `release.html_url`) all come straight from the JSON the API returns.
+- No binaries are downloaded. GitHub checksums come from the asset `digest`
+  field. Forgejo / missing-digest assets get an empty checksum.
+- `/releases/latest` 404 → fall back to `/releases[0]` for pre-release-only
+  repos.
 """
 
 import json
@@ -28,19 +28,6 @@ import subprocess
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-
-CST = timezone(timedelta(hours=8))  # UTC+8 / 东八区
-
-
-def format_last_update(iso_str: str) -> str:
-    """Convert ISO 8601 UTC (e.g. 2026-04-30T16:34:19Z) to 'YYYY-MM-DD HH:MM:SS UTC+8'."""
-    if not iso_str:
-        return ""
-    try:
-        dt = datetime.fromisoformat(iso_str.replace("Z", "+00:00"))
-        return dt.astimezone(CST).strftime("%Y-%m-%d %H:%M:%S UTC+8")
-    except Exception:
-        return iso_str
 
 SOURCES_FILE = "sources.json"
 OUTPUT_FILE = "payloads.json"
@@ -53,9 +40,44 @@ PS5UPLOAD_CATALOGUE_URL = (
     "client/src-tauri/src/commands/payloads.rs"
 )
 CATALOGUE_NAME = "PS5 Payload Catalogue"
+CST = timezone(timedelta(hours=8))  # UTC+8 / 东八区
 
 
-# ─── HTTP helpers ──────────────────────────────────────────────────────
+# ─── URL helpers ─────────────────────────────────────────────────────
+def normalize_repo_url(url: str) -> str:
+    """Lowercase a repo HTML URL for use as a map key. Trims trailing slash and .git."""
+    if not url:
+        return ""
+    url = url.strip().rstrip("/")
+    if url.endswith(".git"):
+        url = url[:-4]
+    return url.lower()
+
+
+def parse_repo_url(url: str):
+    """Extract (host, owner, repo) from a repo HTML URL for API calls."""
+    m = re.search(r"https?://([^/]+)/([^/]+)/([^/?#]+)", url or "")
+    if not m:
+        return None
+    host, owner, repo = m.groups()
+    repo = repo.rstrip("/")
+    if repo.endswith(".git"):
+        repo = repo[:-4]
+    return host, owner, repo
+
+
+def format_last_update(iso_str: str) -> str:
+    """ISO 8601 UTC → 'YYYY-MM-DD HH:MM:SS UTC+8'."""
+    if not iso_str:
+        return ""
+    try:
+        dt = datetime.fromisoformat(iso_str.replace("Z", "+00:00"))
+        return dt.astimezone(CST).strftime("%Y-%m-%d %H:%M:%S UTC+8")
+    except Exception:
+        return iso_str
+
+
+# ─── HTTP / API ──────────────────────────────────────────────────────
 def http_get(url: str, timeout: int = 30) -> str:
     req = urllib.request.Request(url, headers={"User-Agent": "ps5-payloads-atlas/1.0"})
     with urllib.request.urlopen(req, timeout=timeout) as response:
@@ -75,14 +97,18 @@ def gh_api(endpoint: str):
 
 def forgejo_api(host: str, endpoint: str):
     try:
-        url = f"https://{host}/api/v1/{endpoint}"
-        return json.loads(http_get(url))
+        return json.loads(http_get(f"https://{host}/api/v1/{endpoint}"))
     except Exception as e:
-        print(f"  forgejo {url} failed: {e}")
+        print(f"  forgejo {host}/{endpoint} failed: {e}")
         return None
 
 
-def get_latest_release(host: str, owner: str, repo: str) -> dict | None:
+def get_latest_release(repo_url: str) -> dict | None:
+    """Fetch latest release (with pre-release fallback) for a repo URL."""
+    info = parse_repo_url(repo_url)
+    if not info:
+        return None
+    host, owner, repo = info
     if host == "github.com":
         release = gh_api(f"repos/{owner}/{repo}/releases/latest")
         if release:
@@ -96,48 +122,30 @@ def get_latest_release(host: str, owner: str, repo: str) -> dict | None:
     return releases[0] if releases else None
 
 
-# ─── Repo URL / canonical resolution ─────────────────────────────────
-def parse_repo_url(url: str):
-    m = re.search(r"https?://([^/]+)/([^/]+)/([^/?#]+)", url or "")
-    if not m:
-        return None
-    host, owner, repo = m.groups()
-    repo = repo.rstrip("/")
-    if repo.endswith(".git"):
-        repo = repo[:-4]
-    if repo.lower() == "releases":
-        parts = (url or "").split("/")
-        try:
-            idx = parts.index(host)
-            owner, repo = parts[idx + 1], parts[idx + 2]
-        except (ValueError, IndexError):
-            return None
-    return host, owner, repo
+def canonical_repo_url(release: dict, fallback: str) -> str:
+    """Use the API's release.html_url to derive the canonical repo URL.
+
+    `release.html_url` looks like
+    `https://github.com/<owner>/<repo>/releases/tag/<tag>` — strip everything
+    from `/releases` onward. Falls back to the input URL if absent.
+    """
+    html_url = release.get("html_url") or ""
+    idx = html_url.find("/releases")
+    if idx > 0:
+        return html_url[:idx].lower()
+    return normalize_repo_url(fallback)
 
 
-def canonical_key(host: str, owner: str, repo: str, release: dict) -> tuple:
-    """Resolve redirects via the release's API url; fall back to input."""
-    if host == "github.com":
-        url = release.get("url", "")
-        m = re.search(r"/repos/([^/]+)/([^/]+)/releases/", url)
-        if m:
-            return (host, m.group(1).lower(), m.group(2).lower())
-    return (host, owner.lower(), repo.lower())
-
-
-# ─── Asset selection ──────────────────────────────────────────────────
-def score_asset(name: str, asset_pattern: str, has_extract: bool, preferred_ext: str) -> float:
+# ─── Asset selection ─────────────────────────────────────────────────
+def score_asset(name: str, asset_pattern: str, has_extract: bool) -> float:
     name_lower = name.lower()
     if has_extract and name.endswith(".zip"):
         return 20
     if not (name.endswith(".elf") or name.endswith(".bin") or (has_extract and name.endswith(".zip"))):
-        if not name.endswith(preferred_ext):
-            return -1
+        return -1
     if asset_pattern and not re.search(asset_pattern, name, re.IGNORECASE):
         return -1
     score = 0.0
-    if name.endswith(preferred_ext):
-        score += 5
     if "ps5" in name_lower:
         score += 10
     if "ps4" in name_lower:
@@ -148,11 +156,11 @@ def score_asset(name: str, asset_pattern: str, has_extract: bool, preferred_ext:
     return score
 
 
-def pick_asset(assets: list, asset_pattern: str, has_extract: bool, preferred_ext: str) -> dict | None:
+def pick_asset(assets: list, asset_pattern: str, has_extract: bool) -> dict | None:
     selected = None
     best = -2.0
     for asset in assets:
-        s = score_asset(asset["name"], asset_pattern, has_extract, preferred_ext)
+        s = score_asset(asset["name"], asset_pattern, has_extract)
         if s > best:
             best = s
             selected = asset
@@ -167,7 +175,7 @@ def get_checksum(asset: dict, host: str) -> str:
     return ""
 
 
-# ─── Category derivation ──────────────────────────────────────────────
+# ─── Category derivation ─────────────────────────────────────────────
 CATEGORY_RULES = [
     (r"kernel|kstuff|exploit|patch|jb|jailbreak", "Kernel"),
     (r"\bftp\b|file transfer", "File Transfer"),
@@ -189,9 +197,9 @@ def derive_category(name: str, description: str) -> str:
     return "Misc"
 
 
-# ─── Discovery: itsPLK payloads.json ─────────────────────────────────
+# ─── Discovery: itsPLK payloads.json ────────────────────────────────
 def fetch_itsplk_discovery() -> dict:
-    """Return {(host, owner_lower, repo_lower): {host, owner, repo, name, description}}."""
+    """Return {repo_url_lower: {repo_url, display_name, description, asset_pattern, extract_file}}."""
     try:
         data = json.loads(http_get(ITSPLK_DISCOVERY_URL, timeout=30))
     except Exception as e:
@@ -199,15 +207,14 @@ def fetch_itsplk_discovery() -> dict:
         return {}
     discovered = {}
     for p in data:
-        info = parse_repo_url(p.get("source", ""))
+        repo_url = p.get("source", "")
+        info = parse_repo_url(repo_url)
         if not info:
             continue
-        host, owner, repo = info
-        key = (host, owner.lower(), repo.lower())
-        discovered[key] = {
-            "host": host,
-            "owner": owner,
-            "repo": repo,
+        # `source` in itsPLK points at /releases; trim to the repo root URL.
+        repo_url = repo_url.split("/releases")[0].rstrip("/")
+        discovered[normalize_repo_url(repo_url)] = {
+            "repo_url": repo_url,
             "display_name": p.get("name"),
             "description": p.get("description") or "",
             "asset_pattern": p.get("asset_pattern") or "",
@@ -217,7 +224,7 @@ def fetch_itsplk_discovery() -> dict:
     return discovered
 
 
-# ─── Enrichment: ps5upload CATALOGUE ─────────────────────────────────
+# ─── Enrichment + discovery: ps5upload CATALOGUE ────────────────────
 def strip_block_comments(text: str) -> str:
     return re.sub(r"/\*.*?\*/", "", text, flags=re.DOTALL)
 
@@ -292,10 +299,9 @@ def parse_catalogue_str(entry: str, key: str) -> str | None:
 
 
 def fetch_ps5upload_catalogue() -> dict:
-    """Return {(host, owner_lower, repo_lower): {host, owner, repo, display_name, description, asset_name_hint}}.
+    """Return {repo_url_lower: {repo_url, display_name, description, asset_name_hint}}.
 
-    The ps5upload CATALOGUE is used both for discovery (the repos it lists) and
-    for enrichment (the descriptions / display names it carries).
+    ps5upload CATALOGUE is used both for discovery and for enrichment.
     """
     try:
         raw = strip_block_comments(http_get(PS5UPLOAD_CATALOGUE_URL, timeout=30))
@@ -313,10 +319,9 @@ def fetch_ps5upload_catalogue() -> dict:
         repo = parse_catalogue_str(entry_text, "repo_name")
         if not (host and owner and repo):
             continue
-        catalogue[(host, owner.lower(), repo.lower())] = {
-            "host": host,
-            "owner": owner,
-            "repo": repo,
+        repo_url = f"https://{host}/{owner}/{repo}"
+        catalogue[normalize_repo_url(repo_url)] = {
+            "repo_url": repo_url,
             "display_name": parse_catalogue_str(entry_text, "display_name"),
             "description": parse_catalogue_str(entry_text, "description"),
             "asset_name_hint": parse_catalogue_str(entry_text, "asset_name_hint") or "",
@@ -326,41 +331,34 @@ def fetch_ps5upload_catalogue() -> dict:
 
 
 # ─── Item builder ────────────────────────────────────────────────────
-def build_item(host: str, owner: str, repo: str, override: dict, enrich: dict) -> dict | None:
-    """Fetch release, pick asset, emit schema item. Returns item + canon_key via _canon."""
+def build_item(repo_url: str, override: dict, enrich: dict) -> dict | None:
+    """Fetch release, pick asset, emit schema item. Returns item with `_canon` key."""
+    info = parse_repo_url(repo_url)
+    if not info:
+        return None
+    host = info[0]
     asset_pattern = override.get("asset_pattern") or enrich.get("asset_name_hint") or ""
     has_extract = bool(override.get("extract_file"))
-    preferred_ext = ".bin" if repo.lower() == "etahen" else ".elf"
 
-    print(f"Checking {owner}/{repo} on {host}...")
-    release = get_latest_release(host, owner, repo)
+    print(f"Checking {repo_url}...")
+    release = get_latest_release(repo_url)
     if not release:
         print("  no release found, skipping")
         return None
-    canon = canonical_key(host, owner, repo, release)
 
     assets = release.get("assets", [])
     if not assets:
         print(f"  no assets in release {release.get('tag_name')}, skipping")
         return None
 
-    selected = pick_asset(assets, asset_pattern, has_extract, preferred_ext)
+    selected = pick_asset(assets, asset_pattern, has_extract)
     if not selected:
-        print(f"  no suitable asset for {owner}/{repo}, skipping")
+        print(f"  no suitable asset, skipping")
         return None
 
-    display_name = (
-        override.get("display_name")
-        or enrich.get("display_name")
-        or repo
-    )
-    description = (
-        override.get("description")
-        or enrich.get("description")
-        or ""
-    )
+    display_name = override.get("display_name") or enrich.get("display_name") or repo_url.rstrip("/").split("/")[-1]
+    description = override.get("description") or enrich.get("description") or ""
     category = derive_category(display_name, description)
-    checksum = get_checksum(selected, host)
 
     item = {
         "name": display_name,
@@ -369,10 +367,12 @@ def build_item(host: str, owner: str, repo: str, override: dict, enrich: dict) -
         "description": description,
         "version": release.get("tag_name", ""),
         "category": category,
-        "checksum": checksum,
+        "checksum": get_checksum(selected, host),
         "last_update": format_last_update(release.get("published_at") or ""),
-        "source": f"https://{canon[0]}/{canon[1]}/{canon[2]}/releases",
-        "_canon": canon,
+        # Source = repo URL (root), derived from release.html_url when available
+        # so redirect aliases (LightningMods/etaHEN → etaHEN/etaHEN) collapse.
+        "source": canonical_repo_url(release, repo_url) + "/releases",
+        "_canon": canonical_repo_url(release, repo_url),
     }
     print(f"  → {selected['name']} @ {release.get('tag_name')} ({category})")
     return item
@@ -416,16 +416,19 @@ def main() -> None:
     discovery = fetch_itsplk_discovery()
     ps5upload = fetch_ps5upload_catalogue()
 
-    # sources.json: keyed dict + exclude set
+    # Curation: overrides + excludes keyed by lowercased repo URL
     overrides = {}
     excludes = set()
     for src in sources:
-        key = (src["host"], src["owner"].lower(), src["repo"].lower())
-        overrides[key] = src
+        repo_url = src.get("url") or src.get("source", "")
+        if not repo_url:
+            continue
+        key = normalize_repo_url(repo_url)
+        overrides[key] = {**src, "repo_url": repo_url}
         if src.get("exclude"):
             excludes.add(key)
 
-    # Union of repos to consider: curated + itsPLK discovery + ps5upload catalogue
+    # Union: curated overrides + itsPLK discovery + ps5upload catalogue
     seen = set(overrides.keys())
     all_keys = list(overrides.keys())
     for k in list(discovery.keys()) + list(ps5upload.keys()):
@@ -439,22 +442,22 @@ def main() -> None:
 
     for key in all_keys:
         if key in excludes:
-            print(f"Excluded by sources.json: {key[1]}/{key[2]}")
+            print(f"Excluded by sources.json: {key}")
             continue
 
         src_override = overrides.get(key, {})
         disc = discovery.get(key, {})
         psu = ps5upload.get(key, {})
 
-        # Resolve host/owner/repo (sources.json wins for stability)
-        identity = src_override or disc or psu
-        if not identity:
+        repo_url = (
+            src_override.get("repo_url")
+            or disc.get("repo_url")
+            or psu.get("repo_url")
+        )
+        if not repo_url:
             continue
-        host = identity["host"]
-        owner = identity["owner"]
-        repo = identity["repo"]
 
-        # Build merged override with priority: sources.json > ps5upload > itsPLK
+        # Merged override with priority: sources.json > ps5upload > itsPLK
         override = {}
         for field in ("display_name", "description", "asset_pattern", "extract_file"):
             for src_data in (src_override, psu, disc):
@@ -463,14 +466,14 @@ def main() -> None:
                     override[field] = val
                     break
 
-        item = build_item(host, owner, repo, override, psu)
+        item = build_item(repo_url, override, psu)
         if not item:
-            skipped.append(f"{owner}/{repo}")
+            skipped.append(repo_url)
             continue
 
         canon = item.pop("_canon")
         if canon in canon_seen:
-            print(f"  dedup: {owner}/{repo} folds into {canon[1]}/{canon[2]}, already listed")
+            print(f"  dedup: {repo_url} folds into {canon}, already listed")
             continue
         canon_seen.add(canon)
         final_items.append(item)
