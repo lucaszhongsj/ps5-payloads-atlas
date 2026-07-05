@@ -16,6 +16,20 @@ Data is sourced directly from real upstream release repositories (not mirrors). 
 - `sources.json` — curation overlay (override / exclude). Acts as fallback seed if discovery fails.
 - `update_payloads.py` — the aggregator.
 
+## `sources.json` schema
+
+Each entry is one upstream repo. Only `url` is required; every other field is an optional override with the fallback shown.
+
+| Field | Required | Purpose | Fallback if omitted |
+| --- | --- | --- | --- |
+| `url` | yes | Repo HTML URL — the entry's identity and API lookup key | — |
+| `display_name` | no | Overrides the output `name` | ps5upload `display_name` → repo name from URL |
+| `description` | no | Overrides the output `description` | ps5upload / itsPLK description → empty |
+| `asset_pattern` | no | Regex narrowing which release asset to pick (multiple `.elf` files) | ps5upload `asset_name_hint` → no filter |
+| `exclude` | no | `true` skips this repo entirely | `false` (include) |
+
+Same repo under multiple aliases (e.g. `LightningMods/etaHEN` and `etaHEN/etaHEN`) needs one entry per alias if you want to override or exclude both.
+
 ## Notes
 
 - No binaries are hosted here. `url` points at the upstream release asset; download happens on the PS5 side.
@@ -32,7 +46,7 @@ Data is sourced directly from real upstream release repositories (not mirrors). 
 | **elfldr** | `v0.23` | Launcher | An ELF loader for jailbroken PS5s that accepts payloads on port 9021. | `2026-05-13 02:51:52 UTC+8` | [ps5-payload-dev/elfldr](https://github.com/ps5-payload-dev/elfldr) |
 | **ezremote-DPI** | `1.04` | Launcher | Long-lived loopback PKG install daemon (127.0.0.1:9040). Owns Sony's PlayGo/AppInstUtil install state machine so installs don't evaporate when the calling process exits. | `2025-07-02 03:42:24 UTC+8` | [cy33hc/ps5-ezremote-dpi](https://github.com/cy33hc/ps5-ezremote-dpi) |
 | **ftpsrv** | `v0.20` | File Transfer | Lightweight FTP server on :2121 with SELF/ELF auto-decryption and remount-RW SITE commands. Browse the PS5 filesystem from any FTP client. | `2026-05-13 02:36:49 UTC+8` | [ps5-payload-dev/ftpsrv](https://github.com/ps5-payload-dev/ftpsrv) |
-| **ftpsrv (drakmor)** | `1.15-ng-stable` | Misc | drakmor's fork of ftpsrv. | `2026-04-08 10:17:12 UTC+8` | [drakmor/ftpsrv](https://github.com/drakmor/ftpsrv) |
+| **ftpsrv (drakmor)** | `1.15-ng-stable` | File Transfer | drakmor's fork of ftpsrv. | `2026-04-08 10:17:12 UTC+8` | [drakmor/ftpsrv](https://github.com/drakmor/ftpsrv) |
 | **Garlic SaveMgr** | `v1.10` | Save Manager | On-console save decrypt/encrypt daemon. Back up saves in plaintext, edit on PC, re-encrypt for the same console. No network. | `2026-06-11 19:33:01 UTC+8` | [earthonion/garlic-savemgr](https://git.etawen.dev/earthonion/garlic-savemgr) |
 | **Garlic Worker** | `v1.1.6` | Save Manager | Background worker that drains the community save-decryption queue from garlicsaves.com. Handles both PS4 and PS5 saves natively. Opt-in: connects to garlicsaves.com. | `2026-07-04 21:24:04 UTC+8` | [earthonion/garlic-worker](https://git.etawen.dev/earthonion/garlic-worker) |
 | **Ghostpad** | `v1.0.0` | Misc | Creates a virtual PS5 controller on the console and redirects input to it — useful for input automation, remote control, and accessibility setups. | `2026-05-31 23:27:41 UTC+8` | [stonedmodder/ghostpad](https://github.com/stonedmodder/ghostpad) |

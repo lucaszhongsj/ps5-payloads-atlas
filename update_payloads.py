@@ -169,7 +169,7 @@ def get_checksum(asset: dict) -> str:
 # ─── Category derivation ─────────────────────────────────────────────
 CATEGORY_RULES = [
     (r"kernel|kstuff|exploit|patch|jb|jailbreak", "Kernel"),
-    (r"\bftp\b|file transfer", "File Transfer"),
+    (r"\bftp\b|ftpsrv|file transfer", "File Transfer"),
     (r"\bhttp\b|web|telnet|\bdns\b", "Networking"),
     (r"save", "Save Manager"),
     (r"debug|gdb", "Debugger"),
@@ -419,10 +419,14 @@ def main() -> None:
     for src in sources:
         repo_url = src.get("url") or src.get("source", "")
         if not repo_url:
+            print(f"warning: sources.json entry without url/source, skipped: {src}")
+            continue
+        if not parse_repo_url(repo_url):
+            print(f"warning: sources.json entry has unparseable url {repo_url!r}, skipped")
             continue
         key = normalize_repo_url(repo_url)
         if key in overrides:
-            print(f"warning: duplicate sources.json entry for {key}; last one wins")
+            print(f"warning: duplicate sources.json entry for {repo_url}; last one wins")
         overrides[key] = {**src, "repo_url": repo_url}
 
     # Union: curated overrides + itsPLK discovery + ps5upload catalogue
@@ -441,7 +445,7 @@ def main() -> None:
 
     for key in all_keys:
         if overrides.get(key, {}).get("exclude"):
-            print(f"Excluded by sources.json: {key}")
+            print(f"Excluded by sources.json: {overrides[key].get('repo_url', key)}")
             n_excluded += 1
             continue
 

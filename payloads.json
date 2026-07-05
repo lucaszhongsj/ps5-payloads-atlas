@@ -62,7 +62,7 @@
       "url": "https://github.com/drakmor/ftpsrv/releases/download/1.15-ng-stable/ftpsrv-ps5.elf",
       "description": "drakmor's fork of ftpsrv.",
       "version": "1.15-ng-stable",
-      "category": "Misc",
+      "category": "File Transfer",
       "checksum": "913a443af847b6861ec11748e2640f62d1fc1027076f576aa0ddccab8507311f",
       "last_update": "2026-04-08 10:17:12 UTC+8",
       "source": "https://github.com/drakmor/ftpsrv"
