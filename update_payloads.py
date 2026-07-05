@@ -130,42 +130,39 @@ def repo_url_from_release(release: dict) -> str:
 
 
 # ─── Asset selection ─────────────────────────────────────────────────
-def score_asset(name: str, asset_pattern: str, has_extract: bool) -> float:
-    name_lower = name.lower()
-    if has_extract and name.endswith(".zip"):
-        return 20
-    if not (name.endswith(".elf") or name.endswith(".bin") or (has_extract and name.endswith(".zip"))):
-        return -1
-    if asset_pattern and not re.search(asset_pattern, name, re.IGNORECASE):
-        return -1
-    score = 0.0
-    if "ps5" in name_lower:
-        score += 10
-    if "ps4" in name_lower:
-        score -= 10
-    if "install" in name_lower:
-        score -= 5
-    score -= len(name) / 100.0
-    return score
-
-
 def pick_asset(assets: list, asset_pattern: str, has_extract: bool) -> dict | None:
-    selected = None
-    best = -2.0
-    for asset in assets:
-        s = score_asset(asset["name"], asset_pattern, has_extract)
-        if s > best:
-            best = s
-            selected = asset
-    return selected if best > -1 else None
+    """Select the canonical payload asset by explicit priority (no magic numbers).
+
+    Priority: keep only .elf/.bin (or .zip when extracting) → if asset_pattern
+    given, narrow to matches (fallback to unfiltered if none match) → prefer
+    .elf over .bin, non-ps4 over ps4, shorter filename over longer.
+    """
+    def is_candidate(name: str) -> bool:
+        if has_extract and name.endswith(".zip"):
+            return True
+        return name.endswith((".elf", ".bin"))
+
+    candidates = [a for a in assets if is_candidate(a["name"])]
+    if not candidates:
+        return None
+    if asset_pattern:
+        matched = [a for a in candidates if re.search(asset_pattern, a["name"], re.IGNORECASE)]
+        if matched:
+            candidates = matched
+    return min(
+        candidates,
+        key=lambda a: (
+            0 if a["name"].endswith(".elf") else 1,   # .elf preferred over .bin/.zip
+            "ps4" in a["name"].lower(),                # avoid ps4 builds
+            len(a["name"]),                            # shorter canonical name preferred
+        ),
+    )
 
 
-def get_checksum(asset: dict, host: str) -> str:
-    if host == "github.com":
-        digest = asset.get("digest") or ""
-        if digest.startswith("sha256:"):
-            return digest.split(":", 1)[1]
-    return ""
+def get_checksum(asset: dict) -> str:
+    """SHA-256 hex from the asset's `digest` field ('sha256:...' on GitHub; absent on Forgejo)."""
+    digest = asset.get("digest") or ""
+    return digest.split(":", 1)[1] if digest.startswith("sha256:") else ""
 
 
 # ─── Category derivation ─────────────────────────────────────────────
@@ -326,10 +323,8 @@ def fetch_ps5upload_catalogue() -> dict:
 # ─── Item builder ────────────────────────────────────────────────────
 def build_item(repo_url: str, override: dict, enrich: dict) -> dict | None:
     """Fetch release, pick asset, emit schema item. Returns item with `_canon` key."""
-    info = parse_repo_url(repo_url)
-    if not info:
+    if not parse_repo_url(repo_url):
         return None
-    host = info[0]
     asset_pattern = override.get("asset_pattern") or enrich.get("asset_name_hint") or ""
     has_extract = bool(override.get("extract_file"))
 
@@ -361,7 +356,7 @@ def build_item(repo_url: str, override: dict, enrich: dict) -> dict | None:
         "description": description,
         "version": release.get("tag_name", ""),
         "category": category,
-        "checksum": get_checksum(selected, host),
+        "checksum": get_checksum(selected),
         "last_update": format_last_update(release.get("published_at") or ""),
         # Source = repo root URL, straight from release.html_url (no concat).
         "source": canon,
@@ -409,17 +404,13 @@ def main() -> None:
     discovery = fetch_itsplk_discovery()
     ps5upload = fetch_ps5upload_catalogue()
 
-    # Curation: overrides + excludes keyed by lowercased repo URL
+    # Curation: overrides keyed by lowercased repo URL; `exclude` read from the entry directly.
     overrides = {}
-    excludes = set()
     for src in sources:
         repo_url = src.get("url") or src.get("source", "")
         if not repo_url:
             continue
-        key = normalize_repo_url(repo_url)
-        overrides[key] = {**src, "repo_url": repo_url}
-        if src.get("exclude"):
-            excludes.add(key)
+        overrides[normalize_repo_url(repo_url)] = {**src, "repo_url": repo_url}
 
     # Union: curated overrides + itsPLK discovery + ps5upload catalogue
     seen = set(overrides.keys())
@@ -434,7 +425,7 @@ def main() -> None:
     skipped = []
 
     for key in all_keys:
-        if key in excludes:
+        if overrides.get(key, {}).get("exclude"):
             print(f"Excluded by sources.json: {key}")
             continue
 
