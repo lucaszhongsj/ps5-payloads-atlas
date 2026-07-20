@@ -179,13 +179,13 @@
     },
     {
       "name": "pldmgr",
-      "filename": "pldmgr_v0.4.0.elf",
-      "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.4.0/pldmgr_v0.4.0.elf",
+      "filename": "pldmgr_v0.4.1.elf",
+      "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.4.1/pldmgr_v0.4.1.elf",
       "description": "A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5.",
-      "version": "v0.4.0",
+      "version": "v0.4.1",
       "category": "Misc",
-      "checksum": "460808dead44100c4cb6e4ad8a768ffd1c5445afc7d1cb83e2727030240a85fd",
-      "last_update": "2026-07-19 23:20:31 UTC+8",
+      "checksum": "8f26faf1f6e831150af3284e2cca4944917f073efedfb4db0335cfab75a17951",
+      "last_update": "2026-07-20 07:12:41 UTC+8",
       "source": "https://github.com/itsplk/ps5-payload-manager"
     },
     {
