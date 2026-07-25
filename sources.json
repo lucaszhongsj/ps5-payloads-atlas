@@ -170,5 +170,11 @@
     "display_name": "PS5 Web File Manager",
     "description": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
     "exclude": false
+  },
+  {
+    "url": "https://github.com/aydencharles/kylin-core-release",
+    "display_name": "Kylin Core",
+    "description": "Game cheat trainer for jailbroken PS5. Apply in-game cheats and modifications to running titles; community-lite build distributed as a single payload.",
+    "exclude": false
   }
 ]

@@ -145,6 +145,17 @@
       "source": "https://github.com/echostretch/kstuff-lite"
     },
     {
+      "name": "Kylin Core",
+      "filename": "kylin-core.elf",
+      "url": "https://github.com/aydencharles/kylin-core-release/releases/download/v1.3.1-community-lite/kylin-core.elf",
+      "description": "Game cheat trainer for jailbroken PS5. Apply in-game cheats and modifications to running titles; community-lite build distributed as a single payload.",
+      "version": "v1.3.1-community-lite",
+      "category": "Tools",
+      "checksum": "90320a4169d61be6e168e605e59c4d8fc89fb978f1772f03c2011e7e8087b8a3",
+      "last_update": "2026-06-20 02:21:33 UTC+8",
+      "source": "https://github.com/aydencharles/kylin-core-release"
+    },
+    {
       "name": "Lapy JB Daemon",
       "filename": "lapy_jb_daemon-v1.2.elf",
       "url": "https://github.com/itsPLK/PS5-Lapy-JB-Daemon/releases/download/v1.2/lapy_jb_daemon-v1.2.elf",
