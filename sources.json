@@ -164,5 +164,11 @@
     "description": "Headless payload that registers PS5 user slots directly via the system registry. Offline account activation without PSN. One-shot ELF: send, runs, exits.",
     "asset_pattern": "np-fake-signin-ps5",
     "exclude": false
+  },
+  {
+    "url": "https://github.com/owendswang/ps5-web-file-manager",
+    "display_name": "PS5 Web File Manager",
+    "description": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
+    "exclude": false
   }
 ]

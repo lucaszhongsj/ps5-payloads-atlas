@@ -189,6 +189,17 @@
       "source": "https://github.com/itsplk/ps5-payload-manager"
     },
     {
+      "name": "PS5 Web File Manager",
+      "filename": "web-file-mgr-v0.9.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v0.9/web-file-mgr-v0.9.elf",
+      "description": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
+      "version": "v0.9",
+      "category": "Networking",
+      "checksum": "62be5e3865b409c53301f4fc65ff4f4bda3aaf2e20bed1197aca883bfffa16e0",
+      "last_update": "2026-07-19 00:38:31 UTC+8",
+      "source": "https://github.com/owendswang/ps5-web-file-manager"
+    },
+    {
       "name": "ps5-app-dumper",
       "filename": "ps5-app-dumper.elf",
       "url": "https://github.com/EchoStretch/ps5-app-dumper/releases/download/v1.10/ps5-app-dumper.elf",
