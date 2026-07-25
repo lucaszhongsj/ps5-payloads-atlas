@@ -7,7 +7,7 @@
       "url": "https://github.com/BestPig/BackPork/releases/download/0.1/ps5-backpork.elf",
       "description": "Lets you sideload system libraries into PS5 games.",
       "version": "0.1",
-      "category": "Tools",
+      "category": "Installer",
       "checksum": "d74e4cd119b2bb1fd423f2f5b1c9a7f096b3e588c753af1ab48b983d56216a52",
       "last_update": "2026-05-01 00:34:19 UTC+8",
       "source": "https://github.com/bestpig/backpork"
@@ -40,7 +40,7 @@
       "url": "https://github.com/cy33hc/ps5-ezremote-dpi/releases/download/1.04/ezremote-dpi.elf",
       "description": "Long-lived loopback PKG install daemon (127.0.0.1:9040). Owns Sony's PlayGo/AppInstUtil install state machine so installs don't evaporate when the calling process exits.",
       "version": "1.04",
-      "category": "Tools",
+      "category": "Installer",
       "checksum": "54a57a7a68ee7d44064438d9a63fafc08ecbaf033dcbdee28f8f3119914ea109",
       "last_update": "2025-07-02 03:42:24 UTC+8",
       "source": "https://github.com/cy33hc/ps5-ezremote-dpi"
@@ -238,7 +238,7 @@
       "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.6beta16/shadowmountplus.elf",
       "description": "Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen.",
       "version": "1.6beta16",
-      "category": "Tools",
+      "category": "Installer",
       "checksum": "a35246fb3bb6042b25653b51cdcbc33254b40339342bf1d2dd0d2eceee2ca526",
       "last_update": "2026-06-28 21:59:58 UTC+8",
       "source": "https://github.com/drakmor/shadowmountplus"

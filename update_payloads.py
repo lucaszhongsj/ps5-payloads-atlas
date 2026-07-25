@@ -173,12 +173,14 @@ def get_checksum(asset: dict) -> str:
 # Files：文件传输与浏览（FTP / Web 文件管理），搬运已有文件。
 # Backup：把主机数据导出（存档加解密 / 游戏转储）。
 # Network：系统级网络服务与调试（Web/Shell/DNS/klog/debug）。
-# Tools：其余用户层工具（挂载装包 / 作弊 / 输入 / 账号 / 面板）。
+# Installer：装载游戏与库（自动挂载镜像 / 注入库 / 远程装包）。
+# Tools：其余用户层工具（作弊 / 输入 / 账号 / 面板）。
 CATEGORY_RULES = [
     (r"kernel|kstuff|jailbreak|\bjb\b|exploit|elfldr|loader|lapy|fself|npdrm", "Kernel"),
     (r"\bftp\b|ftpsrv|zftpd|file (transfer|manager)|web file", "Files"),
     (r"save|dump|decrypt|encrypt|resign", "Backup"),
     (r"\bhttp\b|telnet|\bdns\b|klog|\bshell\b|debug|websrv", "Network"),
+    (r"shadowmount|sideload|fakelib|\bpkg\b|install", "Installer"),
 ]
 
 
