@@ -167,16 +167,18 @@ def get_checksum(asset: dict) -> str:
 
 
 # ─── Category derivation ─────────────────────────────────────────────
+# 分类顺序 = 特异性优先：越靠前的规则越特殊，避免被后面的通用词覆盖。
+# 维度统一为“用户用它做什么”，粗颗粒度，每类 ≥3 个，无 Misc 兜底（默认 Tools）。
+# Kernel：越狱/内核补丁/ELF 加载器，是其它 payload 的地基。
+# Files：文件传输与浏览（FTP / Web 文件管理），搬运已有文件。
+# Backup：把主机数据导出（存档加解密 / 游戏转储）。
+# Network：系统级网络服务与调试（Web/Shell/DNS/klog/debug）。
+# Tools：其余用户层工具（挂载装包 / 作弊 / 输入 / 账号 / 面板）。
 CATEGORY_RULES = [
-    (r"kernel|kstuff|exploit|patch|jb|jailbreak", "Kernel"),
-    (r"\bftp\b|ftpsrv|file transfer", "File Transfer"),
-    (r"\bhttp\b|telnet|\bdns\b|klog", "Networking"),  # `web` dropped: too generic (collides with "web-based dashboard")
-    (r"save", "Save Manager"),
-    (r"debug|gdb", "Debugger"),
-    (r"dump", "Dumper"),
-    (r"linux|loader|launch|homebrew|mount|backup|pkg", "Launcher"),
-    (r"cheat", "Misc"),
-    (r"controller|input|ghostpad|virtual pad", "Misc"),
+    (r"kernel|kstuff|jailbreak|\bjb\b|exploit|elfldr|loader|lapy|fself|npdrm", "Kernel"),
+    (r"\bftp\b|ftpsrv|zftpd|file (transfer|manager)|web file", "Files"),
+    (r"save|dump|decrypt|encrypt|resign", "Backup"),
+    (r"\bhttp\b|telnet|\bdns\b|klog|\bshell\b|debug|websrv", "Network"),
 ]
 
 
@@ -185,7 +187,7 @@ def derive_category(name: str, description: str) -> str:
     for pattern, category in CATEGORY_RULES:
         if re.search(pattern, text):
             return category
-    return "Misc"
+    return "Tools"
 
 
 # ─── Discovery: itsPLK payloads.json ────────────────────────────────
