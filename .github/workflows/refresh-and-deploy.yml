@@ -1,21 +1,51 @@
-name: Deploy to GitHub Pages
+name: Refresh Catalogue and Deploy Pages
 
 on:
-  push:
-    branches: [main]
+  schedule:
+    - cron: '7 * * * *' # Hourly at :07 UTC
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
 concurrency:
-  group: pages
+  group: refresh-and-deploy
   cancel-in-progress: true
 
 jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Aggregate catalogue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python update_payloads.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add payloads.json README.md
+          # git diff --cached --quiet 区分"有变更需提交"与"无变更"，避免静默掩盖。
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-refresh payload catalogue"
+            git push
+          fi
+
   deploy:
+    needs: refresh
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -23,6 +53,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          # refresh job 可能刚 push 了新 commit，拉最新而非 workflow 触发时的快照。
+          ref: ${{ github.ref }}
 
       - name: Render README to HTML
         env:
