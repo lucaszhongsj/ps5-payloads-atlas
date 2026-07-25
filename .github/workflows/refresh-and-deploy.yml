@@ -2,7 +2,7 @@ name: Refresh Catalogue and Deploy Pages
 
 on:
   schedule:
-    - cron: '7 * * * *' # Hourly at :07 UTC
+    - cron: '7 */3 * * *' # 每 3 小时一次 (UTC :07)，东八区 08:07/11:07/14:07/17:07/20:07/23:07
   workflow_dispatch:
 
 permissions:
