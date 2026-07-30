@@ -43,7 +43,7 @@ Same repo under multiple aliases (e.g. `LightningMods/etaHEN` and `etaHEN/etaHEN
 | Name | Version | Category | Description | Last Updated | Source |
 | --- | --- | --- | --- | --- | --- |
 | **BackPork** | `0.1` | Installer | Lets you sideload system libraries into PS5 games. | `2026-05-01 00:34:19 UTC+8` | [bestpig/backpork](https://github.com/bestpig/backpork) |
-| **CheatRunner** | `v0.16` | Tools | Loads and applies game cheats on the PS5. Send it like any other payload, then browse and toggle cheats for supported titles on the console. | `2026-07-21 03:42:06 UTC+8` | [notmaj0r/cheatrunner](https://github.com/notmaj0r/cheatrunner) |
+| **CheatRunner** | `v0.17` | Tools | Loads and applies game cheats on the PS5. Send it like any other payload, then browse and toggle cheats for supported titles on the console. | `2026-07-31 05:27:18 UTC+8` | [notmaj0r/cheatrunner](https://github.com/notmaj0r/cheatrunner) |
 | **elfldr** | `v0.23` | Kernel | An ELF loader for jailbroken PS5s that accepts payloads on port 9021. | `2026-05-13 02:51:52 UTC+8` | [ps5-payload-dev/elfldr](https://github.com/ps5-payload-dev/elfldr) |
 | **ezremote-DPI** | `1.04` | Installer | Long-lived loopback PKG install daemon (127.0.0.1:9040). Owns Sony's PlayGo/AppInstUtil install state machine so installs don't evaporate when the calling process exits. | `2025-07-02 03:42:24 UTC+8` | [cy33hc/ps5-ezremote-dpi](https://github.com/cy33hc/ps5-ezremote-dpi) |
 | **ftpsrv** | `v0.20` | Files | Lightweight FTP server on :2121 with SELF/ELF auto-decryption and remount-RW SITE commands. Browse the PS5 filesystem from any FTP client. | `2026-05-13 02:36:49 UTC+8` | [ps5-payload-dev/ftpsrv](https://github.com/ps5-payload-dev/ftpsrv) |

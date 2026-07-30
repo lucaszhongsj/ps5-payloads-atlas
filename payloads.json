@@ -15,12 +15,12 @@
     {
       "name": "CheatRunner",
       "filename": "CheatRunner.elf",
-      "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.16/CheatRunner.elf",
+      "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17/CheatRunner.elf",
       "description": "Loads and applies game cheats on the PS5. Send it like any other payload, then browse and toggle cheats for supported titles on the console.",
-      "version": "v0.16",
+      "version": "v0.17",
       "category": "Tools",
-      "checksum": "a5483253926a0188c76a68101714cbd9bbc9c2305e0b071fad775d752da995bb",
-      "last_update": "2026-07-21 03:42:06 UTC+8",
+      "checksum": "2f296d3f1e69b65439bb5dc362f0f6504f6dc9f245fa16a3683e9d7ec9533773",
+      "last_update": "2026-07-31 05:27:18 UTC+8",
       "source": "https://github.com/notmaj0r/cheatrunner"
     },
     {
