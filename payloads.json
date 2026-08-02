@@ -268,12 +268,12 @@
     {
       "name": "websrv",
       "filename": "websrv-ps5.elf",
-      "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.33/websrv-ps5.elf",
+      "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.34/websrv-ps5.elf",
       "description": "HTTP server on :8080 serving a homebrew launcher page. Pairs with the homebrew bundles distributed by ps5-payload-dev.",
-      "version": "v0.33",
+      "version": "v0.34",
       "category": "Network",
-      "checksum": "4676a40ac4c7ca1adeb04980efa48dd33a8961446b42e6a12abfcbe96090c8ac",
-      "last_update": "2026-06-28 23:54:38 UTC+8",
+      "checksum": "54730c867c6e1148536fdcb370e63a7762d989ea87b62488ad4caff64d43f263",
+      "last_update": "2026-08-03 03:51:42 UTC+8",
       "source": "https://github.com/ps5-payload-dev/websrv"
     },
     {

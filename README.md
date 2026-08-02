@@ -66,7 +66,7 @@ Same repo under multiple aliases (e.g. `LightningMods/etaHEN` and `etaHEN/etaHEN
 | **ps5debug-NG** | `1.3.0` | Network | PS5 debugger payload — userland TCP wire-protocol server hosted inside SceShellCore. | `2026-06-21 15:37:35 UTC+8` | [opensourcerer-dev/ps5debug-ng](https://github.com/opensourcerer-dev/ps5debug-ng) |
 | **ShadowMount+** | `1.6beta16` | Installer | Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen. | `2026-06-28 21:59:58 UTC+8` | [drakmor/shadowmountplus](https://github.com/drakmor/shadowmountplus) |
 | **shsrv** | `v0.20` | Network | Telnet server on :2323 with 42 POSIX-ish commands plus hbldr (launch unsigned ELF with full A/V) and hbdbg (gdb-style debugger). | `2026-08-03 00:41:01 UTC+8` | [ps5-payload-dev/shsrv](https://github.com/ps5-payload-dev/shsrv) |
-| **websrv** | `v0.33` | Network | HTTP server on :8080 serving a homebrew launcher page. Pairs with the homebrew bundles distributed by ps5-payload-dev. | `2026-06-28 23:54:38 UTC+8` | [ps5-payload-dev/websrv](https://github.com/ps5-payload-dev/websrv) |
+| **websrv** | `v0.34` | Network | HTTP server on :8080 serving a homebrew launcher page. Pairs with the homebrew bundles distributed by ps5-payload-dev. | `2026-08-03 03:51:42 UTC+8` | [ps5-payload-dev/websrv](https://github.com/ps5-payload-dev/websrv) |
 | **zftpd** | `v1.5.0` | Files | Zero-copy FTP/HTTP server. | `2026-06-15 01:25:58 UTC+8` | [seregonwar/zftpd](https://github.com/seregonwar/zftpd) |
 <!-- PAYLOADS_END -->
 
