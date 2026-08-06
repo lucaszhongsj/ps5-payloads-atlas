@@ -4,11 +4,9 @@ Aggregated PS5 payload catalogue in [ps5-payload-manager](https://github.com/its
 
 Data is sourced directly from real upstream release repositories (not mirrors).
 
-部分插件资料由 Tekqart 论坛用户 @a83848400 整理提供，感谢分享。
-
 The aggregator composes three layers:
 
-- **Discovery** — the upstream repo list is the union of [itsPLK/ps5-payloads-mirror](https://github.com/itsPLK/ps5-payloads-mirror) `payloads.json` and [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) `CATALOGUE`. Both are first-class sources; new payloads in either appear here automatically.
+- **Discovery** — the upstream repo list is the union of [itsPLK/ps5-payloads-mirror](https://github.com/itsPLK/ps5-payloads-mirror) `payloads.json` and [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) `CATALOGUE` and some of the plugin information was compiled by `tekqart` forum user `@a83848400`. Both are first-class sources; new payloads in either appear here automatically.
 - **Curation** — `sources.json` overrides display name / description / asset selection per repo, and can `"exclude": true` to suppress a repo entirely.
 - **Enrichment** — `phantomptr/ps5upload` `CATALOGUE` provides longer descriptions / display names where available.
 
