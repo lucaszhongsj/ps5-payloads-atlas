@@ -13,6 +13,28 @@
       "source": "https://github.com/bestpig/backpork"
     },
     {
+      "name": "bdj_unpatch",
+      "filename": "bdj_unpatch_1360.elf",
+      "url": "https://github.com/Gezine/BD-JB5/releases/download/2.0/bdj_unpatch_1360.elf",
+      "description": "BD-JB Blu-ray patch payload for supported optical-drive PS5 firmware. Apply the patch and reboot to use Blu-ray based jailbreaking without reflashing.",
+      "version": "2.0",
+      "category": "Kernel",
+      "checksum": "22bae58b6214832c99457d56fc97676ce8eef1d626fbaf50b6a69508e5c1e18e",
+      "last_update": "2026-08-05 07:40:33 UTC+8",
+      "source": "https://github.com/gezine/bd-jb5"
+    },
+    {
+      "name": "BFpilot",
+      "filename": "bfpilot.elf",
+      "url": "https://github.com/ItsBlurf/BFpilot/releases/download/v0.4.3/bfpilot.elf",
+      "description": "Web-based PS5 file manager serving a browser interface on port 5905 for browsing and managing console files.",
+      "version": "v0.4.3",
+      "category": "Files",
+      "checksum": "e2ca0a948f0d2b5d57f73672836714847a7850c0f07e0859e755e7cbb0204786",
+      "last_update": "2026-07-27 23:40:25 UTC+8",
+      "source": "https://github.com/itsblurf/bfpilot"
+    },
+    {
       "name": "CheatRunner",
       "filename": "CheatRunner.elf",
       "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17/CheatRunner.elf",
@@ -22,6 +44,17 @@
       "checksum": "2f296d3f1e69b65439bb5dc362f0f6504f6dc9f245fa16a3683e9d7ec9533773",
       "last_update": "2026-07-31 05:27:18 UTC+8",
       "source": "https://github.com/notmaj0r/cheatrunner"
+    },
+    {
+      "name": "elf-arsenal",
+      "filename": "elf-arsenal.elf",
+      "url": "https://git.etawen.dev/soniciso/elf-arsenal/releases/download/v1.6.22/elf-arsenal.elf",
+      "description": "etaHEN-oriented payload bundle combining ELF loading, resource management, FTP, trophy tools, ShadowMountPlus, kstuff-lite, Linux loading, controller tools, fake sign-in, and a web UI.",
+      "version": "v1.6.22",
+      "category": "Kernel",
+      "checksum": "",
+      "last_update": "2026-07-04 06:28:45 UTC+8",
+      "source": "https://git.etawen.dev/soniciso/elf-arsenal"
     },
     {
       "name": "elfldr",
@@ -88,6 +121,28 @@
       "checksum": "",
       "last_update": "2026-07-04 21:24:04 UTC+8",
       "source": "https://git.etawen.dev/earthonion/garlic-worker"
+    },
+    {
+      "name": "gdbsrv-ps5",
+      "filename": "gdbsrv-ps5.elf",
+      "url": "https://github.com/ps5-payload-dev/gdbsrv/releases/download/v0.9/gdbsrv-ps5.elf",
+      "description": "GDB remote debugging service payload for inspecting PS5 game processes.",
+      "version": "v0.9",
+      "category": "Network",
+      "checksum": "80952d75f423768b95385f0944e5a5c2f417dcc10c22c1bb6516a923ad8894e5",
+      "last_update": "2026-08-03 00:50:41 UTC+8",
+      "source": "https://github.com/ps5-payload-dev/gdbsrv"
+    },
+    {
+      "name": "Ghostcontrol",
+      "filename": "Ghostcontrol.elf",
+      "url": "https://github.com/StonedModder/Ghostcontrol-PS5-USB-Controller-Patcher/releases/download/1.0.5/Ghostcontrol.elf",
+      "description": "USB HID controller patcher that injects third-party controller input into a virtual DualSense device.",
+      "version": "1.0.5",
+      "category": "Tools",
+      "checksum": "69271d91f27397c9ad42150129639ce452ecb405021108f42c6c87926123a6f1",
+      "last_update": "2026-07-06 10:19:27 UTC+8",
+      "source": "https://github.com/stonedmodder/ghostcontrol-ps5-usb-controller-patcher"
     },
     {
       "name": "Ghostpad",
@@ -189,6 +244,17 @@
       "source": "https://git.etawen.dev/earthonion/np-fake-signin"
     },
     {
+      "name": "pegasus-dl",
+      "filename": "pegasus_dl.elf",
+      "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.7.0/pegasus_dl.elf",
+      "description": "PS5 payload that serves a local web interface for downloading and installing game or application package data.",
+      "version": "v1.7.0",
+      "category": "Installer",
+      "checksum": "cb2a4b3c248323f2432ce118cb1bf4975146035239ce9b571a9bdb51b3fee226",
+      "last_update": "2026-06-25 00:10:11 UTC+8",
+      "source": "https://github.com/pegasus-ps5/pegasus-dl"
+    },
+    {
       "name": "pldmgr",
       "filename": "pldmgr_v0.5.1.elf",
       "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.5.1/pldmgr_v0.5.1.elf",
@@ -198,6 +264,39 @@
       "checksum": "05617c69ea145d1c11b8f7a6b7d3bd9e6df3831afd25d71a4ac85d63fb8e28aa",
       "last_update": "2026-08-02 21:20:44 UTC+8",
       "source": "https://github.com/itsplk/ps5-payload-manager"
+    },
+    {
+      "name": "PS5 Console",
+      "filename": "PS5_Console.elf",
+      "url": "https://github.com/JunLeB/PS5Console/releases/download/6/PS5_Console.elf",
+      "description": "Web-based PS5 control center combining game mounting, save management, USB controller support, FTP, fan control, and ELF management.",
+      "version": "6",
+      "category": "Files",
+      "checksum": "30b5361e2f87fca9e5bf6a5457af42553e0b01b2ab86ee09c181d63b1d9152b8",
+      "last_update": "2026-07-12 08:27:01 UTC+8",
+      "source": "https://github.com/junleb/ps5console"
+    },
+    {
+      "name": "PS5 File Explorer",
+      "filename": "file-explorer.elf",
+      "url": "https://github.com/juma-sayeh/PS5-File-Explorer/releases/download/file-explorer-v0.2.1/file-explorer.elf",
+      "description": "BFpilot-derived web file manager for browsing and managing files on a jailbroken PS5.",
+      "version": "file-explorer-v0.2.1",
+      "category": "Files",
+      "checksum": "1013c23b12980e1bc97decc150c8cd5abc8447dc03cf86dbd106266dd000a6e1",
+      "last_update": "2026-06-19 20:34:09 UTC+8",
+      "source": "https://github.com/juma-sayeh/ps5-file-explorer"
+    },
+    {
+      "name": "PS5 Unified Autoloader",
+      "filename": "ps5-unified-autoloader-v0.1.3-78a6f02.elf",
+      "url": "https://github.com/itsPLK/ps5-unified-autoloader/releases/download/v0.1.3-78a6f02/ps5-unified-autoloader-v0.1.3-78a6f02.elf",
+      "description": "Standalone ELF autoloader that reads autoload.txt from USB or /data and sends listed payloads to elfldr.",
+      "version": "v0.1.3-78a6f02",
+      "category": "Kernel",
+      "checksum": "f411cc69872d7bdfc1d5166b37e93cd31bffdce355ff204c74f787767a4acad8",
+      "last_update": "2026-08-03 03:19:16 UTC+8",
+      "source": "https://github.com/itsplk/ps5-unified-autoloader"
     },
     {
       "name": "PS5 Web File Manager",
@@ -222,6 +321,17 @@
       "source": "https://github.com/echostretch/ps5-app-dumper"
     },
     {
+      "name": "ps5-fan-control",
+      "filename": "ps5-fan-control-v0.2.elf",
+      "url": "https://github.com/owendswang/ps5-fan-control/releases/download/v0.2/ps5-fan-control-v0.2.elf",
+      "description": "Standalone PS5 fan controller with a configurable target temperature.",
+      "version": "v0.2",
+      "category": "Tools",
+      "checksum": "ae38c7e1861a7f7d77bc8461ba52887a0a954ba742471b491efb6d8480f266d7",
+      "last_update": "2026-07-29 12:14:32 UTC+8",
+      "source": "https://github.com/owendswang/ps5-fan-control"
+    },
+    {
       "name": "ps5-linux-loader",
       "filename": "ps5-linux-loader.elf",
       "url": "https://github.com/ps5-linux/ps5-linux-loader/releases/download/v2.4/ps5-linux-loader.elf",
@@ -233,6 +343,17 @@
       "source": "https://github.com/ps5-linux/ps5-linux-loader"
     },
     {
+      "name": "ps5-syslang",
+      "filename": "ps5-syslang-zh-Hans-v0.2.elf",
+      "url": "https://github.com/owendswang/ps5-syslang/releases/download/v0.2/ps5-syslang-zh-Hans-v0.2.elf",
+      "description": "ShellUI language-switching payload for changing the PS5 system language, including on region-locked consoles.",
+      "version": "v0.2",
+      "category": "Tools",
+      "checksum": "776287773aabebe588d144d4d5b361abfff56eef9799af79cb30877bbc80bec6",
+      "last_update": "2026-06-28 10:57:08 UTC+8",
+      "source": "https://github.com/owendswang/ps5-syslang"
+    },
+    {
       "name": "ps5debug-NG",
       "filename": "ps5debug-NG_v1.3.0.elf",
       "url": "https://github.com/OpenSourcereR-dev/ps5debug-NG/releases/download/1.3.0/ps5debug-NG_v1.3.0.elf",
@@ -242,6 +363,17 @@
       "checksum": "8f75fb90b45d7cc4d59147e3323577d7264cf572c78a27f76722202f492ad16a",
       "last_update": "2026-06-21 15:37:35 UTC+8",
       "source": "https://github.com/opensourcerer-dev/ps5debug-ng"
+    },
+    {
+      "name": "PS5upload",
+      "filename": "ps5upload-5.1.3.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.1.3/ps5upload-5.1.3.elf",
+      "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
+      "version": "v5.1.3",
+      "category": "Backup",
+      "checksum": "d5133abe9e3cb7960d32845a98494a97dc2b4b1a7ddc0b58127de43e537e0d0e",
+      "last_update": "2026-08-06 00:43:59 UTC+8",
+      "source": "https://github.com/phantomptr/ps5upload"
     },
     {
       "name": "ShadowMount+",
@@ -264,6 +396,39 @@
       "checksum": "fa4ccb2587bb61be317df0d001f668b17ebf9b4aafad87acf691b1fb8da0bd2d",
       "last_update": "2026-08-03 00:41:01 UTC+8",
       "source": "https://github.com/ps5-payload-dev/shsrv"
+    },
+    {
+      "name": "singleDPI",
+      "filename": "singleDPI.elf",
+      "url": "https://github.com/MaxMilu/ps5-direct-package-installer/releases/download/0.1.0/singleDPI.elf",
+      "description": "Standalone DPI payload accepting TCP 9090 JSON package-install requests and an experimental 12800 URL endpoint.",
+      "version": "0.1.0",
+      "category": "Installer",
+      "checksum": "38b96a3c3bfd8f2094d7e69ad2776621184b718f24744c29cbedb2640aae11b2",
+      "last_update": "2026-06-22 00:50:40 UTC+8",
+      "source": "https://github.com/maxmilu/ps5-direct-package-installer"
+    },
+    {
+      "name": "Sonic Loader",
+      "filename": "sonic-loader.elf",
+      "url": "https://git.earthonion.com/soniciso/sonicloader/releases/download/v1.6.0-elf-arsenal-rebrand/sonic-loader.elf",
+      "description": "Integrated web-based payload loader and management dashboard combining autoloading, cheat management, monitoring, file transfer, and file management.",
+      "version": "v1.6.0-elf-arsenal-rebrand",
+      "category": "Kernel",
+      "checksum": "",
+      "last_update": "2026-05-22 21:05:50 UTC+8",
+      "source": "https://git.earthonion.com/soniciso/sonicloader"
+    },
+    {
+      "name": "unrar_ps5",
+      "filename": "unrar_ps5.elf",
+      "url": "https://github.com/bizkut/unrar-ps5/releases/download/v1.4.0/unrar_ps5.elf",
+      "description": "On-console archive extraction payload for 7z and RAR files, with configurable installation layouts.",
+      "version": "v1.4.0",
+      "category": "Installer",
+      "checksum": "2ef04b0bc8fc1932b29da1a53336c40ed0a3f6a945a0746bef2e5dde52149701",
+      "last_update": "2026-06-18 22:24:15 UTC+8",
+      "source": "https://github.com/bizkut/unrar-ps5"
     },
     {
       "name": "websrv",
