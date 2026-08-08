@@ -224,12 +224,12 @@
     {
       "name": "nanoDNS",
       "filename": "nanodns.elf",
-      "url": "https://github.com/drakmor/nanoDNS/releases/download/0.3/nanodns.elf",
+      "url": "https://github.com/drakmor/nanoDNS/releases/download/0.4/nanodns.elf",
       "description": "Minimal DNS server running on the PS5 (UDP :53). Blocks PlayStation Network + update domains by default and can redirect any domain to a LAN IP.",
-      "version": "0.3",
+      "version": "0.4",
       "category": "Network",
-      "checksum": "ce1c8b31036ab948da65b362a4b6f249ffca8a555fc5bc4b051ec65d041bc944",
-      "last_update": "2026-06-03 17:37:48 UTC+8",
+      "checksum": "dcb845f3570771275b22b37534bf924a7f8ae219fb91ef00c6bccab85d1c2420",
+      "last_update": "2026-08-05 02:27:26 UTC+8",
       "source": "https://github.com/drakmor/nanodns"
     },
     {
