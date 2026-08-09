@@ -366,13 +366,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-5.1.4.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.1.4/ps5upload-5.1.4.elf",
+      "filename": "ps5upload-5.1.7.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.1.7/ps5upload-5.1.7.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v5.1.4",
+      "version": "v5.1.7",
       "category": "Backup",
-      "checksum": "c061fb1024d809cba39f8c04de3a24c493056e1b066fe3628be176040aac088d",
-      "last_update": "2026-08-09 04:22:58 UTC+8",
+      "checksum": "15798b0cb880f64d6c04d3945cb789bb717281621ed57961609fcd610fdf3492",
+      "last_update": "2026-08-09 20:49:37 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
