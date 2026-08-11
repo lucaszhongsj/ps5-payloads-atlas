@@ -26,12 +26,12 @@
     {
       "name": "BFpilot",
       "filename": "bfpilot.elf",
-      "url": "https://github.com/ItsBlurf/BFpilot/releases/download/v0.4.3/bfpilot.elf",
+      "url": "https://github.com/ItsBlurf/BFpilot/releases/download/v0.4.4/bfpilot.elf",
       "description": "Web-based PS5 file manager serving a browser interface on port 5905 for browsing and managing console files.",
-      "version": "v0.4.3",
+      "version": "v0.4.4",
       "category": "Files",
-      "checksum": "e2ca0a948f0d2b5d57f73672836714847a7850c0f07e0859e755e7cbb0204786",
-      "last_update": "2026-07-27 23:40:25 UTC+8",
+      "checksum": "5a8237630260026ad054d71fbbe661e433ac9ffa2cb4eea2785769c1eb7ee1c1",
+      "last_update": "2026-08-12 02:08:09 UTC+8",
       "source": "https://github.com/itsblurf/bfpilot"
     },
     {
