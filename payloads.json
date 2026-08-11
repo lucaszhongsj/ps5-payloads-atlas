@@ -300,13 +300,13 @@
     },
     {
       "name": "PS5 Web File Manager",
-      "filename": "web-file-mgr-v1.3.elf",
-      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.3/web-file-mgr-v1.3.elf",
+      "filename": "web-file-mgr-v1.4.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.4/web-file-mgr-v1.4.elf",
       "description": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
-      "version": "v1.3",
+      "version": "v1.4",
       "category": "Files",
-      "checksum": "02e85cc184964bcef1e988a81191235b9e57f5bdd931f3df6acc244b6a37b004",
-      "last_update": "2026-08-09 12:43:47 UTC+8",
+      "checksum": "1f44ff7190395148d3ff83f348a15ea25e203d23f92dce421b6dda5197427164",
+      "last_update": "2026-08-11 22:42:39 UTC+8",
       "source": "https://github.com/owendswang/ps5-web-file-manager"
     },
     {
@@ -429,6 +429,17 @@
       "checksum": "2ef04b0bc8fc1932b29da1a53336c40ed0a3f6a945a0746bef2e5dde52149701",
       "last_update": "2026-06-18 22:24:15 UTC+8",
       "source": "https://github.com/bizkut/unrar-ps5"
+    },
+    {
+      "name": "WebKit-Autoloader-Installer",
+      "filename": "webkit-autoloader-installer_v0.1.1.elf",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.1.1/webkit-autoloader-installer_v0.1.1.elf",
+      "description": "Installs WebKit Autoloader on homescreen (firmwares 9.00-12.00)",
+      "version": "v0.1.1",
+      "category": "Kernel",
+      "checksum": "162892ca3d6ae9b89764fa6447401b94e62148b21855a9b971b41458955accc1",
+      "last_update": "2026-08-11 22:51:11 UTC+8",
+      "source": "https://github.com/itsplk/ps5-webkit-autoloader"
     },
     {
       "name": "websrv",
