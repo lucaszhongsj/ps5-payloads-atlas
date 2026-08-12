@@ -191,12 +191,12 @@
     {
       "name": "kstuff-lite (EchoStretch)",
       "filename": "kstuff.elf",
-      "url": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.09/kstuff.elf",
+      "url": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.10/kstuff.elf",
       "description": "Kernel patcher for the full PS5 firmware range. Resolves kernel symbols at runtime via the SDK's NID table, so the same binary covers FW 1.00–12.x. Required by ShadowMountPlus and most other privileged payloads. Load this first.",
-      "version": "v1.09",
+      "version": "v1.10",
       "category": "Kernel",
-      "checksum": "ec5212794dc6e44ee8e70fd0549abec6d3dac8c3e03ddbeafd9f869ffe97d4e8",
-      "last_update": "2026-07-04 09:30:05 UTC+8",
+      "checksum": "b1dfe57f367a35374f605127915eda38c76a6ed5d1c729e427955798bd78c66a",
+      "last_update": "2026-08-12 11:31:03 UTC+8",
       "source": "https://github.com/echostretch/kstuff-lite"
     },
     {
@@ -267,13 +267,13 @@
     },
     {
       "name": "PS5 Console",
-      "filename": "PS5_Console.elf",
-      "url": "https://github.com/JunLeB/PS5Console/releases/download/6/PS5_Console.elf",
+      "filename": "PS5Console.elf",
+      "url": "https://github.com/JunLeB/PS5Console/releases/download/6.3.1/PS5Console.elf",
       "description": "Web-based PS5 control center combining game mounting, save management, USB controller support, FTP, fan control, and ELF management.",
-      "version": "6",
+      "version": "6.3.1",
       "category": "Files",
-      "checksum": "30b5361e2f87fca9e5bf6a5457af42553e0b01b2ab86ee09c181d63b1d9152b8",
-      "last_update": "2026-07-12 08:27:01 UTC+8",
+      "checksum": "2c306362761163c2ac4b66170ee0a53f52cd0af7ff4d20ad0a82f03bb5a732ed",
+      "last_update": "2026-08-12 11:46:32 UTC+8",
       "source": "https://github.com/junleb/ps5console"
     },
     {
