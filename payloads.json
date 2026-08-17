@@ -300,13 +300,13 @@
     },
     {
       "name": "PS5 Web File Manager",
-      "filename": "web-file-mgr-v1.4.elf",
-      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.4/web-file-mgr-v1.4.elf",
+      "filename": "web-file-mgr-v1.5.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.5/web-file-mgr-v1.5.elf",
       "description": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
-      "version": "v1.4",
+      "version": "v1.5",
       "category": "Files",
-      "checksum": "1f44ff7190395148d3ff83f348a15ea25e203d23f92dce421b6dda5197427164",
-      "last_update": "2026-08-11 22:42:39 UTC+8",
+      "checksum": "9a7d7e5c685900d7f916cdc08cb6f7ea7e9cf5a4576f2799157b3f251deedf3c",
+      "last_update": "2026-08-17 11:46:28 UTC+8",
       "source": "https://github.com/owendswang/ps5-web-file-manager"
     },
     {
