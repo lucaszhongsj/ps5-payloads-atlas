@@ -81,12 +81,12 @@
     {
       "name": "ftpsrv",
       "filename": "ftpsrv-ps5.elf",
-      "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21/ftpsrv-ps5.elf",
+      "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5.elf",
       "description": "Lightweight FTP server on :2121 with SELF/ELF auto-decryption and remount-RW SITE commands. Browse the PS5 filesystem from any FTP client.",
-      "version": "v0.21",
+      "version": "v0.21.1",
       "category": "Files",
-      "checksum": "c580f0534ac6349dc5a4a5c656eaced537b4c2b18da51886d943cea6393436c8",
-      "last_update": "2026-08-03 00:36:12 UTC+8",
+      "checksum": "7d4b31c83eae4e056580482a3a074e1db25922efc74ac1e439473b45d71a5938",
+      "last_update": "2026-08-21 01:02:45 UTC+8",
       "source": "https://github.com/ps5-payload-dev/ftpsrv"
     },
     {
@@ -366,13 +366,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-5.3.3.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.3.3/ps5upload-5.3.3.elf",
+      "filename": "ps5upload-5.4.2.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.4.2/ps5upload-5.4.2.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v5.3.3",
+      "version": "v5.4.2",
       "category": "Backup",
-      "checksum": "1b19e30742068581334d5e936f7416ddcb9fdcabb6acbc89c39aba6993f987e0",
-      "last_update": "2026-08-19 18:22:34 UTC+8",
+      "checksum": "4551df26ec856863ad2c8fe9cc9f76f47a1b694032abe5e94c7a95fd63d6b4b0",
+      "last_update": "2026-08-21 02:33:15 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
