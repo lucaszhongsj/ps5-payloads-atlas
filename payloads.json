@@ -366,13 +366,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-5.4.4.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.4.4/ps5upload-5.4.4.elf",
+      "filename": "ps5upload-5.4.7.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.4.7/ps5upload-5.4.7.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v5.4.4",
+      "version": "v5.4.7",
       "category": "Backup",
-      "checksum": "b03eeca19503ce4d0f51324b077a01ca60b1382809acbfdf3e4e05d55d3ed243",
-      "last_update": "2026-08-21 05:13:27 UTC+8",
+      "checksum": "95b1671a662ad37ef9a51587dba18bfc7f0a614ad49435ef777ecfcc6f8a25a2",
+      "last_update": "2026-08-21 08:53:58 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
@@ -431,10 +431,10 @@
       "source": "https://github.com/bizkut/unrar-ps5"
     },
     {
-      "name": "WebKit-Autoloader-Installer",
+      "name": "WebKit Autoloader (installer)",
       "filename": "webkit-autoloader-installer_v0.3.1.elf",
       "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.3.1/webkit-autoloader-installer_v0.3.1.elf",
-      "description": "Installs WebKit Autoloader on homescreen (FW 1.00-5.50 & 9.00-12.00)",
+      "description": "Installs an autoloader reachable from the PS5's own web browser, so payloads can be launched from the console without sending them from a PC every time. One-shot installer ELF: send it, it installs, it exits. Run it after your kernel exploit, like any other payload.",
       "version": "v0.3.1",
       "category": "Kernel",
       "checksum": "69beea7c4460d283606889f7ae1685f32e8fb7203274c279eeefa97fe4f1eb17",
