@@ -300,13 +300,13 @@
     },
     {
       "name": "PS5 Web File Manager",
-      "filename": "web-file-mgr-v1.5.elf",
-      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.5/web-file-mgr-v1.5.elf",
+      "filename": "web-file-mgr-v1.6.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.6/web-file-mgr-v1.6.elf",
       "description": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
-      "version": "v1.5",
+      "version": "v1.6",
       "category": "Files",
-      "checksum": "9a7d7e5c685900d7f916cdc08cb6f7ea7e9cf5a4576f2799157b3f251deedf3c",
-      "last_update": "2026-08-17 11:46:28 UTC+8",
+      "checksum": "3b2bd4f8c86b125d703fda5806d732580de7b9fc453a3fa831743366239ace62",
+      "last_update": "2026-08-23 23:56:17 UTC+8",
       "source": "https://github.com/owendswang/ps5-web-file-manager"
     },
     {
@@ -366,13 +366,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-5.4.13.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.4.13/ps5upload-5.4.13.elf",
+      "filename": "ps5upload-5.4.14.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.4.14/ps5upload-5.4.14.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v5.4.13",
+      "version": "v5.4.14",
       "category": "Backup",
-      "checksum": "13c124e644dbab1594c759536b3ddd9e4b94c3a12e57a5e2bfe92f76d60bc61e",
-      "last_update": "2026-08-23 17:57:48 UTC+8",
+      "checksum": "a1b47164aecb82138295d9b26badcb9ac4fd5dcc201254dc8fd78ba96a5d3a2e",
+      "last_update": "2026-08-24 02:34:11 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
