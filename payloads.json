@@ -59,12 +59,12 @@
     {
       "name": "elfldr",
       "filename": "elfldr-ps5.elf",
-      "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.25/elfldr-ps5.elf",
+      "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.26/elfldr-ps5.elf",
       "description": "An ELF loader for jailbroken PS5s that accepts payloads on port 9021.",
-      "version": "v0.25",
+      "version": "v0.26",
       "category": "Kernel",
-      "checksum": "de70a47e6d099dc03718c33c158a727f1340c3b5310155618c5049ab0fb41754",
-      "last_update": "2026-08-22 19:59:54 UTC+8",
+      "checksum": "ed6d587a057c09d6a95b2176e336d9ffc605e547ac56462128b029e47b8ccea1",
+      "last_update": "2026-08-30 01:31:18 UTC+8",
       "source": "https://github.com/ps5-payload-dev/elfldr"
     },
     {
@@ -366,13 +366,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-5.12.1.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.12.1/ps5upload-5.12.1.elf",
+      "filename": "ps5upload-5.13.1.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.13.1/ps5upload-5.13.1.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v5.12.1",
+      "version": "v5.13.1",
       "category": "Backup",
-      "checksum": "993206c6cce3457f888efa4bdc0067058cc7116366e31f4245ea7a4e505d8f49",
-      "last_update": "2026-08-28 13:25:54 UTC+8",
+      "checksum": "a2a528aa6098443949f909a6f8598f27a53ffd7a2313beabf1e3b474c2c40e08",
+      "last_update": "2026-08-30 04:03:29 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
