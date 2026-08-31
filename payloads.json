@@ -267,13 +267,13 @@
     },
     {
       "name": "PS5 Console",
-      "filename": "PS5Console.elf",
-      "url": "https://github.com/JunLeB/PS5Console/releases/download/6.3.1/PS5Console.elf",
+      "filename": "PS5_Console.elf",
+      "url": "https://github.com/JunLeB/PS5Console/releases/download/6.5.1/PS5_Console.elf",
       "description": "Web-based PS5 control center combining game mounting, save management, USB controller support, FTP, fan control, and ELF management.",
-      "version": "6.3.1",
+      "version": "6.5.1",
       "category": "Files",
-      "checksum": "2c306362761163c2ac4b66170ee0a53f52cd0af7ff4d20ad0a82f03bb5a732ed",
-      "last_update": "2026-08-12 11:46:32 UTC+8",
+      "checksum": "95f8d5dbd8e15a1c58d7753d1853395cb2700a8d64f47bd11a816be4cacfa032",
+      "last_update": "2026-08-31 19:42:15 UTC+8",
       "source": "https://github.com/junleb/ps5console"
     },
     {
