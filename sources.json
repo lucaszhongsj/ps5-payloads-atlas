@@ -303,7 +303,7 @@
   {
     "url": "https://github.com/aydencharles/onionHEN",
     "display_name": "onionHEN",
-    "description": "Yet another HEN enabler for jailbroken PS5.",
+    "description": "OnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, in-game overlays, payload management, and background services.",
     "asset_pattern": "onionHEN",
     "exclude": false
   }
