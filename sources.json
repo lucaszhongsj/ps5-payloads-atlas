@@ -299,5 +299,12 @@
     "description": "ShellUI language-switching payload for changing the PS5 system language, including on region-locked consoles.",
     "asset_pattern": "ps5-syslang-zh-Hans",
     "exclude": false
+  },
+  {
+    "url": "https://github.com/aydencharles/onionHEN",
+    "display_name": "onionHEN",
+    "description": "Yet another HEN enabler for jailbroken PS5.",
+    "asset_pattern": "onionHEN",
+    "exclude": false
   }
 ]
