@@ -114,12 +114,12 @@
     {
       "name": "Garlic Worker",
       "filename": "garlic-worker-ps5.elf",
-      "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.1.6/garlic-worker-ps5.elf",
+      "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.1.7/garlic-worker-ps5.elf",
       "description": "Background worker that drains the community save-decryption queue from garlicsaves.com. Handles both PS4 and PS5 saves natively. Opt-in: connects to garlicsaves.com.",
-      "version": "v1.1.6",
+      "version": "v1.1.7",
       "category": "Backup",
       "checksum": "",
-      "last_update": "2026-07-04 21:24:04 UTC+8",
+      "last_update": "2026-09-04 20:49:28 UTC+8",
       "source": "https://git.etawen.dev/earthonion/garlic-worker"
     },
     {
