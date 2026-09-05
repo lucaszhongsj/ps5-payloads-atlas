@@ -46,17 +46,6 @@
       "source": "https://github.com/notmaj0r/cheatrunner"
     },
     {
-      "name": "elf-arsenal",
-      "filename": "elf-arsenal.elf",
-      "url": "https://git.etawen.dev/soniciso/elf-arsenal/releases/download/v1.6.22/elf-arsenal.elf",
-      "description": "etaHEN-oriented payload bundle combining ELF loading, resource management, FTP, trophy tools, ShadowMountPlus, kstuff-lite, Linux loading, controller tools, fake sign-in, and a web UI.",
-      "version": "v1.6.22",
-      "category": "Kernel",
-      "checksum": "",
-      "last_update": "2026-07-04 06:28:45 UTC+8",
-      "source": "https://git.etawen.dev/soniciso/elf-arsenal"
-    },
-    {
       "name": "elfldr",
       "filename": "elfldr-ps5.elf",
       "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.26/elfldr-ps5.elf",
@@ -418,17 +407,6 @@
       "checksum": "38b96a3c3bfd8f2094d7e69ad2776621184b718f24744c29cbedb2640aae11b2",
       "last_update": "2026-06-22 00:50:40 UTC+8",
       "source": "https://github.com/maxmilu/ps5-direct-package-installer"
-    },
-    {
-      "name": "Sonic Loader",
-      "filename": "sonic-loader.elf",
-      "url": "https://git.earthonion.com/soniciso/sonicloader/releases/download/v1.6.0-elf-arsenal-rebrand/sonic-loader.elf",
-      "description": "Integrated web-based payload loader and management dashboard combining autoloading, cheat management, monitoring, file transfer, and file management.",
-      "version": "v1.6.0-elf-arsenal-rebrand",
-      "category": "Kernel",
-      "checksum": "",
-      "last_update": "2026-05-22 21:05:50 UTC+8",
-      "source": "https://git.earthonion.com/soniciso/sonicloader"
     },
     {
       "name": "unrar_ps5",
