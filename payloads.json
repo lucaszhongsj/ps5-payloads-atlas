@@ -338,7 +338,7 @@
       "description": "Linux payload implementing HV exploits to run a custom bootloader.",
       "version": "v2.5",
       "category": "Kernel",
-      "checksum": "f2f2cc304ddcbacaf2981c974b8452b9dc3d1365ef93ada7846422cf67541605",
+      "checksum": "9fc48733077145d1d204a4c9cdb879baaab1e711a604dd73af0dd4a807d6bc49",
       "last_update": "2026-09-05 16:40:09 UTC+8",
       "source": "https://github.com/ps5-linux/ps5-linux-loader"
     },
@@ -366,13 +366,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-5.16.0.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.16.0/ps5upload-5.16.0.elf",
+      "filename": "ps5upload-5.17.0.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.17.0/ps5upload-5.17.0.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v5.16.0",
+      "version": "v5.17.0",
       "category": "Backup",
-      "checksum": "f6b53f8ecfa7cbfa8105e6ccc56c7fb99b3567373a021991336d2e2b7d99747a",
-      "last_update": "2026-09-05 13:48:59 UTC+8",
+      "checksum": "e180b4f06ee86d2acd00f2bcb0edbebc02330c396642936d9659b33529d9c3ed",
+      "last_update": "2026-09-05 22:41:54 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
