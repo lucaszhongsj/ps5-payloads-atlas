@@ -306,5 +306,12 @@
     "description": "OnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, in-game overlays, payload management, and background services.",
     "asset_pattern": "onionHEN",
     "exclude": false
+  },
+  {
+    "url": "https://github.com/tsuramatsu1/apr-emu-updater",
+    "display_name": "APR Emu Updater",
+    "description": "PS5 payload that keeps APR Emu up to date on installed titles, from a web interface on the console.",
+    "asset_pattern": "apr-emu-updater",
+    "exclude": false
   }
 ]
