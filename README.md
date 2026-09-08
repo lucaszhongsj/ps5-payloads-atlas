@@ -44,6 +44,7 @@ Same repo under multiple aliases (e.g. `LightningMods/etaHEN` and `etaHEN/etaHEN
 <!-- PAYLOADS_START -->
 | Name | Version | Category | Description | Last Updated | Source |
 | --- | --- | --- | --- | --- | --- |
+| **APR Emu Updater** | `v2.0.6` | Installer | PS5 payload that keeps APR Emu up to date on installed titles, from a web interface on the console. | `2026-08-29 17:54:19 UTC+8` | [tsuramatsu1/apr-emu-updater](https://github.com/tsuramatsu1/apr-emu-updater) |
 | **BackPork** | `0.1` | Installer | Lets you sideload system libraries into PS5 games. | `2026-05-01 00:34:19 UTC+8` | [bestpig/backpork](https://github.com/bestpig/backpork) |
 | **bdj_unpatch** | `2.0` | Kernel | BD-JB Blu-ray patch payload for supported optical-drive PS5 firmware. Apply the patch and reboot to use Blu-ray based jailbreaking without reflashing. | `2026-08-05 07:40:33 UTC+8` | [gezine/bd-jb5](https://github.com/gezine/bd-jb5) |
 | **BFpilot** | `v0.4.4` | Files | Web-based PS5 file manager serving a browser interface on port 5905 for browsing and managing console files. | `2026-08-12 02:08:09 UTC+8` | [itsblurf/bfpilot](https://github.com/itsblurf/bfpilot) |
