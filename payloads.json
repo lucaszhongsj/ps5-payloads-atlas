@@ -224,12 +224,12 @@
     {
       "name": "onionHEN",
       "filename": "OnionHEN.elf",
-      "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.0.12/OnionHEN.elf",
+      "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.0.13/OnionHEN.elf",
       "description": "OnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, in-game overlays, payload management, and background services.",
-      "version": "v0.0.12",
+      "version": "v0.0.13",
       "category": "Tools",
-      "checksum": "a5c8dafe2af2681e8014421400c4ade4183a8d8be6dad6080dbd0930fa159e00",
-      "last_update": "2026-08-31 08:03:05 UTC+8",
+      "checksum": "aa3f98847948e2ae8ea600c3f437e28247a0a4f8b73651a046d2859924bf97b3",
+      "last_update": "2026-09-12 00:44:31 UTC+8",
       "source": "https://github.com/aydencharles/onionhen"
     },
     {
