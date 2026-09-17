@@ -244,6 +244,17 @@
       "source": "https://github.com/pegasus-ps5/pegasus-dl"
     },
     {
+      "name": "PKG-Manager",
+      "filename": "pkgmgr_v1.0.0.elf",
+      "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.0.0/pkgmgr_v1.0.0.elf",
+      "description": "Browse and install PKGs from USB, disc, or SMB shares directly on your PS5",
+      "version": "v1.0.0",
+      "category": "Installer",
+      "checksum": "51d3f13a91d007019f3262e1bd8ccc8ba3cbea6b1b6534b8e86df6bd2e0efb4b",
+      "last_update": "2026-09-18 01:53:40 UTC+8",
+      "source": "https://github.com/itsplk/ps5-pkg-manager"
+    },
+    {
       "name": "pldmgr",
       "filename": "pldmgr_v0.5.1.elf",
       "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.5.1/pldmgr_v0.5.1.elf",
