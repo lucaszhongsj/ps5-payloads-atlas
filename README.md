@@ -46,7 +46,6 @@ Same repo under multiple aliases (e.g. `LightningMods/etaHEN` and `etaHEN/etaHEN
 | --- | --- | --- | --- | --- | --- |
 | **APR Emu Updater** | `v2.0.6` | Installer | PS5 payload that keeps APR Emu up to date on installed titles, from a web interface on the console. | `2026-08-29 17:54:19 UTC+8` | [tsuramatsu1/apr-emu-updater](https://github.com/tsuramatsu1/apr-emu-updater) |
 | **BackPork** | `0.1` | Installer | Lets you sideload system libraries into PS5 games. | `2026-05-01 00:34:19 UTC+8` | [bestpig/backpork](https://github.com/bestpig/backpork) |
-| **bdj_unpatch** | `2.0` | Kernel | BD-JB Blu-ray patch payload for supported optical-drive PS5 firmware. Apply the patch and reboot to use Blu-ray based jailbreaking without reflashing. | `2026-08-05 07:40:33 UTC+8` | [gezine/bd-jb5](https://github.com/gezine/bd-jb5) |
 | **BFpilot** | `v0.4.4` | Files | Web-based PS5 file manager serving a browser interface on port 5905 for browsing and managing console files. | `2026-08-12 02:08:09 UTC+8` | [itsblurf/bfpilot](https://github.com/itsblurf/bfpilot) |
 | **CheatRunner** | `v0.17` | Tools | Loads and applies game cheats on the PS5. Send it like any other payload, then browse and toggle cheats for supported titles on the console. | `2026-07-31 05:27:18 UTC+8` | [notmaj0r/cheatrunner](https://github.com/notmaj0r/cheatrunner) |
 | **elfldr** | `v0.26` | Kernel | An ELF loader for jailbroken PS5s that accepts payloads on port 9021. | `2026-08-30 01:31:18 UTC+8` | [ps5-payload-dev/elfldr](https://github.com/ps5-payload-dev/elfldr) |
