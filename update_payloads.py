@@ -25,6 +25,7 @@ Design rules:
 import json
 import re
 import subprocess
+import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -164,6 +165,17 @@ def get_checksum(asset: dict) -> str:
     """SHA-256 hex from the asset's `digest` field ('sha256:...' on GitHub; absent on Forgejo)."""
     digest = asset.get("digest") or ""
     return digest.split(":", 1)[1] if digest.startswith("sha256:") else ""
+
+
+def normalize_version(tag: str, repo_url: str) -> str:
+    """Strip a leading project-name prefix from the tag (e.g. 'file-explorer-v0.2.1' → 'v0.2.1').
+
+    Only strips when the prefix is followed by 'v<digit>.', i.e. '<words>-v1.2.3'.
+    Bare-digit tags ('1.2.3', 'beta-1.2', 'nightly-20250901') and already-clean
+    'v…' tags pass through untouched. The client treats `version` as display-only.
+    """
+    m = re.match(r"^[a-z][a-z0-9-]*-(?=v\d+\.)", tag, re.IGNORECASE)
+    return tag[m.end():] if m else tag
 
 
 # ─── Category derivation ─────────────────────────────────────────────
@@ -366,7 +378,7 @@ def build_item(repo_url: str, override: dict, asset_hint: str) -> tuple[dict, st
         "filename": selected["name"],
         "url": selected["browser_download_url"],
         "description": description,
-        "version": release.get("tag_name", ""),
+        "version": normalize_version(release.get("tag_name", ""), repo_url),
         "category": category,
         "checksum": get_checksum(selected),
         "last_update": format_last_update(release.get("published_at") or ""),
@@ -492,7 +504,30 @@ def main() -> None:
 
     final_items.sort(key=lambda p: p.get("name", "").lower())
 
+    # 护栏：条目数较上一次骤降 >20% 视为上游大面积失效，拒绝写盘并退出非零，
+    # 防止残缺目录被 Action 自动 commit 部署。
+    try:
+        with open(OUTPUT_FILE, encoding="utf-8") as f:
+            prev_count = len(json.load(f).get("payloads", []))
+    except (OSError, json.JSONDecodeError):
+        prev_count = 0
+    if prev_count and len(final_items) < prev_count * 0.8:
+        print(
+            f"error: payload count dropped from {prev_count} to {len(final_items)} "
+            f"(>20% drop); aborting to avoid publishing a broken catalogue",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
     document = {"name": CATALOGUE_NAME, "payloads": final_items}
+    # skipped 区块：让"投了 sources.json 但没产出"的源在输出里可见。
+    # 注意：skipped 条目只含 url/reason，绝不能含 name+filename+url 三件套——
+    # ps5-payload-manager 的解析器会把任何带三件套的 {…} 对象误收进可安装列表。
+    if skipped:
+        document["skipped"] = [
+            {"url": u, "reason": "no release with .elf/.bin asset, or repo unreachable"}
+            for u in sorted(skipped)
+        ]
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(document, f, indent=2, ensure_ascii=False)
         f.write("\n")
