@@ -24,17 +24,6 @@
       "source": "https://github.com/bestpig/backpork"
     },
     {
-      "name": "bdj_unpatch",
-      "filename": "bdj_unpatch_1360.elf",
-      "url": "https://github.com/Gezine/BD-JB5/releases/download/2.0/bdj_unpatch_1360.elf",
-      "description": "BD-JB Blu-ray patch payload for supported optical-drive PS5 firmware. Apply the patch and reboot to use Blu-ray based jailbreaking without reflashing.",
-      "version": "2.0",
-      "category": "Kernel",
-      "checksum": "22bae58b6214832c99457d56fc97676ce8eef1d626fbaf50b6a69508e5c1e18e",
-      "last_update": "2026-08-05 07:40:33 UTC+8",
-      "source": "https://github.com/gezine/bd-jb5"
-    },
-    {
       "name": "BFpilot",
       "filename": "bfpilot.elf",
       "url": "https://github.com/ItsBlurf/BFpilot/releases/download/v0.4.4/bfpilot.elf",
@@ -44,6 +33,17 @@
       "checksum": "5a8237630260026ad054d71fbbe661e433ac9ffa2cb4eea2785769c1eb7ee1c1",
       "last_update": "2026-08-12 02:08:09 UTC+8",
       "source": "https://github.com/itsblurf/bfpilot"
+    },
+    {
+      "name": "BFplayer",
+      "filename": "bfplayer-standalone.elf",
+      "url": "https://github.com/ItsBlurf/BFplayer/releases/download/v0.1.0-alpha.44/bfplayer-standalone.elf",
+      "description": "A PS5 media and video player that also functions as a complete media library, with support for subtitles, multiple audio tracks, aspect-ratio adjustment, cropping, and many other playback settings.",
+      "version": "v0.1.0-alpha.44",
+      "category": "Tools",
+      "checksum": "0d028deb145d6fc9a5b55d43a45e072919178fbb261c66cd914ebcfb0b3b05c0",
+      "last_update": "2026-07-31 08:54:17 UTC+8",
+      "source": "https://github.com/itsblurf/bfplayer"
     },
     {
       "name": "CheatRunner",
@@ -255,15 +255,15 @@
       "source": "https://github.com/itsplk/ps5-pkg-manager"
     },
     {
-      "name": "pldmgr",
-      "filename": "pldmgr_v0.5.1.elf",
-      "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.5.1/pldmgr_v0.5.1.elf",
-      "description": "A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5.",
-      "version": "v0.5.1",
+      "name": "PoorDS4",
+      "filename": "PoorDS4rc44.elf",
+      "url": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc44/PoorDS4rc44.elf",
+      "description": "Use a wireless DualShock 4 in native PS5 games on jailbroken consoles.",
+      "version": "v0.1.0-rc44",
       "category": "Tools",
-      "checksum": "05617c69ea145d1c11b8f7a6b7d3bd9e6df3831afd25d71a4ac85d63fb8e28aa",
-      "last_update": "2026-08-02 21:20:44 UTC+8",
-      "source": "https://github.com/itsplk/ps5-payload-manager"
+      "checksum": "a077fe7a1defbe6918538b834eaa502a6b4239d7feff58c8fa4ec06cd325d9a8",
+      "last_update": "2026-09-19 02:57:23 UTC+8",
+      "source": "https://github.com/itsblurf/poords4"
     },
     {
       "name": "PS5 Console",
@@ -281,7 +281,7 @@
       "filename": "file-explorer.elf",
       "url": "https://github.com/juma-sayeh/PS5-File-Explorer/releases/download/file-explorer-v0.2.1/file-explorer.elf",
       "description": "BFpilot-derived web file manager for browsing and managing files on a jailbroken PS5.",
-      "version": "file-explorer-v0.2.1",
+      "version": "v0.2.1",
       "category": "Files",
       "checksum": "1013c23b12980e1bc97decc150c8cd5abc8447dc03cf86dbd106266dd000a6e1",
       "last_update": "2026-06-19 20:34:09 UTC+8",
@@ -300,12 +300,12 @@
     },
     {
       "name": "PS5 Web File Manager",
-      "filename": "wfm-7zip-helper.elf",
-      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.9/wfm-7zip-helper.elf",
+      "filename": "web-file-mgr-v1.9.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.9/web-file-mgr-v1.9.elf",
       "description": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
       "version": "v1.9",
       "category": "Files",
-      "checksum": "7a6369489143c2b8887331a7235a6a77dd5667c794c4234973f8159fed92fe24",
+      "checksum": "711cb076e887fcd55d973ade8b84bb6c22720be295bfde18e32761f6e0479a3e",
       "last_update": "2026-09-16 12:09:18 UTC+8",
       "source": "https://github.com/owendswang/ps5-web-file-manager"
     },
@@ -341,6 +341,17 @@
       "checksum": "9fc48733077145d1d204a4c9cdb879baaab1e711a604dd73af0dd4a807d6bc49",
       "last_update": "2026-09-05 16:40:09 UTC+8",
       "source": "https://github.com/ps5-linux/ps5-linux-loader"
+    },
+    {
+      "name": "ps5-payload-manager",
+      "filename": "pldmgr_v0.5.1.elf",
+      "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.5.1/pldmgr_v0.5.1.elf",
+      "description": "A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5.",
+      "version": "v0.5.1",
+      "category": "Tools",
+      "checksum": "05617c69ea145d1c11b8f7a6b7d3bd9e6df3831afd25d71a4ac85d63fb8e28aa",
+      "last_update": "2026-08-02 21:20:44 UTC+8",
+      "source": "https://github.com/itsplk/ps5-payload-manager"
     },
     {
       "name": "ps5-syslang",
@@ -451,6 +462,32 @@
       "checksum": "6cf6a738112fc339619ebe772690fa611f60ecdb20164a0e3f49e137277bc42b",
       "last_update": "2026-06-15 01:25:58 UTC+8",
       "source": "https://github.com/seregonwar/zftpd"
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://git.earthonion.com/soniciso/elf-arsenal",
+      "reason": "no release with .elf/.bin asset, or repo unreachable"
+    },
+    {
+      "url": "https://git.earthonion.com/soniciso/sonicloader",
+      "reason": "no release with .elf/.bin asset, or repo unreachable"
+    },
+    {
+      "url": "https://github.com/LightningMods/Itemzflow",
+      "reason": "no release with .elf/.bin asset, or repo unreachable"
+    },
+    {
+      "url": "https://github.com/StonedModder/Ghostpad",
+      "reason": "no release with .elf/.bin asset, or repo unreachable"
+    },
+    {
+      "url": "https://github.com/almhtar/ghostpad",
+      "reason": "no release with .elf/.bin asset, or repo unreachable"
+    },
+    {
+      "url": "https://github.com/stonedmodder/ghostcontrol-ps5-usb-controller-patcher",
+      "reason": "no release with .elf/.bin asset, or repo unreachable"
     }
   ]
 }
