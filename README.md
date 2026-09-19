@@ -6,11 +6,11 @@ Data is sourced directly from real upstream release repositories (not mirrors).
 
 The aggregator composes three layers:
 
-- **Discovery** — the upstream repo list is the union of [itsPLK/ps5-payloads-mirror](https://github.com/itsPLK/ps5-payloads-mirror) `payloads.json` and [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) `CATALOGUE` and some of the plugin information was compiled by `tekqart` forum user `@a83848400`. Both are first-class sources; new payloads in either appear here automatically.
+- **Discovery** — the upstream repo list is the union of [itsPLK/ps5-payloads-mirror](https://github.com/itsPLK/ps5-payloads-mirror) `payloads.json` and [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) `CATALOGUE`. Both are first-class sources; new payloads in either appear here automatically. Additional plugin information compiled by `tekqart` forum user `@a83848400` has been merged into `sources.json` by hand.
 - **Curation** — `sources.json` overrides display name / description / asset selection per repo, and can `"exclude": true` to suppress a repo entirely.
 - **Enrichment** — `phantomptr/ps5upload` `CATALOGUE` provides longer descriptions / display names where available.
 
-**A GitHub Action refreshes `payloads.json` hourly.**
+**A GitHub Action refreshes `payloads.json` every 3 hours.**
 
 ## Files
 
@@ -36,16 +36,19 @@ Same repo under multiple aliases (e.g. `LightningMods/etaHEN` and `etaHEN/etaHEN
 
 - This repository aggregates **metadata only** (name, description, version, checksum, download URL) about third-party PS5 payload projects. The upstream payloads themselves remain the property of their respective authors under their own licenses. The MIT license above covers only the aggregation script, the curated `sources.json`, and the generated `payloads.json`.
 - No binaries are hosted here. `url` points at the upstream release asset; download happens on the PS5 side.
-- Checksums come from the GitHub Release API `digest` field. Non-GitHub repos (e.g. Forgejo on `git.etawen.dev`) and assets without a published digest have an empty `checksum`.
-- `LightningMods/Itemzflow` is auto-skipped — its releases ship no `.elf`/`.bin` asset, so the aggregator finds no canonical asset to list.
+- Checksums come from the GitHub Release API `digest` field. Non-GitHub repos (Forgejo instances such as `git.etawen.dev` and `git.earthonion.com`) and assets without a published digest have an empty `checksum`.
+- `LightningMods/Itemzflow` is auto-skipped — its releases ship no `.elf`/`.bin` asset, so the aggregator finds no canonical asset to list. Repos that are curated in `sources.json` but produce no payload (no matching asset, or the repo is unreachable) are listed under a top-level `skipped` array in `payloads.json` so the gap is visible in the data itself. `skipped` entries intentionally carry only `url` + `reason` — adding `name`/`filename`/`url` would make the ps5-payload-manager parser ingest them as installable payloads.
 - Pre-release-only repos fall back to the most recent pre-release.
 - Repos are deduped by canonical `(owner, repo)` after redirect resolution (e.g. `LightningMods/etaHEN` folds into `etaHEN/etaHEN`).
+- **Filename collisions**: `filename` is the client's install key and on-disk name. Two entries sharing a filename (e.g. two forks both shipping `kstuff.elf`) overwrite each other on install — the later one wins. This is inherent to the client, not something this catalogue can fix without renaming upstream assets. For the same reason, when this catalogue corrects which asset it points at (via `asset_pattern`), the `filename` may change — users who installed the old asset will see the corrected one as a new install rather than an in-place upgrade.
+- Running `update_payloads.py` locally requires the [`gh` CLI](https://cli.github.com/) to be installed and authenticated (`gh auth login`) — the GitHub API is queried through it. Python 3.10+ is required (the script uses `dict | None` annotations).
 
 <!-- PAYLOADS_START -->
 | Name | Version | Category | Description | Last Updated | Source |
 | --- | --- | --- | --- | --- | --- |
 | **APR Emu Updater** | `v2.0.6` | Installer | PS5 payload that keeps APR Emu up to date on installed titles, from a web interface on the console. | `2026-08-29 17:54:19 UTC+8` | [tsuramatsu1/apr-emu-updater](https://github.com/tsuramatsu1/apr-emu-updater) |
 | **BackPork** | `0.1` | Installer | Lets you sideload system libraries into PS5 games. | `2026-05-01 00:34:19 UTC+8` | [bestpig/backpork](https://github.com/bestpig/backpork) |
+| **bdj_unpatch** | `2.0` | Kernel | BD-JB Blu-ray patch payload for supported optical-drive PS5 firmware. Apply the patch and reboot to use Blu-ray based jailbreaking without reflashing. | `2026-08-05 07:40:33 UTC+8` | [gezine/bd-jb5](https://github.com/gezine/bd-jb5) |
 | **BFpilot** | `v0.4.4` | Files | Web-based PS5 file manager serving a browser interface on port 5905 for browsing and managing console files. | `2026-08-12 02:08:09 UTC+8` | [itsblurf/bfpilot](https://github.com/itsblurf/bfpilot) |
 | **CheatRunner** | `v0.17` | Tools | Loads and applies game cheats on the PS5. Send it like any other payload, then browse and toggle cheats for supported titles on the console. | `2026-07-31 05:27:18 UTC+8` | [notmaj0r/cheatrunner](https://github.com/notmaj0r/cheatrunner) |
 | **elfldr** | `v0.26` | Kernel | An ELF loader for jailbroken PS5s that accepts payloads on port 9021. | `2026-08-30 01:31:18 UTC+8` | [ps5-payload-dev/elfldr](https://github.com/ps5-payload-dev/elfldr) |
