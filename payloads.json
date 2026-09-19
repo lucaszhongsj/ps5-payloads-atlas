@@ -24,6 +24,17 @@
       "source": "https://github.com/bestpig/backpork"
     },
     {
+      "name": "bdj_unpatch",
+      "filename": "bdj_unpatch_1360.elf",
+      "url": "https://github.com/Gezine/BD-JB5/releases/download/2.0/bdj_unpatch_1360.elf",
+      "description": "BD-JB Blu-ray patch payload for supported optical-drive PS5 firmware. Apply the patch and reboot to use Blu-ray based jailbreaking without reflashing.",
+      "version": "2.0",
+      "category": "Kernel",
+      "checksum": "22bae58b6214832c99457d56fc97676ce8eef1d626fbaf50b6a69508e5c1e18e",
+      "last_update": "2026-08-05 07:40:33 UTC+8",
+      "source": "https://github.com/gezine/bd-jb5"
+    },
+    {
       "name": "BFpilot",
       "filename": "bfpilot.elf",
       "url": "https://github.com/ItsBlurf/BFpilot/releases/download/v0.4.4/bfpilot.elf",
