@@ -92,12 +92,12 @@
     {
       "name": "ftpsrv (drakmor)",
       "filename": "ftpsrv-ps5.elf",
-      "url": "https://github.com/drakmor/ftpsrv/releases/download/1.15-ng-stable/ftpsrv-ps5.elf",
+      "url": "https://github.com/drakmor/ftpsrv/releases/download/1.16-ng-stable/ftpsrv-ps5.elf",
       "description": "drakmor's fork of ftpsrv.",
-      "version": "1.15-ng-stable",
+      "version": "1.16-ng-stable",
       "category": "Files",
-      "checksum": "913a443af847b6861ec11748e2640f62d1fc1027076f576aa0ddccab8507311f",
-      "last_update": "2026-04-08 10:17:12 UTC+8",
+      "checksum": "f19ae469b25453a7a4af4529527521d31f143100f18a2c6839666e7121c8bd32",
+      "last_update": "2026-09-21 04:48:47 UTC+8",
       "source": "https://github.com/drakmor/ftpsrv"
     },
     {
@@ -173,7 +173,7 @@
       "description": "Kernel patcher for the full PS5 firmware range. Resolves kernel symbols at runtime via the SDK's NID table, so the same binary covers FW 1.00–12.x. Required by ShadowMountPlus and most other privileged payloads. Load this first.",
       "version": "v1.11",
       "category": "Kernel",
-      "checksum": "ea14edbfe18ddc04f10dc09c4b1bf0c26e95b34a115a797722d6eda6298769c7",
+      "checksum": "62d9bb6f16531e1c10fd522cb918431eaa3319dcd37405af5cc0b2240d7b2ee5",
       "last_update": "2026-09-21 03:08:36 UTC+8",
       "source": "https://github.com/echostretch/kstuff-lite"
     },
