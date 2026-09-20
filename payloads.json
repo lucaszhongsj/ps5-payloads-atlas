@@ -169,12 +169,12 @@
     {
       "name": "kstuff-lite (EchoStretch)",
       "filename": "kstuff.elf",
-      "url": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.10/kstuff.elf",
+      "url": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.11/kstuff.elf",
       "description": "Kernel patcher for the full PS5 firmware range. Resolves kernel symbols at runtime via the SDK's NID table, so the same binary covers FW 1.00–12.x. Required by ShadowMountPlus and most other privileged payloads. Load this first.",
-      "version": "v1.10",
+      "version": "v1.11",
       "category": "Kernel",
-      "checksum": "82cbb1e70f8a562317d6b65269cf6aa0d7d94e22df4f1ac89a260ca0ec261252",
-      "last_update": "2026-08-12 11:31:03 UTC+8",
+      "checksum": "ea14edbfe18ddc04f10dc09c4b1bf0c26e95b34a115a797722d6eda6298769c7",
+      "last_update": "2026-09-21 03:08:36 UTC+8",
       "source": "https://github.com/echostretch/kstuff-lite"
     },
     {
@@ -206,7 +206,7 @@
       "description": "Minimal DNS server running on the PS5 (UDP :53). Blocks PlayStation Network + update domains by default and can redirect any domain to a LAN IP.",
       "version": "0.4",
       "category": "Network",
-      "checksum": "dcb845f3570771275b22b37534bf924a7f8ae219fb91ef00c6bccab85d1c2420",
+      "checksum": "fcfb7d47c3b295560ea1603dc015f7c4950353ef0faca16428bd425680ef1fc5",
       "last_update": "2026-08-05 02:27:26 UTC+8",
       "source": "https://github.com/drakmor/nanodns"
     },
@@ -245,13 +245,13 @@
     },
     {
       "name": "PKG-Manager",
-      "filename": "pkgmgr_v1.0.0.elf",
-      "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.0.0/pkgmgr_v1.0.0.elf",
+      "filename": "pkgmgr_v1.1.0.elf",
+      "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.1.0/pkgmgr_v1.1.0.elf",
       "description": "Browse and install PKGs from USB, disc, or SMB shares directly on your PS5",
-      "version": "v1.0.0",
+      "version": "v1.1.0",
       "category": "Installer",
-      "checksum": "51d3f13a91d007019f3262e1bd8ccc8ba3cbea6b1b6534b8e86df6bd2e0efb4b",
-      "last_update": "2026-09-18 01:53:40 UTC+8",
+      "checksum": "3df00c908411741216b3a5741b297cd3e771ce3b492cdf0f2f4edb7cc60b403b",
+      "last_update": "2026-09-21 03:37:59 UTC+8",
       "source": "https://github.com/itsplk/ps5-pkg-manager"
     },
     {
@@ -377,25 +377,14 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-5.30.0.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.30.0/ps5upload-5.30.0.elf",
+      "filename": "ps5upload-5.31.1.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.31.1/ps5upload-5.31.1.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v5.30.0",
+      "version": "v5.31.1",
       "category": "Backup",
-      "checksum": "5d459934a2e8dac8e1a21104db8c1632809d2f45bb2f9a5a0395317d44de32c8",
-      "last_update": "2026-09-18 19:13:41 UTC+8",
+      "checksum": "c366ebdec72c53154938d3dc319ca9ee6b1bbceee52344755e88774c3d3b0956",
+      "last_update": "2026-09-21 02:31:08 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
-    },
-    {
-      "name": "ShadowMount+",
-      "filename": "shadowmountplus.elf",
-      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.6beta16/shadowmountplus.elf",
-      "description": "Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen.",
-      "version": "1.6beta16",
-      "category": "Installer",
-      "checksum": "a35246fb3bb6042b25653b51cdcbc33254b40339342bf1d2dd0d2eceee2ca526",
-      "last_update": "2026-06-28 21:59:58 UTC+8",
-      "source": "https://github.com/drakmor/shadowmountplus"
     },
     {
       "name": "shsrv",
@@ -483,6 +472,10 @@
     },
     {
       "url": "https://github.com/almhtar/ghostpad",
+      "reason": "no release with .elf/.bin asset, or repo unreachable"
+    },
+    {
+      "url": "https://github.com/drakmor/shadowmountplus",
       "reason": "no release with .elf/.bin asset, or repo unreachable"
     },
     {
