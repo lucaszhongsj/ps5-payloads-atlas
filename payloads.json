@@ -70,12 +70,12 @@
     {
       "name": "ezremote-DPI",
       "filename": "ezremote-dpi.elf",
-      "url": "https://github.com/cy33hc/ps5-ezremote-dpi/releases/download/1.04/ezremote-dpi.elf",
+      "url": "https://github.com/cy33hc/ps5-ezremote-dpi/releases/download/1.05/ezremote-dpi.elf",
       "description": "Long-lived loopback PKG install daemon (127.0.0.1:9040). Owns Sony's PlayGo/AppInstUtil install state machine so installs don't evaporate when the calling process exits.",
-      "version": "1.04",
+      "version": "1.05",
       "category": "Installer",
-      "checksum": "54a57a7a68ee7d44064438d9a63fafc08ecbaf033dcbdee28f8f3119914ea109",
-      "last_update": "2025-07-02 03:42:24 UTC+8",
+      "checksum": "9d62053c13c051456f6542e3f4e25518b7540a21e7f68db064bbf27c99450f96",
+      "last_update": "2026-09-22 00:38:15 UTC+8",
       "source": "https://github.com/cy33hc/ps5-ezremote-dpi"
     },
     {
