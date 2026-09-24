@@ -173,7 +173,7 @@
       "description": "Kernel patcher for the full PS5 firmware range. Resolves kernel symbols at runtime via the SDK's NID table, so the same binary covers FW 1.00–12.x. Required by ShadowMountPlus and most other privileged payloads. Load this first.",
       "version": "v1.11",
       "category": "Kernel",
-      "checksum": "858880a8adbedaabfaced025384f4f6f908cfe44f1a049070ad8df911c22b972",
+      "checksum": "ab9a6cb4d3b1daf139d4d646e402b1cf569071acd64599c936d7a3a6164dc779",
       "last_update": "2026-09-21 03:08:36 UTC+8",
       "source": "https://github.com/echostretch/kstuff-lite"
     },
