@@ -266,6 +266,17 @@
       "source": "https://github.com/itsblurf/poords4"
     },
     {
+      "name": "PS5 aria2",
+      "filename": "aria2-v1.37.0-0.elf",
+      "url": "https://github.com/owendswang/ps5-aria2/releases/download/v1.37.0-0/aria2-v1.37.0-0.elf",
+      "description": "aria2 for PS5",
+      "version": "v1.37.0-0",
+      "category": "Tools",
+      "checksum": "38601e346d2d8695ecb5092a99d83220e630b001e2218611604d58e3fe4b698a",
+      "last_update": "2026-09-25 02:52:43 UTC+8",
+      "source": "https://github.com/owendswang/ps5-aria2"
+    },
+    {
       "name": "PS5 Console",
       "filename": "PS5_Console.elf",
       "url": "https://github.com/JunLeB/PS5Console/releases/download/6.5.1/PS5_Console.elf",
