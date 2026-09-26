@@ -330,5 +330,12 @@
     "description": "PS5 payload that keeps APR Emu up to date on installed titles, from a web interface on the console.",
     "asset_pattern": "apr-emu-updater",
     "exclude": false
+  },
+  {
+    "url": "https://github.com/owendswang/ps5-aria2",
+    "display_name": "PS5 aria2",
+    "description": "aria2 for PS5",
+    "asset_pattern": "PS5-aria2",
+    "exclude": false
   }
 ]
