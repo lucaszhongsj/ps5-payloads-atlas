@@ -48,12 +48,12 @@
     {
       "name": "CheatRunner",
       "filename": "CheatRunner.elf",
-      "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17/CheatRunner.elf",
+      "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17.1/CheatRunner.elf",
       "description": "Loads and applies game cheats on the PS5. Send it like any other payload, then browse and toggle cheats for supported titles on the console.",
-      "version": "v0.17",
+      "version": "v0.17.1",
       "category": "Tools",
-      "checksum": "2f296d3f1e69b65439bb5dc362f0f6504f6dc9f245fa16a3683e9d7ec9533773",
-      "last_update": "2026-07-31 05:27:18 UTC+8",
+      "checksum": "6863f06cb6ff41f846d84a0542c21469b52cacf55c9e6a0e2c74c114b3a55212",
+      "last_update": "2026-10-01 01:34:27 UTC+8",
       "source": "https://github.com/notmaj0r/cheatrunner"
     },
     {
@@ -235,12 +235,12 @@
     {
       "name": "pegasus-dl",
       "filename": "pegasus_dl.elf",
-      "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.10.0/pegasus_dl.elf",
+      "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.10.1/pegasus_dl.elf",
       "description": "PS5 payload that serves a local web interface for downloading and installing game or application package data.",
-      "version": "v1.10.0",
+      "version": "v1.10.1",
       "category": "Installer",
-      "checksum": "724b245d8de08e5a16865180fac7f30eda72b94d45c9cc73686d9b2defc33f66",
-      "last_update": "2026-09-30 01:14:24 UTC+8",
+      "checksum": "b24fdc62fc6cad14684b214a9c5be6c1221585afbf9493e387ab90f9dee21138",
+      "last_update": "2026-09-30 18:06:45 UTC+8",
       "source": "https://github.com/pegasus-ps5/pegasus-dl"
     },
     {
