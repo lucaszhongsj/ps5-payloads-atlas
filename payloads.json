@@ -322,13 +322,13 @@
     },
     {
       "name": "ps5-app-dumper",
-      "filename": "ps5-app-dumper.elf",
-      "url": "https://github.com/EchoStretch/ps5-app-dumper/releases/download/v1.11/ps5-app-dumper.elf",
+      "filename": "ps5-app-dumper_v2.00.elf",
+      "url": "https://github.com/EchoStretch/ps5-app-dumper/releases/download/v2.00/ps5-app-dumper_v2.00.elf",
       "description": "Dumps installed PS5 apps to USB or internal storage in fakepkg/folder format. Reads config from /data/ps5-app-dumper/config.ini.",
-      "version": "v1.11",
+      "version": "v2.00",
       "category": "Backup",
-      "checksum": "18483751ebaea6879b020a9dd87c0a4fb4f1bf09f3708d950362a483f78cc0d0",
-      "last_update": "2026-07-28 10:10:49 UTC+8",
+      "checksum": "b6fea71afb8937fcd1a933116c620e989acba25b7049eaeaa00cdc1bd604d686",
+      "last_update": "2026-09-30 05:54:23 UTC+8",
       "source": "https://github.com/echostretch/ps5-app-dumper"
     },
     {
