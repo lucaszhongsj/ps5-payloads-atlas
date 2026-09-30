@@ -86,9 +86,9 @@ Same repo under multiple aliases (e.g. `LightningMods/etaHEN` and `etaHEN/etaHEN
 | **shsrv** | `v0.20` | Network | Telnet server on :2323 with 42 POSIX-ish commands plus hbldr (launch unsigned ELF with full A/V) and hbdbg (gdb-style debugger). | `2026-08-03 00:41:01 UTC+8` | [ps5-payload-dev/shsrv](https://github.com/ps5-payload-dev/shsrv) |
 | **singleDPI** | `0.1.0` | Installer | Standalone DPI payload accepting TCP 9090 JSON package-install requests and an experimental 12800 URL endpoint. | `2026-06-22 00:50:40 UTC+8` | [maxmilu/ps5-direct-package-installer](https://github.com/maxmilu/ps5-direct-package-installer) |
 | **unrar_ps5** | `v1.4.0` | Installer | On-console archive extraction payload for 7z and RAR files, with configurable installation layouts. | `2026-06-18 22:24:15 UTC+8` | [bizkut/unrar-ps5](https://github.com/bizkut/unrar-ps5) |
-| **WebKit Autoloader (installer)** | `v0.5.1` | Kernel | Installs an autoloader reachable from the PS5's own web browser, so payloads can be launched from the console without sending them from a PC every time. One-shot installer ELF: send it, it installs, it exits. Run it after your kernel exploit, like any other payload. | `2026-09-30 08:45:31 UTC+8` | [itsplk/ps5-webkit-autoloader](https://github.com/itsplk/ps5-webkit-autoloader) |
+| **WebKit Autoloader (installer)** | `v0.5.2` | Kernel | Installs an autoloader reachable from the PS5's own web browser, so payloads can be launched from the console without sending them from a PC every time. One-shot installer ELF: send it, it installs, it exits. Run it after your kernel exploit, like any other payload. | `2026-10-01 02:15:16 UTC+8` | [itsplk/ps5-webkit-autoloader](https://github.com/itsplk/ps5-webkit-autoloader) |
 | **websrv** | `v0.34` | Network | HTTP server on :8080 serving a homebrew launcher page. Pairs with the homebrew bundles distributed by ps5-payload-dev. | `2026-08-03 03:51:42 UTC+8` | [ps5-payload-dev/websrv](https://github.com/ps5-payload-dev/websrv) |
-| **zftpd** | `v1.5.0` | Files | Zero-copy FTP/HTTP server. | `2026-06-15 01:25:58 UTC+8` | [seregonwar/zftpd](https://github.com/seregonwar/zftpd) |
+| **zftpd** | `v1.6.0` | Files | Zero-copy FTP/HTTP server. | `2026-10-01 03:14:18 UTC+8` | [seregonwar/zftpd](https://github.com/seregonwar/zftpd) |
 <!-- PAYLOADS_END -->
 
 ## Support & Suggestions
