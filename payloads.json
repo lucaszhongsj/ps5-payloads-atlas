@@ -256,13 +256,13 @@
     },
     {
       "name": "PoorDS4",
-      "filename": "PoorDS4rc44.elf",
-      "url": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc44/PoorDS4rc44.elf",
+      "filename": "PoorDS4rc51.elf",
+      "url": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc51/PoorDS4rc51.elf",
       "description": "Use a wireless DualShock 4 in native PS5 games on jailbroken consoles.",
-      "version": "v0.1.0-rc44",
+      "version": "v0.1.0-rc51",
       "category": "Tools",
-      "checksum": "a077fe7a1defbe6918538b834eaa502a6b4239d7feff58c8fa4ec06cd325d9a8",
-      "last_update": "2026-09-19 02:57:23 UTC+8",
+      "checksum": "e1b9f257f51678a977edaeafd4ca1f8a03e9df0afda7d5dd84435841fa20795d",
+      "last_update": "2026-09-30 09:01:16 UTC+8",
       "source": "https://github.com/itsblurf/poords4"
     },
     {
@@ -388,13 +388,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-5.39.1.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.39.1/ps5upload-5.39.1.elf",
+      "filename": "ps5upload-5.40.0.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.40.0/ps5upload-5.40.0.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v5.39.1",
+      "version": "v5.40.0",
       "category": "Backup",
-      "checksum": "a50d66033f66cb9d6600c810066b699e59b1a0cc3d7e98bffd5a0b6eb9ebd1a3",
-      "last_update": "2026-09-29 17:05:51 UTC+8",
+      "checksum": "d10ba9d979ac6a18bd8d3d77ea3845ae592761768c9aec89e2b71735cda2927b",
+      "last_update": "2026-09-30 13:45:05 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
@@ -443,13 +443,13 @@
     },
     {
       "name": "WebKit Autoloader (installer)",
-      "filename": "webkit-autoloader-installer_v0.5.0.elf",
-      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.5.0/webkit-autoloader-installer_v0.5.0.elf",
+      "filename": "webkit-autoloader-installer_v0.5.1.elf",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.5.1/webkit-autoloader-installer_v0.5.1.elf",
       "description": "Installs an autoloader reachable from the PS5's own web browser, so payloads can be launched from the console without sending them from a PC every time. One-shot installer ELF: send it, it installs, it exits. Run it after your kernel exploit, like any other payload.",
-      "version": "v0.5.0",
+      "version": "v0.5.1",
       "category": "Kernel",
-      "checksum": "83c2128520267515fe2f197db35427bb95b7273934e52ad3c6bf668a4ef27b7f",
-      "last_update": "2026-09-29 22:35:31 UTC+8",
+      "checksum": "80083f76383944e1f87c2d4126e4e067cd70bd8013feb538575bc2cb08258a78",
+      "last_update": "2026-09-30 08:45:31 UTC+8",
       "source": "https://github.com/itsplk/ps5-webkit-autoloader"
     },
     {
