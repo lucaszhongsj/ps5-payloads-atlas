@@ -421,13 +421,13 @@
     },
     {
       "name": "singleDPI",
-      "filename": "singleDPI.elf",
-      "url": "https://github.com/MaxMilu/ps5-direct-package-installer/releases/download/0.1.0/singleDPI.elf",
+      "filename": "singleDPI_v0.2.1.elf",
+      "url": "https://github.com/MaxMilu/ps5-direct-package-installer/releases/download/0.2.1/singleDPI_v0.2.1.elf",
       "description": "Standalone DPI payload accepting TCP 9090 JSON package-install requests and an experimental 12800 URL endpoint.",
-      "version": "0.1.0",
+      "version": "0.2.1",
       "category": "Installer",
-      "checksum": "38b96a3c3bfd8f2094d7e69ad2776621184b718f24744c29cbedb2640aae11b2",
-      "last_update": "2026-06-22 00:50:40 UTC+8",
+      "checksum": "c824b2220f72bb95c514a857b505f85ead93b1d056eefda942381784c4e602bc",
+      "last_update": "2026-10-01 20:27:43 UTC+8",
       "source": "https://github.com/maxmilu/ps5-direct-package-installer"
     },
     {
