@@ -48,12 +48,12 @@
     {
       "name": "CheatRunner",
       "filename": "CheatRunner.elf",
-      "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17.1/CheatRunner.elf",
+      "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17.2/CheatRunner.elf",
       "description": "Loads and applies game cheats on the PS5. Send it like any other payload, then browse and toggle cheats for supported titles on the console.",
-      "version": "v0.17.1",
+      "version": "v0.17.2",
       "category": "Tools",
-      "checksum": "6863f06cb6ff41f846d84a0542c21469b52cacf55c9e6a0e2c74c114b3a55212",
-      "last_update": "2026-10-01 01:34:27 UTC+8",
+      "checksum": "36ad03e236e6603aaaf05d95ed3399c7b54475a9bceba085cbe02899bc88ae0f",
+      "last_update": "2026-10-02 02:02:13 UTC+8",
       "source": "https://github.com/notmaj0r/cheatrunner"
     },
     {
@@ -180,12 +180,12 @@
     {
       "name": "Kylin Core",
       "filename": "kylin-core.elf",
-      "url": "https://github.com/aydencharles/kylin-core-release/releases/download/v1.3.1-community-lite/kylin-core.elf",
+      "url": "https://github.com/aydencharles/kylin-core-release/releases/download/v2.0.0-community-lite/kylin-core.elf",
       "description": "Game cheat trainer for jailbroken PS5. Apply in-game cheats and modifications to running titles; community-lite build distributed as a single payload.",
-      "version": "v1.3.1-community-lite",
+      "version": "v2.0.0-community-lite",
       "category": "Tools",
-      "checksum": "90320a4169d61be6e168e605e59c4d8fc89fb978f1772f03c2011e7e8087b8a3",
-      "last_update": "2026-06-20 02:21:33 UTC+8",
+      "checksum": "7f5245f2db67b131c6f9e991b731117c2c730923a9dd65a2d82b36f2e2b91545",
+      "last_update": "2026-10-01 21:29:25 UTC+8",
       "source": "https://github.com/aydencharles/kylin-core-release"
     },
     {
@@ -366,13 +366,13 @@
     },
     {
       "name": "ps5-syslang",
-      "filename": "ps5-syslang-zh-Hans-v0.2.elf",
-      "url": "https://github.com/owendswang/ps5-syslang/releases/download/v0.2/ps5-syslang-zh-Hans-v0.2.elf",
+      "filename": "ps5-syslang-zh-Hans-v0.2.1.elf",
+      "url": "https://github.com/owendswang/ps5-syslang/releases/download/v0.2.1/ps5-syslang-zh-Hans-v0.2.1.elf",
       "description": "ShellUI language-switching payload for changing the PS5 system language, including on region-locked consoles.",
-      "version": "v0.2",
+      "version": "v0.2.1",
       "category": "Tools",
-      "checksum": "776287773aabebe588d144d4d5b361abfff56eef9799af79cb30877bbc80bec6",
-      "last_update": "2026-06-28 10:57:08 UTC+8",
+      "checksum": "1baaa4aa01540e07dea8e452594d04bfbb06a0a4abcbae342bd8ca24f56c423e",
+      "last_update": "2026-10-02 01:43:22 UTC+8",
       "source": "https://github.com/owendswang/ps5-syslang"
     },
     {
