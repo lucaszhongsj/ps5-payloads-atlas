@@ -213,12 +213,12 @@
     {
       "name": "NP Fake Sign-in",
       "filename": "np-fake-signin-ps5.elf",
-      "url": "https://git.etawen.dev/earthonion/np-fake-signin/releases/download/v1.3/np-fake-signin-ps5.elf",
+      "url": "https://git.etawen.dev/earthonion/np-fake-signin/releases/download/v1.4/np-fake-signin-ps5.elf",
       "description": "Headless payload that registers PS5 user slots directly via the system registry. Offline account activation without PSN. One-shot ELF: send, runs, exits.",
-      "version": "v1.3",
+      "version": "v1.4",
       "category": "Tools",
       "checksum": "",
-      "last_update": "2026-05-15 19:41:36 UTC+8",
+      "last_update": "2026-10-02 08:58:43 UTC+8",
       "source": "https://git.etawen.dev/earthonion/np-fake-signin"
     },
     {
