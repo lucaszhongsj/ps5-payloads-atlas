@@ -267,13 +267,13 @@
     },
     {
       "name": "PS5 aria2",
-      "filename": "aria2-v1.37.0-0.elf",
-      "url": "https://github.com/owendswang/ps5-aria2/releases/download/v1.37.0-0/aria2-v1.37.0-0.elf",
+      "filename": "aria2-v1.37.0-1.elf",
+      "url": "https://github.com/owendswang/ps5-aria2/releases/download/v1.37.0-1/aria2-v1.37.0-1.elf",
       "description": "aria2 for PS5",
-      "version": "v1.37.0-0",
+      "version": "v1.37.0-1",
       "category": "Tools",
-      "checksum": "38601e346d2d8695ecb5092a99d83220e630b001e2218611604d58e3fe4b698a",
-      "last_update": "2026-09-25 02:52:43 UTC+8",
+      "checksum": "388f575899a7e3f496538f02c2f0e0eea711415b70ae0d6ef9da48b2da5e98c3",
+      "last_update": "2026-10-03 01:21:11 UTC+8",
       "source": "https://github.com/owendswang/ps5-aria2"
     },
     {
