@@ -400,12 +400,12 @@
     {
       "name": "ShadowMount+",
       "filename": "shadowmountplus.elf",
-      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta2/shadowmountplus.elf",
+      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta3/shadowmountplus.elf",
       "description": "Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen.",
-      "version": "1.7beta2",
+      "version": "1.7beta3",
       "category": "Installer",
-      "checksum": "3f716a7b2220c7e87e87452ae05cad689ef842d3beb4cdad6c526cb6dfc2b6b5",
-      "last_update": "2026-09-22 05:17:04 UTC+8",
+      "checksum": "2a7427e20ba7a70bd8cd01e47eb00ee7ca82db82dff3da7884f48f9c3fcbe95a",
+      "last_update": "2026-10-01 21:31:26 UTC+8",
       "source": "https://github.com/drakmor/shadowmountplus"
     },
     {
