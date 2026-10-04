@@ -68,6 +68,17 @@
       "source": "https://github.com/ps5-payload-dev/elfldr"
     },
     {
+      "name": "etaHEN",
+      "filename": "etaHEN-2.5B.bin",
+      "url": "https://github.com/etaHEN/etaHEN/releases/download/2.5B/etaHEN-2.5B.bin",
+      "description": "Long-running homebrew enabler with toolbox features. Faster app jailbreak than the on-the-fly path; provides the HijackerCommand IPC many homebrew apps expect on :9028.",
+      "version": "2.5B",
+      "category": "Kernel",
+      "checksum": "4845cac45095361b8983b14d6690622183b0dcfbf6d7fda16e161aa91ff0531e",
+      "last_update": "2025-12-25 13:31:40 UTC+8",
+      "source": "https://github.com/etahen/etahen"
+    },
+    {
       "name": "ezremote-DPI",
       "filename": "ezremote-dpi.elf",
       "url": "https://github.com/cy33hc/ps5-ezremote-dpi/releases/download/1.05/ezremote-dpi.elf",
@@ -145,21 +156,10 @@
       "source": "https://github.com/ps5-payload-dev/klogsrv"
     },
     {
-      "name": "kstuff",
-      "filename": "kstuff.elf",
-      "url": "https://github.com/EchoStretch/kstuff/releases/download/v1.6.7/kstuff.elf",
-      "description": "Full build of kstuff: dynamically patches the PS5 kernel to bypass security.",
-      "version": "v1.6.7",
-      "category": "Kernel",
-      "checksum": "f1c1f4b2b6395644af04cbe9828aba58586acf7aacb9e01113cac92ce16e3569",
-      "last_update": "2026-01-04 23:55:09 UTC+8",
-      "source": "https://github.com/echostretch/kstuff"
-    },
-    {
       "name": "kstuff-lite (drakmor — fpkg-optimized)",
       "filename": "kstuff.elf",
       "url": "https://github.com/drakmor/kstuff-lite/releases/download/1.2-dr-test1/kstuff.elf",
-      "description": "Fork of EchoStretch/kstuff-lite with a hot path for .ffpkg (UFS) + PFS mounts and lower overhead in repeated mount/unmount cycles. Adds an option to disable automatic mounting (noautomount) for a controlled startup.",
+      "description": "Fork of EchoStretch/kstuff-lite with a hot path for .ffpkg (UFS) + PFS mounts and lower overhead in repeated mount/unmount cycles. Recent builds extended firmware coverage through FW 12.xx (the '12.xx Support' update) on top of the original 3.00→10.01 range — check the release notes for your exact firmware. Adds an option to disable automatic mounting (noautomount) for a controlled startup. Recommended when your primary workflow is ShadowMount+ with .ffpkg/.exfat/PFS images. Same load-first ordering as any other kstuff: must boot before ShadowMount+ or ps5upload.",
       "version": "1.2-dr-test1",
       "category": "Kernel",
       "checksum": "9c1b242eaed3704ef18be45d001a2c4ebf2d9222cfe3cbb0f0c3db33309abac9",
@@ -297,6 +297,17 @@
       "checksum": "1013c23b12980e1bc97decc150c8cd5abc8447dc03cf86dbd106266dd000a6e1",
       "last_update": "2026-06-19 20:34:09 UTC+8",
       "source": "https://github.com/juma-sayeh/ps5-file-explorer"
+    },
+    {
+      "name": "PS5 Tailscale",
+      "filename": "tailscale.elf",
+      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.5.2/tailscale.elf",
+      "description": "Tailscale for jailbroken PS5: reach the console over your tailnet and stream to it with Moonlight/Sunshine (unofficial)",
+      "version": "v0.5.2",
+      "category": "Tools",
+      "checksum": "c536b1a00d025a387a69e136804f501d857e04b8f76ff4a7f50e4617273ca0ca",
+      "last_update": "2026-10-04 22:45:10 UTC+8",
+      "source": "https://github.com/holdmysocks/ps5-tailscale"
     },
     {
       "name": "PS5 Unified Autoloader",
