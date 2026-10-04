@@ -1,341 +1,304 @@
 [
-  {
-    "url": "https://github.com/echostretch/kstuff-lite",
-    "display_name": "kstuff-lite (EchoStretch)",
-    "description": "Kernel patcher for the full PS5 firmware range. Resolves kernel symbols at runtime via the SDK's NID table, so the same binary covers FW 1.00–12.x. Required by ShadowMountPlus and most other privileged payloads. Load this first.",
-    "asset_pattern": "kstuff",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/drakmor/kstuff-lite",
-    "display_name": "kstuff-lite (drakmor — fpkg-optimized)",
-    "description": "Fork of EchoStretch/kstuff-lite with a hot path for .ffpkg (UFS) + PFS mounts and lower overhead in repeated mount/unmount cycles. Adds an option to disable automatic mounting (noautomount) for a controlled startup.",
-    "asset_pattern": "kstuff",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/echostretch/kstuff",
-    "display_name": "kstuff",
-    "description": "Full build of kstuff: dynamically patches the PS5 kernel to bypass security.",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/drakmor/shadowmountplus",
-    "display_name": "ShadowMount+",
-    "description": "Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen.",
-    "asset_pattern": "shadowmountplus",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/etahen/etahen",
-    "display_name": "etaHEN",
-    "description": "Long-running homebrew enabler with toolbox features. Faster app jailbreak than the on-the-fly path; provides the HijackerCommand IPC many homebrew apps expect on :9028.",
-    "exclude": true
-  },
-  {
-    "url": "https://github.com/lightningmods/etahen",
-    "display_name": "etaHEN (LightningMods alias)",
-    "description": "Alias of etaHEN/etaHEN. Excluded to prevent duplicate listing.",
-    "exclude": true
-  },
-  {
-    "url": "https://github.com/ps5-payload-dev/ftpsrv",
-    "display_name": "ftpsrv",
-    "description": "Lightweight FTP server on :2121 with SELF/ELF auto-decryption and remount-RW SITE commands. Browse the PS5 filesystem from any FTP client.",
-    "exclude": false,
-    "asset_pattern": "ftpsrv-ps5\\.elf$"
-  },
-  {
-    "url": "https://github.com/drakmor/ftpsrv",
-    "display_name": "ftpsrv (drakmor)",
-    "description": "drakmor's fork of ftpsrv.",
-    "exclude": false,
-    "asset_pattern": "ftpsrv-ps5\\.elf$"
-  },
-  {
-    "url": "https://github.com/ps5-payload-dev/websrv",
-    "display_name": "websrv",
-    "description": "HTTP server on :8080 serving a homebrew launcher page. Pairs with the homebrew bundles distributed by ps5-payload-dev.",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/ps5-payload-dev/shsrv",
-    "display_name": "shsrv",
-    "description": "Telnet server on :2323 with 42 POSIX-ish commands plus hbldr (launch unsigned ELF with full A/V) and hbdbg (gdb-style debugger).",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/ps5-payload-dev/klogsrv",
-    "display_name": "klogsrv",
-    "description": "Streams /dev/klog over TCP :3232 and tees it to /data/klog/klog.log (10-backup rotation).",
-    "exclude": false,
-    "asset_pattern": "klogsrv-ps5\\.elf$"
-  },
-  {
-    "url": "https://github.com/ps5-payload-dev/elfldr",
-    "display_name": "elfldr",
-    "description": "An ELF loader for jailbroken PS5s that accepts payloads on port 9021.",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/echostretch/ps5-app-dumper",
-    "display_name": "ps5-app-dumper",
-    "description": "Dumps installed PS5 apps to USB or internal storage in fakepkg/folder format. Reads config from /data/ps5-app-dumper/config.ini.",
-    "asset_pattern": "dumper",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/drakmor/nanodns",
-    "display_name": "nanoDNS",
-    "description": "Minimal DNS server running on the PS5 (UDP :53). Blocks PlayStation Network + update domains by default and can redirect any domain to a LAN IP.",
-    "asset_pattern": "nanodns.elf",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/almhtar/ghostpad",
-    "display_name": "Ghostpad",
-    "description": "Creates a virtual PS5 controller on the console and redirects input to it — useful for input automation, remote control, and accessibility setups. [moved to almhtar/Ghostpad; no release yet]",
-    "asset_pattern": "ghostpad.elf",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/cy33hc/ps5-ezremote-dpi",
-    "display_name": "ezremote-DPI",
-    "description": "Long-lived loopback PKG install daemon (127.0.0.1:9040). Owns Sony's PlayGo/AppInstUtil install state machine so installs don't evaporate when the calling process exits.",
-    "asset_pattern": "ezremote-dpi",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/notmaj0r/cheatrunner",
-    "display_name": "CheatRunner",
-    "description": "Loads and applies game cheats on the PS5. Send it like any other payload, then browse and toggle cheats for supported titles on the console.",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/itsplk/ps5-lapy-jb-daemon",
-    "display_name": "Lapy JB Daemon",
-    "description": "Standalone homebrew jailbreak daemon for PS5. Mimics etaHEN's jailbreak-on-demand API. Multi-firmware (3.00 to 12.00). No etaHEN required. Upstream voidwhisper/lapy-jb-daemon on git.etawen.dev is offline; this GitHub mirror is the live source.",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/opensourcerer-dev/ps5debug-ng",
-    "display_name": "ps5debug-NG",
-    "description": "PS5 debugger payload — userland TCP wire-protocol server hosted inside SceShellCore.",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/seregonwar/zftpd",
-    "display_name": "zftpd",
-    "description": "Zero-copy FTP/HTTP server.",
-    "asset_pattern": "zhttp",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/itsplk/ps5-payload-manager",
-    "display_name": "ps5-payload-manager",
-    "description": "A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5.",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/ps5-linux/ps5-linux-loader",
-    "display_name": "ps5-linux-loader",
-    "description": "Linux payload implementing HV exploits to run a custom bootloader.",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/bestpig/backpork",
-    "display_name": "BackPork",
-    "description": "Lets you sideload system libraries into PS5 games.",
-    "exclude": false
-  },
-  {
-    "url": "https://git.etawen.dev/earthonion/garlic-worker",
-    "display_name": "Garlic Worker",
-    "description": "Background worker that drains the community save-decryption queue from garlicsaves.com. Handles both PS4 and PS5 saves natively. Opt-in: connects to garlicsaves.com.",
-    "asset_pattern": "garlic-worker-ps5",
-    "exclude": false
-  },
-  {
-    "url": "https://git.etawen.dev/earthonion/garlic-savemgr",
-    "display_name": "Garlic SaveMgr",
-    "description": "On-console save decrypt/encrypt daemon. Back up saves in plaintext, edit on PC, re-encrypt for the same console. No network.",
-    "exclude": false
-  },
-  {
-    "url": "https://git.etawen.dev/earthonion/np-fake-signin",
-    "display_name": "NP Fake Sign-in",
-    "description": "Headless payload that registers PS5 user slots directly via the system registry. Offline account activation without PSN. One-shot ELF: send, runs, exits.",
-    "asset_pattern": "np-fake-signin-ps5",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/owendswang/ps5-web-file-manager",
-    "display_name": "PS5 Web File Manager",
-    "description": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
-    "exclude": false,
-    "asset_pattern": "^web-file-mgr"
-  },
-  {
-    "url": "https://github.com/aydencharles/kylin-core-release",
-    "display_name": "Kylin Core",
-    "description": "Game cheat trainer for jailbroken PS5. Apply in-game cheats and modifications to running titles; community-lite build distributed as a single payload.",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/itsplk/ps5-unified-autoloader",
-    "display_name": "PS5 Unified Autoloader",
-    "description": "Standalone ELF autoloader that reads autoload.txt from USB or /data and sends listed payloads to elfldr.",
-    "asset_pattern": "ps5-unified-autoloader",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/gezine/bd-jb5",
-    "display_name": "bdj_unpatch",
-    "description": "BD-JB Blu-ray patch payload for supported optical-drive PS5 firmware. Apply the patch and reboot to use Blu-ray based jailbreaking without reflashing. [upstream repo deleted]",
-    "asset_pattern": "bdj_unpatch",
-    "exclude": true
-  },
-  {
-    "url": "https://github.com/xbcyl813/shadowmountplusfan",
-    "display_name": "ShadowMountPlusFan",
-    "description": "ShadowMountPlus-based automatic fan controller. The upstream release ships only a ZIP bundle, so it cannot be listed until a direct ELF asset is published.",
-    "exclude": true
-  },
-  {
-    "url": "https://github.com/echostretch/kstuff-toggle",
-    "display_name": "kstuff-toggle",
-    "description": "Optional kstuff toggle payload that disables kstuff after a game starts to reduce overhead. Superseded by the integrated ShadowMountPlus feature; upstream ships only a ZIP bundle.",
-    "exclude": true
-  },
-  {
-    "url": "https://github.com/owendswang/ps5-fan-control",
-    "display_name": "ps5-fan-control",
-    "description": "Standalone PS5 fan controller with a configurable target temperature.",
-    "asset_pattern": "ps5-fan-control",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/stonedmodder/ghostcontrol-ps5-usb-controller-patcher",
-    "display_name": "Ghostcontrol",
-    "description": "USB HID controller patcher that injects third-party controller input into a virtual DualSense device.",
-    "asset_pattern": "ghostcontrol",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/pegasus-ps5/pegasus-dl",
-    "display_name": "pegasus-dl",
-    "description": "PS5 payload that serves a local web interface for downloading and installing game or application package data.",
-    "asset_pattern": "pegasus_dl",
-    "exclude": false
-  },
-  {
-    "url": "https://git.earthonion.com/soniciso/sonicloader",
-    "display_name": "Sonic Loader",
-    "description": "Integrated web-based payload loader and management dashboard combining autoloading, cheat management, monitoring, file transfer, and file management.",
-    "asset_pattern": "sonic-loader",
-    "exclude": false
-  },
-  {
-    "url": "https://git.earthonion.com/soniciso/elf-arsenal",
-    "display_name": "elf-arsenal",
-    "description": "etaHEN-oriented payload bundle combining ELF loading, resource management, FTP, trophy tools, ShadowMountPlus, kstuff-lite, Linux loading, controller tools, fake sign-in, and a web UI.",
-    "asset_pattern": "elf-arsenal",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/maxmilu/ps5-direct-package-installer",
-    "display_name": "singleDPI",
-    "description": "Standalone DPI payload accepting TCP 9090 JSON package-install requests and an experimental 12800 URL endpoint.",
-    "asset_pattern": "singleDPI",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/ps5-payload-dev/gdbsrv",
-    "display_name": "gdbsrv-ps5",
-    "description": "GDB remote debugging service payload for inspecting PS5 game processes.",
-    "asset_pattern": "gdbsrv-ps5",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/itsblurf/bfpilot",
-    "display_name": "BFpilot",
-    "description": "Web-based PS5 file manager serving a browser interface on port 5905 for browsing and managing console files.",
-    "asset_pattern": "^bfpilot\\.elf$",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/itsblurf/bfplayer",
-    "display_name": "BFplayer",
-    "description": "A PS5 media and video player that also functions as a complete media library, with support for subtitles, multiple audio tracks, aspect-ratio adjustment, cropping, and many other playback settings.",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/itsblurf/poords4",
-    "display_name": "PoorDS4",
-    "description": "Use a wireless DualShock 4 in native PS5 games on jailbroken consoles.",
-    "exclude": false,
-    "asset_pattern": "^poords4rc\\d+\\.elf$"
-  },
-  {
-    "url": "https://github.com/juma-sayeh/ps5-file-explorer",
-    "display_name": "PS5 File Explorer",
-    "description": "BFpilot-derived web file manager for browsing and managing files on a jailbroken PS5.",
-    "asset_pattern": "^file-explorer\\.elf$",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/phantomptr/ps5upload",
-    "display_name": "PS5upload",
-    "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-    "asset_pattern": "^ps5upload-.*\\.elf$",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/junleb/ps5console",
-    "display_name": "PS5 Console",
-    "description": "Web-based PS5 control center combining game mounting, save management, USB controller support, FTP, fan control, and ELF management.",
-    "asset_pattern": "PS5_Console",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/bizkut/unrar-ps5",
-    "display_name": "unrar_ps5",
-    "description": "On-console archive extraction payload for 7z and RAR files, with configurable installation layouts.",
-    "asset_pattern": "unrar_ps5",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/ps5-payload-dev/offact",
-    "display_name": "offact",
-    "description": "Offline account activation homebrew that generates a non-zero local account identifier without connecting to PSN. Upstream distributes a ZIP bundle rather than a direct ELF asset.",
-    "exclude": true
-  },
-  {
-    "url": "https://github.com/owendswang/ps5-syslang",
-    "display_name": "ps5-syslang",
-    "description": "ShellUI language-switching payload for changing the PS5 system language, including on region-locked consoles.",
-    "asset_pattern": "ps5-syslang-zh-Hans",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/aydencharles/onionhen",
-    "display_name": "onionHEN",
-    "description": "OnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, in-game overlays, payload management, and background services.",
-    "asset_pattern": "onionHEN",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/tsuramatsu1/apr-emu-updater",
-    "display_name": "APR Emu Updater",
-    "description": "PS5 payload that keeps APR Emu up to date on installed titles, from a web interface on the console.",
-    "asset_pattern": "apr-emu-updater",
-    "exclude": false
-  },
-  {
-    "url": "https://github.com/owendswang/ps5-aria2",
-    "display_name": "PS5 aria2",
-    "description": "aria2 for PS5",
-    "asset_pattern": "PS5-aria2",
-    "exclude": false
-  }
+    {
+        "asset_pattern": "tailscale",
+        "description": "Tailscale for jailbroken PS5: reach the console over your tailnet and stream to it with Moonlight/Sunshine (unofficial)",
+        "display_name": "PS5 Tailscale",
+        "exclude": false,
+        "url": "https://github.com/holdmysocks/ps5-tailscale"
+    },
+    {
+        "asset_pattern": "kstuff",
+        "description": "Kernel patcher for the full PS5 firmware range. Resolves kernel symbols at runtime via the SDK's NID table, so the same binary covers FW 1.00–12.x. Required by ShadowMountPlus and most other privileged payloads. Load this first.",
+        "display_name": "kstuff-lite (EchoStretch)",
+        "exclude": false,
+        "url": "https://github.com/echostretch/kstuff-lite"
+    },
+    {
+        "asset_pattern": "shadowmountplus",
+        "description": "Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen.",
+        "display_name": "ShadowMount+",
+        "exclude": false,
+        "url": "https://github.com/drakmor/shadowmountplus"
+    },
+    {
+        "description": "Long-running homebrew enabler with toolbox features. Faster app jailbreak than the on-the-fly path; provides the HijackerCommand IPC many homebrew apps expect on :9028.",
+        "display_name": "etaHEN",
+        "exclude": true,
+        "url": "https://github.com/etahen/etahen"
+    },
+    {
+        "asset_pattern": "ftpsrv-ps5\\.elf$",
+        "description": "Lightweight FTP server on :2121 with SELF/ELF auto-decryption and remount-RW SITE commands. Browse the PS5 filesystem from any FTP client.",
+        "display_name": "ftpsrv",
+        "exclude": false,
+        "url": "https://github.com/ps5-payload-dev/ftpsrv"
+    },
+    {
+        "asset_pattern": "ftpsrv-ps5\\.elf$",
+        "description": "drakmor's fork of ftpsrv.",
+        "display_name": "ftpsrv (drakmor)",
+        "exclude": false,
+        "url": "https://github.com/drakmor/ftpsrv"
+    },
+    {
+        "description": "HTTP server on :8080 serving a homebrew launcher page. Pairs with the homebrew bundles distributed by ps5-payload-dev.",
+        "display_name": "websrv",
+        "exclude": false,
+        "url": "https://github.com/ps5-payload-dev/websrv"
+    },
+    {
+        "description": "Telnet server on :2323 with 42 POSIX-ish commands plus hbldr (launch unsigned ELF with full A/V) and hbdbg (gdb-style debugger).",
+        "display_name": "shsrv",
+        "exclude": false,
+        "url": "https://github.com/ps5-payload-dev/shsrv"
+    },
+    {
+        "asset_pattern": "klogsrv-ps5\\.elf$",
+        "description": "Streams /dev/klog over TCP :3232 and tees it to /data/klog/klog.log (10-backup rotation).",
+        "display_name": "klogsrv",
+        "exclude": false,
+        "url": "https://github.com/ps5-payload-dev/klogsrv"
+    },
+    {
+        "description": "An ELF loader for jailbroken PS5s that accepts payloads on port 9021.",
+        "display_name": "elfldr",
+        "exclude": false,
+        "url": "https://github.com/ps5-payload-dev/elfldr"
+    },
+    {
+        "asset_pattern": "dumper",
+        "description": "Dumps installed PS5 apps to USB or internal storage in fakepkg/folder format. Reads config from /data/ps5-app-dumper/config.ini.",
+        "display_name": "ps5-app-dumper",
+        "exclude": false,
+        "url": "https://github.com/echostretch/ps5-app-dumper"
+    },
+    {
+        "asset_pattern": "nanodns.elf",
+        "description": "Minimal DNS server running on the PS5 (UDP :53). Blocks PlayStation Network + update domains by default and can redirect any domain to a LAN IP.",
+        "display_name": "nanoDNS",
+        "exclude": false,
+        "url": "https://github.com/drakmor/nanodns"
+    },
+    {
+        "asset_pattern": "ghostpad.elf",
+        "description": "Creates a virtual PS5 controller on the console and redirects input to it — useful for input automation, remote control, and accessibility setups. [moved to almhtar/Ghostpad; no release yet]",
+        "display_name": "Ghostpad",
+        "exclude": false,
+        "url": "https://github.com/almhtar/ghostpad"
+    },
+    {
+        "asset_pattern": "ezremote-dpi",
+        "description": "Long-lived loopback PKG install daemon (127.0.0.1:9040). Owns Sony's PlayGo/AppInstUtil install state machine so installs don't evaporate when the calling process exits.",
+        "display_name": "ezremote-DPI",
+        "exclude": false,
+        "url": "https://github.com/cy33hc/ps5-ezremote-dpi"
+    },
+    {
+        "description": "Loads and applies game cheats on the PS5. Send it like any other payload, then browse and toggle cheats for supported titles on the console.",
+        "display_name": "CheatRunner",
+        "exclude": false,
+        "url": "https://github.com/notmaj0r/cheatrunner"
+    },
+    {
+        "description": "Standalone homebrew jailbreak daemon for PS5. Mimics etaHEN's jailbreak-on-demand API. Multi-firmware (3.00 to 12.00). No etaHEN required. Upstream voidwhisper/lapy-jb-daemon on git.etawen.dev is offline; this GitHub mirror is the live source.",
+        "display_name": "Lapy JB Daemon",
+        "exclude": false,
+        "url": "https://github.com/itsplk/ps5-lapy-jb-daemon"
+    },
+    {
+        "description": "PS5 debugger payload — userland TCP wire-protocol server hosted inside SceShellCore.",
+        "display_name": "ps5debug-NG",
+        "exclude": false,
+        "url": "https://github.com/opensourcerer-dev/ps5debug-ng"
+    },
+    {
+        "asset_pattern": "zhttp",
+        "description": "Zero-copy FTP/HTTP server.",
+        "display_name": "zftpd",
+        "exclude": false,
+        "url": "https://github.com/seregonwar/zftpd"
+    },
+    {
+        "description": "A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5.",
+        "display_name": "ps5-payload-manager",
+        "exclude": false,
+        "url": "https://github.com/itsplk/ps5-payload-manager"
+    },
+    {
+        "description": "Linux payload implementing HV exploits to run a custom bootloader.",
+        "display_name": "ps5-linux-loader",
+        "exclude": false,
+        "url": "https://github.com/ps5-linux/ps5-linux-loader"
+    },
+    {
+        "description": "Lets you sideload system libraries into PS5 games.",
+        "display_name": "BackPork",
+        "exclude": false,
+        "url": "https://github.com/bestpig/backpork"
+    },
+    {
+        "asset_pattern": "garlic-worker-ps5",
+        "description": "Background worker that drains the community save-decryption queue from garlicsaves.com. Handles both PS4 and PS5 saves natively. Opt-in: connects to garlicsaves.com.",
+        "display_name": "Garlic Worker",
+        "exclude": false,
+        "url": "https://git.etawen.dev/earthonion/garlic-worker"
+    },
+    {
+        "description": "On-console save decrypt/encrypt daemon. Back up saves in plaintext, edit on PC, re-encrypt for the same console. No network.",
+        "display_name": "Garlic SaveMgr",
+        "exclude": false,
+        "url": "https://git.etawen.dev/earthonion/garlic-savemgr"
+    },
+    {
+        "asset_pattern": "np-fake-signin-ps5",
+        "description": "Headless payload that registers PS5 user slots directly via the system registry. Offline account activation without PSN. One-shot ELF: send, runs, exits.",
+        "display_name": "NP Fake Sign-in",
+        "exclude": false,
+        "url": "https://git.etawen.dev/earthonion/np-fake-signin"
+    },
+    {
+        "asset_pattern": "^web-file-mgr",
+        "description": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
+        "display_name": "PS5 Web File Manager",
+        "exclude": false,
+        "url": "https://github.com/owendswang/ps5-web-file-manager"
+    },
+    {
+        "description": "Game cheat trainer for jailbroken PS5. Apply in-game cheats and modifications to running titles; community-lite build distributed as a single payload.",
+        "display_name": "Kylin Core",
+        "exclude": false,
+        "url": "https://github.com/aydencharles/kylin-core-release"
+    },
+    {
+        "asset_pattern": "ps5-unified-autoloader",
+        "description": "Standalone ELF autoloader that reads autoload.txt from USB or /data and sends listed payloads to elfldr.",
+        "display_name": "PS5 Unified Autoloader",
+        "exclude": false,
+        "url": "https://github.com/itsplk/ps5-unified-autoloader"
+    },
+    {
+        "asset_pattern": "ps5-fan-control",
+        "description": "Standalone PS5 fan controller with a configurable target temperature.",
+        "display_name": "ps5-fan-control",
+        "exclude": false,
+        "url": "https://github.com/owendswang/ps5-fan-control"
+    },
+    {
+        "asset_pattern": "ghostcontrol",
+        "description": "USB HID controller patcher that injects third-party controller input into a virtual DualSense device.",
+        "display_name": "Ghostcontrol",
+        "exclude": false,
+        "url": "https://github.com/stonedmodder/ghostcontrol-ps5-usb-controller-patcher"
+    },
+    {
+        "asset_pattern": "pegasus_dl",
+        "description": "PS5 payload that serves a local web interface for downloading and installing game or application package data.",
+        "display_name": "pegasus-dl",
+        "exclude": false,
+        "url": "https://github.com/pegasus-ps5/pegasus-dl"
+    },
+    {
+        "asset_pattern": "sonic-loader",
+        "description": "Integrated web-based payload loader and management dashboard combining autoloading, cheat management, monitoring, file transfer, and file management.",
+        "display_name": "Sonic Loader",
+        "exclude": false,
+        "url": "https://git.earthonion.com/soniciso/sonicloader"
+    },
+    {
+        "asset_pattern": "elf-arsenal",
+        "description": "etaHEN-oriented payload bundle combining ELF loading, resource management, FTP, trophy tools, ShadowMountPlus, kstuff-lite, Linux loading, controller tools, fake sign-in, and a web UI.",
+        "display_name": "elf-arsenal",
+        "exclude": false,
+        "url": "https://git.earthonion.com/soniciso/elf-arsenal"
+    },
+    {
+        "asset_pattern": "singleDPI",
+        "description": "Standalone DPI payload accepting TCP 9090 JSON package-install requests and an experimental 12800 URL endpoint.",
+        "display_name": "singleDPI",
+        "exclude": false,
+        "url": "https://github.com/maxmilu/ps5-direct-package-installer"
+    },
+    {
+        "asset_pattern": "gdbsrv-ps5",
+        "description": "GDB remote debugging service payload for inspecting PS5 game processes.",
+        "display_name": "gdbsrv-ps5",
+        "exclude": false,
+        "url": "https://github.com/ps5-payload-dev/gdbsrv"
+    },
+    {
+        "asset_pattern": "^bfpilot\\.elf$",
+        "description": "Web-based PS5 file manager serving a browser interface on port 5905 for browsing and managing console files.",
+        "display_name": "BFpilot",
+        "exclude": false,
+        "url": "https://github.com/itsblurf/bfpilot"
+    },
+    {
+        "description": "A PS5 media and video player that also functions as a complete media library, with support for subtitles, multiple audio tracks, aspect-ratio adjustment, cropping, and many other playback settings.",
+        "display_name": "BFplayer",
+        "exclude": false,
+        "url": "https://github.com/itsblurf/bfplayer"
+    },
+    {
+        "asset_pattern": "^poords4rc\\d+\\.elf$",
+        "description": "Use a wireless DualShock 4 in native PS5 games on jailbroken consoles.",
+        "display_name": "PoorDS4",
+        "exclude": false,
+        "url": "https://github.com/itsblurf/poords4"
+    },
+    {
+        "asset_pattern": "^file-explorer\\.elf$",
+        "description": "BFpilot-derived web file manager for browsing and managing files on a jailbroken PS5.",
+        "display_name": "PS5 File Explorer",
+        "exclude": false,
+        "url": "https://github.com/juma-sayeh/ps5-file-explorer"
+    },
+    {
+        "asset_pattern": "^ps5upload-.*\\.elf$",
+        "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
+        "display_name": "PS5upload",
+        "exclude": false,
+        "url": "https://github.com/phantomptr/ps5upload"
+    },
+    {
+        "asset_pattern": "PS5_Console",
+        "description": "Web-based PS5 control center combining game mounting, save management, USB controller support, FTP, fan control, and ELF management.",
+        "display_name": "PS5 Console",
+        "exclude": false,
+        "url": "https://github.com/junleb/ps5console"
+    },
+    {
+        "asset_pattern": "unrar_ps5",
+        "description": "On-console archive extraction payload for 7z and RAR files, with configurable installation layouts.",
+        "display_name": "unrar_ps5",
+        "exclude": false,
+        "url": "https://github.com/bizkut/unrar-ps5"
+    },
+    {
+        "asset_pattern": "ps5-syslang-zh-Hans",
+        "description": "ShellUI language-switching payload for changing the PS5 system language, including on region-locked consoles.",
+        "display_name": "ps5-syslang",
+        "exclude": false,
+        "url": "https://github.com/owendswang/ps5-syslang"
+    },
+    {
+        "asset_pattern": "onionHEN",
+        "description": "OnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, in-game overlays, payload management, and background services.",
+        "display_name": "onionHEN",
+        "exclude": false,
+        "url": "https://github.com/aydencharles/onionhen"
+    },
+    {
+        "asset_pattern": "apr-emu-updater",
+        "description": "PS5 payload that keeps APR Emu up to date on installed titles, from a web interface on the console.",
+        "display_name": "APR Emu Updater",
+        "exclude": false,
+        "url": "https://github.com/tsuramatsu1/apr-emu-updater"
+    },
+    {
+        "asset_pattern": "PS5-aria2",
+        "description": "aria2 for PS5",
+        "display_name": "PS5 aria2",
+        "exclude": false,
+        "url": "https://github.com/owendswang/ps5-aria2"
+    }
 ]
