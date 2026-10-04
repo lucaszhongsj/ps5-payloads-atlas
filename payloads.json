@@ -235,12 +235,12 @@
     {
       "name": "Orbit Store",
       "filename": "orbit_store.elf",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.5.1/orbit_store.elf",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.6.0/orbit_store.elf",
       "description": "A modern PS5 download manager with resumable downloads and phone controls",
-      "version": "v0.5.1",
+      "version": "v0.6.0",
       "category": "Tools",
-      "checksum": "e3506c645a5c8c3fbc75981ecc00d7bf5cbc4f90bf3dddccf8fcd62b44cf8699",
-      "last_update": "2026-10-05 01:10:45 UTC+8",
+      "checksum": "71ae6b84b16461a07c9e883bf7e28829800022d08a7fde8d9815f3b7f2e3964b",
+      "last_update": "2026-10-05 02:30:38 UTC+8",
       "source": "https://github.com/saawant12/orbit-store-ps5"
     },
     {
