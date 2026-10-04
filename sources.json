@@ -7,6 +7,13 @@
         "url": "https://github.com/holdmysocks/ps5-tailscale"
     },
     {
+        "asset_pattern": "orbit_store",
+        "description": "A modern PS5 download manager with resumable downloads and phone controls",
+        "display_name": "Orbit Store",
+        "exclude": false,
+        "url": "https://github.com/saawant12/orbit-store-ps5"
+    },
+    {
         "asset_pattern": "kstuff",
         "description": "Kernel patcher for the full PS5 firmware range. Resolves kernel symbols at runtime via the SDK's NID table, so the same binary covers FW 1.00–12.x. Required by ShadowMountPlus and most other privileged payloads. Load this first.",
         "display_name": "kstuff-lite (EchoStretch)",
