@@ -233,6 +233,17 @@
       "source": "https://github.com/aydencharles/onionhen"
     },
     {
+      "name": "Orbit Store",
+      "filename": "orbit_store.elf",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.5.1/orbit_store.elf",
+      "description": "A modern PS5 download manager with resumable downloads and phone controls",
+      "version": "v0.5.1",
+      "category": "Tools",
+      "checksum": "e3506c645a5c8c3fbc75981ecc00d7bf5cbc4f90bf3dddccf8fcd62b44cf8699",
+      "last_update": "2026-10-05 01:10:45 UTC+8",
+      "source": "https://github.com/saawant12/orbit-store-ps5"
+    },
+    {
       "name": "pegasus-dl",
       "filename": "pegasus_dl.elf",
       "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.10.1/pegasus_dl.elf",
