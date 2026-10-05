@@ -278,13 +278,13 @@
     },
     {
       "name": "PS5 aria2",
-      "filename": "aria2-v1.37.0-2.elf",
-      "url": "https://github.com/owendswang/ps5-aria2/releases/download/v1.37.0-2/aria2-v1.37.0-2.elf",
+      "filename": "aria2-v1.37.0-3.elf",
+      "url": "https://github.com/owendswang/ps5-aria2/releases/download/v1.37.0-3/aria2-v1.37.0-3.elf",
       "description": "aria2 for PS5",
-      "version": "v1.37.0-2",
+      "version": "v1.37.0-3",
       "category": "Tools",
-      "checksum": "97486d1f9e557a8a98cedff88b628973da2b3a81bbff3b226ea98afdfc3d5e9d",
-      "last_update": "2026-10-04 02:13:23 UTC+8",
+      "checksum": "802d53a201545ea84a86c1a3bc2f9b84446a1d245ea11108b912116ffbc1a8a6",
+      "last_update": "2026-10-05 22:00:24 UTC+8",
       "source": "https://github.com/owendswang/ps5-aria2"
     },
     {
@@ -312,12 +312,12 @@
     {
       "name": "PS5 Tailscale",
       "filename": "tailscale.elf",
-      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.5.2/tailscale.elf",
+      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.6.0/tailscale.elf",
       "description": "Tailscale for jailbroken PS5: reach the console over your tailnet and stream to it with Moonlight/Sunshine (unofficial)",
-      "version": "v0.5.2",
+      "version": "v0.6.0",
       "category": "Tools",
-      "checksum": "c536b1a00d025a387a69e136804f501d857e04b8f76ff4a7f50e4617273ca0ca",
-      "last_update": "2026-10-04 22:45:10 UTC+8",
+      "checksum": "6f73be53ad09370f95a3c4ca4b96ddf193daaa70022f83511b0e352221b0d5cf",
+      "last_update": "2026-10-05 20:53:18 UTC+8",
       "source": "https://github.com/holdmysocks/ps5-tailscale"
     },
     {
