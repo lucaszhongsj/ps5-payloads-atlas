@@ -235,12 +235,12 @@
     {
       "name": "Orbit Store",
       "filename": "orbit_store.elf",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.6.1/orbit_store.elf",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.7.0/orbit_store.elf",
       "description": "A modern PS5 download manager with resumable downloads and phone controls",
-      "version": "v0.6.1",
+      "version": "v0.7.0",
       "category": "Tools",
-      "checksum": "cb548c8c39e45d6a1b72bb81f0b7c74d569fd050aafdd9ce163fa3ac8e738bc2",
-      "last_update": "2026-10-05 05:04:57 UTC+8",
+      "checksum": "12f9f3b7cb66ba45ae6ce3732781a4ae2ed3228f14d4f85fba0cebe6adfa2eb8",
+      "last_update": "2026-10-05 22:51:21 UTC+8",
       "source": "https://github.com/saawant12/orbit-store-ps5"
     },
     {
@@ -333,13 +333,13 @@
     },
     {
       "name": "PS5 Web File Manager",
-      "filename": "web-file-mgr-v1.9.elf",
-      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.9/web-file-mgr-v1.9.elf",
+      "filename": "web-file-mgr-v1.10.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.10/web-file-mgr-v1.10.elf",
       "description": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
-      "version": "v1.9",
+      "version": "v1.10",
       "category": "Files",
-      "checksum": "711cb076e887fcd55d973ade8b84bb6c22720be295bfde18e32761f6e0479a3e",
-      "last_update": "2026-09-16 12:09:18 UTC+8",
+      "checksum": "409145ec9a1c338ecb5f6f917c3b057c4ba48bfae2e86d621e19dda7ac129bd3",
+      "last_update": "2026-10-05 22:39:43 UTC+8",
       "source": "https://github.com/owendswang/ps5-web-file-manager"
     },
     {
@@ -410,13 +410,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-5.41.0.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.41.0/ps5upload-5.41.0.elf",
+      "filename": "ps5upload-6.1.0.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.1.0/ps5upload-6.1.0.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v5.41.0",
+      "version": "v6.1.0",
       "category": "Backup",
-      "checksum": "90db08434228a08554e06a949f26457fb25c9b607f126fa63616b8d261426dee",
-      "last_update": "2026-10-01 08:11:17 UTC+8",
+      "checksum": "39bb275892ad9f07dfd6da56de9467945b0c9dc839db877cd00d881aa60481e9",
+      "last_update": "2026-10-06 02:15:59 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
