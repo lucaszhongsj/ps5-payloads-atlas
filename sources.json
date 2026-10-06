@@ -28,10 +28,11 @@
         "url": "https://github.com/drakmor/shadowmountplus"
     },
     {
-        "description": "Long-running homebrew enabler with toolbox features. Faster app jailbreak than the on-the-fly path; provides the HijackerCommand IPC many homebrew apps expect on :9028.",
+        "asset_pattern": "etaHEN-11.00-13.60",
+        "description": "Unofficial etaHEN 2.5B unified PS5 11.00-13.60 port: Toolbox, plugins and PS4/PS5 FPS. Original etaHEN by LightningMods and contributors.",
         "display_name": "etaHEN",
-        "exclude": true,
-        "url": "https://github.com/etahen/etahen"
+        "exclude": false,
+        "url": "https://github.com/GronedWaffel/etahen-11.00-13.60"
     },
     {
         "asset_pattern": "ftpsrv-ps5\\.elf$",
