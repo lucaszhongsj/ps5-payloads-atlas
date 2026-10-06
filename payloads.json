@@ -69,11 +69,22 @@
     },
     {
       "name": "etaHEN",
+      "filename": "etaHEN-11.00-13.60.elf",
+      "url": "https://github.com/GronedWaffel/etahen-11.00-13.60/releases/download/v2.5B-unified.1/etaHEN-11.00-13.60.elf",
+      "description": "Unofficial etaHEN 2.5B unified PS5 11.00-13.60 port: Toolbox, plugins and PS4/PS5 FPS. Original etaHEN by LightningMods and contributors.",
+      "version": "v2.5B-unified.1",
+      "category": "Tools",
+      "checksum": "46c161473b27d12f1fa5e2d1d10466ce587db841ed9e8d71a219424d8fcf637f",
+      "last_update": "2026-10-06 00:00:19 UTC+8",
+      "source": "https://github.com/gronedwaffel/etahen-11.00-13.60"
+    },
+    {
+      "name": "etaHEN",
       "filename": "etaHEN-2.5B.bin",
       "url": "https://github.com/etaHEN/etaHEN/releases/download/2.5B/etaHEN-2.5B.bin",
-      "description": "Long-running homebrew enabler with toolbox features. Faster app jailbreak than the on-the-fly path; provides the HijackerCommand IPC many homebrew apps expect on :9028.",
+      "description": "AIO HEN payload",
       "version": "2.5B",
-      "category": "Kernel",
+      "category": "Tools",
       "checksum": "4845cac45095361b8983b14d6690622183b0dcfbf6d7fda16e161aa91ff0531e",
       "last_update": "2025-12-25 13:31:40 UTC+8",
       "source": "https://github.com/etahen/etahen"
@@ -410,13 +421,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-6.1.0.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.1.0/ps5upload-6.1.0.elf",
+      "filename": "ps5upload-6.1.1.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.1.1/ps5upload-6.1.1.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v6.1.0",
+      "version": "v6.1.1",
       "category": "Backup",
-      "checksum": "39bb275892ad9f07dfd6da56de9467945b0c9dc839db877cd00d881aa60481e9",
-      "last_update": "2026-10-06 02:15:59 UTC+8",
+      "checksum": "db3f750a1a0daecc9c6c25b85fadf47c1083185bd7e6a4f9628724382eee78c0",
+      "last_update": "2026-10-06 07:57:58 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
