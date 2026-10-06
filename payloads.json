@@ -246,12 +246,12 @@
     {
       "name": "Orbit Store",
       "filename": "orbit_store.elf",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.7.0/orbit_store.elf",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.8.0/orbit_store.elf",
       "description": "A modern PS5 download manager with resumable downloads and phone controls",
-      "version": "v0.7.0",
+      "version": "v0.8.0",
       "category": "Tools",
-      "checksum": "12f9f3b7cb66ba45ae6ce3732781a4ae2ed3228f14d4f85fba0cebe6adfa2eb8",
-      "last_update": "2026-10-05 22:51:21 UTC+8",
+      "checksum": "f8188366e1b6a36cf7ce1c3429df15a1d0fa69c2a93cb9cca36ea5a46cedbb4d",
+      "last_update": "2026-10-07 01:03:55 UTC+8",
       "source": "https://github.com/saawant12/orbit-store-ps5"
     },
     {
@@ -322,13 +322,13 @@
     },
     {
       "name": "PS5 Tailscale",
-      "filename": "tailscale.elf",
-      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.6.0/tailscale.elf",
+      "filename": "tailscale-0.6.1.elf",
+      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.6.1/tailscale-0.6.1.elf",
       "description": "Tailscale for jailbroken PS5: reach the console over your tailnet and stream to it with Moonlight/Sunshine (unofficial)",
-      "version": "v0.6.0",
+      "version": "v0.6.1",
       "category": "Tools",
-      "checksum": "6f73be53ad09370f95a3c4ca4b96ddf193daaa70022f83511b0e352221b0d5cf",
-      "last_update": "2026-10-05 20:53:18 UTC+8",
+      "checksum": "7ff2cb682531b47f022ad3c49932ede9b4f05dc0f45fb5c95bb47793797da385",
+      "last_update": "2026-10-07 06:34:40 UTC+8",
       "source": "https://github.com/holdmysocks/ps5-tailscale"
     },
     {
