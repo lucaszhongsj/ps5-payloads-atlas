@@ -14,6 +14,13 @@
         "url": "https://github.com/saawant12/orbit-store-ps5"
     },
     {
+        "asset_pattern": "game-compressor",
+        "description": "Standalone PS5 payload for compressing, unpacking, validating, and repairing ShadowMountPlus-mounted games",
+        "display_name": "PS5 Game Compressor",
+        "exclude": false,
+        "url": "https://github.com/gcoding97/PS5-Game-Compressor"
+    },
+    {
         "asset_pattern": "kstuff",
         "description": "Kernel patcher for the full PS5 firmware range. Resolves kernel symbols at runtime via the SDK's NID table, so the same binary covers FW 1.00–12.x. Required by ShadowMountPlus and most other privileged payloads. Load this first.",
         "display_name": "kstuff-lite (EchoStretch)",
