@@ -322,13 +322,13 @@
     },
     {
       "name": "PS5 Tailscale",
-      "filename": "tailscale-0.6.1.elf",
-      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.6.1/tailscale-0.6.1.elf",
+      "filename": "tailscale-0.7.1.elf",
+      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.1/tailscale-0.7.1.elf",
       "description": "Tailscale for jailbroken PS5: reach the console over your tailnet and stream to it with Moonlight/Sunshine (unofficial)",
-      "version": "v0.6.1",
+      "version": "v0.7.1",
       "category": "Tools",
-      "checksum": "7ff2cb682531b47f022ad3c49932ede9b4f05dc0f45fb5c95bb47793797da385",
-      "last_update": "2026-10-07 06:34:40 UTC+8",
+      "checksum": "af320493c8e2fc3443b8f42496ac11aa3db77b112e95777706d835eccd304cb9",
+      "last_update": "2026-10-07 07:46:38 UTC+8",
       "source": "https://github.com/holdmysocks/ps5-tailscale"
     },
     {
@@ -421,13 +421,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-6.1.2.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.1.2/ps5upload-6.1.2.elf",
+      "filename": "ps5upload-6.2.1.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.2.1/ps5upload-6.2.1.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v6.1.2",
+      "version": "v6.2.1",
       "category": "Backup",
-      "checksum": "1fdf0a79687a4a823dd7c331c267cf492f849bd2bc6666e2db496fc03e544162",
-      "last_update": "2026-10-06 10:51:32 UTC+8",
+      "checksum": "eb0bf3b9f5c0004cecc5e2c43dbd3d0749fa6e032a9a4b0343c115d79fb10a96",
+      "last_update": "2026-10-07 03:31:32 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
