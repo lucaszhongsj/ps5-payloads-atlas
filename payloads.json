@@ -321,6 +321,17 @@
       "source": "https://github.com/juma-sayeh/ps5-file-explorer"
     },
     {
+      "name": "PS5 Game Compressor",
+      "filename": "game-compressor.elf",
+      "url": "https://github.com/gcoding97/PS5-Game-Compressor/releases/download/v1.1.1/game-compressor.elf",
+      "description": "Standalone PS5 payload for compressing, unpacking, validating, and repairing ShadowMountPlus-mounted games",
+      "version": "v1.1.1",
+      "category": "Installer",
+      "checksum": "5fec05b8a3cb89bafbc97970d5d68d9f31e6fcde873b5523243890e50836592b",
+      "last_update": "2026-10-02 14:39:43 UTC+8",
+      "source": "https://github.com/gcoding97/ps5-game-compressor"
+    },
+    {
       "name": "PS5 Tailscale",
       "filename": "tailscale-0.7.1.elf",
       "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.1/tailscale-0.7.1.elf",
@@ -421,13 +432,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-6.2.3.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.2.3/ps5upload-6.2.3.elf",
+      "filename": "ps5upload-6.3.1.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.3.1/ps5upload-6.3.1.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v6.2.3",
+      "version": "v6.3.1",
       "category": "Backup",
-      "checksum": "19c0455f2e460badba95021501468dd7b06d3b8b3baa0348c7d3bc777d4c5f74",
-      "last_update": "2026-10-07 15:30:57 UTC+8",
+      "checksum": "2ff17e8096fa06c36fe27f4ea28d750733a9d10677ae6c566fd851f07da6b136",
+      "last_update": "2026-10-08 01:02:09 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
