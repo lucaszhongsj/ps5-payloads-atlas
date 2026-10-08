@@ -21,6 +21,13 @@
         "url": "https://github.com/gcoding97/PS5-Game-Compressor"
     },
     {
+        "asset_pattern": "HearBridge-PS5",
+        "description": "Bluetooth A2DP audio bridge for PS5 homebrew",
+        "display_name": "HearBridge PS5",
+        "exclude": false,
+        "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5"
+    },
+    {
         "asset_pattern": "kstuff",
         "description": "Kernel patcher for the full PS5 firmware range. Resolves kernel symbols at runtime via the SDK's NID table, so the same binary covers FW 1.00–12.x. Required by ShadowMountPlus and most other privileged payloads. Load this first.",
         "display_name": "kstuff-lite (EchoStretch)",
