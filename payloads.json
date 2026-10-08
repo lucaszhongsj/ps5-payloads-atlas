@@ -156,6 +156,17 @@
       "source": "https://github.com/ps5-payload-dev/gdbsrv"
     },
     {
+      "name": "HearBridge PS5",
+      "filename": "HearBridge-PS5-1.0.2.elf",
+      "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.0.2/HearBridge-PS5-1.0.2.elf",
+      "description": "Bluetooth A2DP audio bridge for PS5 homebrew",
+      "version": "v1.0.2",
+      "category": "Tools",
+      "checksum": "02a00da62602bde14001dad730e21ca251a3867c6ed351b31a9b7a3f1c9813a6",
+      "last_update": "2026-10-08 11:26:57 UTC+8",
+      "source": "https://github.com/x-f1reball-x/hearbridge-ps5"
+    },
+    {
       "name": "klogsrv",
       "filename": "klogsrv-ps5.elf",
       "url": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps5.elf",
