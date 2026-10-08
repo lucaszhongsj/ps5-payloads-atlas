@@ -498,13 +498,13 @@
     },
     {
       "name": "WebKit Autoloader (installer)",
-      "filename": "webkit-autoloader-installer_v0.6.0.elf",
-      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0/webkit-autoloader-installer_v0.6.0.elf",
+      "filename": "webkit-autoloader-installer_v0.6.1.elf",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf",
       "description": "Installs an autoloader reachable from the PS5's own web browser, so payloads can be launched from the console without sending them from a PC every time. One-shot installer ELF: send it, it installs, it exits. Run it after your kernel exploit, like any other payload.",
-      "version": "v0.6.0",
+      "version": "v0.6.1",
       "category": "Kernel",
-      "checksum": "b4dc090ea7f22529d507e684909ab4524a21a6a26777a425bf787dbffc5b419c",
-      "last_update": "2026-10-08 16:10:41 UTC+8",
+      "checksum": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f",
+      "last_update": "2026-10-09 00:06:48 UTC+8",
       "source": "https://github.com/itsplk/ps5-webkit-autoloader"
     },
     {
