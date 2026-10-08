@@ -246,12 +246,12 @@
     {
       "name": "Orbit Store",
       "filename": "orbit_store.elf",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.9.0/orbit_store.elf",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.9.1/orbit_store.elf",
       "description": "A modern PS5 download manager with resumable downloads and phone controls",
-      "version": "v0.9.0",
+      "version": "v0.9.1",
       "category": "Tools",
-      "checksum": "aeef769d81507157837a017886a72c169ee7acb472e7c029a1d5e830735762df",
-      "last_update": "2026-10-08 04:19:11 UTC+8",
+      "checksum": "a7ff23dfc0ed5cd7d5c4b05c7e0c0a4e1ea2ee2c91742e00d754122917f8f318",
+      "last_update": "2026-10-08 18:03:46 UTC+8",
       "source": "https://github.com/saawant12/orbit-store-ps5"
     },
     {
@@ -432,13 +432,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-6.3.1.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.3.1/ps5upload-6.3.1.elf",
+      "filename": "ps5upload-6.4.0.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.4.0/ps5upload-6.4.0.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v6.3.1",
+      "version": "v6.4.0",
       "category": "Backup",
-      "checksum": "2ff17e8096fa06c36fe27f4ea28d750733a9d10677ae6c566fd851f07da6b136",
-      "last_update": "2026-10-08 01:02:09 UTC+8",
+      "checksum": "b0392932ae957821fbaccee44d761a9320655995ccfa80c9ffdcc5cec2497f70",
+      "last_update": "2026-10-08 09:21:45 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
@@ -487,13 +487,13 @@
     },
     {
       "name": "WebKit Autoloader (installer)",
-      "filename": "webkit-autoloader-installer_v0.5.2.elf",
-      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.5.2/webkit-autoloader-installer_v0.5.2.elf",
+      "filename": "webkit-autoloader-installer_v0.6.0.elf",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0/webkit-autoloader-installer_v0.6.0.elf",
       "description": "Installs an autoloader reachable from the PS5's own web browser, so payloads can be launched from the console without sending them from a PC every time. One-shot installer ELF: send it, it installs, it exits. Run it after your kernel exploit, like any other payload.",
-      "version": "v0.5.2",
+      "version": "v0.6.0",
       "category": "Kernel",
-      "checksum": "f990e48e8330231d2066a7b8ab6dc25fda83b2cc36cb426c472b35b33767451a",
-      "last_update": "2026-10-01 02:15:16 UTC+8",
+      "checksum": "b4dc090ea7f22529d507e684909ab4524a21a6a26777a425bf787dbffc5b419c",
+      "last_update": "2026-10-08 16:10:41 UTC+8",
       "source": "https://github.com/itsplk/ps5-webkit-autoloader"
     },
     {
