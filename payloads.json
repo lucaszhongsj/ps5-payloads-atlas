@@ -135,13 +135,13 @@
     },
     {
       "name": "HearBridge PS5",
-      "filename": "HearBridge-PS5-1.0.2.elf",
-      "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.0.2/HearBridge-PS5-1.0.2.elf",
+      "filename": "HearBridge-PS5-1.1.0.elf",
+      "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.1.0/HearBridge-PS5-1.1.0.elf",
       "description": "Bluetooth A2DP audio bridge for PS5 homebrew",
-      "version": "v1.0.2",
+      "version": "v1.1.0",
       "category": "Tools",
-      "checksum": "02a00da62602bde14001dad730e21ca251a3867c6ed351b31a9b7a3f1c9813a6",
-      "last_update": "2026-10-08 11:26:57 UTC+8",
+      "checksum": "ab08b891ec8fc73306bbe4b640df7db44c9ffd3ab8988c036745d4dda70db026",
+      "last_update": "2026-10-09 14:03:53 UTC+8",
       "source": "https://github.com/x-f1reball-x/hearbridge-ps5"
     },
     {
