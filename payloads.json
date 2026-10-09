@@ -123,28 +123,6 @@
       "source": "https://github.com/drakmor/ftpsrv"
     },
     {
-      "name": "Garlic SaveMgr",
-      "filename": "garlic-savemgr.elf",
-      "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.13.1/garlic-savemgr.elf",
-      "description": "On-console save decrypt/encrypt daemon. Back up saves in plaintext, edit on PC, re-encrypt for the same console. No network.",
-      "version": "v1.13.1",
-      "category": "Backup",
-      "checksum": "",
-      "last_update": "2026-09-19 10:28:52 UTC+8",
-      "source": "https://git.etawen.dev/earthonion/garlic-savemgr"
-    },
-    {
-      "name": "Garlic Worker",
-      "filename": "garlic-worker-ps5.elf",
-      "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.1.7/garlic-worker-ps5.elf",
-      "description": "Background worker that drains the community save-decryption queue from garlicsaves.com. Handles both PS4 and PS5 saves natively. Opt-in: connects to garlicsaves.com.",
-      "version": "v1.1.7",
-      "category": "Backup",
-      "checksum": "",
-      "last_update": "2026-09-04 20:49:28 UTC+8",
-      "source": "https://git.etawen.dev/earthonion/garlic-worker"
-    },
-    {
       "name": "gdbsrv-ps5",
       "filename": "gdbsrv-ps5.elf",
       "url": "https://github.com/ps5-payload-dev/gdbsrv/releases/download/v0.9/gdbsrv-ps5.elf",
@@ -233,17 +211,6 @@
       "source": "https://github.com/drakmor/nanodns"
     },
     {
-      "name": "NP Fake Sign-in",
-      "filename": "np-fake-signin-ps5.elf",
-      "url": "https://git.etawen.dev/earthonion/np-fake-signin/releases/download/v1.4/np-fake-signin-ps5.elf",
-      "description": "Headless payload that registers PS5 user slots directly via the system registry. Offline account activation without PSN. One-shot ELF: send, runs, exits.",
-      "version": "v1.4",
-      "category": "Tools",
-      "checksum": "",
-      "last_update": "2026-10-02 08:58:43 UTC+8",
-      "source": "https://git.etawen.dev/earthonion/np-fake-signin"
-    },
-    {
       "name": "onionHEN",
       "filename": "OnionHEN.elf",
       "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.0.13/OnionHEN.elf",
@@ -257,12 +224,12 @@
     {
       "name": "Orbit Store",
       "filename": "orbit_store.elf",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.9.1/orbit_store.elf",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.0.0/orbit_store.elf",
       "description": "A modern PS5 download manager with resumable downloads and phone controls",
-      "version": "v0.9.1",
+      "version": "v1.0.0",
       "category": "Tools",
-      "checksum": "a7ff23dfc0ed5cd7d5c4b05c7e0c0a4e1ea2ee2c91742e00d754122917f8f318",
-      "last_update": "2026-10-08 18:03:46 UTC+8",
+      "checksum": "8ac8d13e3855e29456205992cebe9fa1604dae0509a6ec20198076560f2a93a0",
+      "last_update": "2026-10-09 05:30:22 UTC+8",
       "source": "https://github.com/saawant12/orbit-store-ps5"
     },
     {
@@ -278,13 +245,13 @@
     },
     {
       "name": "PKG-Manager",
-      "filename": "pkg-manager_v1.4.1.elf",
-      "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.4.1/pkg-manager_v1.4.1.elf",
+      "filename": "pkg-manager_v1.5.0.elf",
+      "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.5.0/pkg-manager_v1.5.0.elf",
       "description": "Browse and install PKGs from USB, disc, or SMB shares directly on your PS5",
-      "version": "v1.4.1",
+      "version": "v1.5.0",
       "category": "Installer",
-      "checksum": "09adaff13b858bb3db519faaea673ee3fa67298081e608d32f6501ed6e9f706e",
-      "last_update": "2026-09-27 09:32:58 UTC+8",
+      "checksum": "fb29a0e3c058cd69e00320668db57704207b827b92b92e0cd23fb5fe7fe1429d",
+      "last_update": "2026-10-09 05:14:26 UTC+8",
       "source": "https://github.com/itsplk/ps5-pkg-manager"
     },
     {
@@ -297,6 +264,17 @@
       "checksum": "e1b9f257f51678a977edaeafd4ca1f8a03e9df0afda7d5dd84435841fa20795d",
       "last_update": "2026-09-30 09:01:16 UTC+8",
       "source": "https://github.com/itsblurf/poords4"
+    },
+    {
+      "name": "ps-patch-system",
+      "filename": "patch-bundle-orbis.elf",
+      "url": "https://github.com/illusionyy/ps-patch-system/releases/download/37549880588/patch-bundle-orbis.elf",
+      "description": "App patching system",
+      "version": "37549880588",
+      "category": "Tools",
+      "checksum": "c5a09ad7d5a62537fdd92e2bb1a021103c80782e39181fe71ce7d16a39629b43",
+      "last_update": "2026-10-07 08:07:05 UTC+8",
+      "source": "https://github.com/illusionyy/ps-patch-system"
     },
     {
       "name": "PS5 aria2",
@@ -443,13 +421,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-6.5.0.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.5.0/ps5upload-6.5.0.elf",
+      "filename": "ps5upload-6.5.1.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.5.1/ps5upload-6.5.1.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v6.5.0",
+      "version": "v6.5.1",
       "category": "Backup",
-      "checksum": "af6aac4acc7776909124eba6b737a9119e587364eeb1f63f9a4382589a8e0b56",
-      "last_update": "2026-10-09 01:24:31 UTC+8",
+      "checksum": "c1f924b6ccddde28a132f56aab4b30628bd79cbb98be6e9566d9768fbac93c3a",
+      "last_update": "2026-10-09 03:35:28 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
@@ -537,6 +515,18 @@
     },
     {
       "url": "https://git.earthonion.com/soniciso/sonicloader",
+      "reason": "no release with .elf/.bin asset, or repo unreachable"
+    },
+    {
+      "url": "https://git.etawen.dev/earthonion/garlic-savemgr",
+      "reason": "no release with .elf/.bin asset, or repo unreachable"
+    },
+    {
+      "url": "https://git.etawen.dev/earthonion/garlic-worker",
+      "reason": "no release with .elf/.bin asset, or repo unreachable"
+    },
+    {
+      "url": "https://git.etawen.dev/earthonion/np-fake-signin",
       "reason": "no release with .elf/.bin asset, or repo unreachable"
     },
     {
