@@ -268,12 +268,12 @@
     {
       "name": "pegasus-dl",
       "filename": "pegasus_dl.elf",
-      "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.10.1/pegasus_dl.elf",
+      "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.11.0/pegasus_dl.elf",
       "description": "PS5 payload that serves a local web interface for downloading and installing game or application package data.",
-      "version": "v1.10.1",
+      "version": "v1.11.0",
       "category": "Installer",
-      "checksum": "b24fdc62fc6cad14684b214a9c5be6c1221585afbf9493e387ab90f9dee21138",
-      "last_update": "2026-09-30 18:06:45 UTC+8",
+      "checksum": "32b69c2089bb545abfabd04d5827444698f9c4f1bc4915d72247cb781e8c23d9",
+      "last_update": "2026-10-10 06:57:31 UTC+8",
       "source": "https://github.com/pegasus-ps5/pegasus-dl"
     },
     {
@@ -454,13 +454,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-6.7.0.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.7.0/ps5upload-6.7.0.elf",
+      "filename": "ps5upload-6.7.3.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.7.3/ps5upload-6.7.3.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v6.7.0",
+      "version": "v6.7.3",
       "category": "Backup",
-      "checksum": "37b5bd387013539c7e951edd363d9118acbeb24b0ef55137ed351422e52bb749",
-      "last_update": "2026-10-10 01:06:29 UTC+8",
+      "checksum": "468740692643ecef083da7d761169c09accec4f43b199a64df9c394ecd6b5df3",
+      "last_update": "2026-10-10 04:54:45 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
