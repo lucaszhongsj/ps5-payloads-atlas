@@ -28,6 +28,13 @@
         "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5"
     },
     {
+        "asset_pattern": "keepawake_ps5",
+        "description": "A PS5 and PS4 payload that stops the console from going into rest mode while it runs.",
+        "display_name": "KeepAwake",
+        "exclude": false,
+        "url": "https://github.com/mortyzip/KeepAwake"
+    },
+    {
         "asset_pattern": "kstuff",
         "description": "Kernel patcher for the full PS5 firmware range. Resolves kernel symbols at runtime via the SDK's NID table, so the same binary covers FW 1.00–12.x. Required by ShadowMountPlus and most other privileged payloads. Load this first.",
         "display_name": "kstuff-lite (EchoStretch)",
