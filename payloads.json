@@ -59,12 +59,12 @@
     {
       "name": "CheatRunner",
       "filename": "CheatRunner.elf",
-      "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17.2/CheatRunner.elf",
+      "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.18/CheatRunner.elf",
       "description": "Loads and applies game cheats on the PS5. Send it like any other payload, then browse and toggle cheats for supported titles on the console.",
-      "version": "v0.17.2",
+      "version": "v0.18",
       "category": "Tools",
-      "checksum": "36ad03e236e6603aaaf05d95ed3399c7b54475a9bceba085cbe02899bc88ae0f",
-      "last_update": "2026-10-02 02:02:13 UTC+8",
+      "checksum": "4ae1ea4e37b2e67d5487355ddf671f166861ed6dceea348c048ad060770c0140",
+      "last_update": "2026-10-11 02:01:49 UTC+8",
       "source": "https://github.com/notmaj0r/cheatrunner"
     },
     {
@@ -279,12 +279,12 @@
     {
       "name": "Orbit Store",
       "filename": "orbit_store.elf",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.0.5/orbit_store.elf",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.1.0/orbit_store.elf",
       "description": "A modern PS5 download manager with resumable downloads and phone controls",
-      "version": "v1.0.5",
+      "version": "v1.1.0",
       "category": "Tools",
-      "checksum": "7883cf64b62252594d58e5558ea29f8de7ed3ca1d9a3182c844f23513eaf7617",
-      "last_update": "2026-10-09 23:59:12 UTC+8",
+      "checksum": "e7afcd24678828436efc3aa3d58bb88cd0165f7dc39e72fb1ae60cf64037b986",
+      "last_update": "2026-10-11 05:04:16 UTC+8",
       "source": "https://github.com/saawant12/orbit-store-ps5"
     },
     {
@@ -476,24 +476,24 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-6.8.1.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.8.1/ps5upload-6.8.1.elf",
+      "filename": "ps5upload-6.8.2.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.8.2/ps5upload-6.8.2.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v6.8.1",
+      "version": "v6.8.2",
       "category": "Backup",
-      "checksum": "4593fcbd6169b67a4dcbfda8f13b0f0485b9ac93adff19ab515957e2c1fa397b",
-      "last_update": "2026-10-10 20:12:04 UTC+8",
+      "checksum": "e9cb922ea48f3e8007aefd2862c2d41dd522eea11a92c846b136333ab37e9e0d",
+      "last_update": "2026-10-11 01:18:38 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
       "name": "ShadowMount+",
       "filename": "shadowmountplus.elf",
-      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta5/shadowmountplus.elf",
+      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7-beta5fix1/shadowmountplus.elf",
       "description": "Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen.",
-      "version": "1.7beta5",
+      "version": "1.7-beta5fix1",
       "category": "Installer",
-      "checksum": "0d54a8467ec3544e1c7b365c9f100b2bf42bf4633cb768bde7c8f16b6cfb5375",
-      "last_update": "2026-10-11 00:12:16 UTC+8",
+      "checksum": "e85fd63b705498488f39c09c9aea6f9fa22e0df2e932865de49a8cedf25172d5",
+      "last_update": "2026-10-11 02:36:33 UTC+8",
       "source": "https://github.com/drakmor/shadowmountplus"
     },
     {
