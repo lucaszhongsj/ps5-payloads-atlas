@@ -2,6 +2,17 @@
   "name": "lucaszhongsj/ps5-payloads-atlas",
   "payloads": [
     {
+      "name": "AnyPad PS5",
+      "filename": "AnyPad-PS5-0.8.1-beta.elf",
+      "url": "https://codeberg.org/elmonomalva0/Any-Pad-ps5/releases/download/v0.8.1-beta/AnyPad-PS5-0.8.1-beta.elf",
+      "description": "A Bluetooth controller bridge for jailbroken PS5 consoles. Un puente de mandos Bluetooth para PS5 con jailbreak.",
+      "version": "v0.8.1-beta",
+      "category": "Kernel",
+      "checksum": "",
+      "last_update": "2026-10-10 05:59:55 UTC+8",
+      "source": "https://codeberg.org/elmonomalva0/any-pad-ps5"
+    },
+    {
       "name": "APR Emu Updater",
       "filename": "apr_emu_updater_v2.0.6.elf",
       "url": "https://github.com/tsuramatsu1/apr-emu-updater/releases/download/v2.0.6/apr_emu_updater_v2.0.6.elf",
@@ -244,6 +255,17 @@
       "source": "https://github.com/itsplk/ps5-lapy-jb-daemon"
     },
     {
+      "name": "LZ4 Compression (theghostonline)",
+      "filename": "lz4-compression.elf",
+      "url": "https://github.com/theghostonline/PS5-LZ4-Compression/releases/download/v1.4.2/lz4-compression.elf",
+      "description": "Shrinks a game that is already on the PS5 by LZ4-packing its AMPR assets, entirely on the console: the game never leaves it. Works on folder games and on mounted .exfat/.ffpfs images, packs in place with rollback, verifies every file, and can undo. Needs ShadowMount+ for image sources. Open its page on port 5920 from the Connection screen's scene tools once it is running. ps5upload's Convert does the same packing on this computer when the game is here instead.",
+      "version": "v1.4.2",
+      "category": "Installer",
+      "checksum": "a4ec1695a2d7baa666da746649e1e4a49056ef53c7502455a7bad1e55f563511",
+      "last_update": "2026-10-12 01:55:48 UTC+8",
+      "source": "https://github.com/theghostonline/ps5-lz4-compression"
+    },
+    {
       "name": "nanoDNS",
       "filename": "nanodns.elf",
       "url": "https://github.com/drakmor/nanoDNS/releases/download/0.4/nanodns.elf",
@@ -476,13 +498,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.0.8.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.8/ps5upload-7.0.8.elf",
+      "filename": "ps5upload-7.0.10.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.10/ps5upload-7.0.10.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.0.8",
+      "version": "v7.0.10",
       "category": "Backup",
-      "checksum": "085d27825a78bb2066c334506791e2a85e12240c0710db1e649e4bf15f8f4aa4",
-      "last_update": "2026-10-11 18:14:33 UTC+8",
+      "checksum": "265cb3d2ed90a29a721a137b6877e680007c7f6041dfe324822c5b260eadc67f",
+      "last_update": "2026-10-12 02:56:07 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
