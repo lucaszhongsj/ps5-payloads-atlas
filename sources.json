@@ -28,6 +28,13 @@
         "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5"
     },
     {
+        "asset_pattern": "AnyPad-PS5",
+        "description": "A Bluetooth controller bridge for jailbroken PS5 consoles. Un puente de mandos Bluetooth para PS5 con jailbreak.",
+        "display_name": "AnyPad PS5",
+        "exclude": false,
+        "url": "https://codeberg.org/elmonomalva0/Any-Pad-ps5"
+    },
+    {
         "asset_pattern": "keepawake_ps5",
         "description": "A PS5 and PS4 payload that stops the console from going into rest mode while it runs.",
         "display_name": "KeepAwake",
