@@ -173,15 +173,16 @@
         "url": "https://git.etawen.dev/earthonion/garlic-worker"
     },
     {
-        "description": "On-console save decrypt/encrypt daemon. Back up saves in plaintext, edit on PC, re-encrypt for the same console. No network.",
-        "display_name": "Garlic SaveMgr",
+        "asset_pattern": "garlic-savemgr",
+        "description": "PS5 save decrypt/encrypt/browse with embedded web UI.",
+        "display_name": "Garlic SaveMgr for PS5",
         "exclude": false,
         "url": "https://git.etawen.dev/earthonion/garlic-savemgr"
     },
     {
         "asset_pattern": "np-fake-signin-ps5",
-        "description": "Headless payload that registers PS5 user slots directly via the system registry. Offline account activation without PSN. One-shot ELF: send, runs, exits.",
-        "display_name": "NP Fake Sign-in",
+        "description": "ELF payload for PS4/PS5 that fakes PSN sign-in for the foreground user by writing NP files and patching registry/ShellCore state.",
+        "display_name": "NP Fake Signin",
         "exclude": false,
         "url": "https://git.etawen.dev/earthonion/np-fake-signin"
     },
