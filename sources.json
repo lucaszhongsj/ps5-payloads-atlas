@@ -71,10 +71,17 @@
     },
     {
         "asset_pattern": "ftpsrv-ps5\\.elf$",
-        "description": "drakmor's fork of ftpsrv.",
+        "description": "A simple FTP server for jailbroken PS4s and PS5s",
         "display_name": "ftpsrv (drakmor)",
         "exclude": false,
         "url": "https://github.com/drakmor/ftpsrv"
+    },
+    {
+        "asset_pattern": "ftpsrv-ps5\\.elf$",
+        "description": "This is a simple FTP server that can be executed on a Playstation 4 or Playstation 5 that has been jailbroken and is running an ELF loader. The FTP server accepts connection on port 2121.",
+        "display_name": "Ftpsrv Streamextract",
+        "exclude": false,
+        "url": "https://github.com/RuiNelson/ftpsrv-streamextract"
     },
     {
         "description": "HTTP server on :8080 serving a homebrew launcher page. Pairs with the homebrew bundles distributed by ps5-payload-dev.",
@@ -291,5 +298,5 @@
         "display_name": "pLinux5-NG",
         "exclude": false,
         "url": "https://github.com/pLabs5/pLinux5-NG"
-    },
+    }
 ]
