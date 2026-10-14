@@ -7,11 +7,11 @@
         "url": "https://github.com/holdmysocks/ps5-tailscale"
     },
     {
-        "asset_pattern": "orbit_store",
-        "description": "A modern PS5 download manager with resumable downloads and phone controls",
-        "display_name": "Orbit Store",
+        "asset_pattern": "ps4mount",
+        "description": "Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal storage or PS5 formatted USB storage",
+        "display_name": "PS4Mount",
         "exclude": false,
-        "url": "https://github.com/saawant12/orbit-store-ps5"
+        "url": "https://github.com/gasb07/ps4mount"
     },
     {
         "asset_pattern": "game-compressor",
@@ -42,6 +42,13 @@
         "url": "https://github.com/mortyzip/KeepAwake"
     },
     {
+        "asset_pattern": "onionHEN",
+        "description": "OnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, in-game overlays, payload management, and background services.",
+        "display_name": "onionHEN",
+        "exclude": false,
+        "url": "https://github.com/aydencharles/onionhen"
+    },
+    {
         "asset_pattern": "kstuff",
         "description": "Kernel patcher for the full PS5 firmware range. Resolves kernel symbols at runtime via the SDK's NID table, so the same binary covers FW 1.00–12.x. Required by ShadowMountPlus and most other privileged payloads. Load this first.",
         "display_name": "kstuff-lite (EchoStretch)",
@@ -61,13 +68,6 @@
         "display_name": "etaHEN",
         "exclude": false,
         "url": "https://github.com/GronedWaffel/etahen-11.00-13.60"
-    },
-    {
-        "asset_pattern": "ftpsrv-ps5\\.elf$",
-        "description": "Lightweight FTP server on :2121 with SELF/ELF auto-decryption and remount-RW SITE commands. Browse the PS5 filesystem from any FTP client.",
-        "display_name": "ftpsrv",
-        "exclude": false,
-        "url": "https://github.com/ps5-payload-dev/ftpsrv"
     },
     {
         "asset_pattern": "ftpsrv-ps5\\.elf$",
@@ -102,13 +102,6 @@
         "url": "https://github.com/ps5-payload-dev/elfldr"
     },
     {
-        "asset_pattern": "dumper",
-        "description": "Dumps installed PS5 apps to USB or internal storage in fakepkg/folder format. Reads config from /data/ps5-app-dumper/config.ini.",
-        "display_name": "ps5-app-dumper",
-        "exclude": false,
-        "url": "https://github.com/echostretch/ps5-app-dumper"
-    },
-    {
         "asset_pattern": "nanodns.elf",
         "description": "Minimal DNS server running on the PS5 (UDP :53). Blocks PlayStation Network + update domains by default and can redirect any domain to a LAN IP.",
         "display_name": "nanoDNS",
@@ -116,30 +109,10 @@
         "url": "https://github.com/drakmor/nanodns"
     },
     {
-        "asset_pattern": "ghostpad.elf",
-        "description": "Creates a virtual PS5 controller on the console and redirects input to it — useful for input automation, remote control, and accessibility setups. [moved to almhtar/Ghostpad; no release yet]",
-        "display_name": "Ghostpad",
-        "exclude": false,
-        "url": "https://github.com/almhtar/ghostpad"
-    },
-    {
-        "asset_pattern": "ezremote-dpi",
-        "description": "Long-lived loopback PKG install daemon (127.0.0.1:9040). Owns Sony's PlayGo/AppInstUtil install state machine so installs don't evaporate when the calling process exits.",
-        "display_name": "ezremote-DPI",
-        "exclude": false,
-        "url": "https://github.com/cy33hc/ps5-ezremote-dpi"
-    },
-    {
         "description": "Loads and applies game cheats on the PS5. Send it like any other payload, then browse and toggle cheats for supported titles on the console.",
         "display_name": "CheatRunner",
         "exclude": false,
         "url": "https://github.com/notmaj0r/cheatrunner"
-    },
-    {
-        "description": "Standalone homebrew jailbreak daemon for PS5. Mimics etaHEN's jailbreak-on-demand API. Multi-firmware (3.00 to 12.00). No etaHEN required. Upstream voidwhisper/lapy-jb-daemon on git.etawen.dev is offline; this GitHub mirror is the live source.",
-        "display_name": "Lapy JB Daemon",
-        "exclude": false,
-        "url": "https://github.com/itsplk/ps5-lapy-jb-daemon"
     },
     {
         "description": "PS5 debugger payload — userland TCP wire-protocol server hosted inside SceShellCore.",
@@ -167,12 +140,6 @@
         "url": "https://github.com/ps5-linux/ps5-linux-loader"
     },
     {
-        "description": "Lets you sideload system libraries into PS5 games.",
-        "display_name": "BackPork",
-        "exclude": false,
-        "url": "https://github.com/bestpig/backpork"
-    },
-    {
         "asset_pattern": "garlic-worker-ps5",
         "description": "Background worker that drains the community save-decryption queue from garlicsaves.com. Handles both PS4 and PS5 saves natively. Opt-in: connects to garlicsaves.com.",
         "display_name": "Garlic Worker",
@@ -194,24 +161,32 @@
         "url": "https://git.etawen.dev/earthonion/np-fake-signin"
     },
     {
-        "asset_pattern": "^web-file-mgr",
+        "asset_pattern": "web-file-mgr",
         "description": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
         "display_name": "PS5 Web File Manager",
         "exclude": false,
         "url": "https://github.com/owendswang/ps5-web-file-manager"
     },
     {
-        "description": "Game cheat trainer for jailbroken PS5. Apply in-game cheats and modifications to running titles; community-lite build distributed as a single payload.",
+        "asset_pattern": "wfm-7zip-helper",
+        "description": "A separate extraction helper for PS5 Web File Manager. It uses 7-Zip's native archive handlers and runs as an independent PS5 payload.",
+        "display_name": "WFM 7-Zip Helper",
+        "exclude": false,
+        "url": "https://github.com/owendswang/wfm-7zip-helper"
+    },
+    {
+        "asset_pattern": "kylin-core",
+        "description": "A homebrew cheat loader and real-time game modifier for PlayStation 5",
         "display_name": "Kylin Core",
         "exclude": false,
         "url": "https://github.com/aydencharles/kylin-core-release"
     },
     {
-        "asset_pattern": "ps5-unified-autoloader",
-        "description": "Standalone ELF autoloader that reads autoload.txt from USB or /data and sends listed payloads to elfldr.",
-        "display_name": "PS5 Unified Autoloader",
+        "asset_pattern": "webkit-autoloader-installer",
+        "description": "Automatically loads the WebKit exploit and your elf payloads.",
+        "display_name": "PS5 WebKit Autoloader",
         "exclude": false,
-        "url": "https://github.com/itsplk/ps5-unified-autoloader"
+        "url": "https://github.com/itsPLK/ps5-webkit-autoloader"
     },
     {
         "asset_pattern": "ps5-fan-control",
@@ -219,13 +194,6 @@
         "display_name": "ps5-fan-control",
         "exclude": false,
         "url": "https://github.com/owendswang/ps5-fan-control"
-    },
-    {
-        "asset_pattern": "ghostcontrol",
-        "description": "USB HID controller patcher that injects third-party controller input into a virtual DualSense device.",
-        "display_name": "Ghostcontrol",
-        "exclude": false,
-        "url": "https://github.com/stonedmodder/ghostcontrol-ps5-usb-controller-patcher"
     },
     {
         "asset_pattern": "pegasus_dl",
@@ -240,20 +208,6 @@
         "display_name": "Sonic Loader",
         "exclude": false,
         "url": "https://git.earthonion.com/soniciso/sonicloader"
-    },
-    {
-        "asset_pattern": "elf-arsenal",
-        "description": "etaHEN-oriented payload bundle combining ELF loading, resource management, FTP, trophy tools, ShadowMountPlus, kstuff-lite, Linux loading, controller tools, fake sign-in, and a web UI.",
-        "display_name": "elf-arsenal",
-        "exclude": false,
-        "url": "https://git.earthonion.com/soniciso/elf-arsenal"
-    },
-    {
-        "asset_pattern": "singleDPI",
-        "description": "Standalone DPI payload accepting TCP 9090 JSON package-install requests and an experimental 12800 URL endpoint.",
-        "display_name": "singleDPI",
-        "exclude": false,
-        "url": "https://github.com/maxmilu/ps5-direct-package-installer"
     },
     {
         "asset_pattern": "gdbsrv-ps5",
@@ -318,13 +272,6 @@
         "url": "https://github.com/owendswang/ps5-syslang"
     },
     {
-        "asset_pattern": "onionHEN",
-        "description": "OnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, in-game overlays, payload management, and background services.",
-        "display_name": "onionHEN",
-        "exclude": false,
-        "url": "https://github.com/aydencharles/onionhen"
-    },
-    {
         "asset_pattern": "apr-emu-updater",
         "description": "PS5 payload that keeps APR Emu up to date on installed titles, from a web interface on the console.",
         "display_name": "APR Emu Updater",
@@ -333,9 +280,16 @@
     },
     {
         "asset_pattern": "PS5-aria2",
-        "description": "aria2 for PS5",
+        "description": "This fork builds aria2 as a PS5 ELF payload.",
         "display_name": "PS5 aria2",
         "exclude": false,
         "url": "https://github.com/owendswang/ps5-aria2"
-    }
+    },
+    {
+        "asset_pattern": "^pLinux5-NG\\.elf$",
+        "description": "boot linux on PS5 consoles running high firmware (8.xx through 13.60)",
+        "display_name": "pLinux5-NG",
+        "exclude": false,
+        "url": "https://github.com/pLabs5/pLinux5-NG"
+    },
 ]
