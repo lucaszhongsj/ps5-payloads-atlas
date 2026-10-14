@@ -3,13 +3,13 @@
   "payloads": [
     {
       "name": "AnyPad PS5",
-      "filename": "AnyPad-PS5-0.9.1-beta.elf",
-      "url": "https://codeberg.org/elmonomalva0/Any-Pad-ps5/releases/download/v0.9.1-beta/AnyPad-PS5-0.9.1-beta.elf",
+      "filename": "AnyPad-PS5-0.9.5-beta.elf",
+      "url": "https://codeberg.org/elmonomalva0/Any-Pad-ps5/releases/download/v0.9.5-beta/AnyPad-PS5-0.9.5-beta.elf",
       "description": "A Bluetooth controller bridge for jailbroken PS5 consoles. Un puente de mandos Bluetooth para PS5 con jailbreak.",
-      "version": "v0.9.1-beta",
+      "version": "v0.9.5-beta",
       "category": "Kernel",
       "checksum": "",
-      "last_update": "2026-10-12 16:42:39 UTC+8",
+      "last_update": "2026-10-15 03:05:40 UTC+8",
       "source": "https://codeberg.org/elmonomalva0/any-pad-ps5"
     },
     {
@@ -246,12 +246,12 @@
     {
       "name": "LZ4 Compression (theghostonline)",
       "filename": "lz4-compression.elf",
-      "url": "https://github.com/theghostonline/PS5-LZ4-Compression/releases/download/v1.4.3/lz4-compression.elf",
+      "url": "https://github.com/theghostonline/PS5-LZ4-Compression/releases/download/v1.5.0/lz4-compression.elf",
       "description": "Shrinks a game that is already on the PS5 by LZ4-packing its AMPR assets, entirely on the console: the game never leaves it. Works on folder games and on mounted .exfat/.ffpfs images, packs in place with rollback, verifies every file, and can undo. Needs ShadowMount+ for image sources. Open its page on port 5920 from the Connection screen's scene tools once it is running. ps5upload's Convert does the same packing on this computer when the game is here instead.",
-      "version": "v1.4.3",
+      "version": "v1.5.0",
       "category": "Installer",
-      "checksum": "8116fd6ee61e364ef602a73221006fcaebfdb59a9ed582aea512b55a192ff160",
-      "last_update": "2026-10-15 01:26:53 UTC+8",
+      "checksum": "edb4f2c5922bea293cc5c5354bd301fb0bde48856c0d2a8d115801d3c778b3f1",
+      "last_update": "2026-10-15 04:54:14 UTC+8",
       "source": "https://github.com/theghostonline/ps5-lz4-compression"
     },
     {
@@ -465,13 +465,13 @@
     },
     {
       "name": "ps5-payload-manager",
-      "filename": "pldmgr_v0.6.0.elf",
-      "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.0/pldmgr_v0.6.0.elf",
+      "filename": "pldmgr_v0.6.1.elf",
+      "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.1/pldmgr_v0.6.1.elf",
       "description": "A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5.",
-      "version": "v0.6.0",
+      "version": "v0.6.1",
       "category": "Tools",
-      "checksum": "5b31079d81d6467f2754edd1d6dbe63b0306502e135c21a425ecb263e39e2059",
-      "last_update": "2026-10-14 07:38:40 UTC+8",
+      "checksum": "5165cbe4c13360828bd0f5d558cdbb9e2d55b0660b1dc7f7a58d3f4ee9e23285",
+      "last_update": "2026-10-15 03:30:13 UTC+8",
       "source": "https://github.com/itsplk/ps5-payload-manager"
     },
     {
