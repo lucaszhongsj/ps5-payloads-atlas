@@ -24,10 +24,10 @@
       "source": "https://github.com/tsuramatsu1/apr-emu-updater"
     },
     {
-      "name": "BackPork",
+      "name": "BackPork (backport helper)",
       "filename": "ps5-backpork.elf",
       "url": "https://github.com/BestPig/BackPork/releases/download/0.1/ps5-backpork.elf",
-      "description": "Lets you sideload system libraries into PS5 games.",
+      "description": "Runs in the background and watches for game launches. When a title starts, it looks for a `fakelib` folder inside that game's install directory and union-mounts it over the sandbox's `common/lib`, so the game loads newer system libraries without altering the originals. This is the runtime half of backporting a game to older firmware — use it together with the SDK Version Changer, which lowers the SDK version recorded in `eboot.bin` and every `prx`/`sprx`. A title needs both: downgraded ELFs so the system agrees to launch it, and compatible libraries so it does not crash on missing imports. The libraries themselves usually need patching to drop imports your firmware lacks; upstream ships BPS patch sets for 6.xx and 7.xx.",
       "version": "0.1",
       "category": "Installer",
       "checksum": "d74e4cd119b2bb1fd423f2f5b1c9a7f096b3e588c753af1ab48b983d56216a52",
@@ -55,17 +55,6 @@
       "checksum": "0d028deb145d6fc9a5b55d43a45e072919178fbb261c66cd914ebcfb0b3b05c0",
       "last_update": "2026-07-31 08:54:17 UTC+8",
       "source": "https://github.com/itsblurf/bfplayer"
-    },
-    {
-      "name": "Browser payload menu (WebKit Autoloader installer)",
-      "filename": "webkit-autoloader-installer_v0.6.1.elf",
-      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf",
-      "description": "Installs a payload menu in the PS5's own web browser, so payloads can be launched from the console without sending them from a PC every time. One-shot installer ELF: send it, it installs, it exits. Run it after your kernel exploit, like any other payload.",
-      "version": "v0.6.1",
-      "category": "Kernel",
-      "checksum": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f",
-      "last_update": "2026-10-09 00:06:48 UTC+8",
-      "source": "https://github.com/itsplk/ps5-webkit-autoloader"
     },
     {
       "name": "CheatRunner",
@@ -112,21 +101,10 @@
       "source": "https://github.com/etahen/etahen"
     },
     {
-      "name": "ezremote-DPI",
-      "filename": "ezremote-dpi.elf",
-      "url": "https://github.com/cy33hc/ps5-ezremote-dpi/releases/download/1.05/ezremote-dpi.elf",
-      "description": "Long-lived loopback PKG install daemon (127.0.0.1:9040). Owns Sony's PlayGo/AppInstUtil install state machine so installs don't evaporate when the calling process exits.",
-      "version": "1.05",
-      "category": "Installer",
-      "checksum": "9d62053c13c051456f6542e3f4e25518b7540a21e7f68db064bbf27c99450f96",
-      "last_update": "2026-09-22 00:38:15 UTC+8",
-      "source": "https://github.com/cy33hc/ps5-ezremote-dpi"
-    },
-    {
       "name": "ftpsrv",
       "filename": "ftpsrv-ps5.elf",
       "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5.elf",
-      "description": "Lightweight FTP server on :2121 with SELF/ELF auto-decryption and remount-RW SITE commands. Browse the PS5 filesystem from any FTP client.",
+      "description": "Lightweight FTP server on :2121 with SELF↔ELF auto-decryption and remount-RW SITE commands. Lets you browse the PS5's filesystem from any FTP client.",
       "version": "v0.21.1",
       "category": "Files",
       "checksum": "7d4b31c83eae4e056580482a3a074e1db25922efc74ac1e439473b45d71a5938",
@@ -137,12 +115,23 @@
       "name": "ftpsrv (drakmor)",
       "filename": "ftpsrv-ps5.elf",
       "url": "https://github.com/drakmor/ftpsrv/releases/download/1.16-ng-stable/ftpsrv-ps5.elf",
-      "description": "drakmor's fork of ftpsrv.",
+      "description": "A simple FTP server for jailbroken PS4s and PS5s",
       "version": "1.16-ng-stable",
       "category": "Files",
       "checksum": "f19ae469b25453a7a4af4529527521d31f143100f18a2c6839666e7121c8bd32",
       "last_update": "2026-09-21 04:48:47 UTC+8",
       "source": "https://github.com/drakmor/ftpsrv"
+    },
+    {
+      "name": "Ftpsrv Streamextract",
+      "filename": "ftpsrv-ps5.elf",
+      "url": "https://github.com/RuiNelson/ftpsrv-streamextract/releases/download/1.0.0/ftpsrv-ps5.elf",
+      "description": "This is a simple FTP server that can be executed on a Playstation 4 or Playstation 5 that has been jailbroken and is running an ELF loader. The FTP server accepts connection on port 2121.",
+      "version": "1.0.0",
+      "category": "Kernel",
+      "checksum": "37f495b8eaf56c6bbac5daacb8eb74d863e64c250b6d95591bfedc212bca00b9",
+      "last_update": "2026-10-14 00:12:49 UTC+8",
+      "source": "https://github.com/ruinelson/ftpsrv-streamextract"
     },
     {
       "name": "Garlic SaveMgr for PS5",
@@ -236,18 +225,18 @@
       "name": "Kylin Core",
       "filename": "kylin-core.elf",
       "url": "https://github.com/aydencharles/kylin-core-release/releases/download/v2.0.0-community-lite/kylin-core.elf",
-      "description": "Game cheat trainer for jailbroken PS5. Apply in-game cheats and modifications to running titles; community-lite build distributed as a single payload.",
+      "description": "A homebrew cheat loader and real-time game modifier for PlayStation 5",
       "version": "v2.0.0-community-lite",
-      "category": "Tools",
+      "category": "Kernel",
       "checksum": "7f5245f2db67b131c6f9e991b731117c2c730923a9dd65a2d82b36f2e2b91545",
       "last_update": "2026-10-01 21:29:25 UTC+8",
       "source": "https://github.com/aydencharles/kylin-core-release"
     },
     {
-      "name": "Lapy JB Daemon",
+      "name": "Lapy-JB-Daemon",
       "filename": "lapy_jb_daemon-v1.2.elf",
       "url": "https://github.com/itsPLK/PS5-Lapy-JB-Daemon/releases/download/v1.2/lapy_jb_daemon-v1.2.elf",
-      "description": "Standalone homebrew jailbreak daemon for PS5. Mimics etaHEN's jailbreak-on-demand API. Multi-firmware (3.00 to 12.00). No etaHEN required. Upstream voidwhisper/lapy-jb-daemon on git.etawen.dev is offline; this GitHub mirror is the live source.",
+      "description": "Standalone homebrew jailbreak daemon for PS5. Mimics etaHEN's jailbreak-on-demand API.",
       "version": "v1.2",
       "category": "Kernel",
       "checksum": "13559b858fc33cc7fa3dc89e10dccf139070d99ee5d378dd75c969293700799e",
@@ -257,12 +246,12 @@
     {
       "name": "LZ4 Compression (theghostonline)",
       "filename": "lz4-compression.elf",
-      "url": "https://github.com/theghostonline/PS5-LZ4-Compression/releases/download/v1.4.2/lz4-compression.elf",
+      "url": "https://github.com/theghostonline/PS5-LZ4-Compression/releases/download/v1.4.3/lz4-compression.elf",
       "description": "Shrinks a game that is already on the PS5 by LZ4-packing its AMPR assets, entirely on the console: the game never leaves it. Works on folder games and on mounted .exfat/.ffpfs images, packs in place with rollback, verifies every file, and can undo. Needs ShadowMount+ for image sources. Open its page on port 5920 from the Connection screen's scene tools once it is running. ps5upload's Convert does the same packing on this computer when the game is here instead.",
-      "version": "v1.4.2",
+      "version": "v1.4.3",
       "category": "Installer",
-      "checksum": "a4ec1695a2d7baa666da746649e1e4a49056ef53c7502455a7bad1e55f563511",
-      "last_update": "2026-10-12 01:55:48 UTC+8",
+      "checksum": "8116fd6ee61e364ef602a73221006fcaebfdb59a9ed582aea512b55a192ff160",
+      "last_update": "2026-10-15 01:26:53 UTC+8",
       "source": "https://github.com/theghostonline/ps5-lz4-compression"
     },
     {
@@ -299,17 +288,6 @@
       "source": "https://github.com/aydencharles/onionhen"
     },
     {
-      "name": "Orbit Store",
-      "filename": "orbit_store.elf",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.3.0/orbit_store.elf",
-      "description": "A modern PS5 download manager with resumable downloads and phone controls",
-      "version": "v1.3.0",
-      "category": "Tools",
-      "checksum": "553b39e7503ec141f6a015b7939c83e93fe8f05dee176e42c7e3bc026b0ea519",
-      "last_update": "2026-10-14 04:46:16 UTC+8",
-      "source": "https://github.com/saawant12/orbit-store-ps5"
-    },
-    {
       "name": "pegasus-dl",
       "filename": "pegasus_dl.elf",
       "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.11.0/pegasus_dl.elf",
@@ -330,6 +308,17 @@
       "checksum": "82e3548edcc41419b644482cccaef65689334fc0315dc20247f48b90bf182dca",
       "last_update": "2026-10-10 23:38:10 UTC+8",
       "source": "https://github.com/itsplk/ps5-pkg-manager"
+    },
+    {
+      "name": "pLinux5-NG",
+      "filename": "pLinux5-NG.elf",
+      "url": "https://github.com/pLabs5/pLinux5-NG/releases/download/v0.1.0/pLinux5-NG.elf",
+      "description": "boot linux on PS5 consoles running high firmware (8.xx through 13.60)",
+      "version": "v0.1.0",
+      "category": "Tools",
+      "checksum": "f7f4872dd37d8f497c76a959d2e61a443a3948ca82a608325ed7dd0aa20f7853",
+      "last_update": "2026-10-14 12:57:17 UTC+8",
+      "source": "https://github.com/plabs5/plinux5-ng"
     },
     {
       "name": "PoorDS4",
@@ -354,10 +343,21 @@
       "source": "https://github.com/illusionyy/ps-patch-system"
     },
     {
+      "name": "PS4Mount",
+      "filename": "ps4mount.elf",
+      "url": "https://github.com/gasb07/ps4mount/releases/download/v0.5.0/ps4mount.elf",
+      "description": "Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal storage or PS5 formatted USB storage",
+      "version": "v0.5.0",
+      "category": "Installer",
+      "checksum": "656988c71c6057207986498083c1fd219b17a94d7d98f94dde50162680c33787",
+      "last_update": "2026-10-15 01:04:46 UTC+8",
+      "source": "https://github.com/gasb07/ps4mount"
+    },
+    {
       "name": "PS5 aria2",
       "filename": "aria2-v1.37.0-3.elf",
       "url": "https://github.com/owendswang/ps5-aria2/releases/download/v1.37.0-3/aria2-v1.37.0-3.elf",
-      "description": "aria2 for PS5",
+      "description": "This fork builds aria2 as a PS5 ELF payload.",
       "version": "v1.37.0-3",
       "category": "Tools",
       "checksum": "802d53a201545ea84a86c1a3bc2f9b84446a1d245ea11108b912116ffbc1a8a6",
@@ -409,17 +409,6 @@
       "source": "https://github.com/holdmysocks/ps5-tailscale"
     },
     {
-      "name": "PS5 Unified Autoloader",
-      "filename": "ps5-unified-autoloader-v0.1.5-915a65e.elf",
-      "url": "https://github.com/itsPLK/ps5-unified-autoloader/releases/download/v0.1.5-915a65e/ps5-unified-autoloader-v0.1.5-915a65e.elf",
-      "description": "Standalone ELF autoloader that reads autoload.txt from USB or /data and sends listed payloads to elfldr.",
-      "version": "v0.1.5-915a65e",
-      "category": "Kernel",
-      "checksum": "c8e36ea06cfd37c5fad356ff9fcd09d3e62065d88170b5119ce8f1eeb3efacac",
-      "last_update": "2026-09-29 22:03:59 UTC+8",
-      "source": "https://github.com/itsplk/ps5-unified-autoloader"
-    },
-    {
       "name": "PS5 Web File Manager",
       "filename": "web-file-mgr-v1.10.elf",
       "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.10/web-file-mgr-v1.10.elf",
@@ -429,6 +418,17 @@
       "checksum": "409145ec9a1c338ecb5f6f917c3b057c4ba48bfae2e86d621e19dda7ac129bd3",
       "last_update": "2026-10-05 22:39:43 UTC+8",
       "source": "https://github.com/owendswang/ps5-web-file-manager"
+    },
+    {
+      "name": "PS5 WebKit Autoloader",
+      "filename": "webkit-autoloader-installer_v0.6.1.elf",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf",
+      "description": "Automatically loads the WebKit exploit and your elf payloads.",
+      "version": "v0.6.1",
+      "category": "Kernel",
+      "checksum": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f",
+      "last_update": "2026-10-09 00:06:48 UTC+8",
+      "source": "https://github.com/itsplk/ps5-webkit-autoloader"
     },
     {
       "name": "ps5-app-dumper",
@@ -530,17 +530,6 @@
       "source": "https://github.com/ps5-payload-dev/shsrv"
     },
     {
-      "name": "singleDPI",
-      "filename": "singleDPI_v0.2.2.elf",
-      "url": "https://github.com/MaxMilu/ps5-direct-package-installer/releases/download/0.2.2/singleDPI_v0.2.2.elf",
-      "description": "Standalone DPI payload accepting TCP 9090 JSON package-install requests and an experimental 12800 URL endpoint.",
-      "version": "0.2.2",
-      "category": "Installer",
-      "checksum": "7e58279af299a25b5391d43b7404908574acf36daf13a06de101bc208d4d9b85",
-      "last_update": "2026-10-03 01:58:30 UTC+8",
-      "source": "https://github.com/maxmilu/ps5-direct-package-installer"
-    },
-    {
       "name": "unrar_ps5",
       "filename": "unrar_ps5.elf",
       "url": "https://github.com/bizkut/unrar-ps5/releases/download/v1.4.0/unrar_ps5.elf",
@@ -563,6 +552,17 @@
       "source": "https://github.com/ps5-payload-dev/websrv"
     },
     {
+      "name": "WFM 7-Zip Helper",
+      "filename": "wfm-7zip-helper-v26.03-2.elf",
+      "url": "https://github.com/owendswang/wfm-7zip-helper/releases/download/v26.03-2/wfm-7zip-helper-v26.03-2.elf",
+      "description": "A separate extraction helper for PS5 Web File Manager. It uses 7-Zip's native archive handlers and runs as an independent PS5 payload.",
+      "version": "v26.03-2",
+      "category": "Files",
+      "checksum": "dd8bbae4cd44ed20c4cbafc74fdc3271f52b9d7888a0d4f4038a8ae05feb92a4",
+      "last_update": "2026-10-06 00:39:17 UTC+8",
+      "source": "https://github.com/owendswang/wfm-7zip-helper"
+    },
+    {
       "name": "zftpd",
       "filename": "zftpd-ps5-zhttp-v1.6.0.elf",
       "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps5-zhttp-v1.6.0.elf",
@@ -576,10 +576,6 @@
   ],
   "skipped": [
     {
-      "url": "https://git.earthonion.com/soniciso/elf-arsenal",
-      "reason": "no release with .elf/.bin asset, or repo unreachable"
-    },
-    {
       "url": "https://git.earthonion.com/soniciso/sonicloader",
       "reason": "no release with .elf/.bin asset, or repo unreachable"
     },
@@ -589,14 +585,6 @@
     },
     {
       "url": "https://github.com/StonedModder/Ghostpad",
-      "reason": "no release with .elf/.bin asset, or repo unreachable"
-    },
-    {
-      "url": "https://github.com/almhtar/ghostpad",
-      "reason": "no release with .elf/.bin asset, or repo unreachable"
-    },
-    {
-      "url": "https://github.com/stonedmodder/ghostcontrol-ps5-usb-controller-patcher",
       "reason": "no release with .elf/.bin asset, or repo unreachable"
     }
   ]
