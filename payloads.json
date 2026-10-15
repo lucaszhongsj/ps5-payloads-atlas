@@ -279,12 +279,12 @@
     {
       "name": "onionHEN",
       "filename": "OnionHEN.elf",
-      "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.0.13/OnionHEN.elf",
+      "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.9.0/OnionHEN.elf",
       "description": "OnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, in-game overlays, payload management, and background services.",
-      "version": "v0.0.13",
+      "version": "v0.9.0",
       "category": "Tools",
-      "checksum": "aa3f98847948e2ae8ea600c3f437e28247a0a4f8b73651a046d2859924bf97b3",
-      "last_update": "2026-09-12 00:44:31 UTC+8",
+      "checksum": "1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212",
+      "last_update": "2026-10-15 15:42:25 UTC+8",
       "source": "https://github.com/aydencharles/onionhen"
     },
     {
@@ -498,13 +498,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.0.22.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.22/ps5upload-7.0.22.elf",
+      "filename": "ps5upload-7.0.23.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.23/ps5upload-7.0.23.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.0.22",
+      "version": "v7.0.23",
       "category": "Backup",
-      "checksum": "e382353612fdf85b2fdbfea75f4f5ebad260c767faa51b0446118646a6db0267",
-      "last_update": "2026-10-12 17:47:07 UTC+8",
+      "checksum": "419b56a10336dda8f4a28672271dfb635e74b05966cc08d44305e70f862dc110",
+      "last_update": "2026-10-15 15:48:16 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
