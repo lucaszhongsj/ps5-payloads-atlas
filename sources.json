@@ -35,6 +35,13 @@
         "url": "https://codeberg.org/elmonomalva0/Any-Pad-ps5"
     },
     {
+        "asset_pattern": "TabShifter",
+        "description": "Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (FW 13.60 supported).",
+        "display_name": "PS5 TabShifter",
+        "exclude": false,
+        "url": "https://github.com/xvvulcanvx/PS5-TabShifter"
+    },
+    {
         "asset_pattern": "keepawake_ps5",
         "description": "A PS5 and PS4 payload that stops the console from going into rest mode while it runs.",
         "display_name": "KeepAwake",
