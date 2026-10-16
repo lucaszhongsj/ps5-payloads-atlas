@@ -345,12 +345,12 @@
     {
       "name": "PS4Mount",
       "filename": "ps4mount.elf",
-      "url": "https://github.com/gasb07/ps4mount/releases/download/v0.5.1/ps4mount.elf",
+      "url": "https://github.com/gasb07/ps4mount/releases/download/v0.6.0/ps4mount.elf",
       "description": "Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal storage or PS5 formatted USB storage",
-      "version": "v0.5.1",
+      "version": "v0.6.0",
       "category": "Installer",
-      "checksum": "23ef99696af8da139fafd13e97e0d1f94968f2e745cb79e45a6aa71bc6391549",
-      "last_update": "2026-10-15 09:40:13 UTC+8",
+      "checksum": "72467a3d8697961d611603956c4e63d96904197e57b175ff73e41d80badcaf25",
+      "last_update": "2026-10-17 05:32:30 UTC+8",
       "source": "https://github.com/gasb07/ps4mount"
     },
     {
@@ -509,13 +509,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.0.29.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.29/ps5upload-7.0.29.elf",
+      "filename": "ps5upload-7.0.31.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.31/ps5upload-7.0.31.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.0.29",
+      "version": "v7.0.31",
       "category": "Backup",
-      "checksum": "fa935b612129c225342cb7016159bfa3d5f4cbef75bb4132ce1e0ade03ae39da",
-      "last_update": "2026-10-17 02:59:02 UTC+8",
+      "checksum": "4ef3b781ae178bbe402a87a64b6f366d3386d6557306db0f51b46b458ffa7e24",
+      "last_update": "2026-10-17 06:51:56 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
