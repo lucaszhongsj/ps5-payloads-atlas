@@ -244,17 +244,6 @@
       "source": "https://github.com/itsplk/ps5-lapy-jb-daemon"
     },
     {
-      "name": "LZ4 Compression (theghostonline)",
-      "filename": "lz4-compression.elf",
-      "url": "https://github.com/theghostonline/PS5-LZ4-Compression/releases/download/v1.5.0/lz4-compression.elf",
-      "description": "Shrinks a game that is already on the PS5 by LZ4-packing its AMPR assets, entirely on the console: the game never leaves it. Works on folder games and on mounted .exfat/.ffpfs images, packs in place with rollback, verifies every file, and can undo. Needs ShadowMount+ for image sources. Open its page on port 5920 from the Connection screen's scene tools once it is running. ps5upload's Convert does the same packing on this computer when the game is here instead.",
-      "version": "v1.5.0",
-      "category": "Installer",
-      "checksum": "edb4f2c5922bea293cc5c5354bd301fb0bde48856c0d2a8d115801d3c778b3f1",
-      "last_update": "2026-10-15 04:54:14 UTC+8",
-      "source": "https://github.com/theghostonline/ps5-lz4-compression"
-    },
-    {
       "name": "nanoDNS",
       "filename": "nanodns.elf",
       "url": "https://github.com/drakmor/nanoDNS/releases/download/0.4/nanodns.elf",
@@ -596,6 +585,10 @@
     },
     {
       "url": "https://github.com/StonedModder/Ghostpad",
+      "reason": "no release with .elf/.bin asset, or repo unreachable"
+    },
+    {
+      "url": "https://github.com/theghostonline/PS5-LZ4-Compression",
       "reason": "no release with .elf/.bin asset, or repo unreachable"
     }
   ]
