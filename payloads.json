@@ -168,13 +168,13 @@
     },
     {
       "name": "HearBridge PS5",
-      "filename": "HearBridge-PS5-1.3.0.elf",
-      "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.0/HearBridge-PS5-1.3.0.elf",
+      "filename": "HearBridge-1.3.5.elf",
+      "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.5/HearBridge-1.3.5.elf",
       "description": "Bluetooth A2DP audio bridge for PS5 homebrew",
-      "version": "v1.3.0",
+      "version": "v1.3.5",
       "category": "Tools",
-      "checksum": "0867d014d0fca7250c0999dab6b575ee480c5f32dd8374e10634f8ff43b4ea5e",
-      "last_update": "2026-10-10 16:15:02 UTC+8",
+      "checksum": "34e790936eee274137a20e879fa9bb746c302d017acc2164be6958a8470ac4fe",
+      "last_update": "2026-10-17 12:41:49 UTC+8",
       "source": "https://github.com/x-f1reball-x/hearbridge-ps5"
     },
     {
@@ -509,13 +509,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.0.32.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.32/ps5upload-7.0.32.elf",
+      "filename": "ps5upload-7.0.34.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.34/ps5upload-7.0.34.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.0.32",
+      "version": "v7.0.34",
       "category": "Backup",
-      "checksum": "05f0fd48d3983cd34c03163950f545446a4db0e34eaf3131753e3fb8fbdf1f3d",
-      "last_update": "2026-10-17 10:18:20 UTC+8",
+      "checksum": "f6a09ed9f92ea230490e2bc3ad912c4e882882839a25a184bb6daddabc0904a7",
+      "last_update": "2026-10-17 16:37:03 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
