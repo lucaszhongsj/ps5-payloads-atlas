@@ -2,6 +2,17 @@
   "name": "lucaszhongsj/ps5-payloads-atlas",
   "payloads": [
     {
+      "name": "007 First Light PS5 Online",
+      "filename": "bond-server-0.3.0.elf",
+      "url": "https://theghostonline.dev/theghostonline/007-First-Light-PS5/releases/download/v0.3.0/bond-server-0.3.0.elf",
+      "description": "007 First Light (PPSA11386) online on a jailbroken PS5, with no IOI servers involved and no PC needed. One payload does everything on the console, so the online features and TacSim work.",
+      "version": "v0.3.0",
+      "category": "Tools",
+      "checksum": "",
+      "last_update": "2026-10-19 02:03:47 UTC+8",
+      "source": "https://theghostonline.dev/theghostonline/007-first-light-ps5"
+    },
+    {
       "name": "AnyPad PS5",
       "filename": "AnyPad-PS5-0.9.5-beta.elf",
       "url": "https://codeberg.org/elmonomalva0/Any-Pad-ps5/releases/download/v0.9.5-beta/AnyPad-PS5-0.9.5-beta.elf",
