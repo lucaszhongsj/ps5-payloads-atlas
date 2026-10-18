@@ -279,12 +279,12 @@
     {
       "name": "NeoEnabler",
       "filename": "neo-manager.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.3.2/neo-manager.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.3.3/neo-manager.elf",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.3.2",
+      "version": "v0.3.3",
       "category": "Tools",
-      "checksum": "bbc90b7de4e3e284c0c6c956b5ad987e6ff6402523bee2f75de44383bd50deea",
-      "last_update": "2026-10-18 00:35:43 UTC+8",
+      "checksum": "380acb4cb1232b6d84985c85af432b2c5026d1d4cd35a25394d7976e2e366195",
+      "last_update": "2026-10-19 06:57:55 UTC+8",
       "source": "https://github.com/gasb07/neoenabler"
     },
     {
@@ -486,6 +486,28 @@
       "source": "https://github.com/echostretch/ps5-app-dumper"
     },
     {
+      "name": "ps5-date-time-sync",
+      "filename": "ps5-date-time-sync.elf",
+      "url": "https://github.com/kerrdec97/ps5-date-time-sync/releases/download/v1.0.0/ps5-date-time-sync.elf",
+      "description": "Automatically restores the system date and time using public NTP servers",
+      "version": "v1.0.0",
+      "category": "Tools",
+      "checksum": "91806229803845930b2173174e1afeadf509e4c171f6396788f929558fad6849",
+      "last_update": "2026-08-24 22:44:14 UTC+8",
+      "source": "https://github.com/kerrdec97/ps5-date-time-sync"
+    },
+    {
+      "name": "ps5-exporter",
+      "filename": "ps5-exporter.elf",
+      "url": "https://github.com/Marice/ps5-exporter/releases/download/v0.3.0/ps5-exporter.elf",
+      "description": "Prometheus exporter for a jailbroken PS5",
+      "version": "v0.3.0",
+      "category": "Tools",
+      "checksum": "ef9fa98269ec3a1b94a6ea62256e81ddcc033df13ed8dea2eb4dd04919745147",
+      "last_update": "2026-10-19 02:56:44 UTC+8",
+      "source": "https://github.com/marice/ps5-exporter"
+    },
+    {
       "name": "ps5-fan-control",
       "filename": "ps5-fan-control-v0.3.elf",
       "url": "https://github.com/owendswang/ps5-fan-control/releases/download/v0.3/ps5-fan-control-v0.3.elf",
@@ -542,13 +564,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.1.4.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.4/ps5upload-7.1.4.elf",
+      "filename": "ps5upload-7.1.5.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.5/ps5upload-7.1.5.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.1.4",
+      "version": "v7.1.5",
       "category": "Backup",
-      "checksum": "71398d65f2f7cd3d0a35ab16f7aee1f51f0f2d2d5b8ab3a184a62b68805cf775",
-      "last_update": "2026-10-19 03:54:48 UTC+8",
+      "checksum": "1d72cb537e93546168a9a6dabd1c535fb96f997d4d921c99b3f8fe32d91a471c",
+      "last_update": "2026-10-19 06:43:54 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
