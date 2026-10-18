@@ -255,6 +255,17 @@
       "source": "https://github.com/itsplk/ps5-lapy-jb-daemon"
     },
     {
+      "name": "LZ4 Compression for PS5",
+      "filename": "lz4-compression.elf",
+      "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression/releases/download/v1.5.0/lz4-compression.elf",
+      "description": "Shrink your PS5 games on the console itself. Pick a game, choose Compress with LZ4, and it packs the game data into LZ4 asset packs that APR-EMU reads while the game runs. Every file gets checked before anything's deleted, and if the game doesn't ship APR-EMU, the right runtime is added for you.",
+      "version": "v1.5.0",
+      "category": "Tools",
+      "checksum": "",
+      "last_update": "2026-10-15 04:53:36 UTC+8",
+      "source": "https://theghostonline.dev/theghostonline/ps5-lz4-compression"
+    },
+    {
       "name": "nanoDNS",
       "filename": "nanodns.elf",
       "url": "https://github.com/drakmor/nanoDNS/releases/download/0.4/nanodns.elf",
