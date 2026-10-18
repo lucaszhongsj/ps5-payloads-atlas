@@ -136,12 +136,12 @@
     {
       "name": "Garlic SaveMgr for PS5",
       "filename": "garlic-savemgr.elf",
-      "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.13.1/garlic-savemgr.elf",
+      "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.14.0/garlic-savemgr.elf",
       "description": "PS5 save decrypt/encrypt/browse with embedded web UI.",
-      "version": "v1.13.1",
+      "version": "v1.14.0",
       "category": "Backup",
       "checksum": "",
-      "last_update": "2026-09-19 10:28:52 UTC+8",
+      "last_update": "2026-10-19 01:50:22 UTC+8",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr"
     },
     {
@@ -253,6 +253,17 @@
       "checksum": "fcfb7d47c3b295560ea1603dc015f7c4950353ef0faca16428bd425680ef1fc5",
       "last_update": "2026-08-05 02:27:26 UTC+8",
       "source": "https://github.com/drakmor/nanodns"
+    },
+    {
+      "name": "NeoEnabler",
+      "filename": "neo-manager.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.3.2/neo-manager.elf",
+      "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
+      "version": "v0.3.2",
+      "category": "Tools",
+      "checksum": "bbc90b7de4e3e284c0c6c956b5ad987e6ff6402523bee2f75de44383bd50deea",
+      "last_update": "2026-10-18 00:35:43 UTC+8",
+      "source": "https://github.com/gasb07/neoenabler"
     },
     {
       "name": "NP Fake Signin",
@@ -431,6 +442,17 @@
       "source": "https://github.com/itsplk/ps5-webkit-autoloader"
     },
     {
+      "name": "ps5-60FPS",
+      "filename": "fps60.elf",
+      "url": "https://github.com/eladharels/ps5-60FPS/releases/download/v1.0.0/fps60.elf",
+      "description": "Unlock 60 FPS in PS4 and PS5 games on a jailbroken PS5, with one switch per game.",
+      "version": "v1.0.0",
+      "category": "Tools",
+      "checksum": "5331ebf1b69cd272a0491f899b14ca5d59240adee2e69078631473070ddeca9b",
+      "last_update": "2026-10-16 13:37:57 UTC+8",
+      "source": "https://github.com/eladharels/ps5-60fps"
+    },
+    {
       "name": "ps5-app-dumper",
       "filename": "ps5-app-dumper_v2.10.elf",
       "url": "https://github.com/EchoStretch/ps5-app-dumper/releases/download/v2.10/ps5-app-dumper_v2.10.elf",
@@ -476,13 +498,13 @@
     },
     {
       "name": "ps5-syslang",
-      "filename": "ps5-syslang-zh-Hans-v0.2.1.elf",
-      "url": "https://github.com/owendswang/ps5-syslang/releases/download/v0.2.1/ps5-syslang-zh-Hans-v0.2.1.elf",
+      "filename": "syslang-ar-v0.3.elf",
+      "url": "https://github.com/owendswang/ps5-syslang/releases/download/v0.3/syslang-ar-v0.3.elf",
       "description": "ShellUI language-switching payload for changing the PS5 system language, including on region-locked consoles.",
-      "version": "v0.2.1",
+      "version": "v0.3",
       "category": "Tools",
-      "checksum": "1baaa4aa01540e07dea8e452594d04bfbb06a0a4abcbae342bd8ca24f56c423e",
-      "last_update": "2026-10-02 01:43:22 UTC+8",
+      "checksum": "71293a7c3eb22dff1dc63ac83aea92e03f66af18ccb48bda17229d58fa1de38c",
+      "last_update": "2026-10-19 00:22:59 UTC+8",
       "source": "https://github.com/owendswang/ps5-syslang"
     },
     {
@@ -498,13 +520,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.1.2.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.2/ps5upload-7.1.2.elf",
+      "filename": "ps5upload-7.1.3.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.3/ps5upload-7.1.3.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.1.2",
+      "version": "v7.1.3",
       "category": "Backup",
-      "checksum": "dde5731e9423112c243cde2c13165b5992f99e3ec35eb423e2c2bcbfab0ee564",
-      "last_update": "2026-10-18 21:23:58 UTC+8",
+      "checksum": "74eeaabc600d0b305117f93375010923e5732602d10228c5b6eba2047b22df2b",
+      "last_update": "2026-10-19 00:45:58 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
@@ -575,10 +597,6 @@
     }
   ],
   "skipped": [
-    {
-      "url": "https://git.earthonion.com/soniciso/sonicloader",
-      "reason": "no release with .elf/.bin asset, or repo unreachable"
-    },
     {
       "url": "https://github.com/LightningMods/Itemzflow",
       "reason": "no release with .elf/.bin asset, or repo unreachable"
