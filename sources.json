@@ -56,6 +56,13 @@
         "url": "https://github.com/mortyzip/KeepAwake"
     },
     {
+        "asset_pattern": "lz4-compression",
+        "description": "Shrink your PS5 games on the console itself. Pick a game, choose Compress with LZ4, and it packs the game data into LZ4 asset packs that APR-EMU reads while the game runs. Every file gets checked before anything's deleted, and if the game doesn't ship APR-EMU, the right runtime is added for you.",
+        "display_name": "LZ4 Compression for PS5",
+        "exclude": false,
+        "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression"
+    },
+    {
         "asset_pattern": "onionHEN",
         "description": "OnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, in-game overlays, payload management, and background services.",
         "display_name": "onionHEN",
