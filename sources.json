@@ -35,6 +35,13 @@
         "url": "https://codeberg.org/elmonomalva0/Any-Pad-ps5"
     },
     {
+        "asset_pattern": "fps60",
+        "description": "Unlock 60 FPS in PS4 and PS5 games on a jailbroken PS5, with one switch per game.",
+        "display_name": "ps5-60FPS",
+        "exclude": false,
+        "url": "https://github.com/eladharels/ps5-60FPS"
+    },
+    {
         "asset_pattern": "TabShifter",
         "description": "Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (FW 13.60 supported).",
         "display_name": "PS5 TabShifter",
