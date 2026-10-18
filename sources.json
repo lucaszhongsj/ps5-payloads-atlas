@@ -312,5 +312,12 @@
         "display_name": "pLinux5-NG",
         "exclude": false,
         "url": "https://github.com/pLabs5/pLinux5-NG"
+    },
+    {
+        "asset_pattern": "^bond-server-.*\\.elf$",
+        "description": "007 First Light (PPSA11386) online on a jailbroken PS5, with no IOI servers involved and no PC needed. One payload does everything on the console, so the online features and TacSim work.",
+        "display_name": "007 First Light PS5 Online",
+        "exclude": false,
+        "url": "https://theghostonline.dev/theghostonline/007-First-Light-PS5"
     }
 ]
