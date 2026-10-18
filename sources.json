@@ -224,11 +224,11 @@
         "url": "https://github.com/pegasus-ps5/pegasus-dl"
     },
     {
-        "asset_pattern": "sonic-loader",
-        "description": "Integrated web-based payload loader and management dashboard combining autoloading, cheat management, monitoring, file transfer, and file management.",
-        "display_name": "Sonic Loader",
+        "asset_pattern": "neo-manager",
+        "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
+        "display_name": "NeoEnabler",
         "exclude": false,
-        "url": "https://git.earthonion.com/soniciso/sonicloader"
+        "url": "https://github.com/gasb07/NeoEnabler"
     },
     {
         "asset_pattern": "gdbsrv-ps5",
