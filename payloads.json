@@ -257,12 +257,12 @@
     {
       "name": "LZ4 Compression for PS5",
       "filename": "lz4-compression.elf",
-      "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression/releases/download/v1.6.0/lz4-compression.elf",
+      "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression/releases/download/v1.6.2/lz4-compression.elf",
       "description": "Shrink your PS5 games on the console itself. Pick a game, choose Compress with LZ4, and it packs the game data into LZ4 asset packs that APR-EMU reads while the game runs. Every file gets checked before anything's deleted, and if the game doesn't ship APR-EMU, the right runtime is added for you.",
-      "version": "v1.6.0",
+      "version": "v1.6.2",
       "category": "Tools",
       "checksum": "",
-      "last_update": "2026-10-19 03:52:42 UTC+8",
+      "last_update": "2026-10-19 10:08:51 UTC+8",
       "source": "https://theghostonline.dev/theghostonline/ps5-lz4-compression"
     },
     {
@@ -564,13 +564,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.1.5.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.5/ps5upload-7.1.5.elf",
+      "filename": "ps5upload-7.1.6.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.6/ps5upload-7.1.6.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.1.5",
+      "version": "v7.1.6",
       "category": "Backup",
-      "checksum": "1d72cb537e93546168a9a6dabd1c535fb96f997d4d921c99b3f8fe32d91a471c",
-      "last_update": "2026-10-19 06:43:54 UTC+8",
+      "checksum": "cc3cd53f9047ad6e82c13db246cb77c7399debaa00b57349c37e058b589b3950",
+      "last_update": "2026-10-19 12:08:40 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
