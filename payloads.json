@@ -279,12 +279,12 @@
     {
       "name": "NeoEnabler",
       "filename": "neo-manager.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.3.3/neo-manager.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.3.4/neo-manager.elf",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.3.3",
+      "version": "v0.3.4",
       "category": "Tools",
-      "checksum": "380acb4cb1232b6d84985c85af432b2c5026d1d4cd35a25394d7976e2e366195",
-      "last_update": "2026-10-19 06:57:55 UTC+8",
+      "checksum": "92c624d96fa0350c9a45a0c66e890536f37a72a6c5f9421e07039368c05ae961",
+      "last_update": "2026-10-20 02:13:21 UTC+8",
       "source": "https://github.com/gasb07/neoenabler"
     },
     {
@@ -443,13 +443,13 @@
     },
     {
       "name": "PS5 Web File Manager",
-      "filename": "web-file-mgr-v1.11.elf",
-      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.11/web-file-mgr-v1.11.elf",
+      "filename": "web-file-mgr-v1.11b.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.11b/web-file-mgr-v1.11b.elf",
       "description": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
-      "version": "v1.11",
+      "version": "v1.11b",
       "category": "Files",
-      "checksum": "cbcdacf69c331025e1643fc99f5b5fc117125e7c39931b6dd914323412558911",
-      "last_update": "2026-10-18 02:19:46 UTC+8",
+      "checksum": "989f26d292d07a35581a2ee36766fc477fc2f5deedb2a9d0cedae5ee19667eba",
+      "last_update": "2026-10-19 23:29:47 UTC+8",
       "source": "https://github.com/owendswang/ps5-web-file-manager"
     },
     {
@@ -499,12 +499,12 @@
     {
       "name": "ps5-exporter",
       "filename": "ps5-exporter.elf",
-      "url": "https://github.com/Marice/ps5-exporter/releases/download/v0.3.0/ps5-exporter.elf",
+      "url": "https://github.com/Marice/ps5-exporter/releases/download/v0.3.1/ps5-exporter.elf",
       "description": "Prometheus exporter for a jailbroken PS5",
-      "version": "v0.3.0",
+      "version": "v0.3.1",
       "category": "Tools",
-      "checksum": "ef9fa98269ec3a1b94a6ea62256e81ddcc033df13ed8dea2eb4dd04919745147",
-      "last_update": "2026-10-19 02:56:44 UTC+8",
+      "checksum": "ff0c36333ba44da20a05039f148b644225edfeeac80e7c12006f767681739862",
+      "last_update": "2026-10-20 01:10:18 UTC+8",
       "source": "https://github.com/marice/ps5-exporter"
     },
     {
@@ -531,13 +531,13 @@
     },
     {
       "name": "ps5-payload-manager",
-      "filename": "pldmgr_v0.6.2.elf",
-      "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.2/pldmgr_v0.6.2.elf",
+      "filename": "pldmgr_v0.6.3.elf",
+      "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.3/pldmgr_v0.6.3.elf",
       "description": "A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5.",
-      "version": "v0.6.2",
+      "version": "v0.6.3",
       "category": "Tools",
-      "checksum": "0cd5e0cc89ca4db6586dc1ff6f335caa4e33b50951c0ef86f5d1ea971f34e9c5",
-      "last_update": "2026-10-19 20:00:07 UTC+8",
+      "checksum": "2a42054fd9725e1d9595ff4add95abc30e5b49446fcdcb96c06775a376a841c4",
+      "last_update": "2026-10-19 21:42:55 UTC+8",
       "source": "https://github.com/itsplk/ps5-payload-manager"
     },
     {
