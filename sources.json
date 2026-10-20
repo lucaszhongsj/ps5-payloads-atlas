@@ -210,6 +210,13 @@
         "url": "https://github.com/aydencharles/kylin-core-release"
     },
     {
+        "asset_pattern": "perfbar-complete",
+        "description": "A standalone on-screen performance overlay for the PS5. It draws FPS, frametimes, 1% lows, CPU/SoC temperatures, and RAM/VRAM usage directly over your games.",
+        "display_name": "PerfBar",
+        "exclude": false,
+        "url": "https://github.com/X1NONs/PrefBar"
+    },
+    {
         "asset_pattern": "webkit-autoloader-installer",
         "description": "Automatically loads the WebKit exploit and your elf payloads.",
         "display_name": "PS5 WebKit Autoloader",
