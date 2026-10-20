@@ -321,6 +321,17 @@
       "source": "https://github.com/pegasus-ps5/pegasus-dl"
     },
     {
+      "name": "PerfBar",
+      "filename": "perfbar-complete.elf",
+      "url": "https://github.com/X1NONs/PrefBar/releases/download/perfbar-complete/perfbar-complete.elf",
+      "description": "A standalone on-screen performance overlay for the PS5. It draws FPS, frametimes, 1% lows, CPU/SoC temperatures, and RAM/VRAM usage directly over your games.",
+      "version": "perfbar-complete",
+      "category": "Tools",
+      "checksum": "c06feb1dd34573086f43eaf6b39882e12776c8cc063cff110eae4b1bac310292",
+      "last_update": "2026-10-20 03:37:59 UTC+8",
+      "source": "https://github.com/x1nons/prefbar"
+    },
+    {
       "name": "PKG-Manager",
       "filename": "pkg-manager_v1.5.1.elf",
       "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.5.1/pkg-manager_v1.5.1.elf",
