@@ -279,12 +279,12 @@
     {
       "name": "NeoEnabler",
       "filename": "neo-manager.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.3.4/neo-manager.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.3.5/neo-manager.elf",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.3.4",
+      "version": "v0.3.5",
       "category": "Tools",
-      "checksum": "92c624d96fa0350c9a45a0c66e890536f37a72a6c5f9421e07039368c05ae961",
-      "last_update": "2026-10-20 02:13:21 UTC+8",
+      "checksum": "65b7c27645fa54f2f7d5028236f7f413c08b0e28ce522011e3e3d6f268b30116",
+      "last_update": "2026-10-20 23:32:48 UTC+8",
       "source": "https://github.com/gasb07/neoenabler"
     },
     {
@@ -658,10 +658,6 @@
     },
     {
       "url": "https://github.com/StonedModder/Ghostpad",
-      "reason": "no release with .elf/.bin asset, or repo unreachable"
-    },
-    {
-      "url": "https://github.com/theghostonline/PS5-LZ4-Compression",
       "reason": "no release with .elf/.bin asset, or repo unreachable"
     }
   ]
