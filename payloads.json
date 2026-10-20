@@ -279,12 +279,12 @@
     {
       "name": "NeoEnabler",
       "filename": "neo-manager.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.3.5/neo-manager.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.4.0/neo-manager.elf",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.3.5",
+      "version": "v0.4.0",
       "category": "Tools",
-      "checksum": "65b7c27645fa54f2f7d5028236f7f413c08b0e28ce522011e3e3d6f268b30116",
-      "last_update": "2026-10-20 23:32:48 UTC+8",
+      "checksum": "8034da1b718f949419004ba52e4c933b7719054dfd4223a71392bdf6607c01c9",
+      "last_update": "2026-10-21 06:31:52 UTC+8",
       "source": "https://github.com/gasb07/neoenabler"
     },
     {
@@ -322,13 +322,13 @@
     },
     {
       "name": "PerfBar",
-      "filename": "perfbar-complete.elf",
-      "url": "https://github.com/X1NONs/PrefBar/releases/download/perfbar-complete/perfbar-complete.elf",
+      "filename": "PrefBar-complete_V0.1.2.elf",
+      "url": "https://github.com/X1NONs/PrefBar/releases/download/v0.1.2/PrefBar-complete_V0.1.2.elf",
       "description": "A standalone on-screen performance overlay for the PS5. It draws FPS, frametimes, 1% lows, CPU/SoC temperatures, and RAM/VRAM usage directly over your games.",
-      "version": "perfbar-complete",
+      "version": "v0.1.2",
       "category": "Tools",
-      "checksum": "c06feb1dd34573086f43eaf6b39882e12776c8cc063cff110eae4b1bac310292",
-      "last_update": "2026-10-20 03:37:59 UTC+8",
+      "checksum": "11fd568c5cc07974fc5aa37b3dd7fef79a862459d42a28027e9d14a74010ac89",
+      "last_update": "2026-10-21 03:31:04 UTC+8",
       "source": "https://github.com/x1nons/prefbar"
     },
     {
@@ -575,13 +575,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.1.9.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.9/ps5upload-7.1.9.elf",
+      "filename": "ps5upload-7.1.10.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.10/ps5upload-7.1.10.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.1.9",
+      "version": "v7.1.10",
       "category": "Backup",
-      "checksum": "a9674bd22737688783c1857817d032ddf2fd5ca4e750eea17175428556271141",
-      "last_update": "2026-10-20 04:14:26 UTC+8",
+      "checksum": "0025ee8d5ac9b660e8bc0ee98e42675ddd69b39c58ce71ff5ac0fb97de1a6040",
+      "last_update": "2026-10-21 03:49:29 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
