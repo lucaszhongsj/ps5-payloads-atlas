@@ -81,12 +81,12 @@
     {
       "name": "elfldr",
       "filename": "elfldr-ps5.elf",
-      "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.26/elfldr-ps5.elf",
+      "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.27/elfldr-ps5.elf",
       "description": "An ELF loader for jailbroken PS5s that accepts payloads on port 9021.",
-      "version": "v0.26",
+      "version": "v0.27",
       "category": "Kernel",
-      "checksum": "ed6d587a057c09d6a95b2176e336d9ffc605e547ac56462128b029e47b8ccea1",
-      "last_update": "2026-08-30 01:31:18 UTC+8",
+      "checksum": "82f6227610172c98bad6efe68219fc93a10027035991f47eb4b75532d023407d",
+      "last_update": "2026-10-22 01:42:19 UTC+8",
       "source": "https://github.com/ps5-payload-dev/elfldr"
     },
     {
