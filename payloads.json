@@ -355,13 +355,13 @@
     },
     {
       "name": "PoorDS4",
-      "filename": "PoorDS4rc51.elf",
-      "url": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc51/PoorDS4rc51.elf",
+      "filename": "PoorDS4.elf",
+      "url": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.2.0/PoorDS4.elf",
       "description": "Use a wireless DualShock 4 in native PS5 games on jailbroken consoles.",
-      "version": "v0.1.0-rc51",
+      "version": "v0.2.0",
       "category": "Tools",
-      "checksum": "e1b9f257f51678a977edaeafd4ca1f8a03e9df0afda7d5dd84435841fa20795d",
-      "last_update": "2026-09-30 09:01:16 UTC+8",
+      "checksum": "c5f257ca2bf2f95949d09f95dd6feb3353b2ad37e24c972d09fccc3beb11301c",
+      "last_update": "2026-10-21 10:59:15 UTC+8",
       "source": "https://github.com/itsblurf/poords4"
     },
     {
@@ -378,12 +378,12 @@
     {
       "name": "PS4Mount",
       "filename": "ps4mount.elf",
-      "url": "https://github.com/gasb07/ps4mount/releases/download/v0.6.0/ps4mount.elf",
+      "url": "https://github.com/gasb07/ps4mount/releases/download/v0.6.1/ps4mount.elf",
       "description": "Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal storage or PS5 formatted USB storage",
-      "version": "v0.6.0",
+      "version": "v0.6.1",
       "category": "Installer",
-      "checksum": "72467a3d8697961d611603956c4e63d96904197e57b175ff73e41d80badcaf25",
-      "last_update": "2026-10-17 05:32:30 UTC+8",
+      "checksum": "e8730c816fe762c52a9aa88c2116520569fa4448c49ff4c2035001ab9427601a",
+      "last_update": "2026-10-21 11:06:30 UTC+8",
       "source": "https://github.com/gasb07/ps4mount"
     },
     {
