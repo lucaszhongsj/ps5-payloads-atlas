@@ -585,17 +585,6 @@
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
-      "name": "ShadowMount+",
-      "filename": "shadowmountplus.elf",
-      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7-beta5fix1/shadowmountplus.elf",
-      "description": "Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen.",
-      "version": "1.7-beta5fix1",
-      "category": "Installer",
-      "checksum": "e85fd63b705498488f39c09c9aea6f9fa22e0df2e932865de49a8cedf25172d5",
-      "last_update": "2026-10-11 02:36:33 UTC+8",
-      "source": "https://github.com/drakmor/shadowmountplus"
-    },
-    {
       "name": "shsrv",
       "filename": "shsrv-ps5.elf",
       "url": "https://github.com/ps5-payload-dev/shsrv/releases/download/v0.20/shsrv-ps5.elf",
@@ -658,6 +647,10 @@
     },
     {
       "url": "https://github.com/StonedModder/Ghostpad",
+      "reason": "no release with .elf/.bin asset, or repo unreachable"
+    },
+    {
+      "url": "https://github.com/drakmor/shadowmountplus",
       "reason": "no release with .elf/.bin asset, or repo unreachable"
     }
   ]
