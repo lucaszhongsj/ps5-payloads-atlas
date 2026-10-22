@@ -3,13 +3,13 @@
   "payloads": [
     {
       "name": "007 First Light PS5 Online",
-      "filename": "bond-server-0.3.0.elf",
-      "url": "https://theghostonline.dev/theghostonline/007-First-Light-PS5/releases/download/v0.3.0/bond-server-0.3.0.elf",
+      "filename": "bond-server-0.3.1.elf",
+      "url": "https://theghostonline.dev/theghostonline/007-First-Light-PS5/releases/download/v0.3.1/bond-server-0.3.1.elf",
       "description": "007 First Light (PPSA11386) online on a jailbroken PS5, with no IOI servers involved and no PC needed. One payload does everything on the console, so the online features and TacSim work.",
-      "version": "v0.3.0",
+      "version": "v0.3.1",
       "category": "Tools",
       "checksum": "",
-      "last_update": "2026-10-19 02:03:47 UTC+8",
+      "last_update": "2026-10-22 04:55:47 UTC+8",
       "source": "https://theghostonline.dev/theghostonline/007-first-light-ps5"
     },
     {
@@ -257,12 +257,12 @@
     {
       "name": "LZ4 Compression for PS5",
       "filename": "lz4-compression.elf",
-      "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression/releases/download/v1.6.2/lz4-compression.elf",
+      "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression/releases/download/v1.6.3/lz4-compression.elf",
       "description": "Shrink your PS5 games on the console itself. Pick a game, choose Compress with LZ4, and it packs the game data into LZ4 asset packs that APR-EMU reads while the game runs. Every file gets checked before anything's deleted, and if the game doesn't ship APR-EMU, the right runtime is added for you.",
-      "version": "v1.6.2",
+      "version": "v1.6.3",
       "category": "Tools",
       "checksum": "",
-      "last_update": "2026-10-19 10:08:51 UTC+8",
+      "last_update": "2026-10-22 04:53:50 UTC+8",
       "source": "https://theghostonline.dev/theghostonline/ps5-lz4-compression"
     },
     {
