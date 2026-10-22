@@ -279,12 +279,12 @@
     {
       "name": "NeoEnabler",
       "filename": "neo-manager.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.4.0/neo-manager.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.4.1/neo-manager.elf",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.4.0",
+      "version": "v0.4.1",
       "category": "Tools",
-      "checksum": "8034da1b718f949419004ba52e4c933b7719054dfd4223a71392bdf6607c01c9",
-      "last_update": "2026-10-21 06:31:52 UTC+8",
+      "checksum": "07402cf701cafba6a50e5922cbb90d860107adb09a37193f4bb81b3e10cd801d",
+      "last_update": "2026-10-23 01:13:12 UTC+8",
       "source": "https://github.com/gasb07/neoenabler"
     },
     {
@@ -575,13 +575,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.1.16.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.16/ps5upload-7.1.16.elf",
+      "filename": "ps5upload-7.1.18.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.18/ps5upload-7.1.18.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.1.16",
+      "version": "v7.1.18",
       "category": "Backup",
-      "checksum": "df095f4492602e5824297fb2cb45802ca4d415006b2ce8222b9940cb942bd880",
-      "last_update": "2026-10-22 18:47:03 UTC+8",
+      "checksum": "360529ccbd9f00b9341f8ca72ed15851e3324ff69341304b7e93e12977aa7470",
+      "last_update": "2026-10-23 00:51:13 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
