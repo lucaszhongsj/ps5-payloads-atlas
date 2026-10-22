@@ -454,13 +454,13 @@
     },
     {
       "name": "PS5 Web File Manager",
-      "filename": "web-file-mgr-v1.11b.elf",
-      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.11b/web-file-mgr-v1.11b.elf",
+      "filename": "web-file-mgr-v1.12.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.12/web-file-mgr-v1.12.elf",
       "description": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
-      "version": "v1.11b",
+      "version": "v1.12",
       "category": "Files",
-      "checksum": "989f26d292d07a35581a2ee36766fc477fc2f5deedb2a9d0cedae5ee19667eba",
-      "last_update": "2026-10-19 23:29:47 UTC+8",
+      "checksum": "f3461eb967da7afbbf0420d3294fbc8f999cc2ad53a756bed413aa80c7cfa67a",
+      "last_update": "2026-10-22 23:28:23 UTC+8",
       "source": "https://github.com/owendswang/ps5-web-file-manager"
     },
     {
@@ -575,13 +575,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.1.13.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.13/ps5upload-7.1.13.elf",
+      "filename": "ps5upload-7.1.16.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.16/ps5upload-7.1.16.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.1.13",
+      "version": "v7.1.16",
       "category": "Backup",
-      "checksum": "46bb7dc0e7f28ded2859ac4392c151e39010354c79de2f323d73aaa861287a30",
-      "last_update": "2026-10-22 03:23:43 UTC+8",
+      "checksum": "df095f4492602e5824297fb2cb45802ca4d415006b2ce8222b9940cb942bd880",
+      "last_update": "2026-10-22 18:47:03 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
@@ -630,13 +630,13 @@
     },
     {
       "name": "WFM 7-Zip Helper",
-      "filename": "wfm-7zip-helper-v26.03-2.elf",
-      "url": "https://github.com/owendswang/wfm-7zip-helper/releases/download/v26.03-2/wfm-7zip-helper-v26.03-2.elf",
+      "filename": "wfm-7zip-helper-v26.04-0.elf",
+      "url": "https://github.com/owendswang/wfm-7zip-helper/releases/download/v26.04-0/wfm-7zip-helper-v26.04-0.elf",
       "description": "A separate extraction helper for PS5 Web File Manager. It uses 7-Zip's native archive handlers and runs as an independent PS5 payload.",
-      "version": "v26.03-2",
+      "version": "v26.04-0",
       "category": "Files",
-      "checksum": "dd8bbae4cd44ed20c4cbafc74fdc3271f52b9d7888a0d4f4038a8ae05feb92a4",
-      "last_update": "2026-10-06 00:39:17 UTC+8",
+      "checksum": "6acc2972d358dfc92b5ac66cf8cb9ca8613c096bde56ce790077a6831fb17825",
+      "last_update": "2026-10-22 23:27:06 UTC+8",
       "source": "https://github.com/owendswang/wfm-7zip-helper"
     },
     {
