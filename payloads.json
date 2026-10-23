@@ -279,12 +279,12 @@
     {
       "name": "NeoEnabler",
       "filename": "neo-manager.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.4.1/neo-manager.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.0/neo-manager.elf",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.4.1",
+      "version": "v0.5.0",
       "category": "Tools",
-      "checksum": "07402cf701cafba6a50e5922cbb90d860107adb09a37193f4bb81b3e10cd801d",
-      "last_update": "2026-10-23 01:13:12 UTC+8",
+      "checksum": "d3464c5deb8dac7c2b55f51baed244d0084a2c76d53b191ac3d42b6c4baf13d3",
+      "last_update": "2026-10-23 19:03:10 UTC+8",
       "source": "https://github.com/gasb07/neoenabler"
     },
     {
