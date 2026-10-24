@@ -279,12 +279,12 @@
     {
       "name": "NeoEnabler",
       "filename": "neo-manager.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.0/neo-manager.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.1/neo-manager.elf",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.5.0",
+      "version": "v0.5.1",
       "category": "Tools",
-      "checksum": "d3464c5deb8dac7c2b55f51baed244d0084a2c76d53b191ac3d42b6c4baf13d3",
-      "last_update": "2026-10-23 19:03:10 UTC+8",
+      "checksum": "105a48f1f1382c224f2f3227d28b02f8df79c3e07efe9fa79fb3f7b76cc41b64",
+      "last_update": "2026-10-24 06:28:26 UTC+8",
       "source": "https://github.com/gasb07/neoenabler"
     },
     {
@@ -378,12 +378,12 @@
     {
       "name": "PS4Mount",
       "filename": "ps4mount.elf",
-      "url": "https://github.com/gasb07/ps4mount/releases/download/v0.6.1/ps4mount.elf",
+      "url": "https://github.com/gasb07/ps4mount/releases/download/v0.7.0/ps4mount.elf",
       "description": "Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal storage or PS5 formatted USB storage",
-      "version": "v0.6.1",
+      "version": "v0.7.0",
       "category": "Installer",
-      "checksum": "e8730c816fe762c52a9aa88c2116520569fa4448c49ff4c2035001ab9427601a",
-      "last_update": "2026-10-21 11:06:30 UTC+8",
+      "checksum": "9a99fdeb2be8ebee823b14636e0aac5721386feabcfe97e27dc6d5b3e4158bb7",
+      "last_update": "2026-10-24 10:07:53 UTC+8",
       "source": "https://github.com/gasb07/ps4mount"
     },
     {
