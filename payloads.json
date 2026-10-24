@@ -279,12 +279,12 @@
     {
       "name": "NeoEnabler",
       "filename": "neo-manager.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.1/neo-manager.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.2/neo-manager.elf",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.5.1",
+      "version": "v0.5.2",
       "category": "Tools",
-      "checksum": "105a48f1f1382c224f2f3227d28b02f8df79c3e07efe9fa79fb3f7b76cc41b64",
-      "last_update": "2026-10-24 06:28:26 UTC+8",
+      "checksum": "ea9342b1349ea26b55af4643bdd34308d7880bb09309b632c1dc2c8c95f7be1b",
+      "last_update": "2026-10-25 06:18:34 UTC+8",
       "source": "https://github.com/gasb07/neoenabler"
     },
     {
@@ -319,17 +319,6 @@
       "checksum": "1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212",
       "last_update": "2026-10-15 15:42:25 UTC+8",
       "source": "https://github.com/aydencharles/onionhen"
-    },
-    {
-      "name": "pegasus-dl",
-      "filename": "pegasus_dl.elf",
-      "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.11.0/pegasus_dl.elf",
-      "description": "PS5 payload that serves a local web interface for downloading and installing game or application package data.",
-      "version": "v1.11.0",
-      "category": "Installer",
-      "checksum": "32b69c2089bb545abfabd04d5827444698f9c4f1bc4915d72247cb781e8c23d9",
-      "last_update": "2026-10-10 06:57:31 UTC+8",
-      "source": "https://github.com/pegasus-ps5/pegasus-dl"
     },
     {
       "name": "PerfBar",
@@ -597,13 +586,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.4.3.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.4.3/ps5upload-7.4.3.elf",
+      "filename": "ps5upload-7.5.1.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.5.1/ps5upload-7.5.1.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.4.3",
+      "version": "v7.5.1",
       "category": "Backup",
-      "checksum": "1a7dfaff37d131adac59a74a454dd0a756a503d1022bddda5b5b7e619299e667",
-      "last_update": "2026-10-25 02:08:20 UTC+8",
+      "checksum": "021c03c15d1b077558f8966ca46f38636f1934c084b930545098167e11abbc7b",
+      "last_update": "2026-10-25 05:40:06 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
@@ -680,6 +669,10 @@
     },
     {
       "url": "https://github.com/StonedModder/Ghostpad",
+      "reason": "no release with .elf/.bin asset, or repo unreachable"
+    },
+    {
+      "url": "https://github.com/pegasus-ps5/pegasus-dl",
       "reason": "no release with .elf/.bin asset, or repo unreachable"
     }
   ]
