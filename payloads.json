@@ -299,6 +299,17 @@
       "source": "https://git.etawen.dev/earthonion/np-fake-signin"
     },
     {
+      "name": "Nuvio PS5",
+      "filename": "nuvio-ps5.elf",
+      "url": "https://theghostonline.dev/theghostonline/Nuvio-PS5/releases/download/v1.9.1/nuvio-ps5.elf",
+      "description": "Nuvio as a PS5 app, with a native 4K HDR player built for the console's own video hardware.",
+      "version": "v1.9.1",
+      "category": "Tools",
+      "checksum": "",
+      "last_update": "2026-10-20 08:17:18 UTC+8",
+      "source": "https://theghostonline.dev/theghostonline/nuvio-ps5"
+    },
+    {
       "name": "onionHEN",
       "filename": "OnionHEN.elf",
       "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.9.0/OnionHEN.elf",
@@ -429,6 +440,17 @@
       "checksum": "5fec05b8a3cb89bafbc97970d5d68d9f31e6fcde873b5523243890e50836592b",
       "last_update": "2026-10-02 14:39:43 UTC+8",
       "source": "https://github.com/gcoding97/ps5-game-compressor"
+    },
+    {
+      "name": "PS5 Game Updater",
+      "filename": "game-updater.elf",
+      "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.0.2/game-updater.elf",
+      "description": "Update your installed PS5 games in a few taps, on the console. Finds the newest official update for each game and installs it, and applies a backport when an update needs a newer firmware than yours. No PC needed.",
+      "version": "v1.0.2",
+      "category": "Installer",
+      "checksum": "",
+      "last_update": "2026-10-24 14:49:37 UTC+8",
+      "source": "https://theghostonline.dev/theghostonline/ps5-game-updater"
     },
     {
       "name": "PS5 TabShifter",
@@ -575,13 +597,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.3.0.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.3.0/ps5upload-7.3.0.elf",
+      "filename": "ps5upload-7.4.1.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.4.1/ps5upload-7.4.1.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.3.0",
+      "version": "v7.4.1",
       "category": "Backup",
-      "checksum": "ded4faa584fa2ac76d34210b7df01cee1359c47eeb0bae5c6f8d7c03a3e1a3cd",
-      "last_update": "2026-10-24 18:22:39 UTC+8",
+      "checksum": "b37ff9670fe33162e03b570a58542ddf3966d1ad4e0a3acdc6e1dae5b69c5b8a",
+      "last_update": "2026-10-25 01:24:36 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
