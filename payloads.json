@@ -455,12 +455,12 @@
     {
       "name": "PS5 TabShifter",
       "filename": "TabShifter.elf",
-      "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v.1.2.1/TabShifter.elf",
+      "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v1.3.0/TabShifter.elf",
       "description": "Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (FW 13.60 supported).",
-      "version": "v.1.2.1",
+      "version": "v1.3.0",
       "category": "Tools",
-      "checksum": "147945cffb28405557a49cd4929c7d0534c55f6a757aba0063f9ce475c1c7255",
-      "last_update": "2026-10-17 04:56:27 UTC+8",
+      "checksum": "5d2d9c46c2390df05c5a85781b033aa9471584629e8bd69b91608cb3e60f45b4",
+      "last_update": "2026-10-25 02:38:30 UTC+8",
       "source": "https://github.com/xvvulcanvx/ps5-tabshifter"
     },
     {
@@ -597,13 +597,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.4.1.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.4.1/ps5upload-7.4.1.elf",
+      "filename": "ps5upload-7.4.3.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.4.3/ps5upload-7.4.3.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.4.1",
+      "version": "v7.4.3",
       "category": "Backup",
-      "checksum": "b37ff9670fe33162e03b570a58542ddf3966d1ad4e0a3acdc6e1dae5b69c5b8a",
-      "last_update": "2026-10-25 01:24:36 UTC+8",
+      "checksum": "1a7dfaff37d131adac59a74a454dd0a756a503d1022bddda5b5b7e619299e667",
+      "last_update": "2026-10-25 02:08:20 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
