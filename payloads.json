@@ -433,12 +433,12 @@
     {
       "name": "PS5 Game Updater",
       "filename": "game-updater.elf",
-      "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.0.2/game-updater.elf",
+      "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.1.0/game-updater.elf",
       "description": "Update your installed PS5 games in a few taps, on the console. Finds the newest official update for each game and installs it, and applies a backport when an update needs a newer firmware than yours. No PC needed.",
-      "version": "v1.0.2",
+      "version": "v1.1.0",
       "category": "Installer",
       "checksum": "",
-      "last_update": "2026-10-24 14:49:37 UTC+8",
+      "last_update": "2026-10-25 13:55:37 UTC+8",
       "source": "https://theghostonline.dev/theghostonline/ps5-game-updater"
     },
     {
@@ -586,13 +586,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-7.5.1.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.5.1/ps5upload-7.5.1.elf",
+      "filename": "ps5upload-7.5.2.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.5.2/ps5upload-7.5.2.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v7.5.1",
+      "version": "v7.5.2",
       "category": "Backup",
-      "checksum": "021c03c15d1b077558f8966ca46f38636f1934c084b930545098167e11abbc7b",
-      "last_update": "2026-10-25 05:40:06 UTC+8",
+      "checksum": "6ad5f22acb9dfb1f977b303c59e7e9c30dc61af302650249fe8fb0078feedde4",
+      "last_update": "2026-10-25 15:08:42 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
