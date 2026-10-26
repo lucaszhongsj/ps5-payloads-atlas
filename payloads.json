@@ -619,14 +619,25 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-8.1.1.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.1.1/ps5upload-8.1.1.elf",
+      "filename": "ps5upload-8.2.0.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.2.0/ps5upload-8.2.0.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v8.1.1",
+      "version": "v8.2.0",
       "category": "Backup",
-      "checksum": "db756d8b61cfa91627491092f090120239722cb8699bc531f34030497c6a1910",
-      "last_update": "2026-10-26 15:00:32 UTC+8",
+      "checksum": "66d3110530686e6768ee1ec1005d0a9a3af1b5b4c2019533980924db57d1cc73",
+      "last_update": "2026-10-26 18:12:15 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
+    },
+    {
+      "name": "RDR2 60fps — PS5 runtime patcher",
+      "filename": "RedDead2.60FPS_v2.0.elf",
+      "url": "https://github.com/armanate/rdr2-60fps-runtime-patcher/releases/download/v2.0/RedDead2.60FPS_v2.0.elf",
+      "description": "Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5, and on a 1080p TV renders the game's own PS4 Pro 4K checkerboard, shown at 1080p (supersampled).",
+      "version": "v2.0",
+      "category": "Tools",
+      "checksum": "646ecb71e80415ab9d9c651539451d38ee0052a5997f7ef7504a42932c7f8261",
+      "last_update": "2026-10-11 01:34:15 UTC+8",
+      "source": "https://github.com/armanate/rdr2-60fps-runtime-patcher"
     },
     {
       "name": "ShadowMount+",
