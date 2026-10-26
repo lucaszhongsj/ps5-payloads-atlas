@@ -255,14 +255,25 @@
       "source": "https://github.com/itsplk/ps5-lapy-jb-daemon"
     },
     {
+      "name": "LiveShell",
+      "filename": "liveshell.elf",
+      "url": "https://github.com/ZiZc3/LiveShell/releases/download/v1.5.2/liveshell.elf",
+      "description": "Animated backgrounds for PS5 home screen.",
+      "version": "v1.5.2",
+      "category": "Tools",
+      "checksum": "3c546a3cc85ded2435f822be12f925a284ac25a2aef757c777d6139dad36b624",
+      "last_update": "2026-10-24 13:52:32 UTC+8",
+      "source": "https://github.com/zizc3/liveshell"
+    },
+    {
       "name": "LZ4 Compression for PS5",
       "filename": "lz4-compression.elf",
-      "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression/releases/download/v1.6.3/lz4-compression.elf",
+      "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression/releases/download/v1.6.4/lz4-compression.elf",
       "description": "Shrink your PS5 games on the console itself. Pick a game, choose Compress with LZ4, and it packs the game data into LZ4 asset packs that APR-EMU reads while the game runs. Every file gets checked before anything's deleted, and if the game doesn't ship APR-EMU, the right runtime is added for you.",
-      "version": "v1.6.3",
+      "version": "v1.6.4",
       "category": "Tools",
       "checksum": "",
-      "last_update": "2026-10-22 04:53:50 UTC+8",
+      "last_update": "2026-10-26 10:34:12 UTC+8",
       "source": "https://theghostonline.dev/theghostonline/ps5-lz4-compression"
     },
     {
@@ -433,12 +444,12 @@
     {
       "name": "PS5 Game Updater",
       "filename": "game-updater.elf",
-      "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.1.0/game-updater.elf",
+      "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.1.1/game-updater.elf",
       "description": "Update your installed PS5 games in a few taps, on the console. Finds the newest official update for each game and installs it, and applies a backport when an update needs a newer firmware than yours. No PC needed.",
-      "version": "v1.1.0",
+      "version": "v1.1.1",
       "category": "Installer",
       "checksum": "",
-      "last_update": "2026-10-25 13:55:37 UTC+8",
+      "last_update": "2026-10-26 10:52:48 UTC+8",
       "source": "https://theghostonline.dev/theghostonline/ps5-game-updater"
     },
     {
@@ -519,6 +530,17 @@
       "source": "https://github.com/kerrdec97/ps5-date-time-sync"
     },
     {
+      "name": "ps5-dump-forge",
+      "filename": "ps5-dump-forge-0.4.1-ps5.elf",
+      "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.4.1/ps5-dump-forge-0.4.1-ps5.elf",
+      "description": "A toolkit for working with PS5 game dumps",
+      "version": "v0.4.1",
+      "category": "Backup",
+      "checksum": "ea5c47d1500efc8573523d19cebaa8addac9ec51fc62a9c90048daca755f5c96",
+      "last_update": "2026-10-25 06:55:07 UTC+8",
+      "source": "https://github.com/quer3q/ps5-dump-forge"
+    },
+    {
       "name": "ps5-exporter",
       "filename": "ps5-exporter.elf",
       "url": "https://github.com/Marice/ps5-exporter/releases/download/v0.3.1/ps5-exporter.elf",
@@ -585,6 +607,17 @@
       "source": "https://github.com/pharaoh2k/ps5debug-ng"
     },
     {
+      "name": "PS5Save",
+      "filename": "backup.elf",
+      "url": "https://github.com/heni0xyz/PS5Save/releases/download/v2/backup.elf",
+      "description": "USB save backup utility for jailbroken PS5’s",
+      "version": "v2",
+      "category": "Backup",
+      "checksum": "91a7661e1f6708da77fe2bb5a5e4634ff1c531445df65bb1681ef2b21357af4c",
+      "last_update": "2026-10-22 00:59:04 UTC+8",
+      "source": "https://github.com/heni0xyz/ps5save"
+    },
+    {
       "name": "PS5upload",
       "filename": "ps5upload-7.5.3.elf",
       "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.5.3/ps5upload-7.5.3.elf",
@@ -638,6 +671,17 @@
       "checksum": "54730c867c6e1148536fdcb370e63a7762d989ea87b62488ad4caff64d43f263",
       "last_update": "2026-08-03 03:51:42 UTC+8",
       "source": "https://github.com/ps5-payload-dev/websrv"
+    },
+    {
+      "name": "WelcomeHubActivator",
+      "filename": "WelcomeHubActivator-v1.2.0.elf",
+      "url": "https://github.com/ghost1372/WelcomeHubActivator/releases/download/v1.2.0/WelcomeHubActivator-v1.2.0.elf",
+      "description": "A PS5 ELF payload that enables the Welcome Hub.",
+      "version": "v1.2.0",
+      "category": "Tools",
+      "checksum": "f989cc412ef782a01f394fe80cf8fc237970884ba90ce4fe4baac165c0b5a2a6",
+      "last_update": "2026-10-24 04:08:05 UTC+8",
+      "source": "https://github.com/ghost1372/welcomehubactivator"
     },
     {
       "name": "WFM 7-Zip Helper",
