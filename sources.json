@@ -35,6 +35,13 @@
         "url": "https://codeberg.org/elmonomalva0/Any-Pad-ps5"
     },
     {
+        "asset_pattern": "RedDead2.60FPS_.*\\.elf$",
+        "description": "Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5, and on a 1080p TV renders the game's own PS4 Pro 4K checkerboard, shown at 1080p (supersampled).",
+        "display_name": "RDR2 60fps — PS5 runtime patcher",
+        "exclude": false,
+        "url": "https://github.com/armanate/rdr2-60fps-runtime-patcher"
+    },
+    {
         "asset_pattern": "fps60",
         "description": "Unlock 60 FPS in PS4 and PS5 games on a jailbroken PS5, with one switch per game.",
         "display_name": "ps5-60FPS",
