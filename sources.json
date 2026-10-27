@@ -1,5 +1,12 @@
 [
     {
+        "asset_pattern": "RecompStore-Installer",
+        "description": "A homebrew app store for jailbroken PS5. It installs and updates native PS5 ports of recompiled games, emulators, apps and tools, and sets each game up from your own disc image.",
+        "display_name": "RecompStore",
+        "exclude": false,
+        "url": "https://github.com/elripalda/RecompStore"
+    },
+    {
         "asset_pattern": "tailscale",
         "description": "Tailscale for jailbroken PS5: reach the console over your tailnet and stream to it with Moonlight/Sunshine (unofficial)",
         "display_name": "PS5 Tailscale",
