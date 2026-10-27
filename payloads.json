@@ -257,12 +257,12 @@
     {
       "name": "LiveShell",
       "filename": "liveshell.elf",
-      "url": "https://github.com/ZiZc3/LiveShell/releases/download/v1.5.2/liveshell.elf",
+      "url": "https://github.com/ZiZc3/LiveShell/releases/download/v1.6.0/liveshell.elf",
       "description": "Animated backgrounds for PS5 home screen.",
-      "version": "v1.5.2",
+      "version": "v1.6.0",
       "category": "Tools",
-      "checksum": "3c546a3cc85ded2435f822be12f925a284ac25a2aef757c777d6139dad36b624",
-      "last_update": "2026-10-24 13:52:32 UTC+8",
+      "checksum": "99335e75312d6ffcce91f6a5b659f0191ec057c744b2b3d5b899db5a88b80ac3",
+      "last_update": "2026-10-27 06:33:48 UTC+8",
       "source": "https://github.com/zizc3/liveshell"
     },
     {
