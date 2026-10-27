@@ -640,6 +640,17 @@
       "source": "https://github.com/armanate/rdr2-60fps-runtime-patcher"
     },
     {
+      "name": "RecompStore",
+      "filename": "RecompStore-Installer.elf",
+      "url": "https://github.com/elripalda/RecompStore/releases/download/v2.7.3/RecompStore-Installer.elf",
+      "description": "A homebrew app store for jailbroken PS5. It installs and updates native PS5 ports of recompiled games, emulators, apps and tools, and sets each game up from your own disc image.",
+      "version": "v2.7.3",
+      "category": "Installer",
+      "checksum": "0e0deaf3da256dfcfe582b2c7b2392c18e99da75d280f4b4b0c1121db8507f01",
+      "last_update": "2026-10-26 15:15:51 UTC+8",
+      "source": "https://github.com/elripalda/recompstore"
+    },
+    {
       "name": "ShadowMount+",
       "filename": "shadowmountplus.elf",
       "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta7/shadowmountplus.elf",
