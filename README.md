@@ -102,7 +102,7 @@ Same repo under multiple aliases (e.g. `LightningMods/etaHEN` and `etaHEN/etaHEN
 | **ps5-syslang** | `v0.3` | Tools | ShellUI language-switching payload for changing the PS5 system language, including on region-locked consoles. | `2026-10-19 00:22:59 UTC+8` | [owendswang/ps5-syslang](https://github.com/owendswang/ps5-syslang) |
 | **ps5debug-NG** | `1.3.2` | Network | PS5 debugger payload — userland TCP wire-protocol server hosted inside SceShellCore. | `2026-09-23 11:21:00 UTC+8` | [pharaoh2k/ps5debug-ng](https://github.com/pharaoh2k/ps5debug-ng) |
 | **PS5Save** | `v2` | Backup | USB save backup utility for jailbroken PS5’s | `2026-10-22 00:59:04 UTC+8` | [heni0xyz/ps5save](https://github.com/heni0xyz/ps5save) |
-| **PS5upload** | `v8.5.1` | Backup | Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client. | `2026-10-27 18:08:05 UTC+8` | [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) |
+| **PS5upload** | `v8.6.1` | Backup | Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client. | `2026-10-28 16:28:30 UTC+8` | [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) |
 | **RDR2 60fps — PS5 runtime patcher** | `v2.0` | Tools | Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5, and on a 1080p TV renders the game's own PS4 Pro 4K checkerboard, shown at 1080p (supersampled). | `2026-10-11 01:34:15 UTC+8` | [armanate/rdr2-60fps-runtime-patcher](https://github.com/armanate/rdr2-60fps-runtime-patcher) |
 | **RecompStore** | `v2.7.3` | Installer | A homebrew app store for jailbroken PS5. It installs and updates native PS5 ports of recompiled games, emulators, apps and tools, and sets each game up from your own disc image. | `2026-10-26 15:15:51 UTC+8` | [elripalda/recompstore](https://github.com/elripalda/recompstore) |
 | **ShadowMount+** | `1.7beta9` | Installer | Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen. | `2026-10-28 01:52:54 UTC+8` | [drakmor/shadowmountplus](https://github.com/drakmor/shadowmountplus) |
@@ -111,7 +111,7 @@ Same repo under multiple aliases (e.g. `LightningMods/etaHEN` and `etaHEN/etaHEN
 | **websrv** | `v0.34` | Network | HTTP server on :8080 serving a homebrew launcher page. Pairs with the homebrew bundles distributed by ps5-payload-dev. | `2026-08-03 03:51:42 UTC+8` | [ps5-payload-dev/websrv](https://github.com/ps5-payload-dev/websrv) |
 | **WelcomeHubActivator** | `v1.2.0` | Tools | A PS5 ELF payload that enables the Welcome Hub. | `2026-10-24 04:08:05 UTC+8` | [ghost1372/welcomehubactivator](https://github.com/ghost1372/welcomehubactivator) |
 | **WFM 7-Zip Helper** | `v26.04-0` | Files | A separate extraction helper for PS5 Web File Manager. It uses 7-Zip's native archive handlers and runs as an independent PS5 payload. | `2026-10-22 23:27:06 UTC+8` | [owendswang/wfm-7zip-helper](https://github.com/owendswang/wfm-7zip-helper) |
-| **zftpd** | `v1.6.0` | Files | Zero-copy FTP/HTTP server. | `2026-10-01 03:14:18 UTC+8` | [seregonwar/zftpd](https://github.com/seregonwar/zftpd) |
+| **zftpd** | `v1.7.0` | Files | Zero-copy FTP/HTTP server. | `2026-10-28 17:20:28 UTC+8` | [seregonwar/zftpd](https://github.com/seregonwar/zftpd) |
 <!-- PAYLOADS_END -->
 
 ## Support & Suggestions

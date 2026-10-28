@@ -619,13 +619,13 @@
     },
     {
       "name": "PS5upload",
-      "filename": "ps5upload-8.5.1.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.5.1/ps5upload-8.5.1.elf",
+      "filename": "ps5upload-8.6.1.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.6.1/ps5upload-8.6.1.elf",
       "description": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
-      "version": "v8.5.1",
+      "version": "v8.6.1",
       "category": "Backup",
-      "checksum": "2039eb340f6c09f7fce6bd726ad526adb68e9e924351b21dba74720025267481",
-      "last_update": "2026-10-27 18:08:05 UTC+8",
+      "checksum": "3e7d67537a2eac9f92ae9330a90682499610b06a5058dd47cb99c2b567c62671",
+      "last_update": "2026-10-28 16:28:30 UTC+8",
       "source": "https://github.com/phantomptr/ps5upload"
     },
     {
@@ -718,13 +718,13 @@
     },
     {
       "name": "zftpd",
-      "filename": "zftpd-ps5-zhttp-v1.6.0.elf",
-      "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps5-zhttp-v1.6.0.elf",
+      "filename": "zftpd-ps5-zhttp-v1.7.0.elf",
+      "url": "https://github.com/seregonwar/zftpd/releases/download/v1.7.0/zftpd-ps5-zhttp-v1.7.0.elf",
       "description": "Zero-copy FTP/HTTP server.",
-      "version": "v1.6.0",
+      "version": "v1.7.0",
       "category": "Files",
-      "checksum": "fc59b60aab2dce9a8bae385c106bfa174048d765c826101355f1f010a789b497",
-      "last_update": "2026-10-01 03:14:18 UTC+8",
+      "checksum": "8f78ac0cde64a0744b82663d4a6bf8c1d7e937876dceddc219a21164578bd96e",
+      "last_update": "2026-10-28 17:20:28 UTC+8",
       "source": "https://github.com/seregonwar/zftpd"
     }
   ],
