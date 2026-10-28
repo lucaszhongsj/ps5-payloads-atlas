@@ -290,12 +290,12 @@
     {
       "name": "NeoEnabler",
       "filename": "neo-manager.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.2/neo-manager.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.3/neo-manager.elf",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.5.2",
+      "version": "v0.5.3",
       "category": "Tools",
-      "checksum": "ea9342b1349ea26b55af4643bdd34308d7880bb09309b632c1dc2c8c95f7be1b",
-      "last_update": "2026-10-25 06:18:34 UTC+8",
+      "checksum": "9b37fa14568168a0cb22dad41a912562691286bb39a19211f692cdb332b81a6e",
+      "last_update": "2026-10-28 09:09:44 UTC+8",
       "source": "https://github.com/gasb07/neoenabler"
     },
     {
@@ -444,12 +444,12 @@
     {
       "name": "PS5 Game Updater",
       "filename": "game-updater.elf",
-      "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.1.1/game-updater.elf",
+      "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.1.2/game-updater.elf",
       "description": "Update your installed PS5 games in a few taps, on the console. Finds the newest official update for each game and installs it, and applies a backport when an update needs a newer firmware than yours. No PC needed.",
-      "version": "v1.1.1",
+      "version": "v1.1.2",
       "category": "Installer",
       "checksum": "",
-      "last_update": "2026-10-26 10:52:48 UTC+8",
+      "last_update": "2026-10-28 08:13:46 UTC+8",
       "source": "https://theghostonline.dev/theghostonline/ps5-game-updater"
     },
     {
@@ -487,13 +487,13 @@
     },
     {
       "name": "PS5 WebKit Autoloader",
-      "filename": "webkit-autoloader-installer_v0.6.1.elf",
-      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf",
+      "filename": "webkit-autoloader-installer_v0.6.2.elf",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf",
       "description": "Automatically loads the WebKit exploit and your elf payloads.",
-      "version": "v0.6.1",
+      "version": "v0.6.2",
       "category": "Kernel",
-      "checksum": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f",
-      "last_update": "2026-10-09 00:06:48 UTC+8",
+      "checksum": "27fd335764270716972faea399a5cc7810b9e49a21abf4966d9759580756cb19",
+      "last_update": "2026-10-28 08:07:18 UTC+8",
       "source": "https://github.com/itsplk/ps5-webkit-autoloader"
     },
     {
