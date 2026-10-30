@@ -1,0 +1,82 @@
+name: Generate PS5 Payload Catalog
+
+# A one-way pipeline; each step consumes the previous step's product and no
+# work is done twice:
+#   collect  upstream lists → sources/mirror/*.json (writes the sources/mirror/*.json only)
+#   build    sources/ → payloads.json               (observes release state over the network)
+#   render   payloads.json → the README `Payloads` table
+#   site     README.md & payloads.json → _site/ → Pages
+on:
+  schedule:
+    - cron: '10 */6 * * *' # every 6 hours. ( 08:10 / 14:10 / 20:10 / 02:10 in UTC+8 )
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: generate-catalog
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # 1) Collect: writes sources/mirror/ only; manual/ is never touched, and a failed fetch keeps the old snapshot.
+      - name: Collect upstream lists
+        run: python scripts/atlas.py collect
+
+      # 2) Assemble: watch each repo's latest release, then shape the client catalogue from those observations.
+      - name: Assemble catalogue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/atlas.py build
+
+      # 3) Render: a pure view; the README moves only when payloads.json did.
+      - name: Render README
+        run: python scripts/atlas.py render
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add payloads.json README.md sources/
+          if git diff --cached --quiet; then
+            echo "No changes to publish"
+            exit 0
+          fi
+          git commit -m "chore: refresh catalogue"
+          git push
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # build may have just pushed a new commit; take the latest, not the snapshot at trigger time.
+          ref: ${{ github.ref }}
+
+      # 4) Package: render the README into a root-path page; payloads.json ships alongside it.
+      - name: Package site
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/atlas.py site
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v5

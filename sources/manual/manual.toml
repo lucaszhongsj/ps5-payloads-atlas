@@ -1,0 +1,99 @@
+
+
+# Corrections for repos someone else already lists; the table key is the repo url (identity). Each table carries at least one key, and the only allowed
+# keys are:
+#   asset_pattern  a regex for picking the asset (re.search against the asset name, case-insensitive); which .elf ships is a judgement
+#   skip           true = do not list, across every source; the reason lives in the comment above the table, never in the data
+# This file corrects, it does not add: if nothing lists the repo in a table, the build says so — the entry belongs in additional.json beside this file.
+
+["https://github.com/blackbearreloaded/prosperostore"]
+skip = true
+
+# PS5 game distribution (PPSA… .zip + SHA256SUMS); no .elf in any release
+["https://github.com/etaHEN/etaHEN"]
+skip = true
+
+# publishes .bin only (2.1B–2.5B); this catalogue is .elf-only
+["https://github.com/herbrax/chiral-ftp-ps5"]
+skip = true
+
+# ships zipped bundles (chiral-ftp-ps5-*.zip); no bare .elf in any release
+["https://github.com/illusionyy/ps-patch-system"]
+asset_pattern = '^patch-bundle-orbis\.elf$'
+
+["https://github.com/itsblurf/poords4"]
+asset_pattern = '^PoorDS4\.elf$'
+
+["https://github.com/juma-sayeh/ps5-file-explorer"]
+asset_pattern = '^file-explorer\.elf$'
+
+["https://github.com/juma-sayeh/PS5-Game-Compressor"]
+skip = true
+
+# upstream of gcoding97/PS5-Game-Compressor but stale (v1.0.4 vs v1.1.1);
+# both ship game-compressor.elf, so listing both overwrites one another
+["https://github.com/LightningMods/etaHEN"]
+skip = true
+
+# alias of etaHEN/etaHEN — GitHub redirects it there, so it is the same payload
+["https://github.com/lightningmods/itemzflow"]
+skip = true
+
+# distributes as pkg; every release has no assets at all
+["https://github.com/n0llptr/playstation-5-save-mounter"]
+skip = true
+
+# ships save-mounter.zip only; no .elf in any release
+["https://github.com/opensourcerer-dev/ps5debug-ng"]
+skip = true
+
+# alias of Pharaoh2k/ps5debug-NG — the repo was renamed
+["https://github.com/owendswang/ps5-syslang"]
+asset_pattern = '^syslang-zh-Hans'
+
+["https://github.com/owendswang/ps5-web-file-manager"]
+asset_pattern = '^web-file-mgr'
+
+["https://github.com/pegasus-ps5/pegasus-dl"]
+skip = true
+
+# distributes as .ffpfsc packages; no .elf in any release
+["https://github.com/pLabs5/pLinux5-NG"]
+asset_pattern = '^pLinux5-NG\.elf$'
+
+["https://github.com/ps5-payload-dev/ftpsrv"]
+asset_pattern = '^ftpsrv-ps5\.elf$'
+
+["https://github.com/ps5-payload-dev/jtplay"]
+skip = true
+
+# ships JTPlay.zip only; no .elf in any release
+["https://github.com/sainsaji/evo-player-ps5"]
+skip = true
+
+# current releases ship pkg/ffpfsc; the last .elf assets were v0.7.0
+["https://github.com/seregonwar/zftpd"]
+asset_pattern = '^zftpd-ps5-zhttp'
+
+["https://github.com/stonedmodder/ghostcontrol-ps5-usb-controller-patcher"]
+skip = true
+
+# repo deleted (GitHub 404)
+["https://github.com/stonedmodder/ghostpad"]
+skip = true
+
+# repo deleted (GitHub 404)
+["https://github.com/stupiditytries/librespot-ps5"]
+skip = true
+
+# current releases ship zip only; the last .elf was v0.1.0
+["https://github.com/theghostonline/PS5-LZ4-Compression"]
+skip = true
+
+# no such GitHub repo; releases live on theghostonline.dev, which is listed separately
+["https://github.com/venezuelanbiggie24/machete-ps5-backup-manager"]
+skip = true
+
+# desktop-app builds (rpm/deb/AppImage/dmg/exe); no .elf in any release
+["https://github.com/zizc3/LiveShell"]
+asset_pattern = '^liveshell\.elf$'

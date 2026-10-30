@@ -1,4 +1,6 @@
-payloads/
 __pycache__/
 *.pyc
 .DS_Store
+.idea/
+build/
+_site/

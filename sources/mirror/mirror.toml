@@ -1,0 +1,13 @@
+
+
+# Mirror manifest: the table key is the repository being mirrored (identity, the same identity-keyed convention as manual.toml), and `url` is where its list lives.
+# The snapshot filename is not declared here — it is the repo segment of the key, lowercased, written as <repo>.json in this directory. collect reads and writes only this directory; manual/ is out of its reach.
+
+["https://github.com/itsPLK/ps5-payloads-mirror"]
+url = "https://raw.githubusercontent.com/itsPLK/ps5-payloads-mirror/main/payloads_v2.json"
+
+["https://github.com/phantomptr/ps5upload"]
+url = "https://raw.githubusercontent.com/phantomptr/ps5upload/main/client/src-tauri/src/commands/payloads.rs"
+
+["https://github.com/RDX-Sci01/PLDMGR_JSON"]
+url = "https://raw.githubusercontent.com/RDX-Sci01/PLDMGR_JSON/main/links.txt"
