@@ -6,7 +6,7 @@ An aggregated catalogue of `.elf` payloads for
 No binaries are hosted here: every entry links to an upstream release and belongs to
 its author. Everything here is MIT licensed. Install third-party content at your own risk.
 
-[![Generate PS5 Payload Catalog](https://github.com/lucaszhongsj/ps5-payloads-atlas/actions/workflows/generate-catalog.yml/badge.svg?branch=main)](https://github.com/lucaszhongsj/ps5-payloads-atlas/actions/workflows/generate-catalog.yml)
+[![ps5-payloads-atlas](https://github.com/lucaszhongsj/ps5-payloads-atlas/actions/workflows/ps5-payloads-atlas.yml/badge.svg?branch=main)](https://github.com/lucaszhongsj/ps5-payloads-atlas/actions/workflows/ps5-payloads-atlas.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Quick start

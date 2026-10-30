@@ -1,4 +1,4 @@
-name: Generate PS5 Payload Catalog
+name: ps5-payloads-atlas
 
 # A one-way pipeline; each step consumes the previous step's product and no
 # work is done twice:
@@ -17,15 +17,19 @@ permissions:
   id-token: write
 
 concurrency:
-  group: generate-catalog
+  group: ps5-payloads-atlas
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.x'
 
@@ -40,10 +44,11 @@ jobs:
         run: python scripts/atlas.py build
 
       # 3) Render: a pure view; the README moves only when payloads.json did.
-      - name: Render README
+      - name: Render README `Payloads`
         run: python scripts/atlas.py render
 
-      - name: Commit changes
+      # 4) Commit + Push: Submit the aforementioned artifacts as repository facts.
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -55,26 +60,14 @@ jobs:
           git commit -m "chore: refresh catalogue"
           git push
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          # build may have just pushed a new commit; take the latest, not the snapshot at trigger time.
-          ref: ${{ github.ref }}
-
-      # 4) Package: render the README into a root-path page; payloads.json ships alongside it.
+      # 5) Package + publish. The worktree already holds the pushed content, so the Pages deployment needs no second checkout or runner.
       - name: Package site
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/atlas.py site
 
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
       - name: Deploy to GitHub Pages
