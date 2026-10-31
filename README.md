@@ -25,7 +25,7 @@ A CI job rebuilds the catalogue from upstream releases every 6 hours.
 The full catalogue as of the last scheduled build:
 
 <!-- STATS_START -->
-**74 records** — Categories: Utilities & Tools 52, Networking & Servers 13, System & Jailbreak 6, Loaders 3.
+**75 records** — Categories: Utilities & Tools 53, Networking & Servers 13, System & Jailbreak 6, Loaders 3.
 <!-- STATS_END -->
 <!-- PAYLOADS_START -->
 | Source | Version | Category | Description | Updated |
@@ -46,6 +46,7 @@ The full catalogue as of the last scheduled build:
 | [earthonion/garlic-worker](https://git.etawen.dev/earthonion/garlic-worker) | `v1.1.7` | Utilities & Tools | — | `2026-09-04` |
 | [ps5-payload-dev/gdbsrv](https://github.com/ps5-payload-dev/gdbsrv) | `v0.9` | Networking & Servers | A simple GDB server for jailbroken PS4s and PS5s | `2026-08-03` |
 | [x-f1reball-x/hearbridge-ps5](https://github.com/x-f1reball-x/hearbridge-ps5) | `v1.4.0` | Utilities & Tools | Play PS5 game audio on any Bluetooth headphones or earbuds. Payload for jailbroken PS5 | `2026-10-30` |
+| [disco-trooper/hush](https://github.com/disco-trooper/hush) | `v1.0.0` | Utilities & Tools | Turns off the PlayStation 5's continuous recent-gameplay recording. With nothing encoded, there is nothing fo… | `2026-10-25` |
 | [stupiditytries/kabuki-ps5](https://github.com/stupiditytries/kabuki-ps5) | `v0.2.0-rc.1` | Utilities & Tools | Kabuki: a native ShellUI control-centre overlay for the PS5 that homebrew can add tiles to | `2026-10-17` |
 | [mortyzip/keepawake](https://github.com/mortyzip/keepawake) | `v1.5.0` | Utilities & Tools | — | `2026-10-10` |
 | [ps5-payload-dev/klogsrv](https://github.com/ps5-payload-dev/klogsrv) | `v0.9` | Networking & Servers | A socket server for jailbroken PS4s and PS5s that redirects /dev/klog to sockets connected on port 3232 | `2026-08-03` |
@@ -55,7 +56,7 @@ The full catalogue as of the last scheduled build:
 | [zizc3/liveshell](https://github.com/zizc3/liveshell) | `v1.6.0` | Utilities & Tools | Animated backgrounds for PS5 home screen. | `2026-10-27` |
 | [seregonwar/memdbg](https://github.com/seregonwar/memdbg) | `nightly-20260930-g6e493c9` | Utilities & Tools | MemDBG is a high-performance memory debugging and inspection suite designed for PlayStation 4 and PlayStation… | `2026-09-30` |
 | [drakmor/nanodns](https://github.com/drakmor/nanodns) | `0.4` | Networking & Servers | Playstation 4/5 DNS proxy server | `2026-08-05` |
-| [gasb07/neoenabler](https://github.com/gasb07/neoenabler) | `v0.6.0` | Utilities & Tools | Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock high… | `2026-10-30` |
+| [gasb07/neoenabler](https://github.com/gasb07/neoenabler) | `v0.6.1` | Utilities & Tools | Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock high… | `2026-11-01` |
 | [earthonion/np-fake-signin](https://git.etawen.dev/earthonion/np-fake-signin) | `v1.4` | Utilities & Tools | — | `2026-10-02` |
 | [theghostonline/nuvio-ps5](https://theghostonline.dev/theghostonline/nuvio-ps5) | `v1.9.1` | Utilities & Tools | Nuvio as a PS5 app, with a native 4K HDR player built for the console's own video hardware. | `2026-10-20` |
 | [diegobarbosaa/omnipad-ps5](https://github.com/diegobarbosaa/omnipad-ps5) | `v1.0.4-hotfix1` | Utilities & Tools | Universal controller engine & Web Dashboard for PlayStation 5 (FW 7.00 - 13.60) | `2026-10-06` |
@@ -63,7 +64,7 @@ The full catalogue as of the last scheduled build:
 | [michele-m-media/pizza-hen](https://github.com/michele-m-media/pizza-hen) | `v2.00` | System & Jailbreak | — | `2026-08-25` |
 | [plabs5/plinux5-ng](https://github.com/plabs5/plinux5-ng) | `v0.1.0` | Utilities & Tools | PS5 Linux for high FW's (8.xx, 9.xx, 10.xx, 11.xx, 12.xx, 13.xx) | `2026-10-14` |
 | [itsblurf/poords4](https://github.com/itsblurf/poords4) | `v0.2.0` | Utilities & Tools | Use a wireless DualShock 4 in native PS5 games on jailbroken consoles. | `2026-10-21` |
-| [x1nons/prefbar](https://github.com/x1nons/prefbar) | `v0.1.3` | Utilities & Tools | PerfBar - On-Screen Performance Overlay for Jailbroken PS5 | `2026-10-21` |
+| [x1nons/prefbar](https://github.com/x1nons/prefbar) | `v0.2.0` | Utilities & Tools | PrefBar — On-Screen Performance Overlay for Jailbroken PS5 Consoles | `2026-11-01` |
 | [notmaj0r/prosperomgr](https://github.com/notmaj0r/prosperomgr) | `v1.1` | Utilities & Tools | All-In-One manager for your PS5! | `2026-09-29` |
 | [illusionyy/ps-patch-system](https://github.com/illusionyy/ps-patch-system) | `38108724867` | Utilities & Tools | App patching system for PS4/PS5 | `2026-10-11` |
 | [mounirhero/ps-play](https://github.com/mounirhero/ps-play) | `2.1` | Utilities & Tools | — | `2026-08-15` |
@@ -89,11 +90,11 @@ The full catalogue as of the last scheduled build:
 | [holdmysocks/ps5-tailscale](https://github.com/holdmysocks/ps5-tailscale) | `v0.7.1` | Networking & Servers | Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonl… | `2026-10-07` |
 | [neokuze/ps5-tailscale](https://github.com/neokuze/ps5-tailscale) | `1.0.0` | Networking & Servers | Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play | `2026-10-10` |
 | [owendswang/ps5-web-file-manager](https://github.com/owendswang/ps5-web-file-manager) | `v1.13-rc1` | Utilities & Tools | A file manager for PS5 with a web UI. | `2026-10-30` |
-| [itsplk/ps5-webkit-autoloader](https://github.com/itsplk/ps5-webkit-autoloader) | `v0.6.2` | Loaders | An automated payload loader for exploited PS5 consoles | `2026-10-28` |
+| [itsplk/ps5-webkit-autoloader](https://github.com/itsplk/ps5-webkit-autoloader) | `v0.7.0-prerelease-2` | Loaders | An automated payload loader for exploited PS5 consoles | `2026-11-01` |
 | [junleb/ps5console](https://github.com/junleb/ps5console) | `6.5.1` | Networking & Servers | PS5 Console 一体化 PS5 本地控制中心，将游戏挂载、存档管理、USB 手柄兼容、FTP、风扇温控和 ELF 管理整合到一个 Payload 与 Web UI 中。 当前项目用于已具备 Payload 运行… | `2026-08-31` |
 | [pharaoh2k/ps5debug-ng](https://github.com/pharaoh2k/ps5debug-ng) | `1.3.2` | Utilities & Tools | PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore. GPL-3. | `2026-09-23` |
 | [heni0xyz/ps5save](https://github.com/heni0xyz/ps5save) | `v2` | Utilities & Tools | USB save backup utility for jailbroken PS5’s | `2026-10-22` |
-| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v10.0.2` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-10-31` |
+| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v10.1.0` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-01` |
 | [armanate/rdr2-60fps-runtime-patcher](https://github.com/armanate/rdr2-60fps-runtime-patcher) | `v2.0` | Utilities & Tools | Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5. | `2026-10-11` |
 | [elripalda/recompstore](https://github.com/elripalda/recompstore) | `v2.7.4` | Utilities & Tools | RecompStore: the free homebrew app store for jailbroken PS5. Installs and updates recompiled game ports, emul… | `2026-10-30` |
 | [drakmor/shadowmountplus](https://github.com/drakmor/shadowmountplus) | `1.7beta11` | Utilities & Tools | Automated background auto-mounter payload for jailbroken PS5 consoles. Detects, mounts, and installs game bac… | `2026-10-30` |

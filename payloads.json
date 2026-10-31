@@ -210,6 +210,19 @@
       "last_update": "2026-10-30T22:33:31+08:00"
     },
     {
+      "id": "hush",
+      "name": "hush",
+      "filename": "hush.elf",
+      "url": "https://github.com/disco-trooper/hush/releases/download/v1.0.0/hush.elf",
+      "source": "https://github.com/disco-trooper/hush",
+      "author": "disco-trooper",
+      "description": "Turns off the PlayStation 5's continuous recent-gameplay recording. With nothing encoded, there is nothing for the console to save.",
+      "version": "v1.0.0",
+      "category": "Utilities & Tools",
+      "checksum": "5c98dd0881b64eb00e90d58d90056a66193ef8ee50e2d9906a1e298b5a34c352",
+      "last_update": "2026-10-25T19:18:40+08:00"
+    },
+    {
       "id": "kabuki-ps5",
       "name": "kabuki-ps5",
       "filename": "kabuki-ps5.elf",
@@ -330,14 +343,14 @@
       "id": "neoenabler",
       "name": "NeoEnabler",
       "filename": "neo-manager.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.6.0/neo-manager.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.6.1/neo-manager.elf",
       "source": "https://github.com/gasb07/neoenabler",
       "author": "gasb07",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.6.0",
+      "version": "v0.6.1",
       "category": "Utilities & Tools",
-      "checksum": "e1db4f5220a3b99453e422162ec50da6bb44c6b52a6fa125d782d2ab0dffa75b",
-      "last_update": "2026-10-30T01:39:32+08:00"
+      "checksum": "d785d8a8747b5dbc2c294595f0fb394f653950b5f42b3ee42eb3e56dd80f7044",
+      "last_update": "2026-11-01T02:29:50+08:00"
     },
     {
       "id": "np-fake-signin",
@@ -433,15 +446,15 @@
     {
       "id": "perfbar",
       "name": "PrefBar",
-      "filename": "prefbar-complete_v0.1.3.elf",
-      "url": "https://github.com/X1NONs/PrefBar/releases/download/v0.1.3/PrefBar-complete_V0.1.3.elf",
+      "filename": "prefbar-complete_v0.2.0.elf",
+      "url": "https://github.com/X1NONs/PrefBar/releases/download/v0.2.0/PrefBar-complete_V0.2.0.elf",
       "source": "https://github.com/x1nons/prefbar",
       "author": "X1NONs",
-      "description": "PerfBar - On-Screen Performance Overlay for Jailbroken PS5",
-      "version": "v0.1.3",
+      "description": "PrefBar — On-Screen Performance Overlay for Jailbroken PS5 Consoles",
+      "version": "v0.2.0",
       "category": "Utilities & Tools",
-      "checksum": "f15022259e97b58bb2418cacd4be33b2035d90ac0b16db3af5d6cf6490caac39",
-      "last_update": "2026-10-21T23:57:50+08:00"
+      "checksum": "aef21e7106a2ab61ac49ff7142edf8421962038bf62b4d2f2b8aa36e8a91a480",
+      "last_update": "2026-11-01T01:34:47+08:00"
     },
     {
       "id": "prosperomgr",
@@ -771,15 +784,15 @@
     {
       "id": "ps5-webkit-autoloader",
       "name": "ps5-webkit-autoloader",
-      "filename": "webkit-autoloader-installer_v0.6.2.elf",
-      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf",
+      "filename": "webkit-autoloader-installer_v0.7.0-dev-3a34c3b.elf",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.0-prerelease-2/webkit-autoloader-installer_v0.7.0-dev-3a34c3b.elf",
       "source": "https://github.com/itsplk/ps5-webkit-autoloader",
       "author": "itsPLK",
       "description": "An automated payload loader for exploited PS5 consoles",
-      "version": "v0.6.2",
+      "version": "v0.7.0-prerelease-2",
       "category": "Loaders",
-      "checksum": "27fd335764270716972faea399a5cc7810b9e49a21abf4966d9759580756cb19",
-      "last_update": "2026-10-28T08:07:18+08:00"
+      "checksum": "2a202023ee9ef4c742c3dc05d872c679c3570ca28e50c668b4b2e86c732d27b1",
+      "last_update": "2026-11-01T02:19:13+08:00"
     },
     {
       "id": "ps5-console",
@@ -823,15 +836,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-10.0.2.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.0.2/ps5upload-10.0.2.elf",
+      "filename": "ps5upload-10.1.0.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.1.0/ps5upload-10.1.0.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v10.0.2",
+      "version": "v10.1.0",
       "category": "Networking & Servers",
-      "checksum": "53ad7fe7b446709ccc36bdd9a7109a0f62a38076bb3b8cb9ba5c3c7cce5dc510",
-      "last_update": "2026-10-31T15:31:59+08:00"
+      "checksum": "2608d338b47438f7702a7be04a7821c637ace1e64fb046e179eb29c5385dfda0",
+      "last_update": "2026-11-01T03:56:56+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
