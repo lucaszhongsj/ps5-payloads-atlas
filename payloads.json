@@ -11,7 +11,7 @@
       "description": "007 First Light online on a jailbroken PS5, with the whole backend inside the payload. No PC needed.",
       "version": "v0.3.1",
       "category": "Utilities & Tools",
-      "checksum": "",
+      "checksum": "d3e44059d5929f8d7cfb799894ddf4190d031e034affad175970c1fa9c07b9be",
       "last_update": "2026-10-22T04:55:47+08:00"
     },
     {
@@ -362,7 +362,7 @@
       "description": "Nuvio as a PS5 app, with a native 4K HDR player built for the console's own video hardware.",
       "version": "v1.9.1",
       "category": "Utilities & Tools",
-      "checksum": "",
+      "checksum": "f79777c24c0105af008ea03333ed3090974715fe3cc89790eb1f51808e10d98d",
       "last_update": "2026-10-20T08:17:18+08:00"
     },
     {
@@ -622,7 +622,7 @@
       "description": "Update your installed PS5 games in a few taps, on the console. Finds the newest official update for each game and installs it, and applies a backport when an update needs a newer firmware than yours. No PC needed.",
       "version": "v1.1.2",
       "category": "Utilities & Tools",
-      "checksum": "",
+      "checksum": "3a21c41c901c29536e3e1a303861f8d4000c76957f52ea482eff8220d125759c",
       "last_update": "2026-10-28T08:13:46+08:00"
     },
     {
@@ -661,7 +661,7 @@
       "description": "Shrink PS5 games on the console itself with LZ4 asset packs and .ffpfsc compression.",
       "version": "v1.6.4",
       "category": "Utilities & Tools",
-      "checksum": "",
+      "checksum": "a7c1a956ebddfc92851822b7d0e71e22fa98fd69758bc17b77043b338bd495a4",
       "last_update": "2026-10-26T10:34:12+08:00"
     },
     {
@@ -823,15 +823,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-9.11.0.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v9.11.0/ps5upload-9.11.0.elf",
+      "filename": "ps5upload-10.0.1.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.0.1/ps5upload-10.0.1.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v9.11.0",
+      "version": "v10.0.1",
       "category": "Networking & Servers",
-      "checksum": "ea961717fb823398dbf346a215cab21aba8cf7a966fb8be53b9d48e75543bdd9",
-      "last_update": "2026-10-31T05:13:47+08:00"
+      "checksum": "c5da95b6438a6d68e8c453df8ea84fb0341744f5fc9dae0781371b350450c3cc",
+      "last_update": "2026-10-31T10:49:07+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
