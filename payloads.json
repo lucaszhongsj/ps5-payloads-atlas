@@ -745,15 +745,15 @@
     {
       "id": "ps5-tailscale",
       "name": "ps5-tailscale",
-      "filename": "tailscale-0.7.1.elf",
-      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.1/tailscale-0.7.1.elf",
+      "filename": "tailscale-0.7.2.elf",
+      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.2/tailscale-0.7.2.elf",
       "source": "https://github.com/holdmysocks/ps5-tailscale",
       "author": "holdmysocks",
       "description": "Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonlight/Sunshine (unofficial)",
-      "version": "v0.7.1",
+      "version": "v0.7.2",
       "category": "Networking & Servers",
-      "checksum": "af320493c8e2fc3443b8f42496ac11aa3db77b112e95777706d835eccd304cb9",
-      "last_update": "2026-10-07T07:46:38+08:00"
+      "checksum": "47294aa593644d1e86f07d7faac71e40ae737b536c1b56261b2b7287238f37c8",
+      "last_update": "2026-11-02T01:47:09+08:00"
     },
     {
       "id": "ps5-tailscale-2",
@@ -836,15 +836,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-10.3.0.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.3.0/ps5upload-10.3.0.elf",
+      "filename": "ps5upload-10.6.0.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.6.0/ps5upload-10.6.0.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v10.3.0",
+      "version": "v10.6.0",
       "category": "Networking & Servers",
-      "checksum": "e3da25330b0b3aeba1ad1eab628726a7b7526bd2be2d5f9a40dba59527dfb155",
-      "last_update": "2026-11-01T11:39:32+08:00"
+      "checksum": "2f67651bf1320a83202b632782a1f404543b1ea4911dfb3be5a510971f015392",
+      "last_update": "2026-11-02T05:40:05+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
@@ -871,6 +871,19 @@
       "category": "Utilities & Tools",
       "checksum": "3a20194226cf5e1ee66a5a67d81610c1ac9bf82deee7b791c752d0e7d6202d5c",
       "last_update": "2026-10-30T12:00:44+08:00"
+    },
+    {
+      "id": "remoteplay_unlock",
+      "name": "remoteplay_unlock",
+      "filename": "remoteplay_unlock_offsets.elf",
+      "url": "https://github.com/earthonion/remoteplay_unlock/releases/download/latest-testing/remoteplay_unlock_offsets.elf",
+      "source": "https://github.com/earthonion/remoteplay_unlock",
+      "author": "earthonion",
+      "description": "",
+      "version": "latest-testing",
+      "category": "Utilities & Tools",
+      "checksum": "007c5a67d23483477bdc4eaaae831155cb21a3c2928cada9a9d6980530399c6f",
+      "last_update": "2026-11-02T04:20:26+08:00"
     },
     {
       "id": "shadowmount",
