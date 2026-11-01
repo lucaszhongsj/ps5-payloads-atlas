@@ -73,7 +73,7 @@ The full catalogue as of the last scheduled build:
 | [echostretch/ps5-app-dumper](https://github.com/echostretch/ps5-app-dumper) | `v2.10` | Utilities & Tools | — | `2026-10-03` |
 | [owendswang/ps5-aria2](https://github.com/owendswang/ps5-aria2) | `v1.37.0-3` | Utilities & Tools | aria2 for PS5 | `2026-10-05` |
 | [kerrdec97/ps5-date-time-sync](https://github.com/kerrdec97/ps5-date-time-sync) | `v1.0.0` | Utilities & Tools | Standalone PS5 payload that automatically restores the system date and time using public NTP servers. | `2026-08-24` |
-| [quer3q/ps5-dump-forge](https://github.com/quer3q/ps5-dump-forge) | `v0.5.0` | Utilities & Tools | A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself. | `2026-10-30` |
+| [quer3q/ps5-dump-forge](https://github.com/quer3q/ps5-dump-forge) | `v0.5.1` | Utilities & Tools | A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself. | `2026-11-01` |
 | [marice/ps5-exporter](https://github.com/marice/ps5-exporter) | `v0.3.1` | Utilities & Tools | Prometheus exporter payload for a jailbroken PS5: temperatures, uptime, storage and ShadowMountPlus game stat… | `2026-10-20` |
 | [owendswang/ps5-fan-control](https://github.com/owendswang/ps5-fan-control) | `v0.3` | Utilities & Tools | Small PS5 daemon keeps applying fan temperature threshold. | `2026-08-09` |
 | [juma-sayeh/ps5-file-explorer](https://github.com/juma-sayeh/ps5-file-explorer) | `v0.2.1` | Utilities & Tools | Browser-based PS5 file explorer payload | `2026-06-19` |

@@ -563,15 +563,15 @@
     {
       "id": "ps5-dump-forge",
       "name": "ps5-dump-forge",
-      "filename": "ps5-dump-forge-0.5.0-ps5.elf",
-      "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.0/ps5-dump-forge-0.5.0-ps5.elf",
+      "filename": "ps5-dump-forge-0.5.1-ps5.elf",
+      "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.1/ps5-dump-forge-0.5.1-ps5.elf",
       "source": "https://github.com/quer3q/ps5-dump-forge",
       "author": "quer3q",
       "description": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself.",
-      "version": "v0.5.0",
+      "version": "v0.5.1",
       "category": "Utilities & Tools",
-      "checksum": "f0cc32e772318f1ae53f1eccae207cb9aa1efb96d1a2a6249205bb3e0e478986",
-      "last_update": "2026-10-30T01:50:57+08:00"
+      "checksum": "864cf7c0739e9f411c596873c3c2fb482a2ebb2be207bf7bd1ac558e4699156f",
+      "last_update": "2026-11-01T15:11:00+08:00"
     },
     {
       "id": "ps5-exporter",
