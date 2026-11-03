@@ -213,14 +213,14 @@
       "id": "hush",
       "name": "hush",
       "filename": "hush.elf",
-      "url": "https://github.com/disco-trooper/hush/releases/download/v1.0.0/hush.elf",
+      "url": "https://github.com/disco-trooper/hush/releases/download/v1.1.0/hush.elf",
       "source": "https://github.com/disco-trooper/hush",
       "author": "disco-trooper",
       "description": "Turns off the PlayStation 5's continuous recent-gameplay recording. With nothing encoded, there is nothing for the console to save.",
-      "version": "v1.0.0",
+      "version": "v1.1.0",
       "category": "Utilities & Tools",
-      "checksum": "5c98dd0881b64eb00e90d58d90056a66193ef8ee50e2d9906a1e298b5a34c352",
-      "last_update": "2026-10-25T19:18:40+08:00"
+      "checksum": "7ce9356eaf28d3fa2e3cfcd6b93300e5321c385d087409912ae3b29e6855a8d3",
+      "last_update": "2026-11-03T21:15:14+08:00"
     },
     {
       "id": "kabuki-ps5",
@@ -771,14 +771,14 @@
     {
       "id": "ps5-web-file-manager",
       "name": "ps5-web-file-manager",
-      "filename": "web-file-mgr-v1.13-rc1.elf",
-      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.13-rc1/web-file-mgr-v1.13-rc1.elf",
+      "filename": "web-file-mgr-v1.13-rc2.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.13-rc2/web-file-mgr-v1.13-rc2.elf",
       "source": "https://github.com/owendswang/ps5-web-file-manager",
       "author": "owendswang",
       "description": "A file manager for PS5 with a web UI.",
-      "version": "v1.13-rc1",
+      "version": "v1.13-rc2",
       "category": "Utilities & Tools",
-      "checksum": "8c9456a10ddde61dd0247b9171e71a285b955096ca7eb8e4ae3bdbe94f38f605",
+      "checksum": "91f8e7f52183ce624651b779016bb48cbe7adaad278833a1191ad2e8fc6fbfe3",
       "last_update": "2026-10-30T03:33:13+08:00"
     },
     {
@@ -836,15 +836,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-10.7.5.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.7.5/ps5upload-10.7.5.elf",
+      "filename": "ps5upload-11.0.0.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.0.0/ps5upload-11.0.0.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v10.7.5",
+      "version": "v11.0.0",
       "category": "Networking & Servers",
-      "checksum": "aca8424e53bc08da2e3b41acb5bed563a73a31698a3b69825977f95625c3decb",
-      "last_update": "2026-11-03T07:55:17+08:00"
+      "checksum": "027f62daaf060c90d159da9e2988e44fcc5f128ad866cb1b67d49a77d6485998",
+      "last_update": "2026-11-03T18:59:39+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
