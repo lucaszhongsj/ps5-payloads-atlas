@@ -83,14 +83,14 @@
       "id": "cheatrunner",
       "name": "CheatRunner",
       "filename": "cheatrunner.elf",
-      "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.18/CheatRunner.elf",
+      "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.18.1/CheatRunner.elf",
       "source": "https://github.com/notmaj0r/cheatrunner",
       "author": "notmaj0r",
       "description": "Web-Based Cheat Trainer for PS5!",
-      "version": "v0.18",
+      "version": "v0.18.1",
       "category": "Utilities & Tools",
-      "checksum": "4ae1ea4e37b2e67d5487355ddf671f166861ed6dceea348c048ad060770c0140",
-      "last_update": "2026-10-11T02:01:49+08:00"
+      "checksum": "80535260027983f09fc9d131e11e13591de61ef5eeea458825598263862d2ce8",
+      "last_update": "2026-11-04T04:12:18+08:00"
     },
     {
       "id": "elfldr",
@@ -213,14 +213,14 @@
       "id": "hush",
       "name": "hush",
       "filename": "hush.elf",
-      "url": "https://github.com/disco-trooper/hush/releases/download/v1.1.0/hush.elf",
+      "url": "https://github.com/disco-trooper/hush/releases/download/v1.1.1/hush.elf",
       "source": "https://github.com/disco-trooper/hush",
       "author": "disco-trooper",
       "description": "Turns off the PlayStation 5's continuous recent-gameplay recording. With nothing encoded, there is nothing for the console to save.",
-      "version": "v1.1.0",
+      "version": "v1.1.1",
       "category": "Utilities & Tools",
-      "checksum": "7ce9356eaf28d3fa2e3cfcd6b93300e5321c385d087409912ae3b29e6855a8d3",
-      "last_update": "2026-11-03T21:15:14+08:00"
+      "checksum": "e58045cc39bb2301a4966e3c043eb75cabc45a0e5e39bb09b0b4151f57767f78",
+      "last_update": "2026-11-04T00:28:41+08:00"
     },
     {
       "id": "kabuki-ps5",
@@ -343,14 +343,14 @@
       "id": "neoenabler",
       "name": "NeoEnabler",
       "filename": "neo-manager.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.6.1/neo-manager.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.6.2/neo-manager.elf",
       "source": "https://github.com/gasb07/neoenabler",
       "author": "gasb07",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.6.1",
+      "version": "v0.6.2",
       "category": "Utilities & Tools",
-      "checksum": "d785d8a8747b5dbc2c294595f0fb394f653950b5f42b3ee42eb3e56dd80f7044",
-      "last_update": "2026-11-01T02:29:50+08:00"
+      "checksum": "c0506bd055820a199ddae59a475686fdcf6f832f94594870ba41cee9b3fce1be",
+      "last_update": "2026-11-03T23:17:11+08:00"
     },
     {
       "id": "np-fake-signin",
@@ -563,15 +563,15 @@
     {
       "id": "ps5-dump-forge",
       "name": "ps5-dump-forge",
-      "filename": "ps5-dump-forge-0.5.1-ps5.elf",
-      "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.1/ps5-dump-forge-0.5.1-ps5.elf",
+      "filename": "ps5-dump-forge-0.5.2-ps5.elf",
+      "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.2/ps5-dump-forge-0.5.2-ps5.elf",
       "source": "https://github.com/quer3q/ps5-dump-forge",
       "author": "quer3q",
       "description": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself.",
-      "version": "v0.5.1",
+      "version": "v0.5.2",
       "category": "Utilities & Tools",
-      "checksum": "864cf7c0739e9f411c596873c3c2fb482a2ebb2be207bf7bd1ac558e4699156f",
-      "last_update": "2026-11-01T15:11:00+08:00"
+      "checksum": "140b4a8625b42af25acf8ff2c454c06c1182866960f18a0f4b04d57a380a5589",
+      "last_update": "2026-11-03T22:08:52+08:00"
     },
     {
       "id": "ps5-exporter",
@@ -836,15 +836,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-11.0.0.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.0.0/ps5upload-11.0.0.elf",
+      "filename": "ps5upload-11.0.1.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.0.1/ps5upload-11.0.1.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v11.0.0",
+      "version": "v11.0.1",
       "category": "Networking & Servers",
-      "checksum": "027f62daaf060c90d159da9e2988e44fcc5f128ad866cb1b67d49a77d6485998",
-      "last_update": "2026-11-03T18:59:39+08:00"
+      "checksum": "7a5f7d1b8c1cbf6d7d1030294b7623793d544f6a4933224c73cc936b33386f2f",
+      "last_update": "2026-11-04T03:38:13+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
