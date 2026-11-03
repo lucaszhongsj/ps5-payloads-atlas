@@ -82,7 +82,7 @@ The full catalogue as of the last scheduled build:
 | [itsplk/ps5-lapy-jb-daemon](https://github.com/itsplk/ps5-lapy-jb-daemon) | `v1.2` | System & Jailbreak | Standalone homebrew jailbreak daemon for PS5. Mimics etaHEN's jailbreak-on-demand API. Multi-firmware (3.00 t… | `2026-06-02` |
 | [ps5-linux/ps5-linux-loader](https://github.com/ps5-linux/ps5-linux-loader) | `v2.5` | Loaders | Linux payload implementing HV exploits to run a custom bootloader | `2026-09-05` |
 | [theghostonline/ps5-lz4-compression](https://theghostonline.dev/theghostonline/ps5-lz4-compression) | `v1.6.4` | Utilities & Tools | Shrink PS5 games on the console itself with LZ4 asset packs and .ffpfsc compression. | `2026-10-26` |
-| [knutwurst/ps5-patchdl](https://github.com/knutwurst/ps5-patchdl) | `v0.3.11` | Utilities & Tools | Official updates for your PS5 and PS4 games, from any browser. PatchDL runs on the PS5, finds the newest upda… | `2026-10-29` |
+| [knutwurst/ps5-patchdl](https://github.com/knutwurst/ps5-patchdl) | `v0.3.12` | Utilities & Tools | Official updates for your PS5 and PS4 games, from any browser. PatchDL runs on the PS5, finds the newest upda… | `2026-11-03` |
 | [itsplk/ps5-payload-manager](https://github.com/itsplk/ps5-payload-manager) | `v0.6.3` | Utilities & Tools | A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5. | `2026-10-19` |
 | [itsplk/ps5-pkg-manager](https://github.com/itsplk/ps5-pkg-manager) | `v1.5.1` | Utilities & Tools | A clean and intuitive package manager for PS5 | `2026-10-10` |
 | [owendswang/ps5-syslang](https://github.com/owendswang/ps5-syslang) | `v0.3` | Utilities & Tools | Small PS5 payload for switching the ShellUI system language. | `2026-10-19` |
@@ -94,7 +94,7 @@ The full catalogue as of the last scheduled build:
 | [junleb/ps5console](https://github.com/junleb/ps5console) | `6.5.1` | Networking & Servers | PS5 Console 一体化 PS5 本地控制中心，将游戏挂载、存档管理、USB 手柄兼容、FTP、风扇温控和 ELF 管理整合到一个 Payload 与 Web UI 中。 当前项目用于已具备 Payload 运行… | `2026-08-31` |
 | [pharaoh2k/ps5debug-ng](https://github.com/pharaoh2k/ps5debug-ng) | `1.3.2` | Utilities & Tools | PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore. GPL-3. | `2026-09-23` |
 | [heni0xyz/ps5save](https://github.com/heni0xyz/ps5save) | `v2` | Utilities & Tools | USB save backup utility for jailbroken PS5’s | `2026-10-22` |
-| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v10.7.2` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-02` |
+| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v10.7.5` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-03` |
 | [armanate/rdr2-60fps-runtime-patcher](https://github.com/armanate/rdr2-60fps-runtime-patcher) | `v2.0` | Utilities & Tools | Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5. | `2026-10-11` |
 | [elripalda/recompstore](https://github.com/elripalda/recompstore) | `v2.7.4` | Utilities & Tools | RecompStore: the free homebrew app store for jailbroken PS5. Installs and updates recompiled game ports, emul… | `2026-10-30` |
 | [earthonion/remoteplay_unlock](https://github.com/earthonion/remoteplay_unlock) | `latest-testing` | Utilities & Tools | — | `2026-11-02` |
