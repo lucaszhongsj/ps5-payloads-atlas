@@ -42,7 +42,7 @@ The full catalogue as of the last scheduled build:
 | [drakmor/ftpsrv](https://github.com/drakmor/ftpsrv) | `1.16-ng-stable` | Networking & Servers | A simple FTP server for jailbroken PS4s and PS5s | `2026-09-21` |
 | [ps5-payload-dev/ftpsrv](https://github.com/ps5-payload-dev/ftpsrv) | `v0.21.1` | Networking & Servers | An FTP server for jailbroken PS4s and PS5s | `2026-08-21` |
 | [ruinelson/ftpsrv-streamextract](https://github.com/ruinelson/ftpsrv-streamextract) | `1.0.1` | Networking & Servers | A simple FTP server for jailbroken PS4s and PS5s | `2026-10-21` |
-| [earthonion/garlic-savemgr](https://git.etawen.dev/earthonion/garlic-savemgr) | `v1.15-beta1` | Utilities & Tools | — | `2026-10-23` |
+| [earthonion/garlic-savemgr](https://git.etawen.dev/earthonion/garlic-savemgr) | `v1.15-beta2` | Utilities & Tools | — | `2026-11-05` |
 | [earthonion/garlic-worker](https://git.etawen.dev/earthonion/garlic-worker) | `v1.1.8` | Utilities & Tools | — | `2026-11-04` |
 | [ps5-payload-dev/gdbsrv](https://github.com/ps5-payload-dev/gdbsrv) | `v0.9` | Networking & Servers | A simple GDB server for jailbroken PS4s and PS5s | `2026-08-03` |
 | [x-f1reball-x/hearbridge-ps5](https://github.com/x-f1reball-x/hearbridge-ps5) | `v1.4.0` | Utilities & Tools | Play PS5 game audio on any Bluetooth headphones or earbuds. Payload for jailbroken PS5 | `2026-10-30` |
@@ -87,7 +87,7 @@ The full catalogue as of the last scheduled build:
 | [itsplk/ps5-pkg-manager](https://github.com/itsplk/ps5-pkg-manager) | `v1.5.1` | Utilities & Tools | A clean and intuitive package manager for PS5 | `2026-10-10` |
 | [owendswang/ps5-syslang](https://github.com/owendswang/ps5-syslang) | `v0.3` | Utilities & Tools | Small PS5 payload for switching the ShellUI system language. | `2026-10-19` |
 | [xvvulcanvx/ps5-tabshifter](https://github.com/xvvulcanvx/ps5-tabshifter) | `v1.3.0` | Utilities & Tools | Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (Unive… | `2026-10-25` |
-| [holdmysocks/ps5-tailscale](https://github.com/holdmysocks/ps5-tailscale) | `v0.7.2` | Networking & Servers | Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonl… | `2026-11-02` |
+| [holdmysocks/ps5-tailscale](https://github.com/holdmysocks/ps5-tailscale) | `v0.7.3` | Networking & Servers | Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonl… | `2026-11-05` |
 | [neokuze/ps5-tailscale](https://github.com/neokuze/ps5-tailscale) | `1.0.0` | Networking & Servers | Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play | `2026-10-10` |
 | [owendswang/ps5-web-file-manager](https://github.com/owendswang/ps5-web-file-manager) | `v1.13-rc2` | Utilities & Tools | A file manager for PS5 with a web UI. | `2026-10-30` |
 | [itsplk/ps5-webkit-autoloader](https://github.com/itsplk/ps5-webkit-autoloader) | `v0.7.0-prerelease-2` | Loaders | An automated payload loader for exploited PS5 consoles | `2026-11-01` |

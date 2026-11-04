@@ -161,14 +161,14 @@
       "id": "garlic-savemgr-for-ps5",
       "name": "garlic-savemgr",
       "filename": "garlic-savemgr.elf",
-      "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta1/garlic-savemgr.elf",
+      "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta2/garlic-savemgr.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr",
       "author": "earthonion",
       "description": "",
-      "version": "v1.15-beta1",
+      "version": "v1.15-beta2",
       "category": "Utilities & Tools",
       "checksum": "",
-      "last_update": "2026-10-23T21:44:13+08:00"
+      "last_update": "2026-11-05T02:44:34+08:00"
     },
     {
       "id": "garlic-worker",
@@ -745,15 +745,15 @@
     {
       "id": "ps5-tailscale",
       "name": "ps5-tailscale",
-      "filename": "tailscale-0.7.2.elf",
-      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.2/tailscale-0.7.2.elf",
+      "filename": "tailscale-0.7.3.elf",
+      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.3/tailscale-0.7.3.elf",
       "source": "https://github.com/holdmysocks/ps5-tailscale",
       "author": "holdmysocks",
       "description": "Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonlight/Sunshine (unofficial)",
-      "version": "v0.7.2",
+      "version": "v0.7.3",
       "category": "Networking & Servers",
-      "checksum": "47294aa593644d1e86f07d7faac71e40ae737b536c1b56261b2b7287238f37c8",
-      "last_update": "2026-11-02T01:47:09+08:00"
+      "checksum": "899c9f76994317171ab62a331a229b260e7c93aab68963502d79c861392e5801",
+      "last_update": "2026-11-05T00:05:32+08:00"
     },
     {
       "id": "ps5-tailscale-2",
