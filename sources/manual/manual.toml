@@ -6,6 +6,10 @@
 #   skip           true = do not list, across every source; the reason lives in the comment above the table, never in the data
 # This file corrects, it does not add: if nothing lists the repo in a table, the build says so — the entry belongs in additional.json beside this file.
 
+# ships Spotless.elf plus a Spotless-Restore.elf helper; list the main payload only
+["https://github.com/abhi245y/spotless"]
+asset_pattern = '^Spotless\.elf$'
+
 ["https://github.com/blackbearreloaded/prosperostore"]
 skip = true
 
@@ -90,6 +94,11 @@ skip = true
 ["https://github.com/stupiditytries/librespot-ps5"]
 skip = true
 
+# both ship game-compressor.elf and collide with gcoding97/PS5-Game-Compressor,
+# the fork kept in the catalogue; this one is stale, so skip it
+["https://github.com/Techsociology/PS5-Game-Compressor"]
+skip = true
+
 # current releases ship zip only; the last .elf was v0.1.0
 ["https://github.com/theghostonline/PS5-LZ4-Compression"]
 skip = true
@@ -97,6 +106,10 @@ skip = true
 # no such GitHub repo; releases live on theghostonline.dev, which is listed separately
 ["https://github.com/venezuelanbiggie24/machete-ps5-backup-manager"]
 skip = true
+
+# each release also ships a PS5-Cleanup-Test variant; list the main payload only
+["https://github.com/xXBneutzerNameXx/PS5-Cleanup"]
+asset_pattern = '^ps5cleanup.*\.elf$'
 
 # desktop-app builds (rpm/deb/AppImage/dmg/exe); no .elf in any release
 ["https://github.com/zizc3/LiveShell"]
