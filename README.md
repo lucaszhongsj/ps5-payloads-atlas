@@ -7,6 +7,12 @@ No binaries are hosted here: every entry links to an upstream release and belong
 its author. The catalogue data here is MIT licensed; each payload keeps its own
 upstream license. Install third-party content at your own risk.
 
+Repository lists are mirrored from
+[ps5-payloads-mirror](https://github.com/itsPLK/ps5-payloads-mirror),
+[ps5upload](https://github.com/phantomptr/ps5upload) and
+[PLDMGR_JSON](https://github.com/RDX-Sci01/PLDMGR_JSON); the rest is curated in
+`sources/manual/`.
+
 [![ps5-payloads-atlas](https://github.com/lucaszhongsj/ps5-payloads-atlas/actions/workflows/ps5-payloads-atlas.yml/badge.svg?branch=main)](https://github.com/lucaszhongsj/ps5-payloads-atlas/actions/workflows/ps5-payloads-atlas.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -166,6 +172,13 @@ dictionary order (case-insensitive); the build refuses an unsorted file.
 | `python scripts/atlas.py site` | package `_site/` for Pages (needs `GH_TOKEN`) |
 
 Requires Python 3.11+ (`tomllib`) and an authenticated `gh` CLI for `build`. Tests:
-`python3 -m unittest discover -s tests` (no network). Do not hand-edit the content
-between the `STATS` / `PAYLOADS` markers; `render` owns it.
+`python3 -m unittest discover -s tests` (no network).
+
+`python scripts/atlas.py render` regenerates exactly two blocks in this file from
+`payloads.json`, each fenced by a pair of HTML-comment markers: the record count
+between `STATS_START` and `STATS_END`, and the whole payload table between
+`PAYLOADS_START` and `PAYLOADS_END`. Do not edit anything inside either pair by
+hand — the next scheduled build overwrites it. Everything outside them (this page's
+prose, the Quick start steps, the Maintaining tables) is hand-written, survives
+`render` unchanged, and is meant to be edited here.
 
