@@ -4,7 +4,8 @@ An aggregated catalogue of `.elf` payloads for
 [ps5-payload-manager](https://github.com/itsPLK/ps5-payload-manager)'s
 [custom repository format](https://github.com/itsPLK/ps5-payload-manager/blob/main/CUSTOM_REPOSITORIES.md).
 No binaries are hosted here: every entry links to an upstream release and belongs to
-its author. Everything here is MIT licensed. Install third-party content at your own risk.
+its author. The catalogue data here is MIT licensed; each payload keeps its own
+upstream license. Install third-party content at your own risk.
 
 [![ps5-payloads-atlas](https://github.com/lucaszhongsj/ps5-payloads-atlas/actions/workflows/ps5-payloads-atlas.yml/badge.svg?branch=main)](https://github.com/lucaszhongsj/ps5-payloads-atlas/actions/workflows/ps5-payloads-atlas.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)

@@ -39,6 +39,10 @@ skip = true
 ["https://github.com/lightningmods/itemzflow"]
 skip = true
 
+# every release ships both ps5-signal.elf and a ps5-signal-dev.elf debug variant; list only the former
+["https://github.com/Marice/ps5-signal"]
+asset_pattern = '^ps5-signal\.elf$'
+
 # distributes as pkg; every release has no assets at all
 ["https://github.com/n0llptr/playstation-5-save-mounter"]
 skip = true
