@@ -18,7 +18,9 @@ permissions:
 
 concurrency:
   group: ps5-payloads-atlas
-  cancel-in-progress: true
+  # Queue runs instead of killing one mid-flight: a cancelled run may already
+  # have pushed, which leaves the next run building on a stale head_sha.
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -29,6 +31,10 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
+        with:
+          # Re-runs reuse the original run's head_sha. Resolve main at checkout
+          # time so a re-run never starts from a commit main has moved past.
+          ref: main
       - uses: actions/setup-python@v7
         with:
           python-version: '3.x'
@@ -47,18 +53,59 @@ jobs:
       - name: Render README `Payloads`
         run: python scripts/atlas.py render
 
-      # 4) Commit + Push: Submit the aforementioned artifacts as repository facts.
+      # 4) Commit + Push: rebuild the generated commit on the current main tip.
+      #    These files are full snapshots, not diffs, so rebasing the old commit
+      #    would fight with the previous auto-commit. Overwrite, never merge.
       - name: Commit and push changes
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add payloads.json README.md sources/
+
+          # Stage once to learn exactly which generated files this run touched.
+          git add -A -- payloads.json README.md sources/
           if git diff --cached --quiet; then
             echo "No changes to publish"
             exit 0
           fi
-          git commit -m "chore: refresh catalogue"
-          git push
+
+          artefacts="${RUNNER_TEMP:?}/atlas-artefacts"
+          deleted="${RUNNER_TEMP:?}/atlas-deleted"
+          rm -rf "$artefacts" "$deleted"
+          mkdir -p "$artefacts"
+          git diff --cached --name-only -z | while IFS= read -r -d '' file; do
+            if [ -f "$file" ]; then
+              mkdir -p "$artefacts/$(dirname "$file")"
+              cp -a "$file" "$artefacts/$file"
+            fi
+          done
+          git diff --cached --diff-filter=D --name-only -z > "$deleted"
+
+          # Rebase point is the latest remote main. The whole cycle repeats if
+          # main advances again between fetch and push.
+          for attempt in 1 2 3; do
+            git fetch --no-tags origin main
+            git reset --hard FETCH_HEAD
+            cp -a "$artefacts/." .
+            while IFS= read -r -d '' file; do
+              rm -f -- "$file"
+            done < "$deleted"
+            git add -A -- payloads.json README.md sources/
+            if git diff --cached --quiet; then
+              echo "No changes to publish on current main"
+              exit 0
+            fi
+            git commit -m "chore: refresh catalogue"
+            if git push origin HEAD:main; then
+              echo "Published $(git rev-parse --short HEAD)"
+              exit 0
+            fi
+            echo "::warning::Push rejected (main moved); retry $attempt/3"
+            if [ "$attempt" -lt 3 ]; then sleep $((attempt * 2)); fi
+          done
+          echo "::error::Could not push after 3 attempts"
+          exit 1
 
       # 5) Package + publish. The worktree already holds the pushed content, so the Pages deployment needs no second checkout or runner.
       - name: Package site
