@@ -875,15 +875,15 @@
     {
       "id": "ps5-webkit-autoloader",
       "name": "ps5-webkit-autoloader",
-      "filename": "webkit-autoloader-installer_v0.7.0-dev-3a34c3b.elf",
-      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.0-prerelease-2/webkit-autoloader-installer_v0.7.0-dev-3a34c3b.elf",
+      "filename": "webkit-autoloader-installer_v0.7.0.elf",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.0/webkit-autoloader-installer_v0.7.0.elf",
       "source": "https://github.com/itsplk/ps5-webkit-autoloader",
       "author": "itsPLK",
       "description": "An automated payload loader for exploited PS5 consoles",
-      "version": "v0.7.0-prerelease-2",
+      "version": "v0.7.0",
       "category": "Loaders",
-      "checksum": "2a202023ee9ef4c742c3dc05d872c679c3570ca28e50c668b4b2e86c732d27b1",
-      "last_update": "2026-11-01T02:19:13+08:00"
+      "checksum": "10cb38baae078e41f252cffb0d356829c89ee63fd3234f1fd1e6b19f81eab1c7",
+      "last_update": "2026-11-07T06:07:55+08:00"
     },
     {
       "id": "ps5_appcache_remove",
@@ -953,15 +953,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-11.2.8.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.8/ps5upload-11.2.8.elf",
+      "filename": "ps5upload-11.3.0.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.3.0/ps5upload-11.3.0.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v11.2.8",
+      "version": "v11.3.0",
       "category": "Networking & Servers",
-      "checksum": "a76ae6f70ee8cb0b536ee39f60855cee627a01f33271699020ee35989a9a8f37",
-      "last_update": "2026-11-07T02:27:55+08:00"
+      "checksum": "db1d0e2be1d14fea08b42a9289e20ebe8609011f288b29b7dd73c957b2616ffd",
+      "last_update": "2026-11-07T11:21:47+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
@@ -1148,15 +1148,15 @@
     {
       "id": "zsshd",
       "name": "zsshd",
-      "filename": "zsshd-ps5-v0.8.0.elf",
-      "url": "https://github.com/jinxcase000/zsshd/releases/download/v0.8.0/zsshd-ps5-v0.8.0.elf",
+      "filename": "zsshd-ps5-v0.8.1.elf",
+      "url": "https://github.com/jinxcase000/zsshd/releases/download/v0.8.1/zsshd-ps5-v0.8.1.elf",
       "source": "https://github.com/jinxcase000/zsshd",
       "author": "jinxcase000",
       "description": "Minimal PS5 SSH server payload: root shell, built-in commands, scripting/automation, post-quantum KEX",
-      "version": "v0.8.0",
+      "version": "v0.8.1",
       "category": "Networking & Servers",
-      "checksum": "f0f1a77f776609d701a454e16fda6ccf66ccd29ac3126e2d47c266892215b40e",
-      "last_update": "2026-11-02T13:11:36+08:00"
+      "checksum": "0b303c8fd50aebffd41d83368b8c185a1d73c0f6a1d7d5bd49b5ab6aab845643",
+      "last_update": "2026-11-07T12:01:00+08:00"
     }
   ]
 }

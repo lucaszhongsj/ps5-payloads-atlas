@@ -104,13 +104,13 @@ The full catalogue as of the last scheduled build:
 | [holdmysocks/ps5-tailscale](https://github.com/holdmysocks/ps5-tailscale) | `v0.7.3` | Networking & Servers | Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonl… | `2026-11-05` |
 | [neokuze/ps5-tailscale](https://github.com/neokuze/ps5-tailscale) | `1.0.0` | Networking & Servers | Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play | `2026-10-10` |
 | [owendswang/ps5-web-file-manager](https://github.com/owendswang/ps5-web-file-manager) | `v1.13-rc2` | Utilities & Tools | A file manager for PS5 with a web UI. | `2026-10-30` |
-| [itsplk/ps5-webkit-autoloader](https://github.com/itsplk/ps5-webkit-autoloader) | `v0.7.0-prerelease-2` | Loaders | An automated payload loader for exploited PS5 consoles | `2026-11-01` |
+| [itsplk/ps5-webkit-autoloader](https://github.com/itsplk/ps5-webkit-autoloader) | `v0.7.0` | Loaders | An automated payload loader for exploited PS5 consoles | `2026-11-07` |
 | [techsociology/ps5_appcache_remove](https://github.com/techsociology/ps5_appcache_remove) | `v1.0.0` | Utilities & Tools | A PS5 payload that wipes WebKit browser cache, cookies, appcache, localstorage, and resource-load-statistics… | `2026-10-20` |
 | [junleb/ps5console](https://github.com/junleb/ps5console) | `6.5.1` | Networking & Servers | PS5 Console 一体化 PS5 本地控制中心，将游戏挂载、存档管理、USB 手柄兼容、FTP、风扇温控和 ELF 管理整合到一个 Payload 与 Web UI 中。 当前项目用于已具备 Payload 运行… | `2026-08-31` |
 | [pharaoh2k/ps5debug-ng](https://github.com/pharaoh2k/ps5debug-ng) | `1.3.2` | Utilities & Tools | PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore. GPL-3. | `2026-09-23` |
 | [tojala1998/ps5diag](https://github.com/tojala1998/ps5diag) | `v1.0.1` | Utilities & Tools | Read-only PlayStation 5 hardware diagnostics, live system monitoring, and DxDiag-style reporting for jailbrok… | `2026-10-25` |
 | [heni0xyz/ps5save](https://github.com/heni0xyz/ps5save) | `v2` | Utilities & Tools | USB save backup utility for jailbroken PS5’s | `2026-10-22` |
-| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v11.2.8` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-07` |
+| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v11.3.0` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-07` |
 | [armanate/rdr2-60fps-runtime-patcher](https://github.com/armanate/rdr2-60fps-runtime-patcher) | `v2.0` | Utilities & Tools | Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5. | `2026-10-11` |
 | [elripalda/recompstore](https://github.com/elripalda/recompstore) | `v2.7.4` | Utilities & Tools | RecompStore: the free homebrew app store for jailbroken PS5. Installs and updates recompiled game ports, emul… | `2026-10-30` |
 | [earthonion/remoteplay_unlock](https://github.com/earthonion/remoteplay_unlock) | `latest-testing` | Utilities & Tools | — | `2026-11-02` |
@@ -125,7 +125,7 @@ The full catalogue as of the last scheduled build:
 | [megacadedev/yetanothercontrollerenabler](https://github.com/megacadedev/yetanothercontrollerenabler) | `v0.0.1` | Utilities & Tools | YetAnotherControllerEnabler is a homebrew payload for a PS5. It lets a controller from another console play o… | `2026-10-04` |
 | [mastershivnath007/ytps5-sponsorblock](https://github.com/mastershivnath007/ytps5-sponsorblock) | `v1.2.0` | Utilities & Tools | YouTube ad blocker + SponsorBlock for the official PS5 video app (jailbroken FW 8.20). One ELF via Payload Ma… | `2026-11-05` |
 | [seregonwar/zftpd](https://github.com/seregonwar/zftpd) | `v1.7.0` | Networking & Servers | Zero-copy FTP/HTTP Daemon compatible with all POSIX systems | `2026-10-28` |
-| [jinxcase000/zsshd](https://github.com/jinxcase000/zsshd) | `v0.8.0` | Networking & Servers | Minimal PS5 SSH server payload: root shell, built-in commands, scripting/automation, post-quantum KEX | `2026-11-02` |
+| [jinxcase000/zsshd](https://github.com/jinxcase000/zsshd) | `v0.8.1` | Networking & Servers | Minimal PS5 SSH server payload: root shell, built-in commands, scripting/automation, post-quantum KEX | `2026-11-07` |
 <!-- PAYLOADS_END -->
 `Source` links to the upstream repository; `Updated` is that release's publish date.
 
