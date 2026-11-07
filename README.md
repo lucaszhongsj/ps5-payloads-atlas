@@ -37,7 +37,7 @@ The full catalogue as of the last scheduled build:
 <!-- PAYLOADS_START -->
 | Source | Version | Category | Description | Updated |
 | --- | --- | --- | --- | --- |
-| [theghostonline/007-first-light-ps5](https://theghostonline.dev/theghostonline/007-first-light-ps5) | `v0.3.1` | Utilities & Tools | 007 First Light online on a jailbroken PS5, with the whole backend inside the payload. No PC needed. | `2026-10-22` |
+| [theghostonline/007-first-light-ps5](https://theghostonline.dev/theghostonline/007-first-light-ps5) | `v0.3.2` | Utilities & Tools | 007 First Light online on a jailbroken PS5, with the whole backend inside the payload. No PC needed. | `2026-11-07` |
 | [elmonomalva0/any-pad-ps5](https://codeberg.org/elmonomalva0/any-pad-ps5) | `v0.9.5-beta` | Utilities & Tools | Free your PS5 from the DualSense | `2026-10-15` |
 | [tsuramatsu1/apr-emu-updater](https://github.com/tsuramatsu1/apr-emu-updater) | `v2.0.6` | Utilities & Tools | PS5 payload that keeps APR Emu up to date on installed titles, from a web interface on the console. | `2026-08-29` |
 | [bestpig/backpork](https://github.com/bestpig/backpork) | `0.1` | Utilities & Tools | Lets you sideload system libraries into PS5 games | `2026-05-01` |
@@ -52,7 +52,7 @@ The full catalogue as of the last scheduled build:
 | [ps5-payload-dev/ftpsrv](https://github.com/ps5-payload-dev/ftpsrv) | `v0.21.1` | Networking & Servers | An FTP server for jailbroken PS4s and PS5s | `2026-08-21` |
 | [ruinelson/ftpsrv-streamextract](https://github.com/ruinelson/ftpsrv-streamextract) | `1.0.1` | Networking & Servers | A simple FTP server for jailbroken PS4s and PS5s | `2026-10-21` |
 | [earthonion/garlic-savemgr](https://git.etawen.dev/earthonion/garlic-savemgr) | `v1.15-beta12` | Utilities & Tools | — | `2026-11-06` |
-| [earthonion/garlic-worker](https://git.etawen.dev/earthonion/garlic-worker) | `v1.3.6` | Utilities & Tools | — | `2026-11-07` |
+| [earthonion/garlic-worker](https://git.etawen.dev/earthonion/garlic-worker) | `v1.3.9` | Utilities & Tools | — | `2026-11-08` |
 | [ps5-payload-dev/gdbsrv](https://github.com/ps5-payload-dev/gdbsrv) | `v0.9` | Networking & Servers | A simple GDB server for jailbroken PS4s and PS5s | `2026-08-03` |
 | [x-f1reball-x/hearbridge-ps5](https://github.com/x-f1reball-x/hearbridge-ps5) | `v1.4.0` | Utilities & Tools | Play PS5 game audio on any Bluetooth headphones or earbuds. Payload for jailbroken PS5 | `2026-10-30` |
 | [disco-trooper/hush](https://github.com/disco-trooper/hush) | `v1.1.1` | Utilities & Tools | Turns off the PlayStation 5's continuous recent-gameplay recording. With nothing encoded, there is nothing fo… | `2026-11-04` |
@@ -110,7 +110,7 @@ The full catalogue as of the last scheduled build:
 | [pharaoh2k/ps5debug-ng](https://github.com/pharaoh2k/ps5debug-ng) | `1.3.2` | Utilities & Tools | PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore. GPL-3. | `2026-09-23` |
 | [tojala1998/ps5diag](https://github.com/tojala1998/ps5diag) | `v1.0.1` | Utilities & Tools | Read-only PlayStation 5 hardware diagnostics, live system monitoring, and DxDiag-style reporting for jailbrok… | `2026-10-25` |
 | [heni0xyz/ps5save](https://github.com/heni0xyz/ps5save) | `v2` | Utilities & Tools | USB save backup utility for jailbroken PS5’s | `2026-10-22` |
-| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v11.4.0` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-07` |
+| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v11.5.1` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-08` |
 | [armanate/rdr2-60fps-runtime-patcher](https://github.com/armanate/rdr2-60fps-runtime-patcher) | `v2.0` | Utilities & Tools | Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5. | `2026-10-11` |
 | [elripalda/recompstore](https://github.com/elripalda/recompstore) | `v2.7.4` | Utilities & Tools | RecompStore: the free homebrew app store for jailbroken PS5. Installs and updates recompiled game ports, emul… | `2026-10-30` |
 | [earthonion/remoteplay_unlock](https://github.com/earthonion/remoteplay_unlock) | `latest-testing` | Utilities & Tools | — | `2026-11-02` |
