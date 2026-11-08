@@ -49,10 +49,10 @@ The full catalogue as of the last scheduled build:
 | [ps5-payload-dev/elfldr](https://github.com/ps5-payload-dev/elfldr) | `v0.27` | Loaders | An ELF loader for jailbroken PS5s that accepts payloads on port 9021 | `2026-10-22` |
 | [gronedwaffel/etahen-11.00-13.60](https://github.com/gronedwaffel/etahen-11.00-13.60) | `v2.5B-unified.1` | System & Jailbreak | Unofficial etaHEN 2.5B unified PS5 11.00-13.60 port: Toolbox, plugins and PS4/PS5 FPS. Original etaHEN by Lig… | `2026-10-06` |
 | [drakmor/ftpsrv](https://github.com/drakmor/ftpsrv) | `1.16-ng-stable` | Networking & Servers | A simple FTP server for jailbroken PS4s and PS5s | `2026-09-21` |
-| [ps5-payload-dev/ftpsrv](https://github.com/ps5-payload-dev/ftpsrv) | `v0.21.1` | Networking & Servers | An FTP server for jailbroken PS4s and PS5s | `2026-08-21` |
+| [ps5-payload-dev/ftpsrv](https://github.com/ps5-payload-dev/ftpsrv) | `v0.22` | Networking & Servers | An FTP server for jailbroken PS4s and PS5s | `2026-11-09` |
 | [ruinelson/ftpsrv-streamextract](https://github.com/ruinelson/ftpsrv-streamextract) | `1.0.1` | Networking & Servers | A simple FTP server for jailbroken PS4s and PS5s | `2026-10-21` |
-| [earthonion/garlic-savemgr](https://git.etawen.dev/earthonion/garlic-savemgr) | `v1.15-beta14` | Utilities & Tools | — | `2026-11-08` |
-| [earthonion/garlic-worker](https://git.etawen.dev/earthonion/garlic-worker) | `v1.3.9` | Utilities & Tools | — | `2026-11-08` |
+| [earthonion/garlic-savemgr](https://git.etawen.dev/earthonion/garlic-savemgr) | `v1.15-beta15` | Utilities & Tools | — | `2026-11-08` |
+| [earthonion/garlic-worker](https://git.etawen.dev/earthonion/garlic-worker) | `v1.4.0` | Utilities & Tools | — | `2026-11-09` |
 | [ps5-payload-dev/gdbsrv](https://github.com/ps5-payload-dev/gdbsrv) | `v0.9` | Networking & Servers | A simple GDB server for jailbroken PS4s and PS5s | `2026-08-03` |
 | [x-f1reball-x/hearbridge-ps5](https://github.com/x-f1reball-x/hearbridge-ps5) | `v1.4.0` | Utilities & Tools | Play PS5 game audio on any Bluetooth headphones or earbuds. Payload for jailbroken PS5 | `2026-10-30` |
 | [disco-trooper/hush](https://github.com/disco-trooper/hush) | `v1.1.1` | Utilities & Tools | Turns off the PlayStation 5's continuous recent-gameplay recording. With nothing encoded, there is nothing fo… | `2026-11-04` |
@@ -74,7 +74,7 @@ The full catalogue as of the last scheduled build:
 | [michele-m-media/pizza-hen](https://github.com/michele-m-media/pizza-hen) | `v2.00` | System & Jailbreak | — | `2026-08-25` |
 | [plabs5/plinux5-ng](https://github.com/plabs5/plinux5-ng) | `v0.1.0` | Utilities & Tools | PS5 Linux for high FW's (8.xx, 9.xx, 10.xx, 11.xx, 12.xx, 13.xx) | `2026-10-14` |
 | [itsblurf/poords4](https://github.com/itsblurf/poords4) | `v0.2.0` | Utilities & Tools | Use a wireless DualShock 4 in native PS5 games on jailbroken consoles. | `2026-10-21` |
-| [x1nons/prefbar](https://github.com/x1nons/prefbar) | `v0.2.0` | Utilities & Tools | PrefBar — On-Screen Performance Overlay for Jailbroken PS5 Consoles | `2026-11-01` |
+| [x1nons/prefbar](https://github.com/x1nons/prefbar) | `v0.2.1` | Utilities & Tools | PrefBar - Standalone On-Screen Performance Overlay for Jailbroken PS5 | `2026-11-09` |
 | [notmaj0r/prosperomgr](https://github.com/notmaj0r/prosperomgr) | `v1.1` | Utilities & Tools | All-In-One manager for your PS5! | `2026-09-29` |
 | [illusionyy/ps-patch-system](https://github.com/illusionyy/ps-patch-system) | `38108724867` | Utilities & Tools | App patching system for PS4/PS5 | `2026-10-11` |
 | [mounirhero/ps-play](https://github.com/mounirhero/ps-play) | `2.1` | Utilities & Tools | — | `2026-08-15` |
@@ -110,11 +110,11 @@ The full catalogue as of the last scheduled build:
 | [pharaoh2k/ps5debug-ng](https://github.com/pharaoh2k/ps5debug-ng) | `1.3.2` | Utilities & Tools | PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore. GPL-3. | `2026-09-23` |
 | [tojala1998/ps5diag](https://github.com/tojala1998/ps5diag) | `v1.0.1` | Utilities & Tools | Read-only PlayStation 5 hardware diagnostics, live system monitoring, and DxDiag-style reporting for jailbrok… | `2026-10-25` |
 | [heni0xyz/ps5save](https://github.com/heni0xyz/ps5save) | `v2` | Utilities & Tools | USB save backup utility for jailbroken PS5’s | `2026-10-22` |
-| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v11.6.0` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-08` |
+| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v12.0.0` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-09` |
 | [armanate/rdr2-60fps-runtime-patcher](https://github.com/armanate/rdr2-60fps-runtime-patcher) | `v2.0` | Utilities & Tools | Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5. | `2026-10-11` |
 | [elripalda/recompstore](https://github.com/elripalda/recompstore) | `v2.7.4` | Utilities & Tools | RecompStore: the free homebrew app store for jailbroken PS5. Installs and updates recompiled game ports, emul… | `2026-10-30` |
 | [earthonion/remoteplay_unlock](https://github.com/earthonion/remoteplay_unlock) | `latest-testing` | Utilities & Tools | — | `2026-11-02` |
-| [drakmor/shadowmountplus](https://github.com/drakmor/shadowmountplus) | `1.7beta11` | Utilities & Tools | Automated background auto-mounter payload for jailbroken PS5 consoles. Detects, mounts, and installs game bac… | `2026-10-30` |
+| [drakmor/shadowmountplus](https://github.com/drakmor/shadowmountplus) | `1.7beta12` | Utilities & Tools | Automated background auto-mounter payload for jailbroken PS5 consoles. Detects, mounts, and installs game bac… | `2026-11-09` |
 | [ps5-payload-dev/shsrv](https://github.com/ps5-payload-dev/shsrv) | `v0.20` | Networking & Servers | A simple telnet-like shell server for jailbroken PS5s that accepts connections on port 2323 | `2026-08-03` |
 | [abhi245y/spotless](https://github.com/abhi245y/spotless) | `v0.2.0-beta` | Utilities & Tools | Your music. Your console. No PSN required. Independent Spotify integration research for PS5. | `2026-10-20` |
 | [bizkut/unrar-ps5](https://github.com/bizkut/unrar-ps5) | `v1.4.0` | Utilities & Tools | PS5 UnRAR payload for extracting homebrew archives | `2026-06-18` |
