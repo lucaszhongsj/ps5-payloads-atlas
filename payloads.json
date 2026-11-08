@@ -187,14 +187,14 @@
       "id": "garlic-savemgr-for-ps5",
       "name": "garlic-savemgr",
       "filename": "garlic-savemgr.elf",
-      "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta12/garlic-savemgr.elf",
+      "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta14/garlic-savemgr.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr",
       "author": "earthonion",
       "description": "",
-      "version": "v1.15-beta12",
+      "version": "v1.15-beta14",
       "category": "Utilities & Tools",
       "checksum": "",
-      "last_update": "2026-11-06T20:15:04+08:00"
+      "last_update": "2026-11-08T10:10:49+08:00"
     },
     {
       "id": "garlic-worker",
@@ -589,15 +589,15 @@
     {
       "id": "ps5-cleanup",
       "name": "PS5-Cleanup",
-      "filename": "ps5cleanup_v1.0.7.elf",
-      "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/v1.0.7/ps5cleanup_v1.0.7.elf",
+      "filename": "ps5cleanup_v1.0.8.elf",
+      "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/v1.0.8/ps5cleanup_v1.0.8.elf",
       "source": "https://github.com/xxbneutzernamexx/ps5-cleanup",
       "author": "xXBneutzerNameXx",
       "description": "Räumt eine PS5 mit Jailbreak auf wie frisch eingerichtet – ohne Neuinstallation. Laufwerks-Kopplung, Konto und Lizenzen bleiben erhalten. Clean up a jailbroken PS5 like new, no reinstall.",
-      "version": "v1.0.7",
+      "version": "v1.0.8",
       "category": "Utilities & Tools",
-      "checksum": "b1787f49680b15ecc1cb7261c08e8ff83c99ff49ed4452d7dfdd0bfcec20e518",
-      "last_update": "2026-11-04T05:34:12+08:00"
+      "checksum": "5ac20609caac40e82ee74e0d60a5c92ea013e26394618473b1a992da488d5e77",
+      "last_update": "2026-11-08T07:45:51+08:00"
     },
     {
       "id": "ps5-date-time-sync",
@@ -875,15 +875,15 @@
     {
       "id": "ps5-webkit-autoloader",
       "name": "ps5-webkit-autoloader",
-      "filename": "webkit-autoloader-installer_v0.7.0.elf",
-      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.0/webkit-autoloader-installer_v0.7.0.elf",
+      "filename": "webkit-autoloader-installer_v0.7.1.elf",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf",
       "source": "https://github.com/itsplk/ps5-webkit-autoloader",
       "author": "itsPLK",
       "description": "An automated payload loader for exploited PS5 consoles",
-      "version": "v0.7.0",
+      "version": "v0.7.1",
       "category": "Loaders",
-      "checksum": "10cb38baae078e41f252cffb0d356829c89ee63fd3234f1fd1e6b19f81eab1c7",
-      "last_update": "2026-11-07T06:07:55+08:00"
+      "checksum": "df60538570e9811bb0b4652a3fdb3e1a35ec3455b3ca7c80edc4140c5bb47ce2",
+      "last_update": "2026-11-08T08:52:43+08:00"
     },
     {
       "id": "ps5_appcache_remove",
@@ -953,15 +953,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-11.5.1.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.5.1/ps5upload-11.5.1.elf",
+      "filename": "ps5upload-11.6.0.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.6.0/ps5upload-11.6.0.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v11.5.1",
+      "version": "v11.6.0",
       "category": "Networking & Servers",
-      "checksum": "e6059aafb53eb48b8bc0ce31f2f0db3b0b5e58d97fea7b7cf813e66a5086b08c",
-      "last_update": "2026-11-08T03:38:05+08:00"
+      "checksum": "13dca53b2216d920ad94b9564cba68fd085d4ea0f1f0193be5b5299c9872e67e",
+      "last_update": "2026-11-08T12:40:36+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
