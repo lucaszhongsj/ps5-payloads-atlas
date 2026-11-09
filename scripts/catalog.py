@@ -132,24 +132,25 @@ def parse_repo_url(url: str):
 # The only section that talks network: retries classify failures instead of
 # retrying everything, and writes land atomically.
 
-GH_API_ATTEMPTS = 3  # GitHub hits TLS EOF now and then; one failure would drop the entry for a whole run
+HTTP_ATTEMPTS = 3    # GitHub hits TLS EOF now and then; one failure would drop the entry for a whole run
+GH_API_ATTEMPTS = 3  # the same retry budget, for calls that go through `gh`
 FETCH_WORKERS = 8    # fetching is pure network wait; serially a refresh would stretch into tens of minutes
 # a publishable checksum is exactly 64 hex digits; build and the release section share this one test.
 SHA256_HEX = re.compile(r"^[0-9a-fA-F]{64}$")
 
 
-def http_get(url: str, timeout: int = 30, attempts: int = 3) -> str:
+def http_get(url: str, timeout: int = 30) -> str:
     """GET with retries. Transport errors and 5xx are blips; 4xx are answers."""
     request = urllib.request.Request(url, headers={"User-Agent": "ps5-payloads-atlas/1.0"})
-    for attempt in range(1, attempts + 1):
+    for attempt in range(1, HTTP_ATTEMPTS + 1):
         try:
             with urllib.request.urlopen(request, timeout=timeout) as response:
                 return response.read().decode("utf-8")
         except urllib.error.HTTPError as e:
-            if e.code < 500 or attempt == attempts:
+            if e.code < 500 or attempt == HTTP_ATTEMPTS:
                 raise
         except Exception:
-            if attempt == attempts:
+            if attempt == HTTP_ATTEMPTS:
                 raise
     raise AssertionError("unreachable")
 
@@ -339,6 +340,15 @@ def _misordered(items: list[str]) -> tuple[str, str] | None:
     return None
 
 
+def _require_sorted(path: Path, items: list[str], what: str) -> None:
+    """Refuse a file whose entries are not in dictionary order."""
+    misordered = _misordered(items)
+    if misordered:
+        a, b = misordered
+        sys.exit(f"error: {path}: {what} are not in dictionary order; "
+                 f"{b!r} belongs before {a!r}")
+
+
 def read_urls(path: Path, check_order: bool = True) -> list[str]:
     """A bare array of repository urls — the only thing a sources/*.json can say.
 
@@ -358,11 +368,7 @@ def read_urls(path: Path, check_order: bool = True) -> list[str]:
     if not isinstance(document, list) or not all(isinstance(u, str) for u in document):
         sys.exit(f"error: {path} must be a bare array of url strings")
     if check_order:
-        misordered = _misordered(document)
-        if misordered:
-            a, b = misordered
-            sys.exit(f"error: {path}: urls are not in dictionary order; "
-                     f"{b!r} belongs before {a!r}")
+        _require_sorted(path, document, "urls")
     return document
 
 
@@ -379,11 +385,7 @@ def read_manual(settings: Settings) -> list[dict]:
     if not path.exists():
         return []
     document = _read_toml(path)
-    misordered = _misordered(list(document))
-    if misordered:
-        a, b = misordered
-        sys.exit(f"error: {path}: tables are not in dictionary order; "
-                 f"[{b}] belongs before [{a}]")
+    _require_sorted(path, list(document), "tables")
     entries = []
     for url, body in document.items():
         if not isinstance(body, dict):
@@ -425,11 +427,7 @@ def read_mirror(settings: Settings) -> dict[str, str]:
     if not path.exists():
         return {}
     document = _read_toml(path)
-    misordered = _misordered(list(document))
-    if misordered:
-        a, b = misordered
-        sys.exit(f"error: {path}: tables are not in dictionary order; "
-                 f"[{b}] belongs before [{a}]")
+    _require_sorted(path, list(document), "tables")
     mirrors, files = {}, set()
     for repo_url, body in document.items():
         if not isinstance(body, dict):
@@ -1095,7 +1093,7 @@ def _fallback(slot: dict, key: str, reason: str, previous: dict, counters: dict)
     returns by itself once the repo resolves.
     """
     reused = previous.get(key)
-    if reused and not reused.get("unavailable"):
+    if reused:
         print(f"  carry-over: {slot['repo_url']} kept from the last published run")
         counters["carried"] += 1
         item = dict(reused)

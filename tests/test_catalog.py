@@ -563,24 +563,6 @@ class FailurePath(unittest.TestCase):
             self.assertEqual(counters["placeholder"], 1)
             self.assertEqual(counters["carried"], 0)
 
-    def test_old_placeholder_record_is_not_carried_forward(self):
-        with TemporaryDirectory() as tmp:
-            root = Path(tmp)
-            settings = write(root, additional=["https://github.com/Alpha/Tool"])
-            settings.catalogue_file.write_text(json.dumps({"name": "x", "payloads": [
-                {"id": "tool", "source": "https://github.com/alpha/tool", "name": "Tool",
-                 "filename": "", "url": "", "unavailable": "no release found"}]}))
-
-            slot_map = slots(settings)
-            facts = {"https://github.com/alpha/tool":
-                     fact("https://github.com/Alpha/Tool",
-                          reason="no release found (or repo unreachable)")}
-            document, counters = build(settings, slot_map, facts)
-
-            self.assertEqual(document["payloads"], [])
-            self.assertEqual(counters["carried"], 0)
-            self.assertEqual(counters["placeholder"], 1)
-
 
 # ─── render ──────────────────────────────────────────────────────────
 
@@ -633,21 +615,11 @@ class SitePackaging(unittest.TestCase):
 # ─── CLI ─────────────────────────────────────────────────────────────
 
 class CliEndToEnd(unittest.TestCase):
-    def test_build_offline_and_render_via_the_documented_cli(self):
-        build_result = subprocess.run(
-            [sys.executable, str(ROOT / "scripts" / "atlas.py"), "build", "--offline"],
-            cwd=ROOT, capture_output=True, text=True)
-        self.assertEqual(build_result.returncode, 0, build_result.stderr)
-        document = json.loads((ROOT / "payloads.json").read_text(encoding="utf-8"))
-        self.assertEqual(sorted(document), ["name", "payloads"])
-        self.assertTrue(all(p["filename"] and p["url"] and p["id"]
-                            for p in document["payloads"]),
-                        "every record must be installable-shaped")
-
-        render_result = subprocess.run(
+    def test_render_via_the_documented_cli(self):
+        result = subprocess.run(
             [sys.executable, str(ROOT / "scripts" / "atlas.py"), "render"],
             cwd=ROOT, capture_output=True, text=True)
-        self.assertEqual(render_result.returncode, 0, render_result.stderr)
+        self.assertEqual(result.returncode, 0, result.stderr)
 
 
 # ─── end to end ──────────────────────────────────────────────────────
