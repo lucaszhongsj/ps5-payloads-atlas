@@ -589,15 +589,15 @@
     {
       "id": "ps5-cleanup",
       "name": "PS5-Cleanup",
-      "filename": "ps5cleanup_v1.0.8.elf",
-      "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/v1.0.8/ps5cleanup_v1.0.8.elf",
+      "filename": "ps5cleanup_v1.0.9.elf",
+      "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/v1.0.9/ps5cleanup_v1.0.9.elf",
       "source": "https://github.com/xxbneutzernamexx/ps5-cleanup",
       "author": "xXBneutzerNameXx",
       "description": "Räumt eine PS5 mit Jailbreak auf wie frisch eingerichtet – ohne Neuinstallation. Laufwerks-Kopplung, Konto und Lizenzen bleiben erhalten. Clean up a jailbroken PS5 like new, no reinstall.",
-      "version": "v1.0.8",
+      "version": "v1.0.9",
       "category": "Utilities & Tools",
-      "checksum": "5ac20609caac40e82ee74e0d60a5c92ea013e26394618473b1a992da488d5e77",
-      "last_update": "2026-11-08T07:45:51+08:00"
+      "checksum": "381e0555b5c67ebb5236d5b47ce80ced81239d79c4134ede2f1a783ceab108bf",
+      "last_update": "2026-11-10T04:46:10+08:00"
     },
     {
       "id": "ps5-date-time-sync",
@@ -615,15 +615,15 @@
     {
       "id": "ps5-dump-forge",
       "name": "ps5-dump-forge",
-      "filename": "ps5-dump-forge-0.5.4-ps5.elf",
-      "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.4/ps5-dump-forge-0.5.4-ps5.elf",
+      "filename": "ps5-dump-forge-0.5.5-ps5.elf",
+      "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.5/ps5-dump-forge-0.5.5-ps5.elf",
       "source": "https://github.com/quer3q/ps5-dump-forge",
       "author": "quer3q",
       "description": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself.",
-      "version": "v0.5.4",
+      "version": "v0.5.5",
       "category": "Utilities & Tools",
-      "checksum": "ad8c36040c39f538376fbbc6434bdbe7f3d001e4f84cbb9afaa16a6d29617fc9",
-      "last_update": "2026-11-06T20:51:45+08:00"
+      "checksum": "858b8ae2954341a3389e4a9f998c6a57d01bc4e4fb8f01a71c41719001c30be7",
+      "last_update": "2026-11-10T04:19:00+08:00"
     },
     {
       "id": "ps5-exporter",
@@ -953,15 +953,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.2.0.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.2.0/ps5upload-12.2.0.elf",
+      "filename": "ps5upload-12.4.1.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.1/ps5upload-12.4.1.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.2.0",
+      "version": "v12.4.1",
       "category": "Networking & Servers",
-      "checksum": "436b8e832484464f4e1bcd11dbc607b4e19a8232b4646e49afff37675555a16f",
-      "last_update": "2026-11-09T12:42:22+08:00"
+      "checksum": "fd3f6679bba4f3246ef83fa4cc747a614b449ad1b9dcfabb0b0069751a609ed4",
+      "last_update": "2026-11-10T04:08:40+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
