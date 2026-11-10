@@ -330,14 +330,14 @@
       "id": "liveshell",
       "name": "LiveShell",
       "filename": "liveshell.elf",
-      "url": "https://github.com/ZiZc3/LiveShell/releases/download/v1.6.0/liveshell.elf",
+      "url": "https://github.com/ZiZc3/LiveShell/releases/download/v1.7.0/liveshell.elf",
       "source": "https://github.com/zizc3/liveshell",
       "author": "zizc3",
       "description": "Animated backgrounds for PS5 home screen.",
-      "version": "v1.6.0",
+      "version": "v1.7.0",
       "category": "Utilities & Tools",
-      "checksum": "99335e75312d6ffcce91f6a5b659f0191ec057c744b2b3d5b899db5a88b80ac3",
-      "last_update": "2026-10-27T06:33:48+08:00"
+      "checksum": "56ffecdb1a02f28044f4426729a4b1b3027e68a52d057c723a1d4c27e5f298fa",
+      "last_update": "2026-11-11T02:03:09+08:00"
     },
     {
       "id": "memdbg",
@@ -862,15 +862,15 @@
     {
       "id": "ps5-web-file-manager",
       "name": "ps5-web-file-manager",
-      "filename": "web-file-mgr-v1.13-rc2.elf",
-      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.13-rc2/web-file-mgr-v1.13-rc2.elf",
+      "filename": "web-file-mgr-v1.14.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/web-file-mgr-v1.14.elf",
       "source": "https://github.com/owendswang/ps5-web-file-manager",
       "author": "owendswang",
       "description": "A file manager for PS5 with a web UI.",
-      "version": "v1.13-rc2",
+      "version": "v1.14",
       "category": "Utilities & Tools",
-      "checksum": "91f8e7f52183ce624651b779016bb48cbe7adaad278833a1191ad2e8fc6fbfe3",
-      "last_update": "2026-10-30T03:33:13+08:00"
+      "checksum": "8493c0bd11d77f9cce4b6c93564ffcae7185a5b530ecf856a768519c2514e231",
+      "last_update": "2026-11-10T21:40:53+08:00"
     },
     {
       "id": "ps5-webkit-autoloader",
@@ -953,15 +953,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.2.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.2/ps5upload-12.4.2.elf",
+      "filename": "ps5upload-12.4.5.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.5/ps5upload-12.4.5.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.4.2",
+      "version": "v12.4.5",
       "category": "Networking & Servers",
-      "checksum": "06dbb9022bcb71cb95178c29c9da39ae6e60d17becf9c1ff8938c98bd15fa8ef",
-      "last_update": "2026-11-10T07:48:53+08:00"
+      "checksum": "72fef6dcd299aa927b3df800dcc13f166f84eef7b8e403004cb6f4c33ece0b77",
+      "last_update": "2026-11-11T02:59:40+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
