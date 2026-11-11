@@ -51,8 +51,8 @@ The full catalogue as of the last scheduled build:
 | [drakmor/ftpsrv](https://github.com/drakmor/ftpsrv) | `1.16-ng-stable` | Networking & Servers | A simple FTP server for jailbroken PS4s and PS5s | `2026-09-21` |
 | [ps5-payload-dev/ftpsrv](https://github.com/ps5-payload-dev/ftpsrv) | `v0.22` | Networking & Servers | An FTP server for jailbroken PS4s and PS5s | `2026-11-09` |
 | [ruinelson/ftpsrv-streamextract](https://github.com/ruinelson/ftpsrv-streamextract) | `1.0.1` | Networking & Servers | A simple FTP server for jailbroken PS4s and PS5s | `2026-10-21` |
-| [earthonion/garlic-savemgr](https://git.etawen.dev/earthonion/garlic-savemgr) | `v1.15-beta16` | Utilities & Tools | — | `2026-11-09` |
-| [earthonion/garlic-worker](https://git.etawen.dev/earthonion/garlic-worker) | `v1.5.0` | Utilities & Tools | — | `2026-11-09` |
+| [earthonion/garlic-savemgr](https://git.etawen.dev/earthonion/garlic-savemgr) | `v1.15-beta22` | Utilities & Tools | — | `2026-11-11` |
+| [earthonion/garlic-worker](https://git.etawen.dev/earthonion/garlic-worker) | `v1.5.5` | Utilities & Tools | — | `2026-11-11` |
 | [ps5-payload-dev/gdbsrv](https://github.com/ps5-payload-dev/gdbsrv) | `v0.9` | Networking & Servers | A simple GDB server for jailbroken PS4s and PS5s | `2026-08-03` |
 | [x-f1reball-x/hearbridge-ps5](https://github.com/x-f1reball-x/hearbridge-ps5) | `v1.4.0` | Utilities & Tools | Play PS5 game audio on any Bluetooth headphones or earbuds. Payload for jailbroken PS5 | `2026-10-30` |
 | [disco-trooper/hush](https://github.com/disco-trooper/hush) | `v1.1.1` | Utilities & Tools | Turns off the PlayStation 5's continuous recent-gameplay recording. With nothing encoded, there is nothing fo… | `2026-11-04` |
@@ -110,7 +110,7 @@ The full catalogue as of the last scheduled build:
 | [pharaoh2k/ps5debug-ng](https://github.com/pharaoh2k/ps5debug-ng) | `1.3.2` | Utilities & Tools | PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore. GPL-3. | `2026-09-23` |
 | [tojala1998/ps5diag](https://github.com/tojala1998/ps5diag) | `v1.0.1` | Utilities & Tools | Read-only PlayStation 5 hardware diagnostics, live system monitoring, and DxDiag-style reporting for jailbrok… | `2026-10-25` |
 | [heni0xyz/ps5save](https://github.com/heni0xyz/ps5save) | `v2` | Utilities & Tools | USB save backup utility for jailbroken PS5’s | `2026-10-22` |
-| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v12.4.5` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-11` |
+| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v12.4.7` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-11` |
 | [armanate/rdr2-60fps-runtime-patcher](https://github.com/armanate/rdr2-60fps-runtime-patcher) | `v2.0` | Utilities & Tools | Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5. | `2026-10-11` |
 | [elripalda/recompstore](https://github.com/elripalda/recompstore) | `v2.7.4` | Utilities & Tools | RecompStore: the free homebrew app store for jailbroken PS5. Installs and updates recompiled game ports, emul… | `2026-10-30` |
 | [earthonion/remoteplay_unlock](https://github.com/earthonion/remoteplay_unlock) | `latest-testing` | Utilities & Tools | — | `2026-11-02` |
