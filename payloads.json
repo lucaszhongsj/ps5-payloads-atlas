@@ -421,14 +421,14 @@
       "id": "onionhen",
       "name": "onionHEN",
       "filename": "onionhen.elf",
-      "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.9.0/OnionHEN.elf",
+      "url": "https://github.com/aydencharles/onionHEN/releases/download/nightly/OnionHEN.elf",
       "source": "https://github.com/aydencharles/onionhen",
       "author": "aydencharles",
       "description": "Yet another HEN enabler for jailbroken PS5",
-      "version": "v0.9.0",
+      "version": "nightly",
       "category": "System & Jailbreak",
-      "checksum": "1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212",
-      "last_update": "2026-10-15T15:42:25+08:00"
+      "checksum": "d0620cc430c10ac2bc7776bd10265742075c7b782b5c8c3fd05cf46e752ed49e",
+      "last_update": "2026-11-12T12:24:50+08:00"
     },
     {
       "id": "orbit-play-ps5",
@@ -953,15 +953,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.10.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.10/ps5upload-12.4.10.elf",
+      "filename": "ps5upload-12.4.12.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.12/ps5upload-12.4.12.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.4.10",
+      "version": "v12.4.12",
       "category": "Networking & Servers",
-      "checksum": "c51f52398aa9a9b0c78b5561010dffbaf198511f3daf8388bcf293918810f483",
-      "last_update": "2026-11-12T07:49:31+08:00"
+      "checksum": "7ce3b5fc3b5815b8b39711aacc83df247d93947fc165810161f1336b8527f2e3",
+      "last_update": "2026-11-12T13:31:28+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
