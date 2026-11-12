@@ -187,27 +187,27 @@
       "id": "garlic-savemgr-for-ps5",
       "name": "garlic-savemgr",
       "filename": "garlic-savemgr.elf",
-      "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta22/garlic-savemgr.elf",
+      "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta23/garlic-savemgr.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr",
       "author": "earthonion",
       "description": "",
-      "version": "v1.15-beta22",
+      "version": "v1.15-beta23",
       "category": "Utilities & Tools",
       "checksum": "",
-      "last_update": "2026-11-11T11:30:36+08:00"
+      "last_update": "2026-11-12T06:19:40+08:00"
     },
     {
       "id": "garlic-worker",
       "name": "garlic-worker",
       "filename": "garlic-worker-ps5.elf",
-      "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.5.5/garlic-worker-ps5.elf",
+      "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.5.6/garlic-worker-ps5.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-worker",
       "author": "earthonion",
       "description": "",
-      "version": "v1.5.5",
+      "version": "v1.5.6",
       "category": "Utilities & Tools",
       "checksum": "",
-      "last_update": "2026-11-11T11:30:36+08:00"
+      "last_update": "2026-11-12T06:19:40+08:00"
     },
     {
       "id": "gdbsrv-ps5",
@@ -433,15 +433,15 @@
     {
       "id": "orbit-play-ps5",
       "name": "orbit-play-ps5",
-      "filename": "orbit-play-0.7.0-ps5.elf",
-      "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.7.0/orbit-play-0.7.0-ps5.elf",
+      "filename": "orbit-play-0.8.0-ps5.elf",
+      "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.8.0/orbit-play-0.8.0-ps5.elf",
       "source": "https://github.com/saawant12/orbit-play-ps5",
       "author": "saawant12",
       "description": "Remote Play for jailbroken PS5s on Mac, Windows and Linux. Play at home without PSN sign-in, or away from home over a direct, encrypted connection. Supports local PS5 accounts and sets up Remote Play for you.",
-      "version": "v0.7.0",
+      "version": "v0.8.0",
       "category": "Utilities & Tools",
-      "checksum": "c567f2514d83cdaecf4a111bb887b77ac4f10c1bea6dcc2a357aedf2c7898879",
-      "last_update": "2026-11-02T23:34:33+08:00"
+      "checksum": "ec081aaad816e49cfdd66e8a1ae501342939b3c4f627c6032c691d0574d548fa",
+      "last_update": "2026-11-12T05:14:15+08:00"
     },
     {
       "id": "pizza-hen",
@@ -593,7 +593,7 @@
       "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/v1.0.9/ps5cleanup_v1.0.9.elf",
       "source": "https://github.com/xxbneutzernamexx/ps5-cleanup",
       "author": "xXBneutzerNameXx",
-      "description": "Räumt eine PS5 mit Jailbreak auf wie frisch eingerichtet – ohne Neuinstallation. Laufwerks-Kopplung, Konto und Lizenzen bleiben erhalten. Clean up a jailbroken PS5 like new, no reinstall.",
+      "description": "Clean up a jailbroken PS5 like new, no reinstall.",
       "version": "v1.0.9",
       "category": "Utilities & Tools",
       "checksum": "381e0555b5c67ebb5236d5b47ce80ced81239d79c4134ede2f1a783ceab108bf",
@@ -953,15 +953,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.8.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.8/ps5upload-12.4.8.elf",
+      "filename": "ps5upload-12.4.10.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.10/ps5upload-12.4.10.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.4.8",
+      "version": "v12.4.10",
       "category": "Networking & Servers",
-      "checksum": "053154034ffdb5057a08a962b68a26708270c78da966ef0a9f433c3f6de860fc",
-      "last_update": "2026-11-11T15:10:10+08:00"
+      "checksum": "c51f52398aa9a9b0c78b5561010dffbaf198511f3daf8388bcf293918810f483",
+      "last_update": "2026-11-12T07:49:31+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
