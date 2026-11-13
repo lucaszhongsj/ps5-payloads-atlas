@@ -343,14 +343,14 @@
       "id": "memdbg",
       "name": "MemDBG",
       "filename": "memdbg-ps5.elf",
-      "url": "https://github.com/seregonwar/MemDBG/releases/download/nightly-20260930-g6e493c9/MemDBG-ps5.elf",
+      "url": "https://github.com/seregonwar/MemDBG/releases/download/nightly-20261112-g6e31144/MemDBG-ps5.elf",
       "source": "https://github.com/seregonwar/memdbg",
       "author": "seregonwar",
       "description": "MemDBG is a high-performance memory debugging and inspection suite designed for PlayStation 4 and PlayStation 5 homebrew research environments.",
-      "version": "nightly-20260930-g6e493c9",
+      "version": "nightly-20261112-g6e31144",
       "category": "Utilities & Tools",
-      "checksum": "2fbdc9f0b21043619b1c32b512df47b3ddf79a99f096243c0d48f5ffc14e1906",
-      "last_update": "2026-09-30T15:46:37+08:00"
+      "checksum": "d2d8565c7c83b1d1dfe5d66471b5941b164d21854eee6a1b2e1d945eed383cbb",
+      "last_update": "2026-11-13T09:53:22+08:00"
     },
     {
       "id": "nanodns",
@@ -824,14 +824,14 @@
       "id": "ps5-tabshifter",
       "name": "PS5-TabShifter",
       "filename": "tabshifter.elf",
-      "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v1.3.0/TabShifter.elf",
+      "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v1.4.0/TabShifter.elf",
       "source": "https://github.com/xvvulcanvx/ps5-tabshifter",
       "author": "xvvulcanvx",
       "description": "Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (Universal FW 5.00 – 13.60)",
-      "version": "v1.3.0",
+      "version": "v1.4.0",
       "category": "Utilities & Tools",
-      "checksum": "5d2d9c46c2390df05c5a85781b033aa9471584629e8bd69b91608cb3e60f45b4",
-      "last_update": "2026-10-25T02:38:30+08:00"
+      "checksum": "f687372160a2ae564b2c401c5378fa5ae0902e9815f2f13fc6a07b9c34c1630f",
+      "last_update": "2026-11-13T08:27:16+08:00"
     },
     {
       "id": "ps5-tailscale",

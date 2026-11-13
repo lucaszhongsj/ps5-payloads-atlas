@@ -63,7 +63,7 @@ The full catalogue as of the last scheduled build:
 | [echostretch/kstuff-lite](https://github.com/echostretch/kstuff-lite) | `v1.11` | System & Jailbreak | — | `2026-09-21` |
 | [aydencharles/kylin-core-release](https://github.com/aydencharles/kylin-core-release) | `v2.0.0-community-lite` | Utilities & Tools | kylin-core-release | `2026-10-01` |
 | [zizc3/liveshell](https://github.com/zizc3/liveshell) | `v1.7.0` | Utilities & Tools | Animated backgrounds for PS5 home screen. | `2026-11-11` |
-| [seregonwar/memdbg](https://github.com/seregonwar/memdbg) | `nightly-20260930-g6e493c9` | Utilities & Tools | MemDBG is a high-performance memory debugging and inspection suite designed for PlayStation 4 and PlayStation… | `2026-09-30` |
+| [seregonwar/memdbg](https://github.com/seregonwar/memdbg) | `nightly-20261112-g6e31144` | Utilities & Tools | MemDBG is a high-performance memory debugging and inspection suite designed for PlayStation 4 and PlayStation… | `2026-11-13` |
 | [drakmor/nanodns](https://github.com/drakmor/nanodns) | `0.4` | Networking & Servers | Playstation 4/5 DNS proxy server | `2026-08-05` |
 | [gasb07/neoenabler](https://github.com/gasb07/neoenabler) | `v0.6.2` | Utilities & Tools | Allows PS4 games with no PS4 Pro Support to receive patches via illusionyy's ps-patch-system that can unlock… | `2026-11-03` |
 | [earthonion/np-fake-signin](https://git.etawen.dev/earthonion/np-fake-signin) | `v1.4` | Utilities & Tools | — | `2026-10-02` |
@@ -100,7 +100,7 @@ The full catalogue as of the last scheduled build:
 | [marice/ps5-signal](https://github.com/marice/ps5-signal) | `v0.2.1` | Networking & Servers | PS5 background payload that plays beep tunes and LED colour patterns for homebrew, through a small HTTP API o… | `2026-10-20` |
 | [marice/ps5-smbd](https://github.com/marice/ps5-smbd) | `v0.3.0` | Utilities & Tools | The PS5's /data and /mnt as Windows shares (SMB2/3), from a payload | `2026-11-01` |
 | [owendswang/ps5-syslang](https://github.com/owendswang/ps5-syslang) | `v0.3` | Utilities & Tools | Small PS5 payload for switching the ShellUI system language. | `2026-10-19` |
-| [xvvulcanvx/ps5-tabshifter](https://github.com/xvvulcanvx/ps5-tabshifter) | `v1.3.0` | Utilities & Tools | Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (Unive… | `2026-10-25` |
+| [xvvulcanvx/ps5-tabshifter](https://github.com/xvvulcanvx/ps5-tabshifter) | `v1.4.0` | Utilities & Tools | Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (Unive… | `2026-11-13` |
 | [holdmysocks/ps5-tailscale](https://github.com/holdmysocks/ps5-tailscale) | `v0.7.3` | Networking & Servers | Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonl… | `2026-11-05` |
 | [neokuze/ps5-tailscale](https://github.com/neokuze/ps5-tailscale) | `1.0.0` | Networking & Servers | Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play | `2026-10-10` |
 | [owendswang/ps5-web-file-manager](https://github.com/owendswang/ps5-web-file-manager) | `v1.14` | Utilities & Tools | A file manager for PS5 with a web UI. | `2026-11-10` |
