@@ -70,7 +70,7 @@ The full catalogue as of the last scheduled build:
 | [theghostonline/nuvio-ps5](https://theghostonline.dev/theghostonline/nuvio-ps5) | `v1.9.1` | Utilities & Tools | Nuvio as a PS5 app, with a native 4K HDR player built for the console's own video hardware. | `2026-10-20` |
 | [diegobarbosaa/omnipad-ps5](https://github.com/diegobarbosaa/omnipad-ps5) | `v1.0.4-hotfix1` | Utilities & Tools | Universal controller engine & Web Dashboard for PlayStation 5 (FW 7.00 - 13.60) | `2026-10-06` |
 | [aydencharles/onionhen](https://github.com/aydencharles/onionhen) | `nightly` | System & Jailbreak | Yet another HEN enabler for jailbroken PS5 | `2026-11-12` |
-| [saawant12/orbit-play-ps5](https://github.com/saawant12/orbit-play-ps5) | `v0.8.0` | Utilities & Tools | Remote Play for jailbroken PS5s on Mac, Windows and Linux. Play at home without PSN sign-in, or away from hom… | `2026-11-12` |
+| [saawant12/orbit-play-ps5](https://github.com/saawant12/orbit-play-ps5) | `v0.8.1` | Utilities & Tools | Remote Play for jailbroken PS5s on Mac, Windows and Linux. Play at home without PSN sign-in, or away from hom… | `2026-11-15` |
 | [michele-m-media/pizza-hen](https://github.com/michele-m-media/pizza-hen) | `v2.00` | System & Jailbreak | — | `2026-08-25` |
 | [plabs5/plinux5-ng](https://github.com/plabs5/plinux5-ng) | `v0.1.0` | Utilities & Tools | PS5 Linux for high FW's (8.xx, 9.xx, 10.xx, 11.xx, 12.xx, 13.xx) | `2026-10-14` |
 | [itsblurf/poords4](https://github.com/itsblurf/poords4) | `v0.2.0` | Utilities & Tools | Use a wireless DualShock 4 in native PS5 games on jailbroken consoles. | `2026-10-21` |
@@ -82,7 +82,7 @@ The full catalogue as of the last scheduled build:
 | [eladharels/ps5-60fps](https://github.com/eladharels/ps5-60fps) | `v1.0.0` | Utilities & Tools | — | `2026-10-16` |
 | [echostretch/ps5-app-dumper](https://github.com/echostretch/ps5-app-dumper) | `v2.10` | Utilities & Tools | — | `2026-10-03` |
 | [owendswang/ps5-aria2](https://github.com/owendswang/ps5-aria2) | `v1.37.0-3` | Utilities & Tools | aria2 for PS5 | `2026-10-05` |
-| [xxbneutzernamexx/ps5-cleanup](https://github.com/xxbneutzernamexx/ps5-cleanup) | `v1.0.9` | Utilities & Tools | Clean up a jailbroken PS5 like new, no reinstall. | `2026-11-10` |
+| [xxbneutzernamexx/ps5-cleanup](https://github.com/xxbneutzernamexx/ps5-cleanup) | `v1.0.10` | Utilities & Tools | Clean up a jailbroken PS5 like new, no reinstall. | `2026-11-15` |
 | [kerrdec97/ps5-date-time-sync](https://github.com/kerrdec97/ps5-date-time-sync) | `v1.0.0` | Utilities & Tools | Standalone PS5 payload that automatically restores the system date and time using public NTP servers. | `2026-08-24` |
 | [quer3q/ps5-dump-forge](https://github.com/quer3q/ps5-dump-forge) | `v0.5.5` | Utilities & Tools | A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself. | `2026-11-10` |
 | [marice/ps5-exporter](https://github.com/marice/ps5-exporter) | `v0.3.1` | Utilities & Tools | Prometheus exporter payload for a jailbroken PS5: temperatures, uptime, storage and ShadowMountPlus game stat… | `2026-10-20` |
@@ -110,7 +110,7 @@ The full catalogue as of the last scheduled build:
 | [pharaoh2k/ps5debug-ng](https://github.com/pharaoh2k/ps5debug-ng) | `1.3.2` | Utilities & Tools | PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore. GPL-3. | `2026-09-23` |
 | [tojala1998/ps5diag](https://github.com/tojala1998/ps5diag) | `v1.0.1` | Utilities & Tools | Read-only PlayStation 5 hardware diagnostics, live system monitoring, and DxDiag-style reporting for jailbrok… | `2026-10-25` |
 | [heni0xyz/ps5save](https://github.com/heni0xyz/ps5save) | `v2` | Utilities & Tools | USB save backup utility for jailbroken PS5’s | `2026-10-22` |
-| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v12.4.19` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-14` |
+| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v12.4.20` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-15` |
 | [armanate/rdr2-60fps-runtime-patcher](https://github.com/armanate/rdr2-60fps-runtime-patcher) | `v2.0` | Utilities & Tools | Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5. | `2026-10-11` |
 | [elripalda/recompstore](https://github.com/elripalda/recompstore) | `v2.7.4` | Utilities & Tools | RecompStore: the free homebrew app store for jailbroken PS5. Installs and updates recompiled game ports, emul… | `2026-10-30` |
 | [earthonion/remoteplay_unlock](https://github.com/earthonion/remoteplay_unlock) | `latest-testing` | Utilities & Tools | — | `2026-11-02` |
