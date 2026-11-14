@@ -538,14 +538,14 @@
       "id": "ps4mount",
       "name": "ps4mount",
       "filename": "ps4mount.elf",
-      "url": "https://github.com/gasb07/ps4mount/releases/download/v0.7.3/ps4mount.elf",
+      "url": "https://github.com/gasb07/ps4mount/releases/download/v0.8.0/ps4mount.elf",
       "source": "https://github.com/gasb07/ps4mount",
       "author": "gasb07",
       "description": "Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal storage or PS5 formatted USB storage",
-      "version": "v0.7.3",
+      "version": "v0.8.0",
       "category": "Utilities & Tools",
-      "checksum": "f107a443aa83196744deeefe748a7f09d8b8b340a30df1b232535b6ee0f15127",
-      "last_update": "2026-11-06T01:13:28+08:00"
+      "checksum": "2f7d548cdb5c2beba631299fa9f1e5c18cca65c648443f9f36ffab9940a6a5ac",
+      "last_update": "2026-11-14T05:24:31+08:00"
     },
     {
       "id": "ps5-60fps",

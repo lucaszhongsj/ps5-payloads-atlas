@@ -78,7 +78,7 @@ The full catalogue as of the last scheduled build:
 | [notmaj0r/prosperomgr](https://github.com/notmaj0r/prosperomgr) | `v1.2` | Utilities & Tools | All-In-One manager for your PS5! | `2026-11-09` |
 | [illusionyy/ps-patch-system](https://github.com/illusionyy/ps-patch-system) | `38108724867` | Utilities & Tools | App patching system for PS4/PS5 | `2026-10-11` |
 | [mounirhero/ps-play](https://github.com/mounirhero/ps-play) | `2.1` | Utilities & Tools | — | `2026-08-15` |
-| [gasb07/ps4mount](https://github.com/gasb07/ps4mount) | `v0.7.3` | Utilities & Tools | Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal stora… | `2026-11-06` |
+| [gasb07/ps4mount](https://github.com/gasb07/ps4mount) | `v0.8.0` | Utilities & Tools | Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal stora… | `2026-11-14` |
 | [eladharels/ps5-60fps](https://github.com/eladharels/ps5-60fps) | `v1.0.0` | Utilities & Tools | — | `2026-10-16` |
 | [echostretch/ps5-app-dumper](https://github.com/echostretch/ps5-app-dumper) | `v2.10` | Utilities & Tools | — | `2026-10-03` |
 | [owendswang/ps5-aria2](https://github.com/owendswang/ps5-aria2) | `v1.37.0-3` | Utilities & Tools | aria2 for PS5 | `2026-10-05` |
