@@ -745,15 +745,15 @@
     {
       "id": "ps5-patchdl",
       "name": "ps5-patchdl",
-      "filename": "patchdl_0.3.12.elf",
-      "url": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.12/patchdl_0.3.12.elf",
+      "filename": "patchdl_0.3.13.elf",
+      "url": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.13/patchdl_0.3.13.elf",
       "source": "https://github.com/knutwurst/ps5-patchdl",
       "author": "knutwurst",
       "description": "Official updates for your PS5 and PS4 games, from any browser. PatchDL runs on the PS5, finds the newest update for every installed game, downloads it with parallel connections and resume, and installs it on the console. Web UI for phone, laptop and TV, plus a home-screen tile. Runs on firmware 1.00 to 13.60.",
-      "version": "v0.3.12",
+      "version": "v0.3.13",
       "category": "Utilities & Tools",
-      "checksum": "a8aeb6039825188561b7346bb6f0c9244f72d7be1412dc7dd6c2bea0dd3f396a",
-      "last_update": "2026-11-03T04:40:16+08:00"
+      "checksum": "257cce632b9ad701094dad3f8c0206ff87ab6b417415a57ebfd558c5ee3b0c50",
+      "last_update": "2026-11-14T20:10:44+08:00"
     },
     {
       "id": "ps5-payload-manager",
@@ -953,15 +953,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.17.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.17/ps5upload-12.4.17.elf",
+      "filename": "ps5upload-12.4.19.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.19/ps5upload-12.4.19.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.4.17",
+      "version": "v12.4.19",
       "category": "Networking & Servers",
-      "checksum": "f145f543338cab0b5f67946d1b98c4cc2dab1ca6e898f088da41e525fb0c6903",
-      "last_update": "2026-11-14T03:24:31+08:00"
+      "checksum": "cd3765ab9c643190bb3ca00b40de0dee5a90d6f5f0f1085d0decd056c5d91889",
+      "last_update": "2026-11-14T19:06:20+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
