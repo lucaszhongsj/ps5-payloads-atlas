@@ -225,15 +225,15 @@
     {
       "id": "hearbridge-ps5",
       "name": "HearBridge-PS5",
-      "filename": "hearbridge-1.4.0.elf",
-      "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.0/HearBridge-1.4.0.elf",
+      "filename": "hearbridge-1.4.2.elf",
+      "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.2/HearBridge-1.4.2.elf",
       "source": "https://github.com/x-f1reball-x/hearbridge-ps5",
       "author": "X-F1REBALL-X",
       "description": "Play PS5 game audio on any Bluetooth headphones or earbuds. Payload for jailbroken PS5",
-      "version": "v1.4.0",
+      "version": "v1.4.2",
       "category": "Utilities & Tools",
-      "checksum": "0c78332ac317541da12cb5998d1cab7f5b1b2778b3e835c4213b62278515d186",
-      "last_update": "2026-10-30T22:33:31+08:00"
+      "checksum": "565bb15656efad8d5561c2e397eac89002f12955fb2c6b65dc3475017613e434",
+      "last_update": "2026-11-16T01:45:40+08:00"
     },
     {
       "id": "hush",
@@ -499,14 +499,14 @@
       "id": "prosperomgr",
       "name": "ProsperoMgr",
       "filename": "prosperomgr.elf",
-      "url": "https://github.com/notmaj0r/ProsperoMgr/releases/download/v1.2/ProsperoMgr.elf",
+      "url": "https://github.com/notmaj0r/ProsperoMgr/releases/download/v1.2.1/ProsperoMgr.elf",
       "source": "https://github.com/notmaj0r/prosperomgr",
       "author": "notmaj0r",
       "description": "All-In-One manager for your PS5!",
-      "version": "v1.2",
+      "version": "v1.2.1",
       "category": "Utilities & Tools",
-      "checksum": "127394cc4f1ac7347fea509e010e80bab7b5ee13d820665474cdc3928d173bce",
-      "last_update": "2026-11-09T08:31:51+08:00"
+      "checksum": "f9240e53ac5f035b36fb6eca2845dd49827eddfb133d1bbb2810b1a025db9c5b",
+      "last_update": "2026-11-15T15:24:29+08:00"
     },
     {
       "id": "ps-patch-system",
@@ -953,15 +953,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.20.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.20/ps5upload-12.4.20.elf",
+      "filename": "ps5upload-12.4.22.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.22/ps5upload-12.4.22.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.4.20",
+      "version": "v12.4.22",
       "category": "Networking & Servers",
-      "checksum": "23584161eb851eca7185ede538387da8a280cfc84092e0c3dff488e41975cbba",
-      "last_update": "2026-11-15T04:51:11+08:00"
+      "checksum": "b60d65a9f753233cd1a25f46eb3c3e7de595f251a1b87d8a9deefaf4c2b8cf06",
+      "last_update": "2026-11-15T18:21:02+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
