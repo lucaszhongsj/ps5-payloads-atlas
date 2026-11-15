@@ -941,14 +941,14 @@
       "id": "ps5save",
       "name": "PS5Save",
       "filename": "backup.elf",
-      "url": "https://github.com/heni0xyz/PS5Save/releases/download/v2/backup.elf",
+      "url": "https://github.com/heni0xyz/PS5Save/releases/download/v3/backup.elf",
       "source": "https://github.com/heni0xyz/ps5save",
       "author": "heni0xyz",
       "description": "USB save backup utility for jailbroken PS5’s",
-      "version": "v2",
+      "version": "v3",
       "category": "Utilities & Tools",
-      "checksum": "91a7661e1f6708da77fe2bb5a5e4634ff1c531445df65bb1681ef2b21357af4c",
-      "last_update": "2026-10-22T00:59:04+08:00"
+      "checksum": "06897d7fb166c37329e6ac6c8904225abba03e847a5f705bf2c93963b1402794",
+      "last_update": "2026-11-15T08:18:47+08:00"
     },
     {
       "id": "ps5upload",
