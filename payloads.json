@@ -589,15 +589,15 @@
     {
       "id": "ps5-cleanup",
       "name": "PS5-Cleanup",
-      "filename": "ps5cleanup_v1.0.10.elf",
-      "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/v1.0.10/ps5cleanup_v1.0.10.elf",
+      "filename": "ps5cleanup_v1.1.elf",
+      "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/v1.1/ps5cleanup_v1.1.elf",
       "source": "https://github.com/xxbneutzernamexx/ps5-cleanup",
       "author": "xXBneutzerNameXx",
       "description": "Clean up a jailbroken PS5 like new, no reinstall.",
-      "version": "v1.0.10",
+      "version": "v1.1",
       "category": "Utilities & Tools",
-      "checksum": "992332419af558a82d7ba0fb7feb6dbe73043ed0b162c55c84b47b5bdc3b017a",
-      "last_update": "2026-11-15T04:34:21+08:00"
+      "checksum": "e1f32177140c2de7c89b620e0a5a698c995462a5ee1fa4e001388aec51b2f28d",
+      "last_update": "2026-11-18T01:27:01+08:00"
     },
     {
       "id": "ps5-date-time-sync",
@@ -875,15 +875,15 @@
     {
       "id": "ps5-webkit-autoloader",
       "name": "ps5-webkit-autoloader",
-      "filename": "webkit-autoloader-installer_v0.8.0-pre-627ba8c.elf",
-      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0-pre-627ba8c/webkit-autoloader-installer_v0.8.0-pre-627ba8c.elf",
+      "filename": "webkit-autoloader-installer_v0.8.0-pre-0850478.elf",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0-pre-0850478/webkit-autoloader-installer_v0.8.0-pre-0850478.elf",
       "source": "https://github.com/itsplk/ps5-webkit-autoloader",
       "author": "itsPLK",
       "description": "An automated payload loader for exploited PS5 consoles",
-      "version": "v0.8.0-pre-627ba8c",
+      "version": "v0.8.0-pre-0850478",
       "category": "Loaders",
-      "checksum": "e12b69b53e1486412b834ca68f948b78d8182dccefd4e3f2f1db89a2ae666e5c",
-      "last_update": "2026-11-16T23:08:39+08:00"
+      "checksum": "d5929a1a8aa31ba7c6fd86eb501650b3be11d9f370adaada3d1abd236473356e",
+      "last_update": "2026-11-17T21:39:58+08:00"
     },
     {
       "id": "ps5_appcache_remove",
@@ -953,15 +953,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.2.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.2/ps5upload-12.6.2.elf",
+      "filename": "ps5upload-12.6.4.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.4/ps5upload-12.6.4.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.6.2",
+      "version": "v12.6.4",
       "category": "Networking & Servers",
-      "checksum": "85fb68760b16a958ded77becf2cba14581af375f4988594bfddfde5fa1a749ad",
-      "last_update": "2026-11-17T13:56:11+08:00"
+      "checksum": "ef80322b107474dd3c1d5cdc8bc34de8b686da81268e0186ce5cd2b654bf44f7",
+      "last_update": "2026-11-18T03:54:10+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
