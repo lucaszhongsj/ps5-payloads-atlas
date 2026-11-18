@@ -589,15 +589,15 @@
     {
       "id": "ps5-cleanup",
       "name": "PS5-Cleanup",
-      "filename": "ps5cleanup_v1.1.elf",
-      "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/v1.1/ps5cleanup_v1.1.elf",
+      "filename": "ps5cleanup_diagnose_13x.elf",
+      "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/wegdiagnose-13x/ps5cleanup_diagnose_13x.elf",
       "source": "https://github.com/xxbneutzernamexx/ps5-cleanup",
       "author": "xXBneutzerNameXx",
       "description": "Clean up a jailbroken PS5 like new, no reinstall.",
-      "version": "v1.1",
+      "version": "wegdiagnose-13x",
       "category": "Utilities & Tools",
-      "checksum": "e1f32177140c2de7c89b620e0a5a698c995462a5ee1fa4e001388aec51b2f28d",
-      "last_update": "2026-11-18T01:27:01+08:00"
+      "checksum": "25e4cec4228f73ab61144d93ce59523e4d236246e3ae32d8f9b69fd7bb714f97",
+      "last_update": "2026-11-18T14:09:36+08:00"
     },
     {
       "id": "ps5-date-time-sync",
@@ -953,15 +953,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.4.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.4/ps5upload-12.6.4.elf",
+      "filename": "ps5upload-12.6.5.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.5/ps5upload-12.6.5.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.6.4",
+      "version": "v12.6.5",
       "category": "Networking & Servers",
-      "checksum": "ef80322b107474dd3c1d5cdc8bc34de8b686da81268e0186ce5cd2b654bf44f7",
-      "last_update": "2026-11-18T03:54:10+08:00"
+      "checksum": "cd8ff9209d0e8d62c08762a28ee4b5b663b812e4ab480b4024b1b8cca9f6676f",
+      "last_update": "2026-11-18T11:15:48+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
