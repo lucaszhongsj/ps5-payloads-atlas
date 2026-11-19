@@ -225,15 +225,15 @@
     {
       "id": "hearbridge-ps5",
       "name": "HearBridge-PS5",
-      "filename": "hearbridge-1.4.2.elf",
-      "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.2/HearBridge-1.4.2.elf",
+      "filename": "hearbridge-1.4.3.elf",
+      "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.3/HearBridge-1.4.3.elf",
       "source": "https://github.com/x-f1reball-x/hearbridge-ps5",
       "author": "X-F1REBALL-X",
       "description": "Play PS5 game audio on any Bluetooth headphones or earbuds. Payload for jailbroken PS5",
-      "version": "v1.4.2",
+      "version": "v1.4.3",
       "category": "Utilities & Tools",
-      "checksum": "565bb15656efad8d5561c2e397eac89002f12955fb2c6b65dc3475017613e434",
-      "last_update": "2026-11-16T01:45:40+08:00"
+      "checksum": "cc3ed39ee208ab76d0da2b3e99596a7037474f6d7238f98452c23130bdc7f379",
+      "last_update": "2026-11-20T03:48:23+08:00"
     },
     {
       "id": "hush",
@@ -836,15 +836,15 @@
     {
       "id": "ps5-tailscale",
       "name": "ps5-tailscale",
-      "filename": "tailscale-0.7.3.elf",
-      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.3/tailscale-0.7.3.elf",
+      "filename": "tailscale-0.7.5.elf",
+      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.5/tailscale-0.7.5.elf",
       "source": "https://github.com/holdmysocks/ps5-tailscale",
       "author": "holdmysocks",
       "description": "Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonlight/Sunshine (unofficial)",
-      "version": "v0.7.3",
+      "version": "v0.7.5",
       "category": "Networking & Servers",
-      "checksum": "899c9f76994317171ab62a331a229b260e7c93aab68963502d79c861392e5801",
-      "last_update": "2026-11-05T00:05:32+08:00"
+      "checksum": "4a3ee8758115d16875eecc8b89443746097f55362e9fef2fae9c6392814efb5e",
+      "last_update": "2026-11-19T21:00:20+08:00"
     },
     {
       "id": "ps5-tailscale-2",
@@ -953,15 +953,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.10.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.10/ps5upload-12.6.10.elf",
+      "filename": "ps5upload-12.6.12.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.12/ps5upload-12.6.12.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.6.10",
+      "version": "v12.6.12",
       "category": "Networking & Servers",
-      "checksum": "81a51ed76ba8b1901fc064620dbe36c77bb458600bfe53f17aa2fce273e7271f",
-      "last_update": "2026-11-19T12:03:42+08:00"
+      "checksum": "a92f6919f7090b08fbfa835d3e686564ae9d37078d7c4494f69f75ba93883a0d",
+      "last_update": "2026-11-20T02:37:09+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
