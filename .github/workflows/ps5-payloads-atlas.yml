@@ -5,7 +5,8 @@ name: ps5-payloads-atlas
 #   collect  upstream lists → sources/mirror/*.json (writes the sources/mirror/*.json only)
 #   build    sources/ → payloads.json               (observes release state over the network)
 #   render   payloads.json → the README `Payloads` table
-#   site     README.md & payloads.json → _site/ → Pages
+#   mirror   payloads.json → payloads-cn.json (probes a live proxy over the network)
+#   site     README.md, payloads.json & payloads-cn.json → _site/ → Pages
 on:
   schedule:
     - cron: '10 */6 * * *' # every 6 hours. ( 08:10 / 14:10 / 20:10 / 02:10 in UTC+8 )
@@ -50,7 +51,12 @@ jobs:
       - name: Render README `Payloads`
         run: python scripts/atlas.py render
 
-      # 4) Commit + Push: rebuild the generated commit on the current main tip.
+      # 4) Mirror: probe the proxy candidates before trusting one. A dead or
+      #    redirecting proxy is skipped, so the file names a host that answered.
+      - name: Refresh CN proxy view
+        run: python scripts/atlas.py mirror
+
+      # 5) Commit + Push: rebuild the generated commit on the current main tip.
       #    These files are full snapshots, not diffs, so rebasing the old commit
       #    would fight with the previous auto-commit. Overwrite, never merge.
       - name: Commit and push changes
@@ -61,7 +67,12 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           # Stage once to learn exactly which generated files this run touched.
+          # A missing CN snapshot (first run, or no proxy answered) must not make
+          # `git add` fail under `set -e`.
           git add -A -- payloads.json README.md sources/
+          if [ -e payloads-cn.json ]; then
+            git add -A -- payloads-cn.json
+          fi
           if git diff --cached --quiet; then
             echo "No changes to publish"
             exit 0
@@ -88,7 +99,12 @@ jobs:
             while IFS= read -r -d '' file; do
               rm -f -- "$file"
             done < "$deleted"
+            # A missing CN snapshot (first run, or no proxy answered) must not
+            # make `git add` fail under `set -e`.
             git add -A -- payloads.json README.md sources/
+            if [ -e payloads-cn.json ]; then
+              git add -A -- payloads-cn.json
+            fi
             if git diff --cached --quiet; then
               echo "No changes to publish on current main"
               exit 0
@@ -104,7 +120,7 @@ jobs:
           echo "::error::Could not push after 3 attempts"
           exit 1
 
-      # 5) Package + publish. The worktree already holds the pushed content, so the Pages deployment needs no second checkout or runner.
+      # 6) Package + publish. The worktree already holds the pushed content, so the Pages deployment needs no second checkout or runner.
       - name: Package site
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

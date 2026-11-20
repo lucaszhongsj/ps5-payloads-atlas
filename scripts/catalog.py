@@ -1,6 +1,6 @@
 """The catalogue pipeline — one module, sections in pipeline order.
 
-    identity → transport → harvest → sources → collect → releases → build → render → site
+    identity → transport → harvest → sources → collect → releases → build → render → mirror → site
 
     sources/ contracts + mirror snapshots
         |  collect             refresh the mirror snapshots  (network)
@@ -10,8 +10,10 @@
         v
     build                   shape into the client catalogue  (pure)
         |  write_readme      the README page                 (pure)
+        |  cn_catalogue      the CN proxy view               (pure)
+        |  choose_proxy      which proxy the view points at  (network)
         v
-    payloads.json / README.md / _site
+    payloads.json / payloads-cn.json / README.md / _site
 
 Every path is derived from one `Settings`, and nothing reads a module-level
 constant. That is the whole point: a test can point `root` at a temp directory
@@ -28,6 +30,7 @@ import tempfile
 import time
 import tomllib
 import urllib.error
+import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
@@ -69,6 +72,11 @@ class Settings:
     @property
     def readme_file(self) -> Path:
         return self.root / "README.md"
+
+    @property
+    def cn_catalogue_file(self) -> Path:
+        """The CN proxy view: same entries, GitHub downloads routed through one proxy."""
+        return self.root / "payloads-cn.json"
 
     @property
     def site_dir(self) -> Path:
@@ -1207,6 +1215,174 @@ def render_readme(settings: Settings) -> None:
     changed = write_readme(settings, payloads)
     print(f"{settings.readme_file.name}: {'updated' if changed else 'unchanged'} "
           f"({len(payloads)} rows)")
+
+
+# ─── CN proxy view: the same catalogue, downloads through one proxy ──
+# Mainland China often cannot reach GitHub release assets. Payload Manager has
+# no fallback URL field, so the only lever is a second catalogue whose `url`s
+# carry a proxy prefix. The proxy is a third party: two rules keep that
+# survivable. Only GitHub release downloads are rewritten (nothing else can be
+# proxied), and only entries carrying a SHA-256 are rewritten, because Payload
+# Manager verifies the digest on every attempt — an entry without one would turn
+# the proxy into an unverifiable middleman. The catalogue stays committed so
+# jsDelivr can serve it when Pages itself is unreachable.
+#
+# The candidates below are probe targets, not a pin: each run keeps the first
+# one that streams a real release asset, so a dead or redirecting proxy is
+# skipped instead of frozen into the published file. The probe runs on the CI
+# runner, so it proves liveness and streaming, not mainland reachability.
+
+CN_PROXIES = (
+    "https://ghfast.top/",
+    "https://gh-proxy.com/",
+    "https://ghproxy.net/",
+    "https://gh.llkk.cc/",
+)
+CN_RELEASE_PATH = "/releases/download/"
+PROBE_BYTES = 1 << 16
+PROBE_TIMEOUT = 20
+PROBE_TARGETS = 3
+ELF_MAGIC = b"\x7fELF"
+# Response types that mean "an error page", never a release asset.
+ERROR_TYPES = ("text/", "application/json", "application/xml", "application/xhtml+xml")
+
+
+def _routable(url: str, checksum: str) -> bool:
+    """Only a checksummed GitHub release download can be proxied safely."""
+    return (bool(url) and url.startswith("https://github.com/")
+            and CN_RELEASE_PATH in url
+            and bool(SHA256_HEX.fullmatch(checksum or "")))
+
+
+def cn_proxy_url(url: str, checksum: str, base: str) -> str:
+    """Route a GitHub release download through `base`; anything else stays put."""
+    return base.rstrip("/") + "/" + url if _routable(url or "", checksum or "") else (url or "")
+
+
+def cn_catalogue(document: dict, base: str) -> dict:
+    """Derive the CN view without mutating the catalogue it read."""
+    payloads = [dict(payload, url=cn_proxy_url(payload.get("url"),
+                                               payload.get("checksum"), base))
+                for payload in document.get("payloads", [])]
+    name = document.get("name") or CATALOGUE_NAME
+    return dict(document, name=f"{name} (CN proxy)", payloads=payloads)
+
+
+def _probe_targets(payloads: list[dict], count: int = PROBE_TARGETS) -> list[str]:
+    """Up to `count` routable assets, spread across the catalogue.
+
+    Spread rather than one asset: a single release can be deleted or go private
+    while the catalogue still lists it, and a proxy is only trusted if it can
+    serve more than that one entry.
+    """
+    targets = [payload.get("url", "") for payload in payloads
+               if _routable(payload.get("url", ""), payload.get("checksum", ""))]
+    if count < 2 or len(targets) <= count:
+        return targets[:count]
+    picks = [targets[round(i * (len(targets) - 1) / (count - 1))] for i in range(count)]
+    return list(dict.fromkeys(picks))
+
+
+def probe_proxy(base: str, url: str, timeout: int = PROBE_TIMEOUT) -> float | None:
+    """Seconds to stream the first PROBE_BYTES through `base`, or None.
+
+    Trust nothing until the bytes look like the asset: a proxy that jumps to
+    another host (the client would then fetch from GitHub directly), downgrades
+    to http, or answers with an error page is not serving payloads. Every
+    catalogue entry is an `.elf`, so its magic is checked outright.
+    """
+    started = time.monotonic()
+    deadline = started + timeout
+    try:
+        request = urllib.request.Request(
+            base.rstrip("/") + "/" + url,
+            headers={"Range": f"bytes=0-{PROBE_BYTES - 1}",
+                     "User-Agent": "ps5-payloads-atlas/1.0"})
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            status = response.status
+            final = urllib.parse.urlparse(response.geturl())
+            content_type = (response.headers.get("Content-Type") or "").lower()
+            chunks, received = [], 0
+            while received < PROBE_BYTES:
+                # `read` blocks until it fills the requested size, so the
+                # deadline would never fire on a trickling proxy. `read1`
+                # returns whatever one socket read yields, bounding each wait
+                # by the socket timeout.
+                if time.monotonic() > deadline:
+                    return None
+                chunk = response.read1(min(65536, PROBE_BYTES - received))
+                if not chunk:
+                    break
+                chunks.append(chunk)
+                received += len(chunk)
+    except Exception:
+        return None
+    if status not in (200, 206) or final.scheme != "https":
+        return None
+    if final.netloc != urllib.parse.urlparse(base).netloc:
+        return None
+    body = b"".join(chunks)
+    if not body or any(content_type.startswith(kind) for kind in ERROR_TYPES):
+        return None
+    if body.lstrip(b"\xef\xbb\xbf \t\r\n")[:1] in (b"<", b"{"):
+        return None
+    if url.lower().endswith(".elf") and not body.startswith(ELF_MAGIC):
+        return None
+    return time.monotonic() - started
+
+
+def choose_proxy(payloads: list[dict], candidates: tuple[str, ...] = CN_PROXIES,
+                 probe=probe_proxy) -> str | None:
+    """First candidate that serves every probe target, else a majority.
+
+    Order is the stated preference; runner-side latency is not mainland
+    latency, so it is logged but never used to rank. One transient failure out
+    of three should not demote a working proxy, hence the majority fallback;
+    a candidate that serves none is never chosen.
+    """
+    targets = _probe_targets(payloads)
+    if not targets or not candidates:
+        print("::warning::mirror: no checksummed GitHub release entries to probe")
+        return None
+    with ThreadPoolExecutor(max_workers=min(8, len(candidates) * len(targets))) as pool:
+        futures = {(base, index): pool.submit(probe, base, target)
+                   for base in candidates for index, target in enumerate(targets)}
+        timings = {key: future.result() for key, future in futures.items()}
+    passes = {}
+    for base in candidates:
+        served = sum(timings[(base, index)] is not None for index in range(len(targets)))
+        passes[base] = served
+        print(f"proxy {urllib.parse.urlparse(base).netloc}: "
+              f"{served}/{len(targets)} targets served")
+    for base in candidates:
+        if passes[base] == len(targets):
+            return base
+    needed = len(targets) // 2 + 1
+    for base in candidates:
+        if passes[base] >= needed:
+            print(f"::warning::mirror: no proxy served every target; "
+                  f"falling back to {urllib.parse.urlparse(base).netloc}")
+            return base
+    return None
+
+
+def write_cn_catalogue(settings: Settings, base: str) -> None:
+    """Write the CN view for `base`; a no-op when it already matches."""
+    document = json.loads(settings.catalogue_file.read_text(encoding="utf-8"))
+    mirror = cn_catalogue(document, base)
+    path = settings.cn_catalogue_file
+    if path.exists():
+        try:
+            if json.loads(path.read_text(encoding="utf-8")) == mirror:
+                print(f"{path.name}: unchanged ({len(mirror['payloads'])} rows)")
+                return
+        except (OSError, ValueError):
+            pass  # an unreadable snapshot is simply rewritten
+    atomic_write_json(path, mirror)
+    routed = sum(1 for payload in mirror["payloads"]
+                 if payload["url"].startswith(base))
+    print(f"{path.name}: updated ({len(mirror['payloads'])} rows, {routed} through "
+          f"{urllib.parse.urlparse(base).netloc})")
 
 
 # ─── site: package into a standalone page ────────────────────────────

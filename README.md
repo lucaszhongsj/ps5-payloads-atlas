@@ -25,6 +25,25 @@ managed there, not on the console itself.
 2. Paste `https://lucaszhongsj.github.io/ps5-payloads-atlas/payloads.json`.
 3. If the list stays empty, enable third-party payload repositories in Settings.
 
+> **Users in mainland China:** if GitHub Pages is slow or unreachable, add the
+> jsDelivr mirror as the source instead:
+> `https://cdn.jsdelivr.net/gh/lucaszhongsj/ps5-payloads-atlas@main/payloads.json`.
+> jsDelivr caches the branch for up to 12 hours, so it can lag behind the 6-hour
+> rebuild.
+>
+> If payload downloads from GitHub are slow, use the CN proxy catalogue instead:
+> `https://lucaszhongsj.github.io/ps5-payloads-atlas/payloads-cn.json` (or the
+> jsDelivr copy `https://cdn.jsdelivr.net/gh/lucaszhongsj/ps5-payloads-atlas@main/payloads-cn.json`
+> when Pages is unreachable). It
+> routes GitHub release downloads through a public proxy that every build probes
+> and picks from several candidates; the proxy is a third party outside this
+> project's control. Every routed entry carries a SHA-256 that Payload Manager
+> verifies, so a tampered download fails the install; entries without a checksum,
+> and downloads from other hosts, stay direct. The proxy operator can see the
+> download requests, including the client's address. If no candidate answers during
+> a build, the CN catalogue keeps its previous content and can lag behind the main
+> one.
+
 A CI job rebuilds the catalogue from upstream releases every 6 hours.
 
 ## Payloads
@@ -181,6 +200,7 @@ dictionary order (case-insensitive); the build refuses an unsorted file.
 | `python scripts/atlas.py build` | observe releases, shape `payloads.json` (network) |
 | `python scripts/atlas.py build --offline` | re-shape from `build/releases.json`, no network |
 | `python scripts/atlas.py render` | regenerate the blocks in this page (idempotent) |
+| `python scripts/atlas.py mirror` | probe the proxy candidates, write `payloads-cn.json` (network) |
 | `python scripts/atlas.py site` | package `_site/` for Pages (needs `GH_TOKEN`) |
 
 Requires Python 3.11+ (`tomllib`) and an authenticated `gh` CLI for `build`. Tests:

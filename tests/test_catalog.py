@@ -9,6 +9,7 @@ CLI, and the end-to-end pipeline.
 import contextlib
 import io
 import json
+import os
 import subprocess
 import sys
 import unittest
@@ -18,13 +19,15 @@ from tempfile import TemporaryDirectory
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
+import atlas
 import catalog
 from catalog import (Settings, assign_filenames, assign_ids, build, canonical,
+                     choose_proxy, cn_catalogue, cn_proxy_url,
                      collect, checksum_of, derive_category,
                      digest_from_checksum_assets, format_last_update, harvest,
                      source_layers, normalize_repo_url, parse_repo_url, read_mirror,
                      read_manual, render_readme, slots, slugify, payload_table,
-                     version_of, write_readme)
+                     version_of, write_cn_catalogue, write_readme)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -610,6 +613,214 @@ class SitePackaging(unittest.TestCase):
     def test_markdown_without_heading_falls_back_to_default_title(self):
         page = catalog.page_html("<p>no heading</p>")
         self.assertIn("<title>ps5-payloads-atlas</title>", page)
+
+    def test_site_packs_the_cn_catalogue_when_present(self):
+        with TemporaryDirectory() as tmp:
+            settings = Settings(root=Path(tmp))
+            settings.readme_file.write_text("# Atlas\n", encoding="utf-8")
+            settings.catalogue_file.write_text('{"name": "x", "payloads": []}', encoding="utf-8")
+            settings.cn_catalogue_file.write_text(
+                '{"name": "x (CN proxy)", "payloads": []}', encoding="utf-8")
+            with mock.patch.object(catalog, "render_markdown", return_value="<h1>Atlas</h1>"), \
+                    mock.patch.dict(os.environ, {"GH_TOKEN": "test"}):
+                quiet(lambda: atlas.cmd_site(settings, []))
+            self.assertTrue((settings.site_dir / "payloads.json").exists())
+            self.assertTrue((settings.site_dir / "payloads-cn.json").exists())
+
+
+# ─── CN proxy view ──────────────────────────────────────────────────
+
+GH = "https://github.com/a/tool/releases/download/v1/tool.elf"
+
+
+def asset(name: str) -> dict:
+    """A routable catalogue record: GitHub release, checksummed, `.elf`."""
+    return {"url": f"https://github.com/a/{name}/releases/download/v1/{name}.elf",
+            "checksum": "a" * 64}
+
+
+class FakeResponse:
+    """The slice of an http.client response that `probe_proxy` uses."""
+
+    def __init__(self, body=b"", status=200, url="https://p/",
+                 content_type="application/octet-stream"):
+        self._body, self._offset = body, 0
+        self.status = status
+        self._url = url
+        self.headers = {"Content-Type": content_type}
+
+    def read(self, count=-1):
+        chunk = self._body[self._offset:self._offset + count]
+        self._offset += len(chunk)
+        return chunk
+
+    def read1(self, count=-1):
+        return self.read(count)
+
+    def geturl(self):
+        return self._url
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *exc):
+        return False
+
+
+class CnProxyView(unittest.TestCase):
+    def test_only_checksummed_github_release_downloads_are_routed(self):
+        checksum = "a" * 64
+        self.assertEqual(cn_proxy_url(GH, checksum, "https://p/"), "https://p/" + GH)
+        self.assertEqual(cn_proxy_url(GH, "", "https://p/"), GH)
+        self.assertEqual(cn_proxy_url(None, None, "https://p/"), "")
+        archive = "https://github.com/a/tool/archive/v1.zip"
+        self.assertEqual(cn_proxy_url(archive, checksum, "https://p/"), archive)
+        codeberg = "https://codeberg.org/a/tool/releases/download/v1/tool.elf"
+        self.assertEqual(cn_proxy_url(codeberg, checksum, "https://p/"), codeberg)
+
+    def test_the_cn_view_does_not_mutate_the_catalogue(self):
+        document = {"name": "atlas", "icons_url": "icons.json", "payloads": [asset("tool")]}
+        view = cn_catalogue(document, "https://p/")
+        self.assertEqual(view["name"], "atlas (CN proxy)")
+        self.assertEqual(view["icons_url"], "icons.json")
+        self.assertEqual(view["payloads"][0]["url"], "https://p/" + asset("tool")["url"])
+        self.assertEqual(document["payloads"][0]["url"], asset("tool")["url"])
+
+    def test_probe_targets_spread_across_the_catalogue(self):
+        payloads = [{"url": "https://example.com/x.elf", "checksum": "a" * 64}] + \
+                   [asset(f"p{index}") for index in range(5)]
+        targets, _ = quiet(lambda: catalog._probe_targets(payloads))
+        self.assertEqual(len(targets), 3)
+        self.assertEqual(targets[0], payloads[1]["url"])
+        self.assertEqual(targets[-1], payloads[-1]["url"])
+
+    def test_probe_targets_are_empty_without_routable_entries(self):
+        self.assertEqual(catalog._probe_targets([{"url": "https://example.com/x"}]), [])
+
+    def test_a_served_asset_passes_the_probe(self):
+        body = catalog.ELF_MAGIC + b"\0" * 2048
+        with mock.patch("urllib.request.urlopen",
+                        return_value=FakeResponse(body, status=206, url="https://p/" + GH)):
+            self.assertIsNotNone(catalog.probe_proxy("https://p/", GH))
+
+    def test_a_redirect_off_the_proxy_is_a_failure(self):
+        body = catalog.ELF_MAGIC + b"\0" * 2048
+        with mock.patch("urllib.request.urlopen",
+                        return_value=FakeResponse(body, url="https://objects.example/x")):
+            self.assertIsNone(catalog.probe_proxy("https://p/", GH))
+
+    def test_a_downgrade_to_http_is_a_failure(self):
+        body = catalog.ELF_MAGIC + b"\0" * 2048
+        with mock.patch("urllib.request.urlopen",
+                        return_value=FakeResponse(body, url="http://p/" + GH)):
+            self.assertIsNone(catalog.probe_proxy("https://p/", GH))
+
+    def test_error_pages_and_wrong_magic_are_failures(self):
+        cases = [
+            FakeResponse(b"<html>blocked</html>", content_type="text/html"),
+            FakeResponse(b'{"error":"rate limited"}', content_type="application/json"),
+            FakeResponse(b'{"error":"rate limited"}'),
+            FakeResponse(b"PK\x03\x04" + b"\0" * 128),
+        ]
+        for response in cases:
+            with self.subTest(content_type=response.headers["Content-Type"]):
+                with mock.patch("urllib.request.urlopen", return_value=response):
+                    self.assertIsNone(catalog.probe_proxy("https://p/", GH))
+
+    def test_a_bom_prefixed_html_page_is_a_failure(self):
+        response = FakeResponse(b"\xef\xbb\xbf<html>blocked</html>")
+        with mock.patch("urllib.request.urlopen", return_value=response):
+            self.assertIsNone(catalog.probe_proxy("https://p/", GH))
+
+    def test_a_non_success_status_is_a_failure(self):
+        for status in (403, 404, 500):
+            with self.subTest(status=status):
+                response = FakeResponse(catalog.ELF_MAGIC + b"\0" * 64, status=status)
+                with mock.patch("urllib.request.urlopen", return_value=response):
+                    self.assertIsNone(catalog.probe_proxy("https://p/", GH))
+
+    def test_a_base_without_a_trailing_slash_still_probes(self):
+        body = catalog.ELF_MAGIC + b"\0" * 64
+        response = FakeResponse(body, url="https://p/" + GH)
+        with mock.patch("urllib.request.urlopen", return_value=response) as opener:
+            self.assertIsNotNone(catalog.probe_proxy("https://p", GH))
+        self.assertEqual(opener.call_args.args[0].full_url, "https://p/" + GH)
+
+    def test_the_probe_stops_at_its_total_deadline(self):
+        response = FakeResponse(catalog.ELF_MAGIC + b"\0" * 64)
+        ticks = iter([0.0, 0.0, 100.0])
+        with mock.patch("urllib.request.urlopen", return_value=response), \
+                mock.patch.object(catalog.time, "monotonic",
+                                  side_effect=lambda: next(ticks, 100.0)):
+            self.assertIsNone(catalog.probe_proxy("https://p/", GH, timeout=5))
+
+    def test_transport_failure_is_a_failure(self):
+        with mock.patch("urllib.request.urlopen", side_effect=OSError("boom")):
+            self.assertIsNone(catalog.probe_proxy("https://p/", GH))
+
+    def test_the_first_candidate_serving_every_target_wins(self):
+        payloads = [asset(f"p{index}") for index in range(3)]
+        timings = {"https://dead/": None, "https://live/": 0.4}
+        base, _ = quiet(lambda: choose_proxy(
+            payloads, ("https://dead/", "https://live/"),
+            probe=lambda candidate, url: timings[candidate]))
+        self.assertEqual(base, "https://live/")
+
+    def test_one_transient_miss_demotes_to_a_full_pass(self):
+        payloads = [asset(f"p{index}") for index in range(3)]
+
+        def probe(candidate, url):
+            return None if candidate == "https://partial/" and url.endswith("p1.elf") else 0.1
+
+        base, _ = quiet(lambda: choose_proxy(
+            payloads, ("https://partial/", "https://full/"), probe=probe))
+        self.assertEqual(base, "https://full/")
+
+    def test_a_majority_falls_back_when_no_candidate_serves_everything(self):
+        payloads = [asset(f"p{index}") for index in range(3)]
+
+        def probe(candidate, url):
+            return None if url.endswith("p0.elf") else 0.1
+
+        base, output = quiet(lambda: choose_proxy(
+            payloads, ("https://partial/",), probe=probe))
+        self.assertEqual(base, "https://partial/")
+        self.assertIn("falling back", output)
+
+    def test_no_candidate_means_no_view(self):
+        payloads = [asset("tool")]
+        base, _ = quiet(lambda: choose_proxy(
+            payloads, ("https://dead/",), probe=lambda candidate, url: None))
+        self.assertIsNone(base)
+
+    def test_write_skips_an_identical_snapshot(self):
+        with TemporaryDirectory() as tmp:
+            settings = Settings(root=Path(tmp))
+            settings.catalogue_file.write_text(json.dumps(
+                {"name": "atlas", "payloads": [asset("tool")]}), encoding="utf-8")
+            writes = []
+            original = catalog.atomic_write_json
+
+            def counting(path, document):
+                writes.append(path)
+                original(path, document)
+
+            with mock.patch.object(catalog, "atomic_write_json", side_effect=counting):
+                write_cn_catalogue(settings, "https://p/")
+                write_cn_catalogue(settings, "https://p/")
+            self.assertEqual(len(writes), 1)
+            self.assertIn("https://p/" + asset("tool")["url"],
+                          settings.cn_catalogue_file.read_text(encoding="utf-8"))
+
+    def test_a_corrupt_snapshot_is_rewritten(self):
+        with TemporaryDirectory() as tmp:
+            settings = Settings(root=Path(tmp))
+            settings.catalogue_file.write_text(json.dumps(
+                {"name": "atlas", "payloads": [asset("tool")]}), encoding="utf-8")
+            settings.cn_catalogue_file.write_text("<<<not json>>>", encoding="utf-8")
+            write_cn_catalogue(settings, "https://p/")
+            self.assertIn("(CN proxy)",
+                          settings.cn_catalogue_file.read_text(encoding="utf-8"))
 
 
 # ─── CLI ─────────────────────────────────────────────────────────────

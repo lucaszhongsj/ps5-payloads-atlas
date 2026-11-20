@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
-"""The atlas pipeline behind one entry point — four stages, one command each.
+"""The atlas pipeline behind one entry point — five stages, one command each.
 
     python scripts/atlas.py collect [--force]   # refresh mirror snapshots (network)
     python scripts/atlas.py build [--offline]   # observe + shape the catalogue (network)
     python scripts/atlas.py render              # refresh the README page (idempotent)
+    python scripts/atlas.py mirror              # pick a live proxy, refresh payloads-cn.json (network)
     python scripts/atlas.py site                # package _site/ for Pages (needs GH_TOKEN)
 
 All pipeline logic lives in scripts/catalog.py; this file is only the CLI
 surface: argv, env vars, exit codes.
 """
 
+import json
 import os
 import sys
 from pathlib import Path
@@ -65,8 +67,30 @@ def cmd_render(settings: Settings, argv: list[str]) -> None:
     catalog.render_readme(settings)
 
 
+def cmd_mirror(settings: Settings, argv: list[str]) -> None:
+    """Stage 4 — probe the proxy candidates, then write the CN view.
+
+    A proxy that answers now may be dead in six hours, so the published file
+    names the one that answered during this run rather than a fixed host. When
+    none answers, the previous file is kept: rewriting it to direct URLs would
+    turn a transient CI failure into a silent loss of the acceleration. The
+    stage is optional, so its own failure never blocks the catalogue.
+    """
+    try:
+        document = json.loads(settings.catalogue_file.read_text(encoding="utf-8"))
+        base = catalog.choose_proxy(document.get("payloads", []))
+        if base is None:
+            print("::warning::mirror: no proxy reachable; payloads-cn.json left unchanged")
+            return
+        catalog.write_cn_catalogue(settings, base)
+    except (OSError, ValueError) as exc:
+        # Expected environment/data failures stay fail-open; a programming error
+        # still crashes, because a silently green CI is worse than a red one.
+        print(f"::warning::mirror: skipped ({exc})")
+
+
 def cmd_site(settings: Settings, argv: list[str]) -> None:
-    """Stage 4 — package `_site/` for Pages: the rendered README plus the catalogue."""
+    """Stage 5 — package `_site/` for Pages: the rendered README plus both catalogues."""
     token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
     if not token:
         sys.exit("error: site needs GH_TOKEN (the markdown API is authenticated)")
@@ -74,11 +98,16 @@ def cmd_site(settings: Settings, argv: list[str]) -> None:
     settings.site_dir.mkdir(exist_ok=True)
     (settings.site_dir / "index.html").write_text(catalog.page_html(body), encoding="utf-8")
     (settings.site_dir / "payloads.json").write_bytes(settings.catalogue_file.read_bytes())
-    print(f"Packed {settings.site_dir.name}/: index.html + {settings.catalogue_file.name}")
+    packed = f"index.html + {settings.catalogue_file.name}"
+    if settings.cn_catalogue_file.exists():
+        (settings.site_dir / settings.cn_catalogue_file.name).write_bytes(
+            settings.cn_catalogue_file.read_bytes())
+        packed += f" + {settings.cn_catalogue_file.name}"
+    print(f"Packed {settings.site_dir.name}/: {packed}")
 
 
-COMMANDS = {"collect": cmd_collect, "build": cmd_build,
-            "render": cmd_render, "site": cmd_site}
+COMMANDS = {"collect": cmd_collect, "build": cmd_build, "render": cmd_render,
+            "mirror": cmd_mirror, "site": cmd_site}
 
 
 def main(argv: list[str]) -> None:
