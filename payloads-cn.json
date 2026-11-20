@@ -122,14 +122,14 @@
       "id": "elfldr",
       "name": "elfldr",
       "filename": "elfldr-ps5.elf",
-      "url": "https://ghfast.top/https://github.com/ps5-payload-dev/elfldr/releases/download/v0.27/elfldr-ps5.elf",
+      "url": "https://ghfast.top/https://github.com/ps5-payload-dev/elfldr/releases/download/v0.28/elfldr-ps5.elf",
       "source": "https://github.com/ps5-payload-dev/elfldr",
       "author": "ps5-payload-dev",
       "description": "An ELF loader for jailbroken PS5s that accepts payloads on port 9021",
-      "version": "v0.27",
+      "version": "v0.28",
       "category": "Loaders",
-      "checksum": "82f6227610172c98bad6efe68219fc93a10027035991f47eb4b75532d023407d",
-      "last_update": "2026-10-22T01:42:19+08:00"
+      "checksum": "66968bae6159d8fb06125fcd43fb99cf64d6bfdf730c70f37a6f5d056ff63458",
+      "last_update": "2026-11-20T06:44:29+08:00"
     },
     {
       "id": "etahen-2",
@@ -875,15 +875,15 @@
     {
       "id": "ps5-webkit-autoloader",
       "name": "ps5-webkit-autoloader",
-      "filename": "webkit-autoloader-installer_v0.8.0-pre-0850478.elf",
-      "url": "https://ghfast.top/https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0-pre-0850478/webkit-autoloader-installer_v0.8.0-pre-0850478.elf",
+      "filename": "webkit-autoloader-installer_v0.8.0.elf",
+      "url": "https://ghfast.top/https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0/webkit-autoloader-installer_v0.8.0.elf",
       "source": "https://github.com/itsplk/ps5-webkit-autoloader",
       "author": "itsPLK",
       "description": "An automated payload loader for exploited PS5 consoles",
-      "version": "v0.8.0-pre-0850478",
+      "version": "v0.8.0",
       "category": "Loaders",
-      "checksum": "d5929a1a8aa31ba7c6fd86eb501650b3be11d9f370adaada3d1abd236473356e",
-      "last_update": "2026-11-17T21:39:58+08:00"
+      "checksum": "015959f76c48e45df2b331ee2a6b52096afa3c2f9f1cbf9a29e67be699a6455b",
+      "last_update": "2026-11-20T08:25:11+08:00"
     },
     {
       "id": "ps5_appcache_remove",
@@ -953,15 +953,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.12.elf",
-      "url": "https://ghfast.top/https://github.com/phantomptr/ps5upload/releases/download/v12.6.12/ps5upload-12.6.12.elf",
+      "filename": "ps5upload-12.6.14.elf",
+      "url": "https://ghfast.top/https://github.com/phantomptr/ps5upload/releases/download/v12.6.14/ps5upload-12.6.14.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.6.12",
+      "version": "v12.6.14",
       "category": "Networking & Servers",
-      "checksum": "a92f6919f7090b08fbfa835d3e686564ae9d37078d7c4494f69f75ba93883a0d",
-      "last_update": "2026-11-20T02:37:09+08:00"
+      "checksum": "416e5791c488bc92eeb7d573ed7b798183416aae2d42e5212f3a3faf8bbc707f",
+      "last_update": "2026-11-20T11:59:56+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
