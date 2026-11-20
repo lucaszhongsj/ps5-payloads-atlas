@@ -953,15 +953,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.15.elf",
-      "url": "https://ghfast.top/https://github.com/phantomptr/ps5upload/releases/download/v12.6.15/ps5upload-12.6.15.elf",
+      "filename": "ps5upload-12.6.17.elf",
+      "url": "https://ghfast.top/https://github.com/phantomptr/ps5upload/releases/download/v12.6.17/ps5upload-12.6.17.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.6.15",
+      "version": "v12.6.17",
       "category": "Networking & Servers",
-      "checksum": "593eda1e48d31a5b754da3ccbec046ce6c8e70048aead762fc8f631543a6acd2",
-      "last_update": "2026-11-20T19:30:05+08:00"
+      "checksum": "2bf4c7ebee49c06e0517040a68f6e6458826bcaca49f435c6151aeb108c65ee4",
+      "last_update": "2026-11-21T03:56:20+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
