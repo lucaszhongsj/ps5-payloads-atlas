@@ -212,6 +212,19 @@ class Corrections(unittest.TestCase):
             with self.assertRaises(SystemExit):
                 read_manual(s)
 
+    def test_skip_prerelease_must_be_true(self):
+        with TemporaryDirectory() as tmp:
+            s = write(Path(tmp), additional=[],
+                      manual='["https://github.com/a/t"]\nskip_prerelease = false\n')
+            with self.assertRaises(SystemExit):
+                read_manual(s)
+
+    def test_skip_prerelease_is_carried_into_the_slot(self):
+        with TemporaryDirectory() as tmp:
+            s = write(Path(tmp), additional=["https://github.com/a/t"],
+                      manual='["https://github.com/a/t"]\nskip_prerelease = true\n')
+            self.assertTrue(slots(s)["https://github.com/a/t"]["skip_prerelease"])
+
 
 class Manifest(unittest.TestCase):
     def test_mirror_needs_a_url(self):
@@ -458,6 +471,24 @@ class LatestRelease(unittest.TestCase):
     def test_no_releases_is_none(self):
         with mock.patch.object(catalog, "gh_api", return_value=[]):
             self.assertIsNone(catalog.latest_release("https://github.com/a/tool"))
+
+    def test_skip_prerelease_takes_the_newest_stable(self):
+        with mock.patch.object(catalog, "gh_api",
+                               return_value=[self.PRERELEASE, self.STABLE]):
+            release = catalog.latest_release("https://github.com/a/tool",
+                                             skip_prerelease=True)
+        self.assertEqual(release["tag_name"], "v1.0")
+
+    def test_skip_prerelease_can_exhaust_the_list(self):
+        with mock.patch.object(catalog, "gh_api", return_value=[self.PRERELEASE]):
+            self.assertIsNone(catalog.latest_release("https://github.com/a/tool",
+                                                     skip_prerelease=True))
+
+    def test_resolve_passes_the_skip_prerelease_flag(self):
+        with mock.patch.object(catalog, "latest_release", return_value=None) as latest:
+            catalog.resolve({"repo_url": "https://github.com/a/tool",
+                             "skip_prerelease": True})
+        latest.assert_called_once_with("https://github.com/a/tool", True)
 
 
 # ─── build: field shaping ────────────────────────────────────────────

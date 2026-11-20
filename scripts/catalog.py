@@ -319,7 +319,7 @@ ADDITIONAL = "additional"
 INTAKE = "intake"
 CORRECTION = "correction"
 # Keys allowed in manual.toml. Any other key (category, once) is a dead branch: zero uses in the data.
-MANUAL_KEYS = ("asset_pattern", "skip")
+MANUAL_KEYS = ("asset_pattern", "skip", "skip_prerelease")
 # a mirror shedding many repos at once is almost always upstream truncation or a revamp, not a real purge.
 SHRINK_RATIO = 0.7
 SHRINK_FLOOR = 10
@@ -419,6 +419,8 @@ def read_manual(settings: Settings) -> list[dict]:
         if "skip" in body and body["skip"] is not True:
             sys.exit(f"error: {path}: [{url}] skip must be `true`; "
                      "the reason belongs in a comment above the table")
+        if "skip_prerelease" in body and body["skip_prerelease"] is not True:
+            sys.exit(f"error: {path}: [{url}] skip_prerelease must be `true`")
         entries.append({"url": url, **body})
     return entries
 
@@ -612,14 +614,16 @@ ASSET_SUFFIX = ".elf"
 WRONG_PLATFORM_MARKER = "ps4"
 
 
-def latest_release(repo_url: str) -> dict | None:
-    """The newest release, stable or pre-release alike; drafts never ship.
+def latest_release(repo_url: str, skip_prerelease: bool = False) -> dict | None:
+    """The newest release; drafts never ship.
 
     Both APIs list releases newest-first and include pre-releases — only the
     `latest` endpoint hides them. Reading the list directly means a fresh
-    `-rc` or `-beta` updates the catalogue without waiting for a stable tag,
-    and one request replaces the old stable-then-fallback pair. Ten entries
-    are scanned so a stale draft on top cannot hide the newest published one.
+    `-rc` or `-beta` updates the catalogue without waiting for a stable tag.
+    A source whose pre-releases are diagnostic builds opts out with
+    `skip_prerelease`, which looks past them to the newest stable release.
+    Ten entries are scanned so a stale draft on top cannot hide the newest
+    published one.
     """
     info = parse_repo_url(repo_url)
     if not info:
@@ -629,8 +633,11 @@ def latest_release(repo_url: str) -> dict | None:
     page = "per_page=10" if host == "github.com" else "limit=10"
     releases = api(f"repos/{owner}/{repo}/releases?{page}") or []
     for release in releases:
-        if isinstance(release, dict) and not release.get("draft"):
-            return release
+        if not isinstance(release, dict) or release.get("draft"):
+            continue
+        if skip_prerelease and release.get("prerelease"):
+            continue
+        return release
     return None
 
 
@@ -746,7 +753,7 @@ def resolve(slot: dict) -> dict:
         return facts
 
     print(f"Checking {repo_url}...")
-    release = latest_release(repo_url)
+    release = latest_release(repo_url, bool(slot.get("skip_prerelease")))
     if not release:
         facts["reason"] = "no release found (or repo unreachable)"
         return facts

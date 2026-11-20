@@ -174,8 +174,9 @@ dictionary order (case-insensitive); the build refuses an unsorted file.
 - **Correct a repo.** Add a table keyed by the repo url to `manual.toml`.
   `asset_pattern = '^that-one\.elf$'` picks the asset (`re.search`, case-insensitive).
   `skip = true` removes it from every source, with the reason in a comment above the
-  table. An empty table is rejected, and a correction nothing else lists is reported
-  as an intake entry.
+  table. `skip_prerelease = true` follows the newest stable release, for a repo whose
+  pre-releases are test builds. An empty table is rejected, and a correction nothing
+  else lists is reported as an intake entry.
 - **Mirror another list.** Add a table keyed by their repository to `mirror.toml`,
   with `url` pointing at its list, then run `collect`. The snapshot lands as
   `<repo>.json`, named after the key's repo segment in lowercase. `collect` never

@@ -4,6 +4,7 @@
 # keys are:
 #   asset_pattern  a regex for picking the asset (re.search against the asset name, case-insensitive); which .elf ships is a judgement
 #   skip           true = do not list, across every source; the reason lives in the comment above the table, never in the data
+#   skip_prerelease  true = use the newest stable release; for repos whose pre-releases are test or diagnostic builds
 # This file corrects, it does not add: if nothing lists the repo in a table, the build says so — the entry belongs in additional.json beside this file.
 
 # ships Spotless.elf plus a Spotless-Restore.elf helper; list the main payload only
@@ -107,9 +108,12 @@ skip = true
 ["https://github.com/venezuelanbiggie24/machete-ps5-backup-manager"]
 skip = true
 
-# each release also ships a PS5-Cleanup-Test variant; list the main payload only
+# each release also ships a PS5-Cleanup-Test variant; list the main payload only.
+# diagnostic builds are published as pre-releases, so ignore them and take the
+# newest stable release.
 ["https://github.com/xXBneutzerNameXx/PS5-Cleanup"]
-asset_pattern = '^ps5cleanup.*\.elf$'
+asset_pattern = '^ps5cleanup_v[0-9.]+\.elf$'
+skip_prerelease = true
 
 # desktop-app builds (rpm/deb/AppImage/dmg/exe); no .elf in any release
 ["https://github.com/zizc3/LiveShell"]
