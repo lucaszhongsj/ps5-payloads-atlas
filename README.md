@@ -25,24 +25,14 @@ managed there, not on the console itself.
 2. Paste `https://lucaszhongsj.github.io/ps5-payloads-atlas/payloads.json`.
 3. If the list stays empty, enable third-party payload repositories in Settings.
 
-> **Users in mainland China:** if GitHub Pages is slow or unreachable, add the
-> jsDelivr mirror as the source instead:
-> `https://cdn.jsdelivr.net/gh/lucaszhongsj/ps5-payloads-atlas@main/payloads.json`.
-> jsDelivr caches the branch for up to 12 hours, so it can lag behind the 6-hour
-> rebuild.
->
-> If payload downloads from GitHub are slow, use the CN proxy catalogue instead:
-> `https://lucaszhongsj.github.io/ps5-payloads-atlas/payloads-cn.json` (or the
-> jsDelivr copy `https://cdn.jsdelivr.net/gh/lucaszhongsj/ps5-payloads-atlas@main/payloads-cn.json`
-> when Pages is unreachable). It
-> routes GitHub release downloads through a public proxy that every build probes
-> and picks from several candidates; the proxy is a third party outside this
-> project's control. Every routed entry carries a SHA-256 that Payload Manager
-> verifies, so a tampered download fails the install; entries without a checksum,
-> and downloads from other hosts, stay direct. The proxy operator can see the
-> download requests, including the client's address. If no candidate answers during
-> a build, the CN catalogue keeps its previous content and can lag behind the main
-> one.
+> **Users in mainland China:** add this source instead of the one above —
+> `https://cdn.jsdelivr.net/gh/lucaszhongsj/ps5-payloads-atlas@main/payloads-cn.json`.
+> It is the same catalogue with GitHub release downloads routed through a public
+> proxy that every build probes and picks from several candidates. The proxy is a
+> third party outside this project's control and can see download requests,
+> including the client's address; every routed entry carries a SHA-256 that Payload
+> Manager verifies, so a tampered download fails the install, and entries without a
+> checksum stay direct. jsDelivr caches the catalogue for up to 12 hours.
 
 A CI job rebuilds the catalogue from upstream releases every 6 hours.
 
