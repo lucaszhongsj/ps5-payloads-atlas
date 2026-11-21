@@ -113,7 +113,7 @@ The full catalogue as of the last scheduled build:
 | [holdmysocks/ps5-tailscale](https://github.com/holdmysocks/ps5-tailscale) | `v0.7.5` | Networking & Servers | Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonl… | `2026-11-19` |
 | [neokuze/ps5-tailscale](https://github.com/neokuze/ps5-tailscale) | `1.0.0` | Networking & Servers | Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play | `2026-10-10` |
 | [owendswang/ps5-web-file-manager](https://github.com/owendswang/ps5-web-file-manager) | `v1.14` | Utilities & Tools | A file manager for PS5 with a web UI. | `2026-11-10` |
-| [itsplk/ps5-webkit-autoloader](https://github.com/itsplk/ps5-webkit-autoloader) | `v0.8.2` | Loaders | An automated payload loader for exploited PS5 consoles | `2026-11-20` |
+| [itsplk/ps5-webkit-autoloader](https://github.com/itsplk/ps5-webkit-autoloader) | `v0.8.3` | Loaders | An automated payload loader for exploited PS5 consoles | `2026-11-21` |
 | [techsociology/ps5_appcache_remove](https://github.com/techsociology/ps5_appcache_remove) | `v1.0.0` | Utilities & Tools | A PS5 payload that wipes WebKit browser cache, cookies, appcache, localstorage, and resource-load-statistics… | `2026-10-20` |
 | [junleb/ps5console](https://github.com/junleb/ps5console) | `6.5.1` | Networking & Servers | PS5 Console 一体化 PS5 本地控制中心，将游戏挂载、存档管理、USB 手柄兼容、FTP、风扇温控和 ELF 管理整合到一个 Payload 与 Web UI 中。 当前项目用于已具备 Payload 运行… | `2026-08-31` |
 | [pharaoh2k/ps5debug-ng](https://github.com/pharaoh2k/ps5debug-ng) | `1.3.2` | Utilities & Tools | PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore. GPL-3. | `2026-09-23` |

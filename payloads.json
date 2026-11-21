@@ -875,15 +875,15 @@
     {
       "id": "ps5-webkit-autoloader",
       "name": "ps5-webkit-autoloader",
-      "filename": "webkit-autoloader-installer_v0.8.2.elf",
-      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.2/webkit-autoloader-installer_v0.8.2.elf",
+      "filename": "webkit-autoloader-installer_v0.8.3.elf",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.3/webkit-autoloader-installer_v0.8.3.elf",
       "source": "https://github.com/itsplk/ps5-webkit-autoloader",
       "author": "itsPLK",
       "description": "An automated payload loader for exploited PS5 consoles",
-      "version": "v0.8.2",
+      "version": "v0.8.3",
       "category": "Loaders",
-      "checksum": "1c415bc124944c85b86a4751006b98010b977f142142d67306d13804899bad54",
-      "last_update": "2026-11-20T19:04:25+08:00"
+      "checksum": "f4b0dee9af572ea1cb77aaf1e6fc5bf8ef520fc0a0a30753dd94a5cbdc04dd8e",
+      "last_update": "2026-11-21T18:15:21+08:00"
     },
     {
       "id": "ps5_appcache_remove",
