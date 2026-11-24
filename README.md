@@ -41,7 +41,7 @@ A CI job rebuilds the catalogue from upstream releases every 6 hours.
 The full catalogue as of the last scheduled build:
 
 <!-- STATS_START -->
-**89 records** — Categories: Utilities & Tools 64, Networking & Servers 15, System & Jailbreak 6, Loaders 4.
+**90 records** — Categories: Utilities & Tools 65, Networking & Servers 15, System & Jailbreak 6, Loaders 4.
 <!-- STATS_END -->
 <!-- PAYLOADS_START -->
 | Source | Version | Category | Description | Updated |
@@ -68,6 +68,7 @@ The full catalogue as of the last scheduled build:
 | [stupiditytries/kabuki-ps5](https://github.com/stupiditytries/kabuki-ps5) | `v0.2.0-rc.1` | Utilities & Tools | Kabuki: a native ShellUI control-centre overlay for the PS5 that homebrew can add tiles to | `2026-10-17` |
 | [mortyzip/keepawake](https://github.com/mortyzip/keepawake) | `v1.5.0` | Utilities & Tools | — | `2026-10-10` |
 | [ps5-payload-dev/klogsrv](https://github.com/ps5-payload-dev/klogsrv) | `v0.9` | Networking & Servers | A socket server for jailbroken PS4s and PS5s that redirects /dev/klog to sockets connected on port 3232 | `2026-08-03` |
+| [quer3q/kraken-mount](https://github.com/quer3q/kraken-mount) | `v0.3.2` | Utilities & Tools | Minimalist PS5 game mounter supporting PKG, folder dumps, zstd and lz4 | `2026-11-24` |
 | [drakmor/kstuff-lite](https://github.com/drakmor/kstuff-lite) | `1.2-dr-test2` | System & Jailbreak | — | `2026-06-12` |
 | [echostretch/kstuff-lite](https://github.com/echostretch/kstuff-lite) | `v1.11` | System & Jailbreak | — | `2026-09-21` |
 | [aydencharles/kylin-core-release](https://github.com/aydencharles/kylin-core-release) | `v2.0.0-community-lite` | Utilities & Tools | kylin-core-release | `2026-10-01` |
@@ -83,7 +84,7 @@ The full catalogue as of the last scheduled build:
 | [michele-m-media/pizza-hen](https://github.com/michele-m-media/pizza-hen) | `v2.00` | System & Jailbreak | — | `2026-08-25` |
 | [plabs5/plinux5-ng](https://github.com/plabs5/plinux5-ng) | `v0.1.0` | Utilities & Tools | PS5 Linux for high FW's (8.xx, 9.xx, 10.xx, 11.xx, 12.xx, 13.xx) | `2026-10-14` |
 | [itsblurf/poords4](https://github.com/itsblurf/poords4) | `v0.2.0` | Utilities & Tools | Use a wireless DualShock 4 in native PS5 games on jailbroken consoles. | `2026-10-21` |
-| [x1nons/prefbar](https://github.com/x1nons/prefbar) | `v0.3.0` | Utilities & Tools | PrefBar - Standalone On-Screen Performance Overlay for Jailbroken PS5 | `2026-11-13` |
+| [x1nons/prefbar](https://github.com/x1nons/prefbar) | `v0.3.1` | Utilities & Tools | PrefBar - Standalone On-Screen Performance Overlay for Jailbroken PS5 | `2026-11-24` |
 | [notmaj0r/prosperomgr](https://github.com/notmaj0r/prosperomgr) | `v1.2.1` | Utilities & Tools | All-In-One manager for your PS5! | `2026-11-15` |
 | [illusionyy/ps-patch-system](https://github.com/illusionyy/ps-patch-system) | `38108724867` | Utilities & Tools | App patching system for PS4/PS5 | `2026-10-11` |
 | [mounirhero/ps-play](https://github.com/mounirhero/ps-play) | `2.1` | Utilities & Tools | — | `2026-08-15` |
