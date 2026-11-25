@@ -291,14 +291,14 @@
       "id": "kraken-mount",
       "name": "kraken-mount",
       "filename": "kraken-mount.elf",
-      "url": "https://ghfast.top/https://github.com/quer3q/kraken-mount/releases/download/v0.3.2/kraken-mount.elf",
+      "url": "https://ghfast.top/https://github.com/quer3q/kraken-mount/releases/download/v0.4.0/kraken-mount.elf",
       "source": "https://github.com/quer3q/kraken-mount",
       "author": "quer3q",
       "description": "Minimalist PS5 game mounter supporting PKG, folder dumps, zstd and lz4",
-      "version": "v0.3.2",
+      "version": "v0.4.0",
       "category": "Utilities & Tools",
-      "checksum": "5b72ea22af0b28dd3522be4a4f10cbec9b5423fbe2e4e8990b45b4d1daeabdde",
-      "last_update": "2026-11-24T17:31:10+08:00"
+      "checksum": "6c778613b796039230f6690a16e4c04a76069a6b7b6c8030e292f54e904cc401",
+      "last_update": "2026-11-25T18:21:29+08:00"
     },
     {
       "id": "kstuff-lite-drakmor-fpkg-optimized",
@@ -382,14 +382,14 @@
       "id": "neoenabler",
       "name": "NeoEnabler",
       "filename": "neo-manager.elf",
-      "url": "https://ghfast.top/https://github.com/gasb07/NeoEnabler/releases/download/0.7.0/neo-manager.elf",
+      "url": "https://ghfast.top/https://github.com/gasb07/NeoEnabler/releases/download/v0.7.1-experimental/neo-manager.elf",
       "source": "https://github.com/gasb07/neoenabler",
       "author": "gasb07",
       "description": "Allows PS4 games with no PS4 Pro Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "0.7.0",
+      "version": "v0.7.1-experimental",
       "category": "Utilities & Tools",
-      "checksum": "4195e02fa9f1d3d6ecacdf37149db1ba4ba3e6261d6a10d47d3c92b56ce9d4c6",
-      "last_update": "2026-11-16T18:20:02+08:00"
+      "checksum": "0be44a3d2f5f60550167844da991aafa859f733358077a1e45ee6cb77c1c064a",
+      "last_update": "2026-11-26T03:45:25+08:00"
     },
     {
       "id": "np-fake-signin",
@@ -502,7 +502,7 @@
       "url": "https://ghfast.top/https://github.com/X1NONs/PrefBar/releases/download/v0.3.1/Prefbar_V0.3.1.elf",
       "source": "https://github.com/x1nons/prefbar",
       "author": "X1NONs",
-      "description": "PrefBar - Standalone On-Screen Performance Overlay for Jailbroken PS5",
+      "description": "Standalone PS5 Performance Overlay",
       "version": "v0.3.1",
       "category": "Utilities & Tools",
       "checksum": "b876836d4597e28e519ae6bc80df0eeceefde2e8648491c66d4983a779dff134",
@@ -966,15 +966,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.28.elf",
-      "url": "https://ghfast.top/https://github.com/phantomptr/ps5upload/releases/download/v12.6.28/ps5upload-12.6.28.elf",
+      "filename": "ps5upload-12.6.30.elf",
+      "url": "https://ghfast.top/https://github.com/phantomptr/ps5upload/releases/download/v12.6.30/ps5upload-12.6.30.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.6.28",
+      "version": "v12.6.30",
       "category": "Networking & Servers",
-      "checksum": "fdc16ff34b0aaa217df2445c502d28f2ec8f624da17ab46622e547845ec52521",
-      "last_update": "2026-11-25T15:40:59+08:00"
+      "checksum": "722badeb0943b624660a6614a403cfba46ed28094701ab3a49655037d5a8e6a9",
+      "last_update": "2026-11-25T22:51:01+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
