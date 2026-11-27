@@ -102,7 +102,7 @@ The full catalogue as of the last scheduled build:
 | [marice/ps5-exporter](https://github.com/marice/ps5-exporter) | `v0.3.1` | Utilities & Tools | Prometheus exporter payload for a jailbroken PS5: temperatures, uptime, storage and ShadowMountPlus game stat… | `2026-10-20` |
 | [owendswang/ps5-fan-control](https://github.com/owendswang/ps5-fan-control) | `v0.3` | Utilities & Tools | Small PS5 daemon keeps applying fan temperature threshold. | `2026-08-09` |
 | [juma-sayeh/ps5-file-explorer](https://github.com/juma-sayeh/ps5-file-explorer) | `v0.2.1` | Utilities & Tools | Browser-based PS5 file explorer payload | `2026-06-19` |
-| [hsgod/ps5-fpsunlocker-gta6](https://github.com/hsgod/ps5-fpsunlocker-gta6) | `v1.14` | Utilities & Tools | Unlock FPS on Grand Theft Auto VI for jailbroken PS5 | `2026-11-27` |
+| [hsgod/ps5-fpsunlocker-gta6](https://github.com/hsgod/ps5-fpsunlocker-gta6) | `v1.15` | Utilities & Tools | Unlock FPS on Grand Theft Auto VI for jailbroken PS5 | `2026-11-27` |
 | [gcoding97/ps5-game-compressor](https://github.com/gcoding97/ps5-game-compressor) | `v1.1.1` | Utilities & Tools | Standalone PS5 payload for compressing, unpacking, validating, and repairing ShadowMountPlus-mounted games | `2026-10-02` |
 | [theghostonline/ps5-game-updater](https://theghostonline.dev/theghostonline/ps5-game-updater) | `v1.1.2` | Utilities & Tools | Update your installed PS5 games in a few taps, on the console. Finds the newest official update for each game… | `2026-10-28` |
 | [marice/ps5-homeassistant](https://github.com/marice/ps5-homeassistant) | `v0.3.0` | Utilities & Tools | Your jailbroken PS5 as a Home Assistant device: a payload that publishes temperatures, power, FPS and the gam… | `2026-10-23` |
@@ -125,7 +125,7 @@ The full catalogue as of the last scheduled build:
 | [pharaoh2k/ps5debug-ng](https://github.com/pharaoh2k/ps5debug-ng) | `1.3.2` | Utilities & Tools | PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore. GPL-3. | `2026-09-23` |
 | [tojala1998/ps5diag](https://github.com/tojala1998/ps5diag) | `v1.0.1` | Utilities & Tools | Read-only PlayStation 5 hardware diagnostics, live system monitoring, and DxDiag-style reporting for jailbrok… | `2026-10-25` |
 | [heni0xyz/ps5save](https://github.com/heni0xyz/ps5save) | `v3` | Utilities & Tools | USB save backup utility for jailbroken PS5’s | `2026-11-15` |
-| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v12.6.38` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-27` |
+| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v12.6.39` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-27` |
 | [armanate/rdr2-60fps-runtime-patcher](https://github.com/armanate/rdr2-60fps-runtime-patcher) | `v2.0` | Utilities & Tools | Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5. | `2026-10-11` |
 | [elripalda/recompstore](https://github.com/elripalda/recompstore) | `v2.7.4` | Utilities & Tools | RecompStore: the free homebrew app store for jailbroken PS5. Installs and updates recompiled game ports, emul… | `2026-10-30` |
 | [earthonion/remoteplay_unlock](https://github.com/earthonion/remoteplay_unlock) | `latest-testing` | Utilities & Tools | — | `2026-11-02` |
