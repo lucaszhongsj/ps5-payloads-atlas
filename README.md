@@ -41,7 +41,7 @@ A CI job rebuilds the catalogue from upstream releases every 6 hours.
 The full catalogue as of the last scheduled build:
 
 <!-- STATS_START -->
-**94 records** — Categories: Utilities & Tools 69, Networking & Servers 15, System & Jailbreak 6, Loaders 4.
+**95 records** — Categories: Utilities & Tools 70, Networking & Servers 15, System & Jailbreak 6, Loaders 4.
 <!-- STATS_END -->
 <!-- PAYLOADS_START -->
 | Source | Version | Category | Description | Updated |
@@ -53,6 +53,7 @@ The full catalogue as of the last scheduled build:
 | [itsblurf/bfpilot](https://github.com/itsblurf/bfpilot) | `v0.4.9` | Utilities & Tools | Lightweight PS5 file manager \| browser based | `2026-10-24` |
 | [itsblurf/bfplayer](https://github.com/itsblurf/bfplayer) | `v0.1.0-alpha.44` | Utilities & Tools | A PS5 media and video player that also functions as a complete media library, with support for subtitles, mul… | `2026-07-31` |
 | [xxd3v3l0p3rxx/blackwiresmb](https://github.com/xxd3v3l0p3rxx/blackwiresmb) | `v0.3.0-beta.3` | Utilities & Tools | PS5 - PC SMB share. | `2026-10-29` |
+| [miladrtx/breeze](https://github.com/miladrtx/breeze) | `v1.9.1` | Utilities & Tools | Custom fan curve for the PS5: a payload with a web panel and a home screen app. Live CPU and GPU temps, 24-ho… | `2026-10-27` |
 | [ramalhoboss/browserps5](https://github.com/ramalhoboss/browserps5) | `v1.0.0-rc17` | Utilities & Tools | A real, full web browser for the PS5: a port of current WebKit with the JavaScript JIT, drawn on the console'… | `2026-11-19` |
 | [notmaj0r/cheatrunner](https://github.com/notmaj0r/cheatrunner) | `v0.18.1` | Utilities & Tools | Web-Based Cheat Trainer for PS5! | `2026-11-04` |
 | [stonedmodder/chronicloader-ps5-payload](https://github.com/stonedmodder/chronicloader-ps5-payload) | `0.1` | Loaders | Payload Updater & autoload.txt manager | `2026-04-08` |
@@ -124,7 +125,7 @@ The full catalogue as of the last scheduled build:
 | [pharaoh2k/ps5debug-ng](https://github.com/pharaoh2k/ps5debug-ng) | `1.3.2` | Utilities & Tools | PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore. GPL-3. | `2026-09-23` |
 | [tojala1998/ps5diag](https://github.com/tojala1998/ps5diag) | `v1.0.1` | Utilities & Tools | Read-only PlayStation 5 hardware diagnostics, live system monitoring, and DxDiag-style reporting for jailbrok… | `2026-10-25` |
 | [heni0xyz/ps5save](https://github.com/heni0xyz/ps5save) | `v3` | Utilities & Tools | USB save backup utility for jailbroken PS5’s | `2026-11-15` |
-| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v12.6.35` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-27` |
+| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v12.6.38` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-27` |
 | [armanate/rdr2-60fps-runtime-patcher](https://github.com/armanate/rdr2-60fps-runtime-patcher) | `v2.0` | Utilities & Tools | Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5. | `2026-10-11` |
 | [elripalda/recompstore](https://github.com/elripalda/recompstore) | `v2.7.4` | Utilities & Tools | RecompStore: the free homebrew app store for jailbroken PS5. Installs and updates recompiled game ports, emul… | `2026-10-30` |
 | [earthonion/remoteplay_unlock](https://github.com/earthonion/remoteplay_unlock) | `latest-testing` | Utilities & Tools | — | `2026-11-02` |

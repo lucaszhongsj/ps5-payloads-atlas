@@ -93,6 +93,19 @@
       "last_update": "2026-10-29T01:48:19+08:00"
     },
     {
+      "id": "breeze",
+      "name": "Breeze",
+      "filename": "breeze.elf",
+      "url": "https://github.com/MiladRTX/Breeze/releases/download/v1.9.1/breeze.elf",
+      "source": "https://github.com/miladrtx/breeze",
+      "author": "MiladRTX",
+      "description": "Custom fan curve for the PS5: a payload with a web panel and a home screen app. Live CPU and GPU temps, 24-hour history and presets.",
+      "version": "v1.9.1",
+      "category": "Utilities & Tools",
+      "checksum": "7f6720795036c51025ddaef5692f62cda3988c67c7c338e3b617b9c98d36cff3",
+      "last_update": "2026-10-27T04:01:07+08:00"
+    },
+    {
       "id": "browserps5",
       "name": "BrowserPS5",
       "filename": "browserps5.elf",
@@ -1018,15 +1031,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.35.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.35/ps5upload-12.6.35.elf",
+      "filename": "ps5upload-12.6.38.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.38/ps5upload-12.6.38.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.6.35",
+      "version": "v12.6.38",
       "category": "Networking & Servers",
-      "checksum": "bb3113bbe1d1ad5863153abe7df7102eee4440dd25d776a84c09e81f7166c654",
-      "last_update": "2026-11-27T08:23:52+08:00"
+      "checksum": "da4ec888e0c1d2d4e43f97d71b0ebdca7fdf7aa08a2b019a4a142db709f6dbda",
+      "last_update": "2026-11-27T13:10:02+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
