@@ -330,14 +330,14 @@
       "id": "kraken-mount",
       "name": "kraken-mount",
       "filename": "kraken-mount.elf",
-      "url": "https://github.com/quer3q/kraken-mount/releases/download/v0.4.1/kraken-mount.elf",
+      "url": "https://github.com/quer3q/kraken-mount/releases/download/v0.4.2/kraken-mount.elf",
       "source": "https://github.com/quer3q/kraken-mount",
       "author": "quer3q",
       "description": "Minimalist PS5 game mounter supporting PKG, folder dumps, zstd and lz4",
-      "version": "v0.4.1",
+      "version": "v0.4.2",
       "category": "Utilities & Tools",
-      "checksum": "88d39545728f4202421616a299467545afe7f9b295b636f7bd49b1f2fe1aad1d",
-      "last_update": "2026-11-27T05:01:15+08:00"
+      "checksum": "4d4ec0fc2b436d7be3e9d573dc63e6c94c64eac0d72c08aa15fe54446a19201f",
+      "last_update": "2026-11-28T00:52:15+08:00"
     },
     {
       "id": "kstuff-lite-drakmor-fpkg-optimized",
@@ -678,6 +678,19 @@
       "last_update": "2026-08-24T22:44:14+08:00"
     },
     {
+      "id": "ps5-disk-space-analyzer",
+      "name": "ps5-disk-space-analyzer",
+      "filename": "disk-space-analyzer-v1.0.0-beta4.elf",
+      "url": "https://github.com/igorwojda/ps5-disk-space-analyzer/releases/download/v1.0.0-beta4/disk-space-analyzer-v1.0.0-beta4.elf",
+      "source": "https://github.com/igorwojda/ps5-disk-space-analyzer",
+      "author": "igorwojda",
+      "description": "Disk Space Analyzer for PS5",
+      "version": "v1.0.0-beta4",
+      "category": "Utilities & Tools",
+      "checksum": "1b017bfee8d1e70d49a61910f421d918cd8694a2ed12ff4b466a46659a1dcaa1",
+      "last_update": "2026-11-28T04:30:29+08:00"
+    },
+    {
       "id": "ps5-dump-forge",
       "name": "ps5-dump-forge",
       "filename": "ps5-dump-forge-0.6.0-ps5.elf",
@@ -732,15 +745,15 @@
     {
       "id": "ps5-fpsunlocker-gta6",
       "name": "ps5-fpsunlocker-gta6",
-      "filename": "gtavi.unlockfps_v1.15.elf",
-      "url": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases/download/v1.15/GTAVI.UnlockFPS_v1.15.elf",
+      "filename": "gtavi.unlockfps_v1.16.elf",
+      "url": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases/download/v1.16/GTAVI.UnlockFPS_v1.16.elf",
       "source": "https://github.com/hsgod/ps5-fpsunlocker-gta6",
       "author": "HSgod",
       "description": "Unlock FPS on Grand Theft Auto VI for jailbroken PS5",
-      "version": "v1.15",
+      "version": "v1.16",
       "category": "Utilities & Tools",
-      "checksum": "09258095452838e6e38e2e5301dc534eb215f48e1288e1a980b555d1e82eb48b",
-      "last_update": "2026-11-27T16:36:42+08:00"
+      "checksum": "6d294fa504b0526d720d8f3a53804eca5f8f813deae01a9de5588dfe228c03b1",
+      "last_update": "2026-11-28T03:28:30+08:00"
     },
     {
       "id": "ps5-game-compressor",
@@ -1031,15 +1044,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.39.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.39/ps5upload-12.6.39.elf",
+      "filename": "ps5upload-12.6.43.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.43/ps5upload-12.6.43.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.6.39",
+      "version": "v12.6.43",
       "category": "Networking & Servers",
-      "checksum": "a34cc67a2bd6f573d53d72afe947154514ab3dbccdf69189393623aa189240d3",
-      "last_update": "2026-11-27T18:43:46+08:00"
+      "checksum": "8b8bfc0fcdf74e92a6a0c1eb934ead27b94a4cb75f0ff09658a3b7d1cc599a7f",
+      "last_update": "2026-11-28T04:49:48+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
@@ -1213,15 +1226,15 @@
     {
       "id": "zftpd",
       "name": "zftpd",
-      "filename": "zftpd-ps5-zhttp-v1.7.0.elf",
-      "url": "https://github.com/seregonwar/zftpd/releases/download/v1.7.0/zftpd-ps5-zhttp-v1.7.0.elf",
+      "filename": "zftpd-ps5-zhttp-v1.7.1.elf",
+      "url": "https://github.com/seregonwar/zftpd/releases/download/v1.7.1/zftpd-ps5-zhttp-v1.7.1.elf",
       "source": "https://github.com/seregonwar/zftpd",
       "author": "seregonwar",
       "description": "Zero-copy FTP/HTTP Daemon compatible with all POSIX systems",
-      "version": "v1.7.0",
+      "version": "v1.7.1",
       "category": "Networking & Servers",
-      "checksum": "8f78ac0cde64a0744b82663d4a6bf8c1d7e937876dceddc219a21164578bd96e",
-      "last_update": "2026-10-28T17:20:28+08:00"
+      "checksum": "833adfc1f2274c63a0a1f60a274427ef6f1bc97d2077d13cbc8b91e62f0da6bf",
+      "last_update": "2026-11-27T20:15:25+08:00"
     },
     {
       "id": "zsshd",

@@ -41,7 +41,7 @@ A CI job rebuilds the catalogue from upstream releases every 6 hours.
 The full catalogue as of the last scheduled build:
 
 <!-- STATS_START -->
-**95 records** — Categories: Utilities & Tools 70, Networking & Servers 15, System & Jailbreak 6, Loaders 4.
+**96 records** — Categories: Utilities & Tools 71, Networking & Servers 15, System & Jailbreak 6, Loaders 4.
 <!-- STATS_END -->
 <!-- PAYLOADS_START -->
 | Source | Version | Category | Description | Updated |
@@ -71,7 +71,7 @@ The full catalogue as of the last scheduled build:
 | [stupiditytries/kabuki-ps5](https://github.com/stupiditytries/kabuki-ps5) | `v0.2.0-rc.1` | Utilities & Tools | Kabuki: a native ShellUI control-centre overlay for the PS5 that homebrew can add tiles to | `2026-10-17` |
 | [mortyzip/keepawake](https://github.com/mortyzip/keepawake) | `v1.5.0` | Utilities & Tools | — | `2026-10-10` |
 | [ps5-payload-dev/klogsrv](https://github.com/ps5-payload-dev/klogsrv) | `v0.9` | Networking & Servers | A socket server for jailbroken PS4s and PS5s that redirects /dev/klog to sockets connected on port 3232 | `2026-08-03` |
-| [quer3q/kraken-mount](https://github.com/quer3q/kraken-mount) | `v0.4.1` | Utilities & Tools | Minimalist PS5 game mounter supporting PKG, folder dumps, zstd and lz4 | `2026-11-27` |
+| [quer3q/kraken-mount](https://github.com/quer3q/kraken-mount) | `v0.4.2` | Utilities & Tools | Minimalist PS5 game mounter supporting PKG, folder dumps, zstd and lz4 | `2026-11-28` |
 | [drakmor/kstuff-lite](https://github.com/drakmor/kstuff-lite) | `1.2-dr-test2` | System & Jailbreak | — | `2026-06-12` |
 | [echostretch/kstuff-lite](https://github.com/echostretch/kstuff-lite) | `v1.11` | System & Jailbreak | — | `2026-09-21` |
 | [aydencharles/kylin-core-release](https://github.com/aydencharles/kylin-core-release) | `v2.0.0-community-lite` | Utilities & Tools | kylin-core-release | `2026-10-01` |
@@ -98,11 +98,12 @@ The full catalogue as of the last scheduled build:
 | [owendswang/ps5-aria2](https://github.com/owendswang/ps5-aria2) | `v1.37.0-3` | Utilities & Tools | aria2 for PS5 | `2026-10-05` |
 | [xxbneutzernamexx/ps5-cleanup](https://github.com/xxbneutzernamexx/ps5-cleanup) | `v1.3` | Utilities & Tools | Clean up a jailbroken PS5 like new, no reinstall. | `2026-11-22` |
 | [kerrdec97/ps5-date-time-sync](https://github.com/kerrdec97/ps5-date-time-sync) | `v1.0.0` | Utilities & Tools | Standalone PS5 payload that automatically restores the system date and time using public NTP servers. | `2026-08-24` |
+| [igorwojda/ps5-disk-space-analyzer](https://github.com/igorwojda/ps5-disk-space-analyzer) | `v1.0.0-beta4` | Utilities & Tools | Disk Space Analyzer for PS5 | `2026-11-28` |
 | [quer3q/ps5-dump-forge](https://github.com/quer3q/ps5-dump-forge) | `v0.6.0` | Utilities & Tools | A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself. | `2026-11-27` |
 | [marice/ps5-exporter](https://github.com/marice/ps5-exporter) | `v0.3.1` | Utilities & Tools | Prometheus exporter payload for a jailbroken PS5: temperatures, uptime, storage and ShadowMountPlus game stat… | `2026-10-20` |
 | [owendswang/ps5-fan-control](https://github.com/owendswang/ps5-fan-control) | `v0.3` | Utilities & Tools | Small PS5 daemon keeps applying fan temperature threshold. | `2026-08-09` |
 | [juma-sayeh/ps5-file-explorer](https://github.com/juma-sayeh/ps5-file-explorer) | `v0.2.1` | Utilities & Tools | Browser-based PS5 file explorer payload | `2026-06-19` |
-| [hsgod/ps5-fpsunlocker-gta6](https://github.com/hsgod/ps5-fpsunlocker-gta6) | `v1.15` | Utilities & Tools | Unlock FPS on Grand Theft Auto VI for jailbroken PS5 | `2026-11-27` |
+| [hsgod/ps5-fpsunlocker-gta6](https://github.com/hsgod/ps5-fpsunlocker-gta6) | `v1.16` | Utilities & Tools | Unlock FPS on Grand Theft Auto VI for jailbroken PS5 | `2026-11-28` |
 | [gcoding97/ps5-game-compressor](https://github.com/gcoding97/ps5-game-compressor) | `v1.1.1` | Utilities & Tools | Standalone PS5 payload for compressing, unpacking, validating, and repairing ShadowMountPlus-mounted games | `2026-10-02` |
 | [theghostonline/ps5-game-updater](https://theghostonline.dev/theghostonline/ps5-game-updater) | `v1.1.2` | Utilities & Tools | Update your installed PS5 games in a few taps, on the console. Finds the newest official update for each game… | `2026-10-28` |
 | [marice/ps5-homeassistant](https://github.com/marice/ps5-homeassistant) | `v0.3.0` | Utilities & Tools | Your jailbroken PS5 as a Home Assistant device: a payload that publishes temperatures, power, FPS and the gam… | `2026-10-23` |
@@ -125,7 +126,7 @@ The full catalogue as of the last scheduled build:
 | [pharaoh2k/ps5debug-ng](https://github.com/pharaoh2k/ps5debug-ng) | `1.3.2` | Utilities & Tools | PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore. GPL-3. | `2026-09-23` |
 | [tojala1998/ps5diag](https://github.com/tojala1998/ps5diag) | `v1.0.1` | Utilities & Tools | Read-only PlayStation 5 hardware diagnostics, live system monitoring, and DxDiag-style reporting for jailbrok… | `2026-10-25` |
 | [heni0xyz/ps5save](https://github.com/heni0xyz/ps5save) | `v3` | Utilities & Tools | USB save backup utility for jailbroken PS5’s | `2026-11-15` |
-| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v12.6.39` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-27` |
+| [phantomptr/ps5upload](https://github.com/phantomptr/ps5upload) | `v12.6.43` | Networking & Servers | Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browse… | `2026-11-28` |
 | [armanate/rdr2-60fps-runtime-patcher](https://github.com/armanate/rdr2-60fps-runtime-patcher) | `v2.0` | Utilities & Tools | Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5. | `2026-10-11` |
 | [elripalda/recompstore](https://github.com/elripalda/recompstore) | `v2.7.4` | Utilities & Tools | RecompStore: the free homebrew app store for jailbroken PS5. Installs and updates recompiled game ports, emul… | `2026-10-30` |
 | [earthonion/remoteplay_unlock](https://github.com/earthonion/remoteplay_unlock) | `latest-testing` | Utilities & Tools | — | `2026-11-02` |
@@ -139,7 +140,7 @@ The full catalogue as of the last scheduled build:
 | [epinorr/y2jb-update-blocker](https://github.com/epinorr/y2jb-update-blocker) | `v1.0.2` | Utilities & Tools | A PlayStation 5 payload for blocking YouTube update metadata | `2026-10-18` |
 | [megacadedev/yetanothercontrollerenabler](https://github.com/megacadedev/yetanothercontrollerenabler) | `v0.0.1` | Utilities & Tools | YetAnotherControllerEnabler is a homebrew payload for a PS5. It lets a controller from another console play o… | `2026-10-04` |
 | [mastershivnath007/ytps5-sponsorblock](https://github.com/mastershivnath007/ytps5-sponsorblock) | `v1.2.0` | Utilities & Tools | YouTube ad blocker + SponsorBlock for the official PS5 video app (jailbroken FW 8.20). One ELF via Payload Ma… | `2026-11-05` |
-| [seregonwar/zftpd](https://github.com/seregonwar/zftpd) | `v1.7.0` | Networking & Servers | Zero-copy FTP/HTTP Daemon compatible with all POSIX systems | `2026-10-28` |
+| [seregonwar/zftpd](https://github.com/seregonwar/zftpd) | `v1.7.1` | Networking & Servers | Zero-copy FTP/HTTP Daemon compatible with all POSIX systems | `2026-11-27` |
 | [jinxcase000/zsshd](https://github.com/jinxcase000/zsshd) | `v0.8.1` | Networking & Servers | Minimal PS5 SSH server payload: root shell, built-in commands, scripting/automation, post-quantum KEX | `2026-11-07` |
 <!-- PAYLOADS_END -->
 `Source` links to the upstream repository; `Updated` is that release's publish date.
