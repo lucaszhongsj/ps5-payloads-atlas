@@ -680,15 +680,15 @@
     {
       "id": "ps5-disk-space-analyzer",
       "name": "ps5-disk-space-analyzer",
-      "filename": "disk-space-analyzer-v1.0.0-beta4.elf",
-      "url": "https://ghfast.top/https://github.com/igorwojda/ps5-disk-space-analyzer/releases/download/v1.0.0-beta4/disk-space-analyzer-v1.0.0-beta4.elf",
+      "filename": "disk-space-analyzer-v1.0.0-beta7.elf",
+      "url": "https://ghfast.top/https://github.com/igorwojda/ps5-disk-space-analyzer/releases/download/v1.0.0-beta7/disk-space-analyzer-v1.0.0-beta7.elf",
       "source": "https://github.com/igorwojda/ps5-disk-space-analyzer",
       "author": "igorwojda",
       "description": "Disk Space Analyzer for PS5",
-      "version": "v1.0.0-beta4",
+      "version": "v1.0.0-beta7",
       "category": "Utilities & Tools",
-      "checksum": "1b017bfee8d1e70d49a61910f421d918cd8694a2ed12ff4b466a46659a1dcaa1",
-      "last_update": "2026-11-28T04:30:29+08:00"
+      "checksum": "521885ec48dd331f93af62570b087974e1dafe44a01b1de9459daf3e736971b9",
+      "last_update": "2026-11-28T06:49:46+08:00"
     },
     {
       "id": "ps5-dump-forge",
@@ -1044,15 +1044,15 @@
     {
       "id": "ps5upload",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.43.elf",
-      "url": "https://ghfast.top/https://github.com/phantomptr/ps5upload/releases/download/v12.6.43/ps5upload-12.6.43.elf",
+      "filename": "ps5upload-12.6.46.elf",
+      "url": "https://ghfast.top/https://github.com/phantomptr/ps5upload/releases/download/v12.6.46/ps5upload-12.6.46.elf",
       "source": "https://github.com/phantomptr/ps5upload",
       "author": "phantomptr",
       "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
-      "version": "v12.6.43",
+      "version": "v12.6.46",
       "category": "Networking & Servers",
-      "checksum": "8b8bfc0fcdf74e92a6a0c1eb934ead27b94a4cb75f0ff09658a3b7d1cc599a7f",
-      "last_update": "2026-11-28T04:49:48+08:00"
+      "checksum": "d762e1e3c65f36ed2d1cacce129a612c4777755684560b600a1e216dd445813a",
+      "last_update": "2026-11-28T12:42:04+08:00"
     },
     {
       "id": "rdr2-60fps-ps5-runtime-patcher",
